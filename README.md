@@ -18,7 +18,7 @@ Self-described "working NEET" — operating on a gift economy model, not a salar
 Roots: industrial high school microcontroller builds (nationals qualifier), Apple FileMaker contract gig,
 Dentsu DTP/server-side work, and a decade running Gōdō Kaisha inferno doing AI R&D (2011–2021).
 
-Now based in an off-grid-leaning farmhouse in Yamagata — solar panels, private well, LiFePO4 backup —
+Now based in an off-grid-leaning farmhouse in Yamagata — UPS power, private well, LiFePO4 backup —
 shipping edge AI, live production systems, and open hardware solo.
 
 ---
