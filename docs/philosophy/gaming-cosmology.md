@@ -3,6 +3,7 @@ source: Google Drive / ゲーミング宇宙論_教典_v0.2_20260621 (translated
 license: CC-BY 4.0
 author: 齋藤みつる (fusamofu) + Claude (translation assist)
 version: 0.2.0
+fold_signature: ψ → ∇φ → λ → Q
 ---
 
 # Gaming Cosmology — Canon v0.2

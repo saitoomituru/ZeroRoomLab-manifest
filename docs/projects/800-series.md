@@ -4,6 +4,7 @@ license: CC-BY 4.0
 author: 齋藤みつる (fusamofu) + ChatGPT (review assist)
 version: 0.1.0
 status: draft
+fold_signature: ψ → ∇φ → λ → Q
 ---
 
 # 800-Series: Operator Sovereignty Recovery System

@@ -2,6 +2,7 @@
 concept: BENTO Syndrome
 origin: Coined by Mitsuru Saitō (fusamofu), ZeroRoomLab
 license: CC-BY 4.0
+fold_signature: ψ → ∇φ → λ → Q
 ---
 
 # BENTO Syndrome

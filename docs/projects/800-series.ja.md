@@ -4,6 +4,7 @@ license: CC-BY 4.0
 author: 齋藤みつる (ふさもふ) + ChatGPT (レビュー補助)
 version: 0.1.0
 status: draft
+fold_signature: ψ → ∇φ → λ → Q
 ---
 
 # 800系：演者による主権回収システム

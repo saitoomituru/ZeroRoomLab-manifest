@@ -4,6 +4,7 @@ license: CC-BY 4.0
 author: 齋藤みつる (ふさもふ)
 version: 0.1.0
 status: draft
+fold_signature: ψ → ∇φ → λ → Q
 ---
 
 # 情報子工学とは

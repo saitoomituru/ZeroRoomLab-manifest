@@ -3,6 +3,7 @@ source: Master context / ふさもふ_コンテキスト_マスター_2026-06-13
 license: CC-BY 4.0
 author: 齋藤みつる (fusamofu)
 version: 0.1.0
+fold_signature: ψ → ∇φ → λ → Q
 ---
 
 # ZeroRoomLab Technical Timeline

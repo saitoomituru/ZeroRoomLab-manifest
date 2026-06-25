@@ -4,6 +4,7 @@ license: CC-BY 4.0
 author: ZeroRoomLab / @K_chachamaru
 version: 0.1.0
 status: draft
+fold_signature: ψ → ∇φ → λ → Q
 ---
 
 # Fold構造文章論：情報子工学的ハイパーテキスト仕様書

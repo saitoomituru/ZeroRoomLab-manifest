@@ -3,6 +3,7 @@ source: Google Drive / ゲーミング宇宙論_教典_v0.2_20260621
 license: CC-BY 4.0
 author: 齋藤みつる (ふさもふ) + Claude (記録補助)
 version: 0.2.0
+fold_signature: ψ → ∇φ → λ → Q
 ---
 
 # ゲーミング宇宙論 教典 v0.2

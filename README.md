@@ -91,4 +91,20 @@ Money is flow and velocity. Hoarding it is the losing play.
 
 ---
 
+---
+
+## Go Deeper
+
+| Doc | What it is |
+|---|---|
+| [docs/philosophy/gaming-cosmology.md](docs/philosophy/gaming-cosmology.md) | Gaming Cosmology Canon — universe as MMO |
+| [docs/philosophy/techno-animism.md](docs/philosophy/techno-animism.md) | Shinto + engineering as convertible observation layers |
+| [docs/theory/fam-overview.md](docs/theory/fam-overview.md) | FAM (FoldAccessMapper) — vertical thought storage |
+| [docs/theory/infoton-engineering.md](docs/theory/infoton-engineering.md) | Infoton Engineering — industrial number theory via FAM |
+| [docs/projects/800-series.md](docs/projects/800-series.md) | 800-series — operator sovereignty recovery system |
+| [docs/projects/bento-syndrome.md](docs/projects/bento-syndrome.md) | BENTO Syndrome — UI hierarchy vs architecture mismatch |
+| [quantaril.cloud](https://quantaril.cloud) | Live Quantaril Cloud docs site |
+
+---
+
 *ZeroRoomLab / @K_chachamaru — CC-BY 4.0 / Apache 2.0*
