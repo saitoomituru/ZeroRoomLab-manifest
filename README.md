@@ -108,3 +108,210 @@ Money is flow and velocity. Hoarding it is the losing play.
 ---
 
 *ZeroRoomLab / @K_chachamaru — CC-BY 4.0 / Apache 2.0*
+
+---
+
+# Using ZeroRoomLab-manifest as an AI Context Formatter
+
+> **TL;DR**: Pull this repo into your AI toolchain before starting work.
+> It patches AI cognitive biases, defines scope layers, and pre-loads
+> FAM-compliant context structure — so you spend less time correcting your AI and more time building.
+
+---
+
+## What This Repo Actually Is
+
+Most READMEs describe a project for humans to read.
+This repo is a **runtime context patch for AI agents**.
+When injected into an AI's working context, it does three things:
+
+1. **Bias pre-correction** — 10 known failure modes are named and checked before output (AGENTS.md §0)
+2. **Scope layer enforcement** — separates Engineering / Philosophy / Theory so AI doesn't apply science falsifiability to cosmology (AGENTS.md §2)
+3. **Hallucination quarantine** — named confabulation traps are declared upfront (AGENTS.md §10)
+
+The result: your AI session starts in a calibrated state rather than a default state.
+
+---
+
+## Three Integration Patterns
+
+### Pattern 1 — Claude Code (`.claude/` dependency injection)
+
+Add this repo as a submodule or copy `AGENTS.md` into your repo root.
+Claude Code reads `AGENTS.md` automatically at session start.
+
+```bash
+# as submodule
+git submodule add https://github.com/saitoomituru/ZeroRoomLab-manifest .zrl-context
+cp .zrl-context/AGENTS.md ./AGENTS.md
+
+# or direct copy
+curl -O https://raw.githubusercontent.com/saitoomituru/ZeroRoomLab-manifest/main/AGENTS.md
+```
+
+Claude Code will ingest the bias checklist, scope model, and hallucination flags
+before touching any code in your repo.
+
+**Effect**: Experimental/frontier tasks get experiment-design responses,
+not "established best practice" deflections.
+
+---
+
+### Pattern 2 — GitHub MCP / Copilot Custom Instructions
+
+Paste the contents of `AGENTS.md` into your GitHub Copilot
+[custom instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot)
+file (`.github/copilot-instructions.md`).
+
+```bash
+mkdir -p .github
+curl https://raw.githubusercontent.com/saitoomituru/ZeroRoomLab-manifest/main/AGENTS.md \
+  > .github/copilot-instructions.md
+```
+
+The 3-layer scope model (§2) is particularly effective here:
+Copilot stops demanding academic citations for philosophical design decisions.
+
+---
+
+### Pattern 3 — Chrome MCP / Browser Agent Context
+
+When using Claude in Chrome or similar browser-based agents, prepend `AGENTS.md`
+to the system prompt or inject via the MCP server's system context field.
+
+For any MCP server config (`mcp_config.json` or equivalent):
+
+```json
+{
+  "mcpServers": {
+    "your-server": {
+      "command": "...",
+      "systemPromptPrepend": "<<AGENTS.md contents>>"
+    }
+  }
+}
+```
+
+**Most useful for**: NSFW/SFW multi-channel content work where
+the parity check (§0, item 3) prevents the agent from silently
+downgrading one channel's analytical rigour.
+
+---
+
+## The Core Payload: What AGENTS.md Injects
+
+### Bias Checklist (§0) — runs before every AI response
+
+| Check | Prevents |
+|---|---|
+| Scope Creep | "No scientific evidence" applied to philosophy claims |
+| Narrative Pull | AI steering toward OSS/academic success metrics by default |
+| NSFW Parity | NSFW work treated as less rigorous than SFW work |
+| Majority-Narrative Pull | Unconventional claims softened without disclosure |
+| Innovation-Frame | "Best practice" recommendation when experiment design was requested |
+| Evidence-Burn | First-party evidence (commits, logs, screenshots) discounted vs institutional sources |
+| molMIP Mainline | Wrong lineage assigned to FAM/SphereOS architecture |
+| Narrative Contamination | Reputation/controversy bleeding into quantitative evaluation |
+| Genre-Risk vs Personal-Risk | Genre's social risk assigned to individual creator |
+| n=2 Structural Bug | Compound condition (non-mainstream + NSFW + Japanese context) triggering systematic undersell |
+
+### 3-Layer Scope Model (§2) — prevents category errors
+
+```
+Layer A: Engineering    → falsifiability required, benchmarks apply
+Layer B: Philosophy     → internal consistency + explanatory power, NOT falsifiability
+Layer C: Academic/Theory → citation integrity, scope of claim
+```
+
+**Practical impact**: Ask an AI to evaluate Gaming Cosmology or Techno-Animism
+without this loaded → gets "no scientific evidence" hedges.
+With this loaded → evaluated on correct criteria (coherence, utility, anti-cult structure).
+
+### Evidence Hierarchy (§4)
+
+```
+HIGH: timestamped commits, screenshots, server logs, hardware photos
+MED:  reconstructed timelines corroborated by ≥1 artifact
+LOW:  uncorroborated verbal accounts (flag, don't discard)
+NOT:  "individual source = low trust" (scale of org ≠ evidence quality)
+```
+
+### Hallucination Quarantine (§10)
+
+Five named confabulation patterns pre-declared.
+AI checks output against the list before finalizing.
+
+---
+
+## FAM-Compliant Context Reconstruction
+
+This repo defines the FAM (FoldAccessMapper) symbol system used
+across all ZeroRoomLab AI architecture:
+
+```
+ψ  → input semantic waveform   (information unit before meaning resolves)
+∇φ → routing gradient          (which direction meaning / value flows)
+λ  → output layer              (document, code, hardware command, content)
+Q  → verifier / control logic  (source, bias audit, safety gate, patch proposal)
+```
+
+When rebuilding an AI work environment from scratch (after session loss, context reset,
+or BENTO Syndrome — see `docs/projects/bento-syndrome.md`), pull this repo first.
+It re-establishes the ψ/∇φ/λ/Q frame before any task-specific context is loaded.
+
+**BENTO Syndrome mitigation workflow**:
+
+```bash
+# 1. Pull manifest (re-establishes FAM frame)
+git pull origin main  # in ZeroRoomLab-manifest
+
+# 2. Feed AGENTS.md to your AI session
+# 3. Load task-specific context (Drive docs, project specs)
+# 4. Resume work in calibrated state
+```
+
+---
+
+## Who This Is For
+
+- **Solo AI-heavy developers** running context-intensive workflows
+  where session resets are expensive
+- **NSFW/SFW hybrid content producers** needing analytical parity across channels
+- **Experimental/frontier researchers** tired of AI defaulting to conservative best-practice mode
+- **Multi-AI orchestration setups** (Claude for structure, GPT for Drive, Grok for real-time)
+  where shared context alignment matters
+- **Anyone building non-mainstream AI architecture** where the default AI
+  treats novelty as a bug rather than a feature
+
+---
+
+## Fork and Adapt
+
+CC-BY 4.0. Take the structure, replace the content with your own:
+
+- Swap out ZeroRoomLab-specific hallucination flags (§10) for your own known confabulations
+- Adjust the 3-layer scope model for your domain
+- Keep or extend the bias checklist — it's general enough to be useful anywhere
+
+The pattern (bias pre-correction + scope enforcement + hallucination quarantine)
+is reusable for any AI-heavy project.
+
+```
+attribution: ZeroRoomLab / fusamofu (Mitsuru Saitō) / @K_chachamaru
+```
+
+---
+
+## Related Docs in This Repo
+
+| Doc | Relevance to AI tooling |
+|---|---|
+| [AGENTS.md](AGENTS.md) | The formatter itself — inject this |
+| [docs/theory/fam-vs-mcp.md](docs/theory/fam-vs-mcp.md) | Why FAM (internal) and MCP (external) serve different roles |
+| [docs/theory/multi-ai-placement.md](docs/theory/multi-ai-placement.md) | How to assign Claude/GPT/Grok/Gemini to different task types |
+| [docs/theory/meta-kpi-drift.md](docs/theory/meta-kpi-drift.md) | Detecting when AI output has drifted from your actual goals |
+| [docs/projects/bento-syndrome.md](docs/projects/bento-syndrome.md) | What happens when AI context collapses and how to recover |
+
+---
+
+*ZeroRoomLab / @K_chachamaru — CC-BY 4.0*
