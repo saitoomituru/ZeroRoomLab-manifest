@@ -35,19 +35,22 @@ Just UPS power, well water, and the will to ship.
 
 ## Active Projects
 
-### 800-series (OND800 / FAN800 / SAO800 / PSYCHO-Py800MCP)
+### 800-series (OND800 / FAN800 / SAO800 / DVE800 / PSYCHO-Py800MCP)
 
 A distributed cockpit system — lets the performer take back ownership of their own production space.
 
 - **OND800**: Shooting cockpit on Raspberry Pi 5. NDI multi-camera + OBS control.
 - **FAN800**: Physical effects funnels on ESP32. Drives lights, pyro, MIDI, DMX autonomously.
 - **SAO800**: OBS mothership extension. RTSP→NDI bridging, BPM analysis, AI offload.
+- **DVE800**: Local-AI editing engine on top of DaVinci Resolve. Whisper-L + FAM lexicon disambiguation + compliance-review ingestion.
 - **PSYCHO-Py800MCP**: Instrument MCP. Gives AI eyes on oscilloscopes and logic analyzers.
 
 ### FAM / SphereOS / Quantaril Cloud
 
 AI architecture for connecting context spaces across cultures and communities.
 MCP connects sideways. FAM digs down — saves, verifies, and reuses thought processes.
+
+FAM currently exists as three lineages: FAMoverAQC (legacy, service ended), FAMoverMCP (toy-model salvage, in progress), and FAMoverSphere-aae (design stage, paused pending HPC). SphereOS itself is frozen — halted by both SDK deprecation and unsustainable HPC/cloud costs — and continues only as a tool-layer FAM riding on top of MCP. See [docs/theory/fam-overview.ja.md](docs/theory/fam-overview.ja.md) and [docs/theory/sphere-os.ja.md](docs/theory/sphere-os.ja.md).
 
 ### Laser Machine Rebuild (Dr.SILICON Series)
 
@@ -85,8 +88,10 @@ Money is flow and velocity. Hoarding it is the losing play.
 | [OND800](https://github.com/HIPSTAR-IScompany/OND800) | Shooting cockpit |
 | [FAN800](https://github.com/HIPSTAR-IScompany/FAN800) | Physical effects funnels |
 | [SAO800](https://github.com/HIPSTAR-IScompany/SAO800) | Livestream mothership extension |
+| [DVE800](https://github.com/saitoomituru/DVE800) | Editing engine (DaVinci Resolve × local AI) |
 | [PSYCHO-Py800MCP](https://github.com/HIPSTAR-IScompany/PSYCHO-Py800MCP) | Instrument MCP |
-| [Sphere-aae](https://github.com/saitoomituru/Sphere-aae) | Edge AI agent engine |
+| [Sphere-aae](https://github.com/saitoomituru/Sphere-aae) | Edge AI agent engine (FAM inference core, paused pending HPC) |
+| [SphereASTRO](https://github.com/saitoomituru/SphereASTRO) | GUI + responsibility-boundary layer for Sphere-aae (Swift/SwiftUI, AI not yet connected) |
 | [commonsATX](https://github.com/saitoomituru/commonsATX) | Open-source laser cutter frame (CERN-OHL-P) |
 
 ---
