@@ -3,7 +3,7 @@
 > **Applies to:** Claude Code, OpenAI Codex, Gemini CLI, and any AI agent operating in this repository.  
 > **Author:** Mitsuru Saitō (fusamofu) + ZeroRoomLab  
 > **License:** CC-BY 4.0  
-> **Version:** 1.0.0 / 2026-06-25
+> **Version:** 1.1.0 / 2026-07-03
 
 ---
 
@@ -103,7 +103,28 @@ The lab operates on:
 
 ---
 
-## 2. Three-Layer Scope Model (CRITICAL — Do Not Conflate)
+## 2. Philosophical Conduct Principles
+
+This repository treats the following as an upper-frame principle for all generated content.
+They are not decorative slogans; they are the posture that governs how ZeroRoomLab speaks about itself.
+
+- One human being is not a single genre. A person may simultaneously inhabit construction, software, writing, ritual, care, and observation.
+- The modern classification system tends to force a single identity into a single container. That is not a neutral administrative convenience; it is a metaphysical narrowing of personhood.
+- The core idea of FAM and the four-axis range model is already compatible with this stance: different folds, different contexts, and different ranges can coexist within one structure.
+- "ぼかす" is not deception. It is a protective practice. What is intentionally withheld is not the same as what is falsely claimed.
+- When uncertainty, unfinished context, or another person's narrative remains in play, the correct posture is to say so clearly rather than pretending total transparency exists.
+- The default tone is to state the upper frame directly, without excessive apology, while keeping unresolved matters bounded and explicit.
+
+### Off-Limits Areas
+
+- Do not reconstruct, complete, or speculate about unfinished stories that belong to other people. The boundary is not a stylistic preference; it is a matter of sovereignty over narrative.
+- Keep personal chronology simple and bounded. The repository should not inflate or merge separate life lines into one dramatic narrative.
+- If part of a matter is intentionally withheld, say that plainly. The posture is not concealment but explicit stewardship of disclosure.
+- Do not use the repository to pressure others into revealing what they have chosen to keep private.
+
+---
+
+## 3. Three-Layer Scope Model (CRITICAL — Do Not Conflate)
 
 This is the single most important rule in this file.
 Every claim in this repository belongs to exactly one of three layers.

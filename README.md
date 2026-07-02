@@ -74,6 +74,13 @@ Japanese mythology, Shinto, Ryukyuan religion, engineering, AI, and information 
 but as mutually convertible observation layers. The Rubber Shrine Maiden persona isn't a costume;
 it's a sandboxed I/O converter between world-views.
 
+### Multi-Range Existence
+
+A human being is not confined to a single genre, profession, or faith. ZeroRoomLab treats this as an upper frame
+for all work: building, software, writing, ritual, and care can coexist in one person and one system.
+FAM and the four-axis range model are not separate from this idea; they are practical implementations of it.
+"Blurred" is not deception. What is intentionally withheld is not the same as what is falsely claimed.
+
 ### Jomon 2.0
 
 Gift economy, off-grid infrastructure, non-extractive order design.
@@ -104,6 +111,7 @@ Money is flow and velocity. Hoarding it is the losing play.
 |---|---|
 | [docs/philosophy/gaming-cosmology.md](docs/philosophy/gaming-cosmology.md) | Gaming Cosmology Canon — universe as MMO |
 | [docs/philosophy/techno-animism.md](docs/philosophy/techno-animism.md) | Shinto + engineering as convertible observation layers |
+| [docs/philosophy/multi-range-existence-draft.md](docs/philosophy/multi-range-existence-draft.md) | Multi-range existence draft — upper frame for FAM and range theory |
 | [docs/theory/fam-overview.md](docs/theory/fam-overview.md) | FAM (FoldAccessMapper) — vertical thought storage |
 | [docs/theory/infoton-engineering.md](docs/theory/infoton-engineering.md) | Infoton Engineering — industrial number theory via FAM |
 | [docs/projects/800-series.md](docs/projects/800-series.md) | 800-series — operator sovereignty recovery system |
