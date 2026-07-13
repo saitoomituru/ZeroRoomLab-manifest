@@ -116,11 +116,27 @@ Money is flow and velocity. Hoarding it is the losing play.
 | [docs/theory/infoton-engineering.md](docs/theory/infoton-engineering.md) | Infoton Engineering — industrial number theory via FAM |
 | [docs/projects/800-series.md](docs/projects/800-series.md) | 800-series — operator sovereignty recovery system |
 | [docs/projects/bento-syndrome.md](docs/projects/bento-syndrome.md) | BENTO Syndrome — UI hierarchy vs architecture mismatch |
+| [docs/operations/README.ja.md](docs/operations/README.ja.md) | Operations index — note, docs, and transfer-queue operating model |
+| [docs/operations/manifest-operating-model.ja.md](docs/operations/manifest-operating-model.ja.md) | Manifest operating model — three-layer structure and update rules |
 | [quantaril.cloud](https://quantaril.cloud) | Live Quantaril Cloud docs site |
 
 ---
 
 *ZeroRoomLab / @K_chachamaru — CC-BY 4.0 / Apache 2.0*
+
+---
+
+## Manifest operating model
+
+This repository now serves three layers in one place:
+
+- [note](note) — raw notes, drafts, salvage logs, and source material that should not be treated as canonical yet
+- [docs](docs) — normalized documentation for philosophy, theory, and projects
+- [note/transfer_plan](note/transfer_plan) — staging area for content that should be forwarded to other repositories after review
+
+In other words, this manifest is not only a context patch. It is also a knowledge hub and transfer queue for the wider ZeroRoomLab ecosystem.
+
+The current handoff plan is tracked in [note/transfer_plan/repository_transfer_map.md](note/transfer_plan/repository_transfer_map.md), and the overall update proposal is documented in [note/20260713-1800__repo_structure_update_proposal.md](note/20260713-1800__repo_structure_update_proposal.md).
 
 ---
 
