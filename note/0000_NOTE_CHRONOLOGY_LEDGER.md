@@ -126,3 +126,16 @@ These `.gdoc` files preserve Google Drive document IDs and local Drive timestamp
 | source | destination | sha256 prefix |
 |---|---|---|
 | `/Users/saitoumitsuru/.codex/attachments/25fd928c-9bda-4f3a-a7de-1b29cd53917a/pasted-text.txt` | `20260713-1531__Quantaril Cloud Atlantis世代 — 文書体系マップ(ハブ).md` | `c35e1f8da194` |
+
+## Removed Exact Duplicates After Remote Verification
+
+Checked: 2026-07-13 15:34:21
+
+All removed files had exact matching blobs in `origin/main`; one representative file per hash was retained locally.
+
+| removed | retained representative |
+|---|---|
+| `20260713-1416__infoton-engineering-philosophy-theology.md` | `20260713-1513__infoton-engineering-philosophy-theology_1.md` |
+| `20260713-1416__infoton-engineering-philosophy-theology_1.md` | `20260713-1513__infoton-engineering-philosophy-theology_1.md` |
+| `20260713-1416__sphereos-atlantis-gui-arch-notes-2_1.md` | `20260713-1416__sphereos-atlantis-gui-arch-notes-2_2.md` |
+| `20260713-1416__sphereos-atlantis-gui-philosophy_2.md` | `20260713-1416__sphereos-atlantis-gui-philosophy_3.md` |

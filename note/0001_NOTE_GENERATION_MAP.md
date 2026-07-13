@@ -24,3 +24,11 @@ This map groups same-day, same-context notes as brainstorming generations. The n
 | `20260713` | `infoton-engineering-philosophy-theology` | `20260713-1416__infoton-engineering-philosophy-theology.md`<br>`20260713-1416__infoton-engineering-philosophy-theology_1.md`<br>`20260713-1513__infoton-engineering-philosophy-theology_1.md` | `20260713-1513__infoton-engineering-philosophy-theology_1.md` |
 | `20260713` | `sphereos-atlantis-gui-arch-notes-2` | `20260713-1416__sphereos-atlantis-gui-arch-notes-2_1.md`<br>`20260713-1416__sphereos-atlantis-gui-arch-notes-2_2.md` | `20260713-1416__sphereos-atlantis-gui-arch-notes-2_2.md` |
 | `20260713` | `sphereos-atlantis-gui-philosophy` | `20260713-1416__sphereos-atlantis-gui-philosophy_2.md`<br>`20260713-1416__sphereos-atlantis-gui-philosophy_3.md` | `20260713-1416__sphereos-atlantis-gui-philosophy_3.md` |
+
+## Exact Duplicate Cleanup
+
+Exact duplicate files committed in `origin/main` were pruned from the working `note/` directory. The retained representatives are:
+
+- `20260713-1416__sphereos-atlantis-gui-arch-notes-2_2.md`
+- `20260713-1416__sphereos-atlantis-gui-philosophy_3.md`
+- `20260713-1513__infoton-engineering-philosophy-theology_1.md`
