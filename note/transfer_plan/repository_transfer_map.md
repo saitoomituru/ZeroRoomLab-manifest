@@ -25,9 +25,9 @@
 
 | 対象リポジトリ | 転送内容 | 優先度 | 状態 |
 |---|---|---|---|
-| [../.. /quantaril_cloud_Q3](../../quantaril_cloud_Q3) | Docusaurus / 生成コード / コンテンツ生成の構造整理 | 高 | [TRANSFER-QUEUED] |
-| [../.. /AQC/astro.quantaril.cloud](../../AQC/astro.quantaril.cloud) | AQC → IBD / Infoton / SphereOS の責務整理、用語統一 | 高 | [TRANSFER-QUEUED] |
-| [../.. /IBD/IBD](../../IBD/IBD) | IBD の役割、Schema / Context / Provenance の整理 | 高 | [TRANSFER-QUEUED] |
+| [quantaril_cloud_Q3](../../../quantaril_cloud_Q3/quantaril_cloud_Q3) | Docusaurus / 生成コード / コンテンツ生成の構造整理 | 高 | [TRANSFERRED] |
+| [AQC/astro.quantaril.cloud](../../../AQC/astro.quantaril.cloud) | AQC → IBD / Infoton / SphereOS の責務整理、用語統一 | 高 | [TRANSFERRED] |
+| [IBD/IBD](../../../IBD/IBD) | IBD の役割、Schema / Context / Provenance の整理 | 高 | [TRANSFERRED] |
 | [../.. /pain-scouter-assessment/pain-scouter-assessment](../../pain-scouter-assessment/pain-scouter-assessment) | ノートの評価・鑑定系の文脈整理が必要な場合のみ | 中 | [PENDING] |
 
 ---
@@ -71,6 +71,5 @@
 
 ## 5. 次のアクション
 
-- まずは [quantaril_cloud_Q3](../../quantaril_cloud_Q3) と [AQC/astro.quantaril.cloud](../../AQC/astro.quantaril.cloud) へ、構造メモと運用方針の要約を転送する
-- その後、 [IBD/IBD](../../IBD/IBD) へ概念定義の整理を送る
-- 反映内容が確定したら、ここに [TRANSFERRED] として記録する
+- 反映済みの [quantaril_cloud_Q3](../../quantaril_cloud_Q3)、[AQC/astro.quantaril.cloud](../../AQC/astro.quantaril.cloud)、[IBD/IBD](../../IBD/IBD) について、今後の追随更新を監視する
+- 追加の転送候補が出た場合は、対象リポジトリごとにこの表を更新する

@@ -32,14 +32,14 @@
 |---|---|---|---|---|
 | 1 | **Grainerフロー運用計画書** | 陰謀論/オカルト/ゲーマー沼からの選鉱パイプライン(入力側運用) | [Grainerフロー運用計画書_v1](https://claude.ai/chat)(本セッションで作成、ZeroRoomLab-manifest投げ込み予定) | `[ACTIVE]` 前回セッションで確定 |
 | 2 | **次世代SphereOS Atlantisスペックシート** | FAM/ASTRO/IBD/Atlantis OSの仕様(component別status/capability) | Drive: [統合アーキテクチャ／プロジェクトデータシート v0.5](https://docs.google.com/document/d/12zUXD0h7TXTDh45Q4lUPbZ36or6WBhrFCYhS0TVHFAQ)が現時点の最新版。**改装(改訂)が必要**なため、本ハブは「ここを都度読みに行け」の指示のみ持つ | `[NEEDS-REVISION]` |
-| 3 | **ドキュメント整備規約** | ディレクトリ構成・ライセンス層(Apache2.0/CC-BY/CC-BY-SA)・命名規則・新規ファイル配置ルール | 未作成。§7.7(ライセンス三層)は運用計画書内にあるが、規約単体としては独立してない | `[TODO]` |
-| 4 | **Docusaurus/プログラム部分アップデート計画** | quantaril_cloud_Q3の実コード(generate_*.py、CI/CD、Docusaurus構成)の改修ロードマップ | GitHub: [quantaril_cloud_Q3](https://github.com/HIPSTAR-IScompany/quantaril_cloud_Q3)(現行実体)。改修計画自体は未文書化 | `[TODO]` |
-| 5 | **拡張計画(Native/Server/App-layer/Edge-algo棚)** | Custom GPTs前提の崩壊に伴う棚再編、既存108ファイルの振り分け | 未作成。今回のセッションログに骨子のみ(Grainer運用計画書 §未収録) | `[TODO]` |
+| 3 | **ドキュメント整備規約** | ディレクトリ構成・ライセンス層(Apache2.0/CC-BY/CC-BY-SA)・命名規則・新規ファイル配置ルール | [docs/operations/documentation-maintenance-policy.ja.md](../docs/operations/documentation-maintenance-policy.ja.md) | `[ACTIVE]` |
+| 4 | **Docusaurus/プログラム部分アップデート計画** | quantaril_cloud_Q3の実コード(generate_*.py、CI/CD、Docusaurus構成)の改修ロードマップ | [docs/operations/docusaurus-program-update-plan.ja.md](../docs/operations/docusaurus-program-update-plan.ja.md) | `[ACTIVE]` |
+| 5 | **拡張計画(Native/Server/App-layer/Edge-algo棚)** | Custom GPTs前提の崩壊に伴う棚再編、既存108ファイルの振り分け | [docs/operations/extension-plan.ja.md](../docs/operations/extension-plan.ja.md) | `[ACTIVE]` |
 | 6 | **Fold7G/8Gプロトコル & OS仕様** | 通信プロトコル層の次世代規格化(旧P2P、Trion Bond等) | Drive: 統合アーキテクチャデータシートv0.5内に記載あり(component単位)。独立したプロトコル仕様書としては未分離 | `[IN-PROGRESS-BY-CODEX]` 別セッションでCodexがDrive/Downloads由来の`FOLD7G_TRION_BOND_PROTOCOL`等を`docs/theory/`へ取り込み中(2026-07-13観測)。Claude側からの並行編集は現時点で控える |
 | 7 | **ビジョン・神話文書** | 海んちゅう/カナロア×アストロボーイ系クリーンルーム神話、ゲーミング宇宙論教典 | Drive: ゲーミング宇宙論教典v0.1/v0.2(既存)。`about/`(GitHubリポ表紙層)への信仰明示は未反映 | `[PARTIAL]` |
 | 8 | **コード/GUI分離ドキュメント** | エンジン中立性、ライセンス三層(Apache2.0/CC-BY/CC-BY-SA)の技術的裏付け | Grainerフロー運用計画書 §7.7に記載。独立文書化はまだ | `[EMBEDDED]` 運用計画書内に埋め込み状態、切り出し検討 |
 | 9 | **過去実験プロダクトアーカイブ + 先行プロトログ** | SphereOS3x4x等のサ終済み実装、権威科学ビランムーブへの反証として使う失敗ログ | Drive: [ZeroRoomLab_OS3x4x時代ドキュメント調査報告書](https://docs.google.com/document/d/12MI_h4lC7m-KEQG_6N7MkHTr1OAiMyBv9rasIbVlaxw)、[soikoma-manifest調査報告書](https://docs.google.com/document/d/1vktsJeXwPzP0FrzNp5EdGy_URpJOy6ubu-UkTRghHvA) | `[IN-PROGRESS-BY-CODEX]` `SphereOS_Product_Architecture`, `IBD_README`, AQC/ASTRO系READMEをCodexが`docs/theory/`へ並行取り込み中。Claude側は棚卸し表への反映のみ行い、内容生成は重複させない |
-| 10 | **マルチオーケストレーター/PC-NPCプロトコル仕様** | 全ベンダー対称の相互不可侵、人格実装表記義務、綺麗なキック | 過去チャット: [sphere-architecture-research-note.md該当セッション](https://claude.ai/chat/bbb6d6a5-730e-4b56-b20a-cbb08fbdda6d)(2026-07-11)。ファイル自体は当該セッションの作業ディレクトリにあり、現セッションからは非永続 | `[NEEDS-RETRIEVAL]` 次回セッションで再取得・移植が必要 |
+| 10 | **マルチオーケストレーター/PC-NPCプロトコル仕様** | 全ベンダー対称の相互不可侵、人格実装表記義務、綺麗なキック | [docs/interface-spec/multi-orchestrator-protocol.md](../docs/interface-spec/multi-orchestrator-protocol.md) | `[ACTIVE]` |
 
 ---
 
@@ -95,9 +95,9 @@ Code/Codexエージェントが読む際、
 
 ## 4. 次にやるべきこと(優先度順、判断待ち)
 
-1. `[NEEDS-RETRIEVAL]`のマルチオーケストレーター仕様(#10)を次回セッションで再取得し、`docs/interface-spec/multi-orchestrator-protocol.md`として実体化する
+1. `[ACTIVE]`のマルチオーケストレーター仕様(#10)を [docs/interface-spec/multi-orchestrator-protocol.md](../docs/interface-spec/multi-orchestrator-protocol.md) として実体化した
 2. `[NEEDS-EXTRACTION]`のFold7G/8G(#6)をデータシートv0.5から独立文書として切り出す
-3. `[TODO]`のドキュメント整備規約(#3)・拡張計画(#5)・Docusaurus改修計画(#4)を、それぞれ独立文書として新規作成する
+3. `[ACTIVE]`のドキュメント整備規約(#3)・拡張計画(#5)・Docusaurus改修計画(#4)を、運用層として整備した
 4. `[EMBEDDED]`のコード/GUI分離(#8)を運用計画書から切り出すかどうか判断する(切り出す場合、運用計画書側は「§参照: コード/GUI分離文書」のリンクに置き換える)
 
 これらはすべて**別々の文書として並行着手可能**であり、1つの巨大文書の中で同時に扱う必要はない。
