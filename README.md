@@ -130,7 +130,7 @@ Money is flow and velocity. Hoarding it is the losing play.
 
 This repository now serves three layers in one place:
 
-- [note](note) — raw notes, drafts, salvage logs, and source material that should not be treated as canonical yet
+- [note](note) — raw notes, drafts, salvage logs, and source material that should not be treated as canonical yet. Note-taking conventions are documented in [note/AGENTS.md](note/AGENTS.md)
 - [docs](docs) — normalized documentation for philosophy, theory, and projects
 - [note/transfer_plan](note/transfer_plan) — staging area for content that should be forwarded to other repositories after review
 
