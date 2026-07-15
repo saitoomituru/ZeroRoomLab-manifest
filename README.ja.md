@@ -29,6 +29,8 @@ ZeroRoomLabは、ふさもふの研究・制作スペースの名前。
 
 ---
 
+> README冒頭は一般公開向けの表紙です。以降の各節と実験ノートは、ハードウェア、コミット、ログ、試験境界を読んでから主張の射程を拡張する成人OSS技術者向けです。媒体別の扱いは[テクニカルコミュニケーション運用規約](docs/operations/technical-communication-register.ja.md)を参照してください。
+
 ## 現在進行中のプロジェクト群
 
 ### 800系（OND800 / FAN800 / SAO800 / DVE800 / PSYCHO-Py800MCP）

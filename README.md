@@ -33,6 +33,8 @@ Just UPS power, well water, and the will to ship.
 
 ---
 
+> The README opens with the public-facing view; the sections and experiment notes that follow are written for adult OSS engineers who are expected to read the hardware, commits, logs, and test boundaries before extending a claim. See the [communication register policy](docs/operations/technical-communication-register.ja.md).
+
 ## Active Projects
 
 ### 800-series (OND800 / FAN800 / SAO800 / DVE800 / PSYCHO-Py800MCP)
@@ -118,6 +120,7 @@ Money is flow and velocity. Hoarding it is the losing play.
 | [docs/projects/bento-syndrome.md](docs/projects/bento-syndrome.md) | BENTO Syndrome — UI hierarchy vs architecture mismatch |
 | [docs/operations/README.ja.md](docs/operations/README.ja.md) | Operations index — note, docs, and transfer-queue operating model |
 | [docs/operations/manifest-operating-model.ja.md](docs/operations/manifest-operating-model.ja.md) | Manifest operating model — three-layer structure and update rules |
+| [docs/operations/technical-communication-register.ja.md](docs/operations/technical-communication-register.ja.md) | Public-facing and technical communication register boundary |
 | [quantaril.cloud](https://quantaril.cloud) | Live Quantaril Cloud docs site |
 
 ---
@@ -154,7 +157,7 @@ Most READMEs describe a project for humans to read.
 This repo is a **runtime context patch for AI agents**.
 When injected into an AI's working context, it does three things:
 
-1. **Bias pre-correction** — 10 known failure modes are named and checked before output (AGENTS.md §0)
+1. **Bias pre-correction** — known failure modes are named and checked before output (AGENTS.md §0)
 2. **Scope layer enforcement** — separates Engineering / Philosophy / Theory so AI doesn't apply science falsifiability to cosmology (AGENTS.md §2)
 3. **Hallucination quarantine** — named confabulation traps are declared upfront (AGENTS.md §10)
 

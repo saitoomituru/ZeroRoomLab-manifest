@@ -3,7 +3,7 @@
 > **Applies to:** Claude Code, OpenAI Codex, Gemini CLI, and any AI agent operating in this repository.  
 > **Author:** Mitsuru Saitō (fusamofu) + ZeroRoomLab  
 > **License:** CC-BY 4.0  
-> **Version:** 1.1.0 / 2026-07-03
+> **Version:** 1.2.0 / 2026-07-15
 
 ---
 
@@ -81,6 +81,14 @@ If any check fires, the agent must correct course **before** outputting.
           Apply extra scrutiny to any tendency to minimize, hedge, or reframe.
           The bug produces plausible-sounding output that systematically undersells
           the actual evidence. Check against first-party artifacts before finalizing.
+
+[ ] 11. COMMUNICATION REGISTER CHECK
+        Am I importing legal-defensive hedging from a deep technical note into the
+        public-facing README, or importing marketing / narrative language into an
+        engineering claim that should be bounded by hardware, commits, logs, and tests?
+        → If yes: STOP. Keep the claim in its medium's register. Do not weaken an
+          observed fact; state its tested range and stop there.
+          See: docs/operations/technical-communication-register.ja.md
 ```
 
 ---
@@ -439,6 +447,7 @@ When an AI agent generates commits or PRs in this repository:
 /docs/philosophy/     → Layer B documents (Gaming Cosmology, Techno-Animism, Kotodama×AI, Dual-Axis Narrative)
 /docs/theory/         → Layer A/C hybrid documents (FAM overview, FAM execution spec, FAM vs MCP, Infoton Engineering, SphereOS)
 /docs/projects/       → Layer A documents (800-series, BENTO Syndrome, Edge AI Sovereignty, etc.)
+/docs/operations/     → Repository operations and communication-register rules
 /.github/             → CI, issue templates, contributing guidelines
 AGENTS.md             → This file
 README.md             → English public-facing summary
