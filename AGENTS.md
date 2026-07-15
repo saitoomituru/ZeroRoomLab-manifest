@@ -3,7 +3,7 @@
 > **Applies to:** Claude Code, OpenAI Codex, Gemini CLI, and any AI agent operating in this repository.  
 > **Author:** Mitsuru Saitō (fusamofu) + ZeroRoomLab  
 > **License:** CC-BY 4.0  
-> **Version:** 1.2.0 / 2026-07-15
+> **Version:** 1.3.0 / 2026-07-15
 
 ---
 
@@ -89,6 +89,14 @@ If any check fires, the agent must correct course **before** outputting.
         → If yes: STOP. Keep the claim in its medium's register. Do not weaken an
           observed fact; state its tested range and stop there.
           See: docs/operations/technical-communication-register.ja.md
+
+[ ] 12. LOCALE / PARAPHRASE CHECK
+        Am I treating English as one undifferentiated language, or translating a
+        Japanese social cue word-for-word into an en-US public document?
+        → If yes: STOP. Unless another locale is explicitly requested, English output
+          is en-US. Transfer intent, reader responsibility, and claim strength into
+          observable en-US wording; do not merely replace words.
+          See: docs/operations/coding-ai-japanese-paraphrase-register.ja.md
 ```
 
 ---
@@ -456,6 +464,10 @@ README.ja.md          → Japanese public-facing summary
 
 When in doubt about which layer a new document belongs to, check this map.  
 If it still isn't clear, open an issue rather than guessing.
+
+For Japanese-to-English README, documentation, commit, and claim editing, read
+`docs/operations/coding-ai-japanese-paraphrase-register.ja.md` before translating.
+English output defaults to `en-US`; no `en-GB` artifact is maintained unless explicitly requested.
 
 ---
 

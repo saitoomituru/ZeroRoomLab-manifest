@@ -121,6 +121,7 @@ Money is flow and velocity. Hoarding it is the losing play.
 | [docs/operations/README.ja.md](docs/operations/README.ja.md) | Operations index — note, docs, and transfer-queue operating model |
 | [docs/operations/manifest-operating-model.ja.md](docs/operations/manifest-operating-model.ja.md) | Manifest operating model — three-layer structure and update rules |
 | [docs/operations/technical-communication-register.ja.md](docs/operations/technical-communication-register.ja.md) | Public-facing and technical communication register boundary |
+| [docs/operations/coding-ai-japanese-paraphrase-register.ja.md](docs/operations/coding-ai-japanese-paraphrase-register.ja.md) | Japanese-to-en-US pragmatic translation rules for coding AI |
 | [quantaril.cloud](https://quantaril.cloud) | Live Quantaril Cloud docs site |
 
 ---
