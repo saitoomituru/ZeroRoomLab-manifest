@@ -33,7 +33,7 @@ Just UPS power, well water, and the will to ship.
 
 ---
 
-> The README opens with the public-facing view; the sections and experiment notes that follow are written for adult OSS engineers who are expected to read the hardware, commits, logs, and test boundaries before extending a claim. See the [communication register policy](docs/operations/technical-communication-register.ja.md).
+> The README opens with the public-facing view. The technical notes below assume readers will inspect the hardware, commits, logs, test conditions, and claim boundaries before extending any result. See the [communication register policy](docs/operations/technical-communication-register.ja.md).
 
 ## Active Projects
 

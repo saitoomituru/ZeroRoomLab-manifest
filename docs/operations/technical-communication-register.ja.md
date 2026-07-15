@@ -15,7 +15,7 @@
 | 媒体・位置 | 主な読者 | 適切なレジスター |
 |---|---|---|
 | README冒頭のおおむね40行 | 一般読者、一般ナード、検索・SNS・スクリーンショット経由の読者 | 公開用の表紙。短く、強く、ビジョンと観測結果を伝える。マーケティングおよび芸術表現の射程として扱う |
-| READMEの境界文以降 | 成人したOSS技術者 | ハードウェア、コミット、ログ、試験境界を読んで評価する技術レジスター |
+| READMEの境界文以降 | 技術的な結果を検証・再利用する読者 | ハードウェア、コミット、ログ、試験条件、主張境界を読んで評価する技術レジスター |
 | `docs/`、実験記録、技術レポート | 実装者、再現者、監査者 | 条件、手順、結果、失敗、射程を明記する工学レジスター |
 | リポジトリ内の `note/` | 整理前の調査者・編集者 | 一次資料、草稿、サルベージ記録。正本とは限らないが、原文と文脈を保つ |
 | note.com等の小説・ドキュメンタリー・漫画・ZINE配信SaaS | 一般読者、作品読者 | マーケティング、芸術、物語のレジスター |
@@ -25,7 +25,7 @@
 
 READMEには、公開用の表紙から技術レジスターへ切り替わる位置に次の英文を置く。
 
-> The README opens with the public-facing view; the sections and experiment notes that follow are written for adult OSS engineers who are expected to read the hardware, commits, logs, and test boundaries before extending a claim.
+> The README opens with the public-facing view. The technical notes below assume readers will inspect the hardware, commits, logs, test conditions, and claim boundaries before extending any result.
 
 この一文以降では、読者にも証拠と境界を読む責任がある。冒頭の表紙を技術仕様書として過読せず、深い技術文書を宣伝コピーとして過読しない。
 
