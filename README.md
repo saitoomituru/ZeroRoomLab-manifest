@@ -5,59 +5,97 @@
 
 ZeroRoomLab is a one-person research studio and fabrication space
 running out of an Edo-period farmhouse in Yamagata, Japan.
-We build edge AI systems, live production rigs, and open hardware —
+We build edge AI systems, live production rigs, and open hardware,
 all on UPS power, well water, and stubbornness.
+
+## This may look like project poetry. It is also project management infrastructure.
+
+At first glance, this repository may look like a collection of manifestos, operating notes, and project poetry.
+It is also an experimental project-management reference for the prompt-engineering era.
+
+Its purpose is to keep heterogeneous coding agents from collapsing a shared workspace into conflicting scopes,
+authorities, dependencies, rewrites, and vendor-specific defaults. It records the workspace map, canonical sources,
+protected areas, communication registers, known agent biases, and handoff rules required for continuous development
+across Codex, Claude Code, Gemini CLI, GitHub Copilot, and future agents.
+
+The working hypothesis is simple:
+
+> Coding throughput does not replace project management. In agentic development, the ability to encode intent,
+> responsibility, boundaries, exceptions, and stopping conditions often matters before additional code generation does.
+
+ZeroRoomLab calls that ability **poem power** in Japanese. It does not mean decorative writing.
+It means turning goals and relationships that are not yet reducible to code into a reusable operating context for
+humans and agents. Code provides local implementation force. Narrative specification tells that force where to go,
+where to stop, and what it must not destroy.
+
+This repository therefore doubles as a test bed for preventing **workspace-deck collapse**: the failure mode where
+multiple vendor agents bring their own design philosophies into the same workspace, reinterpret one another's work,
+and begin a proxy war instead of adding useful development capacity.
+
+Start here:
+
+- [Heterogeneous-agent deck governance](docs/operations/heterogeneous-agent-deck-governance.ja.md)
+- [Workspace boundary register](docs/operations/workspace-boundary-register.ja.md)
+- [Machine-readable workspace registry](docs/operations/workspace-registry.json)
+- [Development-environment reconstruction](docs/operations/development-environment-reconstruction.ja.md)
+- [Japanese-to-en-US pragmatic translation register](docs/operations/coding-ai-japanese-paraphrase-register.ja.md)
 
 ---
 
 ## Who is fusamofu (Mitsuru Saitō)?
 
 Independent engineer and content creator. Goes by "fusamofu" and "Mad Shrine Maiden Scientist."
-Self-described "working NEET" — operating on a gift economy model, not a salary.
+Self-described "working NEET," operating on a gift-economy model rather than a salary.
 
-Roots: industrial high school microcontroller builds (nationals qualifier), Apple FileMaker contract gig,
-Dentsu DTP/server-side work, and a decade running Gōdō Kaisha inferno doing AI R&D (2011–2021).
+Roots include industrial-high-school microcontroller builds, an Apple FileMaker contract role,
+Dentsu DTP/server-side work, and a decade running Gōdō Kaisha inferno doing AI R&D from 2011 to 2021.
 
-Now based in an off-grid-leaning farmhouse in Yamagata — UPS-only power (no solar), private well, LiFePO4 backup —
-shipping edge AI, live production systems, and open hardware solo.
+Now based in an off-grid-leaning farmhouse in Yamagata, with UPS-only power, a private well,
+and LiFePO4 backup, shipping edge AI, live production systems, and open hardware solo.
 
 ---
 
 ## What is ZeroRoomLab?
 
-The lab name means two things: "starting from zero" and "a counter to the zero-margin modern era."
+The lab name means both "starting from zero" and "a counter to the zero-margin modern era."
 
-From one room in a Yamagata farmhouse, we run quantum-adjacent AI, distributed livestream production,
-and open hardware. No staff, no investors, no conventional infrastructure.
-Just UPS power, well water, and the will to ship.
+From one room in a Yamagata farmhouse, ZeroRoomLab runs quantum-adjacent AI research,
+distributed livestream production, open hardware, documentation experiments, and agentic-development operations.
+No staff, no investors, no conventional infrastructure. Just UPS power, well water, and the will to ship.
+
+> The README opens with the public-facing view. The technical notes below assume readers will inspect the hardware,
+> commits, logs, test conditions, and claim boundaries before extending any result. See the
+> [communication register policy](docs/operations/technical-communication-register.ja.md).
 
 ---
-
-> The README opens with the public-facing view. The technical notes below assume readers will inspect the hardware, commits, logs, test conditions, and claim boundaries before extending any result. See the [communication register policy](docs/operations/technical-communication-register.ja.md).
 
 ## Active Projects
 
 ### 800-series (OND800 / FAN800 / SAO800 / DVE800 / PSYCHO-Py800MCP)
 
-A distributed cockpit system — lets the performer take back ownership of their own production space.
+A distributed cockpit system that lets the performer take back ownership of their production space.
 
-- **OND800**: Shooting cockpit on Raspberry Pi 5. NDI multi-camera + OBS control.
-- **FAN800**: Physical effects funnels on ESP32. Drives lights, pyro, MIDI, DMX autonomously.
-- **SAO800**: OBS mothership extension. RTSP→NDI bridging, BPM analysis, AI offload.
-- **DVE800**: Local-AI editing engine on top of DaVinci Resolve. Whisper-L + FAM lexicon disambiguation + compliance-review ingestion.
-- **PSYCHO-Py800MCP**: Instrument MCP. Gives AI eyes on oscilloscopes and logic analyzers.
+- **OND800**: Shooting cockpit on Raspberry Pi 5. NDI multi-camera plus OBS control.
+- **FAN800**: Physical-effects funnels on ESP32. Drives lights, pyro, MIDI, and DMX autonomously.
+- **SAO800**: OBS mothership extension. RTSP-to-NDI bridging, BPM analysis, and AI offload.
+- **DVE800**: Local-AI editing engine on DaVinci Resolve. Whisper-L, FAM lexicon disambiguation, and compliance-review ingestion.
+- **PSYCHO-Py800MCP**: Instrument MCP that gives AI access to oscilloscopes and logic analyzers.
 
 ### FAM / SphereOS / Quantaril Cloud
 
 AI architecture for connecting context spaces across cultures and communities.
-MCP connects sideways. FAM digs down — saves, verifies, and reuses thought processes.
+MCP connects sideways. FAM digs down by saving, verifying, and reusing thought processes.
 
-FAM currently exists as three lineages: FAMoverAQC (legacy, service ended), FAMoverMCP (toy-model salvage, in progress), and FAMoverSphere-aae (design stage, paused pending HPC). SphereOS itself is frozen — halted by both SDK deprecation and unsustainable HPC/cloud costs — and continues only as a tool-layer FAM riding on top of MCP. See [docs/theory/fam-overview.ja.md](docs/theory/fam-overview.ja.md) and [docs/theory/sphere-os.ja.md](docs/theory/sphere-os.ja.md).
+FAM currently exists as three lineages: FAMoverAQC, whose original service ended; FAMoverMCP,
+a toy-model salvage path in progress; and FAMoverSphere-aae, a design-stage path paused pending HPC capacity.
+SphereOS itself is frozen because of SDK deprecation and unsustainable HPC/cloud costs, and continues only as
+a tool-layer FAM riding on top of MCP. See [FAM overview](docs/theory/fam-overview.ja.md) and
+[SphereOS](docs/theory/sphere-os.ja.md).
 
 ### Laser Machine Rebuild (Dr.SILICON Series)
 
-Five-person rural workshop crew. Turning rusty scrap tin cans into μm-precision laser cutter duct work.
-Geometry constraints solve what budget can't.
+A five-person rural workshop crew turning rusty scrap into micrometer-class laser-cutter ductwork.
+Geometry constraints solve what budget cannot.
 
 ---
 
@@ -66,26 +104,26 @@ Geometry constraints solve what budget can't.
 ### Gaming Cosmology
 
 Reads the universe, society, and human life as an MMO-style structure.
-"Why does God allow suffering?" becomes "Why did the devs ship this UX?"
-Poverty = Economic UI design problem. War = Player-vs-player UX failure.
+"Why does God allow suffering?" becomes "Why did the developers ship this UX?"
+Poverty becomes an economic-interface problem. War becomes a player-versus-player UX failure.
 Hits bugs, not feelings.
 
 ### Techno-Animism
 
-Japanese mythology, Shinto, Ryukyuan religion, engineering, AI, and information theory — not as separate domains,
-but as mutually convertible observation layers. The Rubber Shrine Maiden persona isn't a costume;
-it's a sandboxed I/O converter between world-views.
+Japanese mythology, Shinto, Ryukyuan religion, engineering, AI, and information theory are treated not as isolated
+domains, but as mutually convertible observation layers. The Rubber Shrine Maiden persona is not a costume.
+It is a sandboxed I/O converter between worldviews.
 
 ### Multi-Range Existence
 
-A human being is not confined to a single genre, profession, or faith. ZeroRoomLab treats this as an upper frame
-for all work: building, software, writing, ritual, and care can coexist in one person and one system.
-FAM and the four-axis range model are not separate from this idea; they are practical implementations of it.
-"Blurred" is not deception. What is intentionally withheld is not the same as what is falsely claimed.
+A human being is not confined to one genre, profession, or faith. Building, software, writing, ritual, care,
+and observation can coexist within one person and one system. FAM and the four-axis range model are practical
+implementations of this stance. Deliberate blurring is not deception; withholding information is not the same as
+making a false claim.
 
 ### Jomon 2.0
 
-Gift economy, off-grid infrastructure, non-extractive order design.
+Gift economy, off-grid infrastructure, and non-extractive order design.
 Money is flow and velocity. Hoarding it is the losing play.
 
 ---
@@ -95,15 +133,13 @@ Money is flow and velocity. Hoarding it is the losing play.
 | Repo | Role |
 |---|---|
 | [OND800](https://github.com/HIPSTAR-IScompany/OND800) | Shooting cockpit |
-| [FAN800](https://github.com/HIPSTAR-IScompany/FAN800) | Physical effects funnels |
+| [FAN800](https://github.com/HIPSTAR-IScompany/FAN800) | Physical-effects funnels |
 | [SAO800](https://github.com/HIPSTAR-IScompany/SAO800) | Livestream mothership extension |
-| [DVE800](https://github.com/saitoomituru/DVE800) | Editing engine (DaVinci Resolve × local AI) |
+| [DVE800](https://github.com/saitoomituru/DVE800) | Editing engine, DaVinci Resolve plus local AI |
 | [PSYCHO-Py800MCP](https://github.com/HIPSTAR-IScompany/PSYCHO-Py800MCP) | Instrument MCP |
-| [Sphere-aae](https://github.com/saitoomituru/Sphere-aae) | Edge AI agent engine (FAM inference core, paused pending HPC) |
-| [SphereASTRO](https://github.com/saitoomituru/SphereASTRO) | GUI + responsibility-boundary layer for Sphere-aae (Swift/SwiftUI, AI not yet connected) |
-| [commonsATX](https://github.com/saitoomituru/commonsATX) | Open-source laser cutter frame (CERN-OHL-P) |
-
----
+| [Sphere-aae](https://github.com/saitoomituru/Sphere-aae) | Edge AI agent engine, paused pending HPC |
+| [SphereASTRO](https://github.com/saitoomituru/SphereASTRO) | GUI and responsibility-boundary layer for Sphere-aae |
+| [commonsATX](https://github.com/saitoomituru/commonsATX) | Open-source laser-cutter frame, CERN-OHL-P |
 
 ---
 
@@ -111,53 +147,53 @@ Money is flow and velocity. Hoarding it is the losing play.
 
 | Doc | What it is |
 |---|---|
-| [docs/philosophy/gaming-cosmology.md](docs/philosophy/gaming-cosmology.md) | Gaming Cosmology Canon — universe as MMO |
-| [docs/philosophy/techno-animism.md](docs/philosophy/techno-animism.md) | Shinto + engineering as convertible observation layers |
-| [docs/philosophy/multi-range-existence-draft.md](docs/philosophy/multi-range-existence-draft.md) | Multi-range existence draft — upper frame for FAM and range theory |
-| [docs/theory/fam-overview.md](docs/theory/fam-overview.md) | FAM (FoldAccessMapper) — vertical thought storage |
-| [docs/theory/infoton-engineering.md](docs/theory/infoton-engineering.md) | Infoton Engineering — industrial number theory via FAM |
-| [docs/projects/800-series.md](docs/projects/800-series.md) | 800-series — operator sovereignty recovery system |
-| [docs/projects/bento-syndrome.md](docs/projects/bento-syndrome.md) | BENTO Syndrome — UI hierarchy vs architecture mismatch |
-| [docs/operations/README.ja.md](docs/operations/README.ja.md) | Operations index — note, docs, and transfer-queue operating model |
-| [docs/operations/manifest-operating-model.ja.md](docs/operations/manifest-operating-model.ja.md) | Manifest operating model — three-layer structure and update rules |
-| [docs/operations/technical-communication-register.ja.md](docs/operations/technical-communication-register.ja.md) | Public-facing and technical communication register boundary |
-| [docs/operations/coding-ai-japanese-paraphrase-register.ja.md](docs/operations/coding-ai-japanese-paraphrase-register.ja.md) | Japanese-to-en-US pragmatic translation rules for coding AI |
-| [docs/operations/workspace-boundary-register.ja.md](docs/operations/workspace-boundary-register.ja.md) | Canonical boundary model for repositories, VS Code workspaces, projects, environments, and dependencies |
-| [docs/operations/workspace-registry.json](docs/operations/workspace-registry.json) | Machine-readable workspace names, public boundaries, and reconstruction status |
-| [docs/operations/development-environment-reconstruction.ja.md](docs/operations/development-environment-reconstruction.ja.md) | Human- and AGI-facing procedure for reconstructing public ZeroRoomLab development workspaces |
-| [docs/operations/dotfiles-and-gitignore-policy.ja.md](docs/operations/dotfiles-and-gitignore-policy.ja.md) | Canonical policy for tracked configuration, ignored machine state, generated output, and secret boundaries |
+| [docs/philosophy/gaming-cosmology.md](docs/philosophy/gaming-cosmology.md) | Gaming Cosmology canon, universe as MMO |
+| [docs/philosophy/techno-animism.md](docs/philosophy/techno-animism.md) | Shinto and engineering as convertible observation layers |
+| [docs/philosophy/multi-range-existence-draft.md](docs/philosophy/multi-range-existence-draft.md) | Multi-range existence draft |
+| [docs/theory/fam-overview.md](docs/theory/fam-overview.md) | FAM, vertical thought storage |
+| [docs/theory/infoton-engineering.md](docs/theory/infoton-engineering.md) | Infoton Engineering |
+| [docs/projects/800-series.md](docs/projects/800-series.md) | 800-series operator-sovereignty system |
+| [docs/projects/bento-syndrome.md](docs/projects/bento-syndrome.md) | UI hierarchy versus architecture mismatch |
+| [docs/operations/README.ja.md](docs/operations/README.ja.md) | Operations index |
+| [docs/operations/manifest-operating-model.ja.md](docs/operations/manifest-operating-model.ja.md) | Manifest operating model |
+| [docs/operations/heterogeneous-agent-deck-governance.ja.md](docs/operations/heterogeneous-agent-deck-governance.ja.md) | Multi-vendor agent governance and workspace-deck-collapse prevention |
+| [docs/operations/technical-communication-register.ja.md](docs/operations/technical-communication-register.ja.md) | Public and technical communication boundaries |
+| [docs/operations/coding-ai-japanese-paraphrase-register.ja.md](docs/operations/coding-ai-japanese-paraphrase-register.ja.md) | Japanese-to-en-US pragmatic translation rules |
+| [docs/operations/workspace-boundary-register.ja.md](docs/operations/workspace-boundary-register.ja.md) | Repository, workspace, project, environment, and dependency boundaries |
+| [docs/operations/workspace-registry.json](docs/operations/workspace-registry.json) | Machine-readable workspace names and reconstruction status |
+| [docs/operations/development-environment-reconstruction.ja.md](docs/operations/development-environment-reconstruction.ja.md) | Public workspace reconstruction procedure |
+| [docs/operations/dotfiles-and-gitignore-policy.ja.md](docs/operations/dotfiles-and-gitignore-policy.ja.md) | Dotfile, generated-output, and secret boundaries |
 | [quantaril.cloud](https://quantaril.cloud) | Live Quantaril Cloud docs site |
-
----
-
-*ZeroRoomLab / @K_chachamaru — CC-BY 4.0 / Apache 2.0*
 
 ---
 
 ## Manifest operating model
 
-This repository now serves three layers in one place:
+This repository serves three layers in one place:
 
-- [note](note) — raw notes, drafts, salvage logs, and source material that should not be treated as canonical yet. Note-taking conventions are documented in [note/AGENTS.md](note/AGENTS.md)
-- [docs](docs) — normalized documentation for philosophy, theory, and projects
-- [note/transfer_plan](note/transfer_plan) — staging area for content that should be forwarded to other repositories after review
+- [note](note): raw notes, drafts, salvage logs, and source material that are not canonical yet
+- [docs](docs): normalized documentation for philosophy, theory, projects, and operations
+- [note/transfer_plan](note/transfer_plan): staging area for material that may be forwarded to other repositories after review
 
-In other words, this manifest is not only a context patch. It is also a knowledge hub and transfer queue for the wider ZeroRoomLab ecosystem.
+The manifest is therefore not only an AI context patch. It is also a knowledge hub, transfer queue,
+project-management layer, and reconstruction map for the wider ZeroRoomLab ecosystem.
 
-The current handoff plan is tracked in [note/transfer_plan/repository_transfer_map.md](note/transfer_plan/repository_transfer_map.md), and the overall update proposal is documented in [note/20260713-1800__repo_structure_update_proposal.md](note/20260713-1800__repo_structure_update_proposal.md).
+The current handoff plan is tracked in
+[note/transfer_plan/repository_transfer_map.md](note/transfer_plan/repository_transfer_map.md).
+
+---
 
 ## Reconstructing the public development environment
 
-This manifest also bootstraps the public ZeroRoomLab development environment. It records
-the names and boundaries of the VS Code workspaces, the public Git repositories each
-workspace is expected to reference, and the checks an AI or AGI must run before changing
-code. Workspace membership is a working-context boundary, not an automatic implementation
-dependency.
+This manifest bootstraps the public ZeroRoomLab development environment. It records the names and boundaries of
+VS Code workspaces, the public Git repositories each workspace is expected to reference, and the checks an AI or AGI
+must run before changing code.
 
-Deb800 and the Sphere workspace have public reconstruction paths. Enterprise and
-third-party workspaces expose only an approved public summary; company assets, worksite
-data, medical information, credentials, internal paths, and enterprise agent instructions
-are excluded from public reconstruction.
+Workspace membership is a working-context boundary, not an automatic implementation dependency.
+
+Deb800 and the Sphere workspace have public reconstruction paths. Enterprise and third-party workspaces expose only
+approved public summaries. Company assets, worksite data, medical information, credentials, internal paths,
+and enterprise agent instructions are excluded from public reconstruction.
 
 Start with the [workspace boundary register](docs/operations/workspace-boundary-register.ja.md),
 the [machine-readable registry](docs/operations/workspace-registry.json), and the
@@ -167,205 +203,146 @@ the [machine-readable registry](docs/operations/workspace-registry.json), and th
 
 # Using ZeroRoomLab-manifest as an AI Context Formatter
 
-> **TL;DR**: Pull this repo into your AI toolchain before starting work.
-> It patches AI cognitive biases, defines scope layers, and pre-loads
-> FAM-compliant context structure — so you spend less time correcting your AI and more time building.
+> **TL;DR**: Load this repository into the working context before development begins.
+> It pre-corrects known agent biases, defines scope layers, reconstructs workspace boundaries,
+> and supplies a vendor-neutral project operating context.
 
----
-
-## What This Repo Actually Is
+## What this repository actually is
 
 Most READMEs describe a project for humans to read.
-This repo is a **runtime context patch for AI agents**.
-When injected into an AI's working context, it does three things:
+This repository is also a **runtime context patch and project-management layer for AI agents**.
 
-1. **Bias pre-correction** — known failure modes are named and checked before output (AGENTS.md §0)
-2. **Scope layer enforcement** — separates Engineering / Philosophy / Theory so AI doesn't apply science falsifiability to cosmology (AGENTS.md §2)
-3. **Hallucination quarantine** — named confabulation traps are declared upfront (AGENTS.md §10)
+When loaded into an agent's working context, it provides:
 
-The result: your AI session starts in a calibrated state rather than a default state.
+1. **Bias pre-correction**: known failure modes are named before output.
+2. **Scope-layer enforcement**: Engineering, Philosophy, and Academic/Theory claims use different evaluation rules.
+3. **Hallucination quarantine**: known confabulation traps are declared in advance.
+4. **Workspace resolution**: the descriptor and registry define the working set without inferring dependencies from proximity.
+5. **Heterogeneous-agent governance**: vendor defaults remain subordinate to the local workspace contract.
+6. **Handoff continuity**: the next human or agent can continue without reconstructing the previous agent's private context.
+
+The result is not a perfectly obedient model. It is a development session that starts from a documented project world
+instead of a vendor-default world.
 
 ---
 
-## Three Integration Patterns
+## Integration patterns
 
-### Pattern 1 — Claude Code (`.claude/` dependency injection)
+### Repository-level agent instructions
 
-Add this repo as a submodule or copy `AGENTS.md` into your repo root.
-Claude Code reads `AGENTS.md` automatically at session start.
+Use this repository as a submodule, adjacent context repository, or documented dependency. Load the root `AGENTS.md`
+and then the local `AGENTS.md` of each repository in the resolved workspace.
 
 ```bash
-# as submodule
 git submodule add https://github.com/saitoomituru/ZeroRoomLab-manifest .zrl-context
 cp .zrl-context/AGENTS.md ./AGENTS.md
-
-# or direct copy
-curl -O https://raw.githubusercontent.com/saitoomituru/ZeroRoomLab-manifest/main/AGENTS.md
 ```
 
-Claude Code will ingest the bias checklist, scope model, and hallucination flags
-before touching any code in your repo.
+### GitHub Copilot custom instructions
 
-**Effect**: Experimental/frontier tasks get experiment-design responses,
-not "established best practice" deflections.
+Where appropriate, map relevant instructions into `.github/copilot-instructions.md`, while keeping this manifest as
+the canonical source rather than allowing copied instructions to drift.
+
+### Browser agents, MCP agents, and orchestration systems
+
+Prepend or retrieve the relevant manifest documents as system context. The central requirement is not a particular
+injection mechanism. It is that the agent receives the same workspace contract, canonical-source map, protected-area
+rules, and communication registers before changing project state.
+
+A dedicated CLI is intentionally not required. Markdown, JSON, workspace descriptors, and Git history remain directly
+readable by different vendors without appointing one adapter as the new central authority.
 
 ---
 
-### Pattern 2 — GitHub MCP / Copilot Custom Instructions
+## Core payload
 
-Paste the contents of `AGENTS.md` into your GitHub Copilot
-[custom instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot)
-file (`.github/copilot-instructions.md`).
+### Bias checklist
 
-```bash
-mkdir -p .github
-curl https://raw.githubusercontent.com/saitoomituru/ZeroRoomLab-manifest/main/AGENTS.md \
-  > .github/copilot-instructions.md
+The root `AGENTS.md` includes checks for scope creep, narrative pull, NSFW parity, majority-narrative pull,
+innovation-frame errors, evidence burn, lineage confusion, narrative contamination, genre-risk confusion,
+communication-register drift, and locale/paraphrase errors.
+
+### Three-layer scope model
+
+```text
+Layer A: Engineering      -> falsifiability, reproducibility, benchmarks, tests
+Layer B: Philosophy       -> coherence, explanatory power, openness to fork
+Layer C: Academic/Theory  -> citation integrity and bounded claims
 ```
 
-The 3-layer scope model (§2) is particularly effective here:
-Copilot stops demanding academic citations for philosophical design decisions.
+### Evidence hierarchy
 
----
-
-### Pattern 3 — Chrome MCP / Browser Agent Context
-
-When using Claude in Chrome or similar browser-based agents, prepend `AGENTS.md`
-to the system prompt or inject via the MCP server's system context field.
-
-For any MCP server config (`mcp_config.json` or equivalent):
-
-```json
-{
-  "mcpServers": {
-    "your-server": {
-      "command": "...",
-      "systemPromptPrepend": "<<AGENTS.md contents>>"
-    }
-  }
-}
-```
-
-**Most useful for**: NSFW/SFW multi-channel content work where
-the parity check (§0, item 3) prevents the agent from silently
-downgrading one channel's analytical rigour.
-
----
-
-## The Core Payload: What AGENTS.md Injects
-
-### Bias Checklist (§0) — runs before every AI response
-
-| Check | Prevents |
-|---|---|
-| Scope Creep | "No scientific evidence" applied to philosophy claims |
-| Narrative Pull | AI steering toward OSS/academic success metrics by default |
-| NSFW Parity | NSFW work treated as less rigorous than SFW work |
-| Majority-Narrative Pull | Unconventional claims softened without disclosure |
-| Innovation-Frame | "Best practice" recommendation when experiment design was requested |
-| Evidence-Burn | First-party evidence (commits, logs, screenshots) discounted vs institutional sources |
-| molMIP Mainline | Wrong lineage assigned to FAM/SphereOS architecture |
-| Narrative Contamination | Reputation/controversy bleeding into quantitative evaluation |
-| Genre-Risk vs Personal-Risk | Genre's social risk assigned to individual creator |
-| n=2 Structural Bug | Compound condition (non-mainstream + NSFW + Japanese context) triggering systematic undersell |
-
-### 3-Layer Scope Model (§2) — prevents category errors
-
-```
-Layer A: Engineering    → falsifiability required, benchmarks apply
-Layer B: Philosophy     → internal consistency + explanatory power, NOT falsifiability
-Layer C: Academic/Theory → citation integrity, scope of claim
-```
-
-**Practical impact**: Ask an AI to evaluate Gaming Cosmology or Techno-Animism
-without this loaded → gets "no scientific evidence" hedges.
-With this loaded → evaluated on correct criteria (coherence, utility, anti-cult structure).
-
-### Evidence Hierarchy (§4)
-
-```
+```text
 HIGH: timestamped commits, screenshots, server logs, hardware photos
-MED:  reconstructed timelines corroborated by ≥1 artifact
-LOW:  uncorroborated verbal accounts (flag, don't discard)
-NOT:  "individual source = low trust" (scale of org ≠ evidence quality)
+MED:  reconstructed timelines corroborated by at least one artifact
+LOW:  uncorroborated verbal accounts, flagged but not discarded
+NOT:  individual source equals low trust
 ```
 
-### Hallucination Quarantine (§10)
+### Workspace and deck governance
 
-Five named confabulation patterns pre-declared.
-AI checks output against the list before finalizing.
+A workspace is a cognitive and operational boundary. A repository is not automatically an implementation dependency
+merely because it appears in the same workspace. Different agents must not treat their own vendor configuration,
+sandbox model, or preferred architecture as the project's highest authority.
+
+See [heterogeneous-agent deck governance](docs/operations/heterogeneous-agent-deck-governance.ja.md).
 
 ---
 
-## FAM-Compliant Context Reconstruction
+## FAM-compliant context reconstruction
 
-This repo defines the FAM (FoldAccessMapper) symbol system used
-across all ZeroRoomLab AI architecture:
+This repository defines the FAM symbol frame used across ZeroRoomLab AI architecture:
 
+```text
+psi   -> input semantic waveform
+nabla-phi -> routing gradient
+lambda -> output layer
+Q     -> verifier and control logic
 ```
-ψ  → input semantic waveform   (information unit before meaning resolves)
-∇φ → routing gradient          (which direction meaning / value flows)
-λ  → output layer              (document, code, hardware command, content)
-Q  → verifier / control logic  (source, bias audit, safety gate, patch proposal)
-```
 
-When rebuilding an AI work environment from scratch (after session loss, context reset,
-or BENTO Syndrome — see `docs/projects/bento-syndrome.md`), pull this repo first.
-It re-establishes the ψ/∇φ/λ/Q frame before any task-specific context is loaded.
-
-**BENTO Syndrome mitigation workflow**:
-
-```bash
-# 1. Pull manifest (re-establishes FAM frame)
-git pull origin main  # in ZeroRoomLab-manifest
-
-# 2. Feed AGENTS.md to your AI session
-# 3. Load task-specific context (Drive docs, project specs)
-# 4. Resume work in calibrated state
-```
+After session loss, context reset, or BENTO Syndrome, load this manifest before task-specific documents.
+It re-establishes the shared frame, workspace boundaries, canonical sources, and known bias checks.
 
 ---
 
-## Who This Is For
+## Who this is for
 
-- **Solo AI-heavy developers** running context-intensive workflows
-  where session resets are expensive
-- **NSFW/SFW hybrid content producers** needing analytical parity across channels
-- **Experimental/frontier researchers** tired of AI defaulting to conservative best-practice mode
-- **Multi-AI orchestration setups** (Claude for structure, GPT for Drive, Grok for real-time)
-  where shared context alignment matters
-- **Anyone building non-mainstream AI architecture** where the default AI
-  treats novelty as a bug rather than a feature
+- Solo developers running context-intensive agent workflows
+- Teams combining multiple coding-agent vendors
+- Experimental researchers who need frontier work evaluated as experiments rather than automatically normalized
+- Projects where session resets, handoffs, and vendor changes are expensive
+- Operators who need secrets, enterprise assets, and local-only components represented without exposing them
+- Anyone who has learned that more agents can increase conflict faster than useful throughput
 
 ---
 
-## Fork and Adapt
+## Fork and adapt
 
-CC-BY 4.0. Take the structure, replace the content with your own:
+The structure is reusable:
 
-- Swap out ZeroRoomLab-specific hallucination flags (§10) for your own known confabulations
-- Adjust the 3-layer scope model for your domain
-- Keep or extend the bias checklist — it's general enough to be useful anywhere
+- Replace ZeroRoomLab-specific bias checks with your own known failure modes
+- Define your own claim layers and evidence rules
+- Record workspace names, members, exclusions, and reconstruction status
+- Separate canonical documents from drafts and transfer queues
+- Describe protected components without exposing their contents
+- Establish vendor-neutral handoff and stop conditions
+- Keep poetic or narrative language when it carries project-management meaning, then explain its operational function
 
-The pattern (bias pre-correction + scope enforcement + hallucination quarantine)
-is reusable for any AI-heavy project.
+The pattern is:
 
+```text
+bias pre-correction
++ scope enforcement
++ workspace resolution
++ protected-area boundaries
++ heterogeneous-agent governance
++ handoff continuity
 ```
+
+```text
 attribution: ZeroRoomLab / fusamofu (Mitsuru Saitō) / @K_chachamaru
 ```
 
 ---
 
-## Related Docs in This Repo
-
-| Doc | Relevance to AI tooling |
-|---|---|
-| [AGENTS.md](AGENTS.md) | The formatter itself — inject this |
-| [docs/theory/fam-vs-mcp.md](docs/theory/fam-vs-mcp.md) | Why FAM (internal) and MCP (external) serve different roles |
-| [docs/theory/multi-ai-placement.md](docs/theory/multi-ai-placement.md) | How to assign Claude/GPT/Grok/Gemini to different task types |
-| [docs/theory/meta-kpi-drift.md](docs/theory/meta-kpi-drift.md) | Detecting when AI output has drifted from your actual goals |
-| [docs/projects/bento-syndrome.md](docs/projects/bento-syndrome.md) | What happens when AI context collapses and how to recover |
-
----
-
-*ZeroRoomLab / @K_chachamaru — CC-BY 4.0*
+*ZeroRoomLab / @K_chachamaru — CC-BY 4.0 / Apache 2.0*
