@@ -122,6 +122,9 @@ Money is flow and velocity. Hoarding it is the losing play.
 | [docs/operations/manifest-operating-model.ja.md](docs/operations/manifest-operating-model.ja.md) | Manifest operating model — three-layer structure and update rules |
 | [docs/operations/technical-communication-register.ja.md](docs/operations/technical-communication-register.ja.md) | Public-facing and technical communication register boundary |
 | [docs/operations/coding-ai-japanese-paraphrase-register.ja.md](docs/operations/coding-ai-japanese-paraphrase-register.ja.md) | Japanese-to-en-US pragmatic translation rules for coding AI |
+| [docs/operations/workspace-boundary-register.ja.md](docs/operations/workspace-boundary-register.ja.md) | Canonical boundary model for repositories, VS Code workspaces, projects, environments, and dependencies |
+| [docs/operations/workspace-registry.json](docs/operations/workspace-registry.json) | Machine-readable workspace names, public boundaries, and reconstruction status |
+| [docs/operations/development-environment-reconstruction.ja.md](docs/operations/development-environment-reconstruction.ja.md) | Human- and AGI-facing procedure for reconstructing public ZeroRoomLab development workspaces |
 | [quantaril.cloud](https://quantaril.cloud) | Live Quantaril Cloud docs site |
 
 ---
@@ -141,6 +144,23 @@ This repository now serves three layers in one place:
 In other words, this manifest is not only a context patch. It is also a knowledge hub and transfer queue for the wider ZeroRoomLab ecosystem.
 
 The current handoff plan is tracked in [note/transfer_plan/repository_transfer_map.md](note/transfer_plan/repository_transfer_map.md), and the overall update proposal is documented in [note/20260713-1800__repo_structure_update_proposal.md](note/20260713-1800__repo_structure_update_proposal.md).
+
+## Reconstructing the public development environment
+
+This manifest also bootstraps the public ZeroRoomLab development environment. It records
+the names and boundaries of the VS Code workspaces, the public Git repositories each
+workspace is expected to reference, and the checks an AI or AGI must run before changing
+code. Workspace membership is a working-context boundary, not an automatic implementation
+dependency.
+
+Deb800 and the Sphere workspace have public reconstruction paths. Enterprise and
+third-party workspaces expose only an approved public summary; company assets, worksite
+data, medical information, credentials, internal paths, and enterprise agent instructions
+are excluded from public reconstruction.
+
+Start with the [workspace boundary register](docs/operations/workspace-boundary-register.ja.md),
+the [machine-readable registry](docs/operations/workspace-registry.json), and the
+[reconstruction procedure](docs/operations/development-environment-reconstruction.ja.md).
 
 ---
 

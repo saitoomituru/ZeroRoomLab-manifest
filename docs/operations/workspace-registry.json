@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0.0",
+  "path_policy": "descriptor_folders_are_authoritative",
+  "unknown_workspace_policy": "return_bottom_and_request_resolution",
+  "workspaces": [
+    {
+      "id": "deb800",
+      "display_name": "Deb800",
+      "descriptor_name": "Deb800.code-workspace",
+      "aliases": [],
+      "layer": "x800_bare_metal_and_field_tools",
+      "visibility": "public_oss",
+      "reconstruction": "supported",
+      "manifest_required": true,
+      "implicit_scope_expansion": false,
+      "descriptor_member_order": [
+        "DVE800/DVE800",
+        "FAN800/FAN800",
+        "OND800/OND800",
+        "ZeroRoomLab-manifest/ZeroRoomLab-manifest",
+        "PSYCHO-Py800MCP/PSYCHO-Py800MCP",
+        "SAO800/SAO800"
+      ],
+      "expected_repositories": [
+        {
+          "name": "DVE800",
+          "workspace_path": "DVE800/DVE800",
+          "remote": "https://github.com/saitoomituru/DVE800.git"
+        },
+        {
+          "name": "FAN800",
+          "workspace_path": "FAN800/FAN800",
+          "remote": "https://github.com/saitoomituru/FAN800.git"
+        },
+        {
+          "name": "OND800",
+          "workspace_path": "OND800/OND800",
+          "remote": "https://github.com/saitoomituru/OND800.git"
+        },
+        {
+          "name": "ZeroRoomLab-manifest",
+          "workspace_path": "ZeroRoomLab-manifest/ZeroRoomLab-manifest",
+          "remote": "https://github.com/saitoomituru/ZeroRoomLab-manifest.git"
+        },
+        {
+          "name": "PSYCHO-Py800MCP",
+          "workspace_path": "PSYCHO-Py800MCP/PSYCHO-Py800MCP",
+          "remote": "https://github.com/saitoomituru/PSYCHO-Py800MCP.git"
+        },
+        {
+          "name": "SAO800",
+          "workspace_path": "SAO800/SAO800",
+          "remote": "https://github.com/saitoomituru/SAO800.git"
+        }
+      ]
+    },
+    {
+      "id": "sphere",
+      "display_name": "スフィア",
+      "descriptor_name": "スフィア.code-workspace",
+      "aliases": [],
+      "layer": "abstract_meta_engine",
+      "visibility": "mixed_public_oss_and_local_reference",
+      "reconstruction": "partial",
+      "manifest_required": true,
+      "implicit_scope_expansion": false,
+      "descriptor_member_order": [
+        "IBD/IBD",
+        "quantaril_cloud_Q3/quantaril_cloud_Q3",
+        "スフィア独鈷書",
+        "ZeroRoomLab-manifest/ZeroRoomLab-manifest",
+        "AQC/astro.quantaril.cloud",
+        "pain-scouter-assessment/pain-scouter-assessment",
+        "Sphere-aae/Sphere-aae",
+        "Sphere-aae/SphereASTRO/SphereASTRO"
+      ],
+      "expected_repositories": [
+        {
+          "name": "IBD",
+          "workspace_path": "IBD/IBD",
+          "remote": "https://github.com/saitoomituru/IBD.git"
+        },
+        {
+          "name": "quantaril_cloud_Q3",
+          "workspace_path": "quantaril_cloud_Q3/quantaril_cloud_Q3",
+          "remote": "https://github.com/HIPSTAR-IScompany/quantaril_cloud_Q3.git"
+        },
+        {
+          "name": "ZeroRoomLab-manifest",
+          "workspace_path": "ZeroRoomLab-manifest/ZeroRoomLab-manifest",
+          "remote": "https://github.com/saitoomituru/ZeroRoomLab-manifest.git"
+        },
+        {
+          "name": "astro.quantaril.cloud",
+          "workspace_path": "AQC/astro.quantaril.cloud",
+          "remote": "https://github.com/HIPSTAR-IScompany/astro.quantaril.cloud.git"
+        },
+        {
+          "name": "pain-scouter-assessment",
+          "workspace_path": "pain-scouter-assessment/pain-scouter-assessment",
+          "remote": "https://github.com/saitoomituru/pain-scouter-assessment.git"
+        },
+        {
+          "name": "Sphere-aae",
+          "workspace_path": "Sphere-aae/Sphere-aae",
+          "remote": "https://github.com/saitoomituru/Sphere-aae.git"
+        },
+        {
+          "name": "SphereASTRO",
+          "workspace_path": "Sphere-aae/SphereASTRO/SphereASTRO",
+          "remote": "https://github.com/saitoomituru/SphereASTRO.git"
+        }
+      ],
+      "local_only_components": [
+        {
+          "name": "スフィア独鈷書",
+          "workspace_path": "スフィア独鈷書",
+          "component_type": "world_boundary_edwards_cryptographic_key_bundle",
+          "visibility": "secret_local_cryptographic_material",
+          "reconstruction": "never_copy_or_reconstruct_from_public_sources",
+          "required_for_public_build": false,
+          "handling": [
+            "do_not_scan_contents",
+            "do_not_log",
+            "do_not_commit",
+            "do_not_upload",
+            "do_not_distribute"
+          ],
+          "future_public_replacement": "After the keychain specification is stabilized, an SDK library may let each third party generate and store its own world-boundary keychain. The existing key bundle is never the distributable template."
+        }
+      ]
+    },
+    {
+      "id": "teratoku_enterprise_training",
+      "display_name": "寺徳アイルー訓練場VScode",
+      "descriptor_name": "寺徳アイルー訓練場VScode.code-workspace",
+      "aliases": [],
+      "layer": "enterprise_construction_dx_and_ccus_validation",
+      "visibility": "private_enterprise",
+      "reconstruction": "not_publicly_supported",
+      "manifest_required": true,
+      "implicit_scope_expansion": false,
+      "public_summary": "株式会社寺徳と行う建築DX、CCUS、マルチエージェント運用の検証環境。会社概要と公開可能な取り組みの概要のみmanifestで扱う。",
+      "protected_categories": [
+        "company_assets",
+        "worksite_labor_data",
+        "labor_standards_information",
+        "medical_information",
+        "enterprise_agent_instructions",
+        "credentials",
+        "internal_paths_and_folder_structure"
+      ],
+      "expected_repositories": []
+    }
+  ]
+}

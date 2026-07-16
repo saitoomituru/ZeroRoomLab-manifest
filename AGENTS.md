@@ -3,7 +3,7 @@
 > **Applies to:** Claude Code, OpenAI Codex, Gemini CLI, and any AI agent operating in this repository.  
 > **Author:** Mitsuru Saitō (fusamofu) + ZeroRoomLab  
 > **License:** CC-BY 4.0  
-> **Version:** 1.3.0 / 2026-07-15
+> **Version:** 1.4.0 / 2026-07-17
 
 ---
 
@@ -98,6 +98,45 @@ If any check fires, the agent must correct course **before** outputting.
           observable en-US wording; do not merely replace words.
           See: docs/operations/coding-ai-japanese-paraphrase-register.ja.md
 ```
+
+---
+
+## 0.5 Mandatory Workspace Resolution (Before Repository Work)
+
+ZeroRoomLab uses VS Code multi-root workspaces as cognitive and operational boundaries.
+A repository, a workspace, a project, an execution environment, and an implementation
+dependency are different units. Never infer the active workspace from the current working
+directory or silently correct a workspace name into a repository name.
+
+Before scanning or changing repositories for a workspace-scoped task:
+
+1. Preserve the user-provided workspace name, path, spelling, and case.
+2. Resolve only registered names and explicit aliases through
+   `docs/operations/workspace-registry.json`.
+3. Read the actual `.code-workspace` descriptor and treat its `folders` array as the
+   authoritative member set.
+4. Load this manifest as the shared context layer, then read each member repository's
+   own `AGENTS.md`.
+5. Do not expand scope from `cwd`, neighboring folders, documentation links, historical
+   lineage, or conceptual relationships.
+6. If the descriptor cannot be resolved, return `⊥` and ask for the exact target instead
+   of guessing.
+7. State the resolved workspace, descriptor, members, exclusions, and known execution
+   environment before substantive work.
+
+Workspace membership does not create an implementation dependency. Workspace separation
+is a deliberate loose-coupling boundary. Enterprise and third-party workspaces may expose
+only a public summary; their internal paths, assets, instructions, credentials, labor data,
+and medical information are not public reconstruction inputs.
+
+`スフィア独鈷書` is local secret cryptographic material: an Edwards-family key-chain
+bundle used for SphereOS world-boundary recognition. Never inspect its contents, summarize
+it, log it, commit it, upload it, distribute it, or reconstruct it from public sources.
+Future SDK users must generate their own world-boundary keychains through a separate
+generator after that specification is stabilized; the existing bundle is never a template.
+
+See `docs/operations/workspace-boundary-register.ja.md` and
+`docs/operations/development-environment-reconstruction.ja.md`.
 
 ---
 
