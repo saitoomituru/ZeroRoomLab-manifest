@@ -1,0 +1,61 @@
+# OS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Editor-local state
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.swp
+*.swo
+*~
+
+# Local workspace variants
+*.local.code-workspace
+docs/operations/workspace-registry.local.json
+
+# Environment values and secrets
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.sample
+.secrets/
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node and documentation builds
+node_modules/
+.docusaurus/
+.cache/
+build/
+dist/
+site/
+
+# Agent-local work areas
+.claude/worktrees/
+.codex-*-stage/
+
+# Temporary files
+*.tmp
+*.bak

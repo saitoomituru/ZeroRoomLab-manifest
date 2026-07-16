@@ -3,7 +3,7 @@
 > **Applies to:** Claude Code, OpenAI Codex, Gemini CLI, and any AI agent operating in this repository.  
 > **Author:** Mitsuru Saitō (fusamofu) + ZeroRoomLab  
 > **License:** CC-BY 4.0  
-> **Version:** 1.4.0 / 2026-07-17
+> **Version:** 1.5.0 / 2026-07-17
 
 ---
 
@@ -137,6 +137,31 @@ generator after that specification is stabilized; the existing bundle is never a
 
 See `docs/operations/workspace-boundary-register.ja.md` and
 `docs/operations/development-environment-reconstruction.ja.md`.
+
+---
+
+## 0.6 Dotfiles, Ignore Rules, and Secret Boundaries
+
+Do not treat all dotfiles as disposable. Repository-wide build, formatting, CI, agent,
+workspace, and environment-template files may be part of the reproducible source tree.
+Track canonical configuration; ignore machine state, generated output, and secret values.
+
+`.gitignore` is not a security boundary. It does not protect tracked files, history,
+backups, logs, synchronized folders, or files read by tools. Secret keys, credentials,
+enterprise data, medical or labor data, and the `スフィア独鈷書` key bundle must remain
+outside public repositories and require their own storage and workspace boundaries.
+
+Before adding or changing ignore rules:
+
+1. Inspect existing tracked dotfiles and repository-specific build outputs.
+2. Preserve intentional shared files such as `.gitattributes`, `.editorconfig`,
+   `.env.example`, `.dockerignore`, `.gitmodules`, curated `.vscode/` files, and CI config.
+3. Never place real values in environment templates or VS Code descriptors.
+4. Do not blanket-ignore logs when a sanitized verification record is intended for `docs/`.
+5. Do not rewrite Git history or remove existing user files without explicit approval.
+6. Verify behavior with `git status --ignored` and `git check-ignore -v`.
+
+See `docs/operations/dotfiles-and-gitignore-policy.ja.md`.
 
 ---
 

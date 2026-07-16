@@ -125,6 +125,7 @@ Money is flow and velocity. Hoarding it is the losing play.
 | [docs/operations/workspace-boundary-register.ja.md](docs/operations/workspace-boundary-register.ja.md) | Canonical boundary model for repositories, VS Code workspaces, projects, environments, and dependencies |
 | [docs/operations/workspace-registry.json](docs/operations/workspace-registry.json) | Machine-readable workspace names, public boundaries, and reconstruction status |
 | [docs/operations/development-environment-reconstruction.ja.md](docs/operations/development-environment-reconstruction.ja.md) | Human- and AGI-facing procedure for reconstructing public ZeroRoomLab development workspaces |
+| [docs/operations/dotfiles-and-gitignore-policy.ja.md](docs/operations/dotfiles-and-gitignore-policy.ja.md) | Canonical policy for tracked configuration, ignored machine state, generated output, and secret boundaries |
 | [quantaril.cloud](https://quantaril.cloud) | Live Quantaril Cloud docs site |
 
 ---
