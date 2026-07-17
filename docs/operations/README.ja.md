@@ -15,3 +15,7 @@
 - [documentation-maintenance-policy.ja.md](documentation-maintenance-policy.ja.md) — ディレクトリ構成・命名規則・更新責任・状態ラベルの規約。
 - [extension-plan.ja.md](extension-plan.ja.md) — Native / Server / App-layer / Edge-algo の棚分け方針。
 - [docusaurus-program-update-plan.ja.md](docusaurus-program-update-plan.ja.md) — quantaril_cloud_Q3 の実装更新ロードマップ。
+
+## 監査・保守記録
+
+- [manifest-coherence-audit-2026-07-17.ja.md](manifest-coherence-audit-2026-07-17.ja.md) — マニフェストを異種AI運用の制御面として読み、正本構造、不変条件、driftリスク、次の保守候補を整理した整合性監査。
