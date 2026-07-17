@@ -24,3 +24,4 @@
 ## 監査・保守記録
 
 - [manifest-coherence-audit-2026-07-17.ja.md](manifest-coherence-audit-2026-07-17.ja.md) — マニフェストを異種AI運用の制御面として読み、正本構造、不変条件、driftリスク、次の保守候補を整理した整合性監査。
+- [manifest-entrypoint-drift-audit-2026-07-17.ja.md](manifest-entrypoint-drift-audit-2026-07-17.ja.md) — SphereOSの監査gateway・service taxonomy・Raphael調停UX追加後に、README、AGENTS、operations索引の説明ドリフトを点検した入口監査。
