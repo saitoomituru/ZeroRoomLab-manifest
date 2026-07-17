@@ -5,32 +5,38 @@
 
 ZeroRoomLab is a one-person research studio and fabrication space
 running out of an Edo-period farmhouse in Yamagata, Japan.
-We build edge AI systems, live production rigs, and open hardware,
-all on UPS power, well water, and stubbornness.
 
-## This may look like project poetry. It is also project management infrastructure.
+We build edge AI systems, live-production rigs, open hardware,
+and shared registers that help humans and different AI agents work
+without flattening engineering, culture, philosophy, and unfinished ideas
+into one vendor's default worldview.
 
-At first glance, this repository may look like a collection of manifestos, operating notes, and project poetry.
-It is also an experimental project-management reference for the prompt-engineering era.
+The lab does not run one linear roadmap.
+It keeps many plans alive as branches, then mounts whichever branch becomes executable
+when donations, shrine offerings, salvage hardware, surviving SDKs, compute, power,
+or a verified interface arrive.
 
-Its purpose is to keep heterogeneous coding agents from collapsing a shared workspace into conflicting scopes,
-authorities, dependencies, rewrites, and vendor-specific defaults. It records the workspace map, canonical sources,
-protected areas, communication registers, known agent biases, and handoff rules required for continuous development
-across Codex, Claude Code, Gemini CLI, GitHub Copilot, and future agents.
+```text
+many plans
+  + changing resources
+  -> choose a currently executable branch
+  -> build, measure, document
+  -> preserve the other branches for their next activation window
+```
 
-The working hypothesis is simple:
+No fixed priority queue does not mean no plan.
+It means the plan is resource-gated rather than capital-assured.
+A branch that cannot run today is preserved, not declared failed.
 
-> Coding throughput does not replace project management. In agentic development, the ability to encode intent,
-> responsibility, boundaries, exceptions, and stopping conditions often matters before additional code generation does.
+This repository is the shared development deck for that process.
+It stores project intent, workspace maps, claim layers, cultural and technical registers,
+protected boundaries, evidence rules, agent handoff routes, and stopping conditions.
+It can be loaded into Codex, Claude Code, Gemini CLI, GitHub Copilot, and future agents
+before they enter the wider ZeroRoomLab workspace.
 
-ZeroRoomLab calls that ability **poem power** in Japanese. It does not mean decorative writing.
-It means turning goals and relationships that are not yet reducible to code into a reusable operating context for
-humans and agents. Code provides local implementation force. Narrative specification tells that force where to go,
-where to stop, and what it must not destroy.
-
-This repository therefore doubles as a test bed for preventing **workspace-deck collapse**: the failure mode where
-multiple vendor agents bring their own design philosophies into the same workspace, reinterpret one another's work,
-and begin a proxy war instead of adding useful development capacity.
+ZeroRoomLab calls the ability to preserve goals and relationships that are not yet reducible
+to code **poem power**. Code supplies local implementation force. Poem power keeps that force
+pointed toward the original purpose without pretending every future branch already exists.
 
 Start here:
 
@@ -115,10 +121,10 @@ A distributed cockpit system that lets the performer take back ownership of thei
 AI architecture for connecting context spaces across cultures and communities.
 MCP connects sideways. FAM digs down by saving, verifying, and reusing thought processes.
 
-FAM currently exists as three lineages: FAMoverAQC, whose original service ended; FAMoverMCP,
-a salvage path in progress; and FAMoverSphere-aae, a design-stage path paused pending HPC capacity.
-SphereOS itself is frozen because of SDK deprecation and unsustainable HPC/cloud costs, and continues as
-a document and tool-layer lineage riding on top of MCP.
+The legacy SphereOS 3.x / 4.x service and instance-ghost runtime have ended.
+SphereOS Atlantis is a separate 0.x architecture lineage under active edge-first redesign.
+Its current reproducible form is the manifest, registers, prompt-bound bootstrap, and tool-layer research;
+a standalone Atlantis / ASTRO runtime has not yet reached the 1.x binary-integration milestone.
 
 ### Laser Machine Rebuild
 
