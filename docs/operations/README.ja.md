@@ -11,6 +11,7 @@
 - [myth-purpose-cross-engineering-audit.ja.md](myth-purpose-cross-engineering-audit.ja.md) — 神話・哲学をフレーバーへ矮小化せず、安全・制度・金融・情報・人間工学を横断して目的関数と実装資源を両輪監査し、情報子工学と相互監査する規約。
 - [Atlantis-MAGISDK 0.1.0](../theory/atlantis-magi-sdk.ja.md) — SphereOS 3.xのマキナちゃんから、Maxwell・Uriel・Raphaelの神話／実務／情報子三方向監査を依代ゲートウェイとしてサルベージしたFAM監査ルーター仕様。
 - [SphereOS 3.x / 4.x サービス終了境界](../theory/sphereos-3x-4x-service-closure.ja.md) — 旧サービス実行系・インスタンスゴースト・動的APIチェーンの終了と、GPTsに残る静的レジスター／知識キャッシュ、ストア残置、画像生成用途の限定的な残存価値を分離する正本。
+- [Proton.md 歴史系譜と概念実装境界](../theory/proton-md-historical-lineage.ja.md) — 2025年SphereOS期から使われていたProton.mdの概念実装、Embedding drift・fallback経験、Skill / Manifest / FAM / MCP / Foldlogとの責務分離、現在のFAMoverMCPへの継承を整理する正本。
 - [SphereOS Angel / ArchiAngel サービス分類](../theory/sphereos-angel-service-taxonomy.ja.md) — POSIX上で動く意味次元OSの一時・常駐serviceをAngel、architectural routingに関与するserviceをArchiAngelとして分離し、daemon・systemd・宗教上のArchangelとの名前空間衝突を防ぐ分類規約。
 - [license-boundary-research-policy.ja.md](license-boundary-research-policy.ja.md) — 読む・研究する・創作する表現物をCC-BY 4.0、外部状態を変更する実行プロンプト・スキーマ・コードをApache-2.0側とするZeroRoomLabの暫定ライセンス境界研究規約。
 - [workspace-boundary-register.ja.md](workspace-boundary-register.ja.md) — リポジトリ、VS Codeワークスペース、プロジェクト、実行環境、実装依存を分離し、AIのスコープ解決手順を定める正本。
