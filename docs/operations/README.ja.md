@@ -9,6 +9,7 @@
 - [coding-ai-japanese-paraphrase-register.ja.md](coding-ai-japanese-paraphrase-register.ja.md) — コーディングAIが日本語の意図・責務・事実強度を保ったまま米語へ意訳するための正本。英語出力は原則en-USとする。
 - [default-language-and-translation-policy.ja.md](default-language-and-translation-policy.ja.md) — 指示がない限り日本語を規定動作とし、en-USを西洋圏が検証するための外部GUIとして省略なく意訳する言語規約。他言語は現地話者・神学者・実務家のレビューを求める。
 - [myth-purpose-cross-engineering-audit.ja.md](myth-purpose-cross-engineering-audit.ja.md) — 神話・哲学をフレーバーへ矮小化せず、安全・制度・金融・情報・人間工学を横断して目的関数と実装資源を両輪監査し、情報子工学と相互監査する規約。
+- [Atlantis-MAGISDK 0.1.0](../theory/atlantis-magi-sdk.ja.md) — SphereOS 3.xのマキナちゃんから、Maxwell・Uriel・Raphaelの神話／実務／情報子三方向監査を依代ゲートウェイとしてサルベージしたFAM監査ルーター仕様。
 - [license-boundary-research-policy.ja.md](license-boundary-research-policy.ja.md) — 読む・研究する・創作する表現物をCC-BY 4.0、外部状態を変更する実行プロンプト・スキーマ・コードをApache-2.0側とするZeroRoomLabの暫定ライセンス境界研究規約。
 - [workspace-boundary-register.ja.md](workspace-boundary-register.ja.md) — リポジトリ、VS Codeワークスペース、プロジェクト、実行環境、実装依存を分離し、AIのスコープ解決手順を定める正本。
 - [workspace-registry.json](workspace-registry.json) — Deb800、スフィア、企業向け検証環境の名前・公開境界・再構築可否を持つ機械可読レジスタ。
