@@ -17,7 +17,7 @@ fold_signature: ψ → ∇φ → λ → Q
 | FAN800 | 物理演出ファンネル | https://github.com/HIPSTAR-IScompany/FAN800 |
 | SAO800 | 配信母艦拡張 | https://github.com/HIPSTAR-IScompany/SAO800 |
 | DVE800 | 編集エンジン | https://github.com/saitoomituru/DVE800 |
-| PSYCHO-Py800MCP | 計測器MCP | https://github.com/HIPSTAR-IScompany/PSYCHO-Py800MCP |
+| PSYCHO-Py800MCP | 計測器MCP | https://github.com/saitoomituru/PSYCHO-Py800MCP |
 
 ---
 
@@ -115,13 +115,18 @@ DaVinci Resolve（無料版）をローカルAIで強化する、完全ローカ
 AIが「波形の眼」を持てるようにするシステム。
 
 ```
-人間の担当：プローブを当てる・GNDを取る・最初のStartを押す
-AIの担当  ：波形取得・FFT解析・スケマティック照合・次測定点決定
+人間の担当：プローブを当てる・GNDを取る・最初のStartを押す・破壊方向操作を承認する
+AIの担当  ：成立済み観測の読取・保存成果物の解析・未来のRisk／Benefitと不足能力の提示
 ```
 
 設計の特徴：
-- 「事故ゼロは不能」「事故った後まで設計する」と明記
-- 証拠保全が設計に入っている（HDF5波形・SQLiteログ・承認ログ）
+- ユーザー成立済みの測定読取は観測支援として扱い、AIによる測定開始・入力経路変更は計画と二者確認へ分離
+- 現在・進行中incidentは枯れたwarning GUI、測定前の未来projectionはSF／幻想themeで表示
+- 幻想paneは現在の警報・実測・課題を軽くせず、覆わず、消さない
+- 安全を責任の押し付けでなく、事故前に人員・装備・時間・停止復旧能力を組む工学として扱う
+- 証拠保全と中止後の部分成果物確定を設計へ含める
+
+上位哲学は[ちくわ砲 — 幻想化によるProspective Meta-Safety](../philosophy/chikuwa-cannon-prospective-meta-safety.ja.md)を参照。
 
 ---
 

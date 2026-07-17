@@ -135,7 +135,7 @@ Geometry constraints solve what budget cannot.
 | [FAN800](https://github.com/HIPSTAR-IScompany/FAN800) | Physical-effects funnels |
 | [SAO800](https://github.com/HIPSTAR-IScompany/SAO800) | Livestream mothership extension |
 | [DVE800](https://github.com/saitoomituru/DVE800) | Editing engine |
-| [PSYCHO-Py800MCP](https://github.com/HIPSTAR-IScompany/PSYCHO-Py800MCP) | Instrument MCP |
+| [PSYCHO-Py800MCP](https://github.com/saitoomituru/PSYCHO-Py800MCP) | Instrument MCP |
 | [Sphere-aae](https://github.com/saitoomituru/Sphere-aae) | Edge AI agent engine |
 | [SphereASTRO](https://github.com/saitoomituru/SphereASTRO) | GUI and responsibility-boundary layer |
 | [commonsATX](https://github.com/saitoomituru/commonsATX) | Open-source laser-cutter frame |

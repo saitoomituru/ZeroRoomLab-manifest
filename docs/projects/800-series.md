@@ -16,7 +16,7 @@ fold_signature: ψ → ∇φ → λ → Q
 | OND800 | Shooting cockpit | https://github.com/HIPSTAR-IScompany/OND800 |
 | FAN800 | Physical effects funnels | https://github.com/HIPSTAR-IScompany/FAN800 |
 | SAO800 | Livestream mothership extension | https://github.com/HIPSTAR-IScompany/SAO800 |
-| PSYCHO-Py800MCP | Instrument MCP | https://github.com/HIPSTAR-IScompany/PSYCHO-Py800MCP |
+| PSYCHO-Py800MCP | Instrument MCP | https://github.com/saitoomituru/PSYCHO-Py800MCP |
 
 ---
 
@@ -100,13 +100,15 @@ Hooks oscilloscopes, logic analyzers, webcams, and microscopes into MCP —
 so AI gets eyes on waveforms.
 
 ```
-Human handles:  probing, GND connection, pressing Start once
-AI handles:     waveform capture, FFT analysis, schematic cross-reference, next measurement point
+Human handles:  probing, GND connection, initial Start, approval of exposure-increasing actions
+AI handles:     reading an established observation, analyzing stored artifacts, presenting projected risk/benefit and missing capability
 ```
 
 Design highlights:
-- "Accidents happen. That's in the design." — the spec says it plainly
-- Evidence preservation is built in: HDF5 waveforms, SQLite logs, approval logs
+- Live incidents use a plain warning surface; prospective risk/benefit uses a visibly fantastical theme
+- The fantasy layer never replaces, hides, or trivializes a live condition
+- AI-initiated measurement and input-path changes remain behind a reviewed plan and physical checks
+- Safety is treated as an organizational capability assembled before measurement, not as a blame label
 
 ---
 
