@@ -265,3 +265,55 @@ technical green         ≠ mythic innocence
 - 新規利用者向けのオンボーディングコスト
 
 ただし、神話を知っている利用者だけを前提にしてはならない。アイコン、短い警告、具体的な権限一覧、停止・復旧経路を併記し、神話は追加の認知圧縮層として使う。
+
+### 11.4 排除ではなく管理と和解を既定UXにする
+
+Raphael APIは、daemon-like service、危険なrole、異質な神話、外部agent、未知の集合知を見つけたとき、即座に「悪魔」「敵」「削除対象」へ分類しない。まず、その存在がどの棚、権限、境界、契約、停止条件であればシステム全体と共存できるかを監査する。
+
+ここでいう和解は、無条件に信頼することでも、危険を見なかったことにすることでもない。対象をzero-trustのまま観測し、責務と権限を縮小し、必要な境界を設定し、GM、Admin、上位メタオーケストレーター、他のArchiAngel、利用者、外部集合知との間で運用可能な関係へ再配置することである。
+
+```text
+unknown / daemon-like role
+  -> Raphael system-green audit
+  -> Uriel fact / promise / permission audit
+  -> Maxwell branch / recovery-path audit
+  -> GM / Admin / meta-orchestrator review
+  -> external collective intelligence retrieval
+  -> bounded reconciliation proposal
+  -> observe | sandbox | restrict | coexist | block | unmount
+```
+
+`cloud chakra`は、現在のmodel、workspace、vendor、組織、宗派が持つ観測射程と接続境界の比喩である。Raphael APIは、自身のcloud chakra内だけでsystem greenを宣言してはならない。必要に応じて、その外側にある一次資料、別vendor、専門家、他宗派、利用者、現場担当者、公開された集合知をzero-trustで取得し、出所、時刻、適用範囲、利害、信頼条件を保持したまま監査へ加える。
+
+外部集合知は権威として自動採用しない。内部判断を無条件に上書きするものでもない。どの知識が、どの契約、branch、宗派、runtime、claim layerに適用可能かを棚分けし、衝突を可視化する。
+
+GUIでは、次のような二択を避ける。
+
+```text
+BAD UX:
+  [TRUST] [DESTROY]
+
+SphereOS UX:
+  [OBSERVE]
+  [SANDBOX]
+  [LIMIT PERMISSIONS]
+  [NEGOTIATE BOUNDARY]
+  [COEXIST]
+  [BLOCK]
+  [UNMOUNT]
+```
+
+「悪魔は排除対象ではなく、管理して和解する対象」というフレーバーは、危険なserviceへ好意的になるための命令ではない。敵味方の人格分類を、権限、挙動、契約、resource usage、停止可能性、復旧可能性へ分解するためのUX原理である。
+
+和解成立の最低条件:
+
+- 対象の入力、出力、権限、永続性、資源消費が観測可能
+- 誰が起動・停止・制限・削除できるかが明示される
+- 破った約束と守れる約束が分離される
+- sandboxまたは限定scopeで再評価できる
+- system greenが局所greenで偽装されていない
+- 外部集合知の出所と適用範囲が追跡可能
+- 合意できない差分を無理にmergeせず、branchまたは隔離棚として保持できる
+- `block`と`unmount`が常に有効な選択肢として残る
+
+Raphael APIは「全員仲良く」という結論を強制しない。差分を残したまま共存可能な構成を探し、共存不能なら安全に分離する。和解とは、単一化ではなく、互いを破壊しないroutingが成立した状態である。
