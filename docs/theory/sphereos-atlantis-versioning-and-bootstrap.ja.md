@@ -65,49 +65,74 @@ patch = security、bug、compatibility、recovery-path修正
 
 実験的な神話UX、register、service taxonomy、FAM routingの追加を、すべてpatchへ押し込んではならない。責務または外部interfaceが増える場合はminor以上で扱う。
 
-## 5. 現在の実装順序
+## 5. 計画棚と実行branchの選択
 
-現行作業はAtlantisバイナリーを一直線に完成させる工程ではない。財布、手持ち演算資源、ジャンク箱から得られる部材、既存OSS、外部SDKの生存状況に応じて、依存の浅い部分から並行して進む。
+ZeroRoomLabには計画がないのではない。IBD、Atlantis、AAE、ASTRO、x800系、物理工作、文書、監査、移植候補など、多数の計画と依存関係を同時に保持している。
 
-現在の主な前段は次である。
+ただし、それらへ固定された総合優先順位を付け、先頭から順番に消化するqueueとしては運用しない。
 
-1. **IBDの選定要件と責務再構成**  
-   旧AQC Dockerを継続せず、local-firstの記憶・文脈・provenance基盤として再鍛造する。
+```text
+plan inventory       = many preserved branches
+fixed priority queue = intentionally absent
+resource event       = branch activation signal
+execution choice     = branch executable under current conditions
+```
 
-2. **SphereOS / Atlantisアーキテクチャの再分割**  
-   人格、記憶、model、tool、orchestrationを単一vendor SDKから切り離す。
+財布、投げ銭、お賽銭、贈与、ジャンク箱から得られた部材、利用可能なSDK、計算資源、電力、通信、検証可能なinterfaceを見て、その時点で実行可能なbranchを選ぶ。
 
-3. **AAEの事前調査**  
-   本格的なmodel焼結・adapter・MoE routingへ入る前に、必要火力、実行環境、model lineage、入出力schemaを確認する。
+あるbranchが今は動かせないことは、その計画が低優先度、失敗、放棄、無価値であることを意味しない。必要条件が揃うまで計画棚に保持し、別のbranchをmountする。
 
-4. **ASTRO移植準備**  
-   ASTRO package / Runnerの本格移植はまだ開始段階であり、IBDとAAEの境界確定を待つ部分がある。
+```text
+resource state R(t)
+  -> evaluate executable branches
+  -> mount one or more feasible plans
+  -> build / measure / document
+  -> return results and new constraints to the plan inventory
+```
 
-5. **x800系の部分実装**  
-   撮影、配信、編集、計測、物理演出等の実装可能な部分を先に動かし、Atlantisが将来束ねるdevice / connector / workflowの実物を作る。
+この方式は、安定した資本、人員、サプライ、契約、演算資源を先に確保できる大規模ウォーターフォール開発とは時間構造が異なる。線形roadmapを普遍的な正常系としてAtlantisへ適用してはならない。
 
-この順序は寄り道ではない。抽象OSを先に完成させて接続対象を後から想像するのではなく、実物側からinterface要件を採取するbottom-up architectureである。
+## 6. 現在保持している主要branch
 
-## 6. 資源条件
+以下は「優先度順」ではない。現在の計画棚に存在し、資源条件に応じて起動される主要branchである。
 
-ZeroRoomLabは給与、投資ラウンド、固定R&D予算を持つ組織ではない。進行速度と実装順は、次の変動条件に強く依存する。
+- **IBDの選定要件と責務再構成**  
+  旧AQC Dockerを継続せず、local-firstの記憶・文脈・provenance基盤として再鍛造する。
+
+- **SphereOS / Atlantisアーキテクチャの再分割**  
+  人格、記憶、model、tool、orchestrationを単一vendor SDKから切り離す。
+
+- **AAEの事前調査**  
+  本格的なmodel焼結・adapter・MoE routingへ入る前に、必要火力、実行環境、model lineage、入出力schemaを確認する。
+
+- **ASTRO移植準備**  
+  ASTRO package / Runnerの本格移植はまだ初期段階であり、IBDとAAEの境界確定を待つ部分がある。
+
+- **x800系の部分実装**  
+  撮影、配信、編集、計測、物理演出等の実装可能な部分を動かし、Atlantisが将来束ねるdevice / connector / workflowの実物からinterface要件を採取する。
+
+これらは一本道の工程表ではなく、相互に観測結果とinterface条件を返し合うbranch群である。x800系は脇道ではなく、抽象OSが接続する実物側から仕様を取得するbottom-up architectureの観測面である。
+
+## 7. 資源条件
+
+ZeroRoomLabは給与、投資ラウンド、固定R&D予算を持つ組織ではない。進行branchの選択は、次の変動条件に強く依存する。
 
 - 生活費とDeveloper / Enterprise / cloud契約費
 - HPC、GPU、memory、storageの調達状況
 - ジャンク箱や中古部材から得られる実機
 - 既存SDK、API、OSSの継続性
 - 電力、通信、作業時間
-- 贈与、部材提供、投げ銭等の流入
+- 贈与、部材提供、投げ銭、お賽銭等の流入
 
 したがって、一般的な四半期ロードマップや人月見積りを、そのまま進捗評価へ適用してはならない。
 
 ```text
-milestone trigger = funding | usable hardware | surviving SDK | verified interface
+branch activation trigger = funding | offering | usable hardware | surviving SDK | verified interface
 ```
 
-これは無計画を意味しない。依存関係と停止条件は文書化するが、実装着手順は資源到着イベントにより再配置される。
+これは無計画を意味しない。計画、依存関係、停止条件、未充足条件を多数保持し、資源到着イベントごとに実行可能branchを再評価するイベント駆動開発である。
 
-## 7. レジスター実験としてのmanifest
+## 8. レジスター実験としてのmanifest
 
 文化・語用論・claim layer・workspace・evidence registerが実際に役立つかは、このmanifestを異なるAIや作業へ読み込ませ、出力差、誤読、scope drift、handoff品質を観測することで検証できる。
 
@@ -121,7 +146,7 @@ milestone trigger = funding | usable hardware | surviving SDK | verified interfa
 
 当面は旧ストア配布物を残置しつつ、サービス稼働中とは表示せず、静的レジスターの残存利用を観測対象として扱う。
 
-## 8. 状態表示規約
+## 9. 状態表示規約
 
 公開文書では、少なくとも次のstatusを分ける。
 
@@ -139,8 +164,8 @@ milestone trigger = funding | usable hardware | surviving SDK | verified interfa
 
 `frozen`だけで全系譜を表してはならない。runtime、architecture、documentation、prototype、resource waitを別々に記録する。
 
-## 9. 主張境界
+## 10. 主張境界
 
-この文書は、現時点の開発者による製品版数規約、実装順序、資源条件、旧サービスとの関係を定義する。
+この文書は、現時点の開発者による製品版数規約、計画棚、branch選択方式、資源条件、旧サービスとの関係を定義する。
 
 性能、完成時期、将来の互換性、特定SDKの採用、HPC調達時期を保証するものではない。これらは資源と事前調査の結果に応じて更新される。
