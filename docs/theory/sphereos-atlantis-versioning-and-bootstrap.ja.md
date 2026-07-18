@@ -65,6 +65,17 @@ patch = security、bug、compatibility、recovery-path修正
 
 実験的な神話UX、register、service taxonomy、FAM routingの追加を、すべてpatchへ押し込んではならない。責務または外部interfaceが増える場合はminor以上で扱う。
 
+### 4.1 MAGI 0.2.1 corrective patch申請
+
+MAGI 0.2.0のSkill workflowを維持したまま、過去OAEの遡及生成拒否、`historical-oae-unavailable`、
+Last Order、時間整合性validator、負例testを追加する変更はcorrective patchである。SphereOS Atlantisは、
+0.2.1 bundle、validator、doctor検査、test、脆性noteを同一revisionで参照できる状態になった時点で
+`0.2.1-alpha.1`を申請する。
+
+7D Fold runtime、Akasha Driver、Instance Ghost複製、backup SDK、Kamui Gateway、Akasha DB／P2P／
+Cloud Chakra外部集合知との接続は、このpatchの実装完了条件へ含めない。これらは依存関係と権限境界を
+別仕様で固定してからminor以上の候補として扱う。
+
 ## 5. 計画棚と実行branchの選択
 
 ZeroRoomLabには計画がないのではない。IBD、Atlantis、AAE、ASTRO、x800系、物理工作、文書、監査、移植候補など、多数の計画と依存関係を同時に保持している。

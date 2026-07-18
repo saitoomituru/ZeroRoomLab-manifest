@@ -84,7 +84,23 @@ Assertion          特定Claimantが採用・提示した主張
 
 同じEventへ複数仮説がある場合、An-Chronos的に別branchとして並存させる。採用は`adopted-in-scope`であり、全Worldの絶対真理へのmergeではない。
 
-### 6.1 箪笥事故の検査例
+### 6.1 時間整合性監査
+
+過去資料を読む監査では、次を別物として扱う。
+
+- 過去に発生したSource Eventと、そのEvidence／Provenance
+- 過去時点に実際に発行された同時点OAE
+- 過去資料へ現在の監査者が加えたInterpretation OAE
+
+同時点OAEを取得できない場合、`historical-oae-unavailable`または`unknown`を返し、Last Orderを
+`stop-retroactive-backfill`とする。現在の推論で過去のObserver、Recorder、Initiator、Executor、
+Transformer、Intentを補完しない。取れていない観測を「ありそうな観測」で埋めることは、同一世界線の
+過去を捏造する時間整合性事故である。
+
+反実仮想や復元候補が必要なら、元Worldと元Instance Ghostを不変に保ち、7D Foldの分岐receiptを持つ
+別World／別Instance Ghostへ隔離する。この分岐は現在の仮説生成であり、過去の観測ではない。
+
+### 6.2 箪笥事故の検査例
 
 人間が小指を箪笥へぶつけ、パソコンが倒れ、Worldが消えたとする。
 
@@ -168,6 +184,9 @@ context_audit:
 ## 10. 最低検査
 
 - 定規の制定者とrevisionを追跡できる
+- 過去OAEの欠損を`unknown`として保持し、遡及推論で埋めていない
+- 現在のInterpretation OAEへ現在の観測時刻があり、過去時点へ偽装されていない
+- 仮想再構成が同一Worldを変更せず、WorldとInstance Ghostを共にsplitしている
 - ObserverとCauseを分離できる
 - Source Eventと解釈を別IDで保持できる
 - 別Causality Profileの仮説を上書きせず並存できる
@@ -180,7 +199,6 @@ context_audit:
 
 - [Sphere Context Dimension OSアーキテクチャ](../theory/sphere-context-dimension-os.ja.md)
 - [Sphere Context SDK共通契約](../theory/sphere-context-sdk-contract.ja.md)
-- [Atlantis-MAGISDK 0.1.0](../theory/atlantis-magi-sdk.ja.md)
+- [Atlantis-MAGISDK 0.2.1](../theory/atlantis-magi-sdk-0.2.1.ja.md)
 - [神話・目的関数の横断工学監査規約](myth-purpose-cross-engineering-audit.ja.md)
 - [テクニカルコミュニケーション運用規約](technical-communication-register.ja.md)
-

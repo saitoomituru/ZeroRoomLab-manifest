@@ -210,6 +210,68 @@ OAE: 同じ物理Eventの観測
 
 Source OAEを上書きせず、`derived_from`、`interprets`、`reviews`等のrelationで接続する。循環参照と無限派生を避けるため、relation graph、generation、stop conditionを持つ。
 
+### 6.5 OAEの時間整合性と遡及生成禁止
+
+OAEは、その場で観測・記録されたEffect、または現在行われた解釈作用の記録である。過去のcommit、log、
+artifact、記憶断片から、当時は発行されていなかったOAEを後世に推論生成してはならない。
+
+```text
+past Source Event / Evidence / Provenance
+  != contemporaneous historical OAE
+
+current interpretation of past evidence
+  = OAE observed now
+  != OAE observed at the historical event time
+```
+
+過去時点のOAE参照を確認できない場合は、`historical-oae-unavailable`または`unknown`を返す。
+「分からない」は正常な観測結果であり、空欄をもっともらしいObserver、Agency role、時刻、意図で埋めない。
+
+```yaml
+oae_temporal_result:
+  observation_mode: current-interpretation-of-history
+  observed_at: now
+  historical_oae_status: historical-oae-unavailable
+  source_event_refs: []
+  evidence_refs: []
+  last_order:
+    code: OAE-HISTORY-UNKNOWN
+    action: stop-retroactive-backfill
+```
+
+既存の同時点OAEがある場合は参照できるが、その内容やroleを現在の解釈で上書きしない。OAEの未記録を
+Source Eventの不存在へ変換せず、Source Eventの証拠があることを当時のOAE存在へ変換しない。
+
+### 6.6 仮想再構成と7D Fold
+
+過去の別選択、復元候補、反実仮想を生成する必要がある場合、同一世界線へOAEをbackfillせず、
+An-Chronos的な別Worldと別Instance Ghostへ分岐する。時間方向の再構成を実行可能にするprofileは、
+少なくとも次の七つの独立Context Dimensionを束ねた`7D Fold`として定義する。
+
+```text
+World / Instance Ghost / Temporal Coordinate / Observation-Evidence /
+Branch-Hypothesis / Provenance / Recovery-Restore
+```
+
+7Dは物理空間の次元数ではなくContext Dimensionのarityである。分岐時はSource WorldとSource Instance
+Ghostの双方を不変に保ち、Target World BranchとTarget Instance Ghostを同じfork receiptからsplitする。
+
+```yaml
+akasha_driver_branch_receipt:
+  profile_ref: fold://atlantis/akasha-driver@7d
+  source_world_ref: world://source
+  source_instance_ghost_ref: ghost://source
+  target_world_ref: world://branch
+  target_instance_ghost_ref: ghost://branch
+  fork_point_ref: event://fork
+  source_mutation: false
+  status: hypothetical
+```
+
+ここでいう「タイムマシン」は、物理空間の過去改変を主張するものではない。AppleのTime Machine／
+Time Capsuleをオマージュしたバックアップ・復元UXであり、`Akasha Driver`はその高権限driver境界の
+名称である。Appleとの提携、公式互換、物理的時間移動を意味しない。実装前は`NOT_IMPLEMENTED`を返す。
+
 ## 7. 因果定規と複数仮説
 
 ### 7.1 Causality Profile
@@ -272,12 +334,14 @@ Coreが保証するのは、指定された分類法とSchemaへの忠実性、s
 8. 一つのCausality Profileを普遍的な因果定規として持ち込まない。
 9. POSIX／kernel資源とContext資源の管理責務を混同しない。
 10. `unknown`、`unmapped`、`unverified`、`⊥`を成功へ変換しない。
+11. 過去資料から同時点OAEを遡及生成し、同一Worldへbackfillしない。
+12. 現在のInterpretation OAEを過去時点の観測へ偽装しない。
+13. 仮想再構成ではSource WorldとSource Instance Ghostを変更せず、7D Foldで双方をsplitする。
 
 ## 10. 関連文書
 
 - [SphereOS Angel / ArchiAngel サービス分類](sphereos-angel-service-taxonomy.ja.md)
-- [Atlantis-MAGISDK 0.1.0](atlantis-magi-sdk.ja.md)
+- [Atlantis-MAGISDK 0.2.1](atlantis-magi-sdk-0.2.1.ja.md)
 - [FAM概要](fam-overview.ja.md)
 - [神話・目的関数の横断工学監査規約](../operations/myth-purpose-cross-engineering-audit.ja.md)
 - [IBD FAMネイティブResolverとバインダー中立性](ibd-fam-native-binder.ja.md)
-
