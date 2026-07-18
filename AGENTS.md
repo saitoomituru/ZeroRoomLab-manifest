@@ -502,10 +502,16 @@ AQC = Quantaril Cloud — INCORRECT.
 
 When an AI agent generates commits or PRs in this repository:
 
-- Commit message format: `[layer] scope: description`
+- 人間向けの記述は日本語を既定とする。対象にはREADME、技術文書、ノート、commit、PR、issue、code comment、CLI help、検証報告、引継ぎ票を含む
+- commit subjectとbodyは、日本語化によって意味・互換性を壊さない限り日本語で書く
+- Commit message format: `[layer] scope: 日本語の説明`
   - layer: `eng` | `phil` | `theory` | `docs` | `meta`
-  - Example: `[eng] fam-json: add unknown_is_not_pass constraint to safety gates`
-  - Example: `[phil] gaming-cosmology: clarify BAN Flag theory — bug not sin`
+  - Example: `[eng] fam-json: 安全ゲートへunknown_is_not_pass制約を追加`
+  - Example: `[phil] gaming-cosmology: BAN Flag理論のbugとsinの境界を明確化`
+- 英語成果物は、ユーザーが英語を指定した場合、既存の英語正本を編集する場合、外部仕様・API・Schema・識別子・引用・互換境界が英語を要求する場合に限定する
+- code identifier、Schema key、protocol field、external API、vendor固有名、安定path、機械可読tokenは、翻訳で互換性・検索性・参照安定性を壊す場合は原語を保持する
+- 日本語既定を理由に、公開済みGit履歴をrewriteしたり、安定した識別子・pathを一括renameしたりしない。移行は以後の変更から前向きに適用する
+- 日本語文中に必要な英語技術語を残す場合も、説明責務まで英語へ逃がさず、日本語で意味と境界を記述する
 
 - Do not merge philosophy layer changes without human review.
 - Do not add external citations to Layer B documents without flagging them as `[cross-layer reference]`.
