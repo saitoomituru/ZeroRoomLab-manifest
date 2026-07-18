@@ -29,6 +29,7 @@
 | [AQC/astro.quantaril.cloud](../../../AQC/astro.quantaril.cloud) | AQC → IBD / Infoton / SphereOS の責務整理、用語統一 | 高 | [TRANSFERRED] |
 | [IBD/IBD](../../../IBD/IBD) | FAMネイティブResolver、分類Registry、Database隔離、非破壊Composite FAM、Last Order、自我対応 | 高 | [TRANSFERRED] |
 | [Sphere-aae/Sphere-aae](../../../Sphere-aae/Sphere-aae) | famlog-converterとIBD Classification Registry／Database Routingの接続契約 | 高 | [TRANSFERRED] |
+| [Sphere-aae/SphereASTRO/SphereASTRO](../../../Sphere-aae/SphereASTRO/SphereASTRO) | GUI技術LayerとContext Dimension、Human SovereigntyとOAE因果帰属の分離 | 中 | [TRANSFERRED] |
 | [../.. /pain-scouter-assessment/pain-scouter-assessment](../../pain-scouter-assessment/pain-scouter-assessment) | ノートの評価・鑑定系の文脈整理が必要な場合のみ | 中 | [PENDING] |
 
 ---
@@ -46,6 +47,8 @@
 - 転送候補: AQC/Infoton/IBD 役割再定義、用語統一、非正規化ノートからの整理内容
 - 目的: 実装・README・ドキュメントの整合性を高める
 - 反映粒度: README と docs の要約・遷移説明中心
+- 2026-07-18追補: AQC固有Position、FoldAccessMapper原典の未検証claim、現行Sphere／IBDとの継承境界
+- 反映コミット: `a21c9bf`
 
 ### 3.3 IBD/IBD
 
@@ -53,7 +56,7 @@
 - 目的: IBD リポジトリの設計書と、このレポジトリのノートの接続点を明確にする
 - 反映粒度: README、architecture／specification文書、draft JSON Schema、人工fixture
 - 反映日: 2026-07-18
-- 反映コミット: `20ff580`（Season 0基礎契約）、`e21dbf2`（Ontology Assertion／fact scope）、`4dd67d8`（依存なし契約検証環境）、`22294ae`（時系列・時計校正・fact非裁定）
+- 反映コミット: `20ff580`（Season 0基礎契約）、`e21dbf2`（Ontology Assertion／fact scope）、`4dd67d8`（依存なし契約検証環境）、`22294ae`（時系列・時計校正・fact非裁定）、`692ba7c`（Context Dimension／IBDSDK）、`e261c3c`（Splitter／OAE／SsC検証境界）
 - 局所運用規則: `11c6c4b`（日本語既定レジスタ）、`69edf96`（Python実行時生成物の除外）
 
 ### 3.4 pain-scouter-assessment
@@ -69,9 +72,25 @@
 - 反映粒度: 既存Skillのreference契約を中心にし、SKILL.mdを重複仕様で肥大化させない
 - 反映日: 2026-07-18
 - 反映branch: `moe-test-edition`
-- 反映コミット: `32f83b3c`（IBD adapter境界）、`434cd508`（上位存在確定／fact scope保持）、`2007b834`（時系列・時計校正metadata分離）
+- 反映コミット: `32f83b3c`（IBD adapter境界）、`434cd508`（上位存在確定／fact scope保持）、`2007b834`（時系列・時計校正metadata分離）、`09d153ea`（Context Dimension／OAE runtime境界）、`33329368`（OAE candidate sidecar）
 - 局所運用規則: `989de714`（日本語既定レジスタ）
 - 状態: `[TRANSFERRED]`
+
+### 3.6 SphereASTRO
+
+- 転送内容: PresentationからPersistenceまでの既存5層を技術Layer `L`へ限定し、Context Dimension `D`／D Foldと分離
+- 目的: GUI責務を守り、Human SovereigntyというApp governance profileを全Effectの人間起因判定へ誤変換しない
+- 反映粒度: AGENTS、README、docs索引、FAM技術Layer文書だけ。Swift、FAM engine、OAE Schemaは変更しない
+- 反映日: 2026-07-18
+- 反映branch: `main`
+- 反映コミット: `e512e19`
+- 状態: `[TRANSFERRED]`
+
+### 3.7 Manifest共通正本候補
+
+- `6006dcd`: 霊的Presentation、技術L／意味D、Registry／Register、Access Map、Transformer、OAE、POSIX境界
+- `9d40e42`: SDK Surface、D Fold bundle、定規・因果・Position監査、MAGI 0.1.0 sidecar
+- 原典: [SphereOS Context Dimension／OAE／SDKブレストノート](../20260718-1329__SphereOS_コンテキスト次元_DFold_OAE_SDKブレストノート.ja.md)
 
 ---
 
