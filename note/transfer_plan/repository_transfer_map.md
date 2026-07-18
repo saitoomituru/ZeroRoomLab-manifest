@@ -49,11 +49,11 @@
 
 ### 3.3 IBD/IBD
 
-- 転送内容: FAMネイティブ問い合わせ、Classification Registry、Schema Bundle単位のIBD Database、非破壊Composite FAM、Last Order、Evidence鮮度、自我対応、実行形態中立
+- 転送内容: FAMネイティブ問い合わせ、Classification Registry、Schema Bundle単位のIBD Database、非破壊Composite FAM、Last Order、Evidence鮮度、自我対応、実行形態中立、実行環境時計と上位時系列の分離
 - 目的: IBD リポジトリの設計書と、このレポジトリのノートの接続点を明確にする
 - 反映粒度: README、architecture／specification文書、draft JSON Schema、人工fixture
 - 反映日: 2026-07-18
-- 反映コミット: `20ff580`（Season 0基礎契約）、`e21dbf2`（Ontology Assertion／fact scope）、`4dd67d8`（依存なし契約検証環境）
+- 反映コミット: `20ff580`（Season 0基礎契約）、`e21dbf2`（Ontology Assertion／fact scope）、`4dd67d8`（依存なし契約検証環境）、`22294ae`（時系列・時計校正・fact非裁定）
 - 局所運用規則: `11c6c4b`（日本語既定レジスタ）、`69edf96`（Python実行時生成物の除外）
 
 ### 3.4 pain-scouter-assessment
