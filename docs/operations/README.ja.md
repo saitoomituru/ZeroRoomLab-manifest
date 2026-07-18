@@ -21,6 +21,7 @@
 - [workspace-boundary-register.ja.md](workspace-boundary-register.ja.md) — リポジトリ、VS Codeワークスペース、プロジェクト、実行環境、実装依存を分離し、AIのスコープ解決手順を定める正本。
 - [workspace-registry.json](workspace-registry.json) — Deb800、スフィア、企業向け検証環境の名前・公開境界・再構築可否を持つ機械可読レジスタ。
 - [development-environment-reconstruction.ja.md](development-environment-reconstruction.ja.md) — 公開OSSリポジトリを集め、ZeroRoomLabのVS Codeワークスペースを再構築する人間・AGI向け手順書。
+- [Python／Venv運用の虎の巻.proton](python-venv-operations.proton.md) — Python実行主体、repository単位Venv、既知の自己再生成loop、network依存導入、clean-room、SaaS検索と使い捨てheadless browser観測を分離する横断runtime contract。
 - [heterogeneous-agent-deck-governance.ja.md](heterogeneous-agent-deck-governance.ja.md) — Codex、Claude Code、Gemini CLI、Copilot等を同一現場へ投入した際のベンダー代理戦争、認知衝突、権限競合、デッキ崩壊を防ぐ、操竜型マルチ召喚プロジェクト管理と兵站規約。
 - [dotfiles-and-gitignore-policy.ja.md](dotfiles-and-gitignore-policy.ja.md) — 再現性に必要なdotfileと、端末状態・生成物・秘密情報を分離する`.gitignore`運用の正本。
 - [documentation-maintenance-policy.ja.md](documentation-maintenance-policy.ja.md) — ディレクトリ構成・命名規則・更新責任・状態ラベルの規約。
