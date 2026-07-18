@@ -25,7 +25,7 @@
 
 | 対象リポジトリ | 転送内容 | 優先度 | 状態 |
 |---|---|---|---|
-| [quantaril_cloud_Q3](../../../quantaril_cloud_Q3/quantaril_cloud_Q3) | Docusaurus / 生成コード / コンテンツ生成の構造整理 | 高 | [TRANSFERRED] |
+| [quantaril_cloud_Q3](../../../quantaril_cloud_Q3/quantaril_cloud_Q3) | Docusaurus文書体系、Context Dimension／Atlantis World Builder適用差分、正本受領台帳 | 高 | [TRANSFERRED] |
 | [AQC/astro.quantaril.cloud](../../../AQC/astro.quantaril.cloud) | AQC → IBD / Infoton / SphereOS の責務整理、用語統一 | 高 | [TRANSFERRED] |
 | [IBD/IBD](../../../IBD/IBD) | FAMネイティブResolver、分類Registry、Database隔離、非破壊Composite FAM、Last Order、自我対応 | 高 | [TRANSFERRED] |
 | [Sphere-aae/Sphere-aae](../../../Sphere-aae/Sphere-aae) | famlog-converterとIBD Classification Registry／Database Routingの接続契約 | 高 | [TRANSFERRED] |
@@ -41,6 +41,11 @@
 - 転送候補: Docusaurus と生成スクリプトの分離方針、文書体系のハブ/ストリーム構造
 - 目的: 実装リポジトリ側でも、ノート由来の構造変更を追跡しやすくする
 - 反映粒度: 設計方針・運用ルール中心。生ノートそのものは転送しない
+- 2026-07-18追補: Sphere共通L／D／OAE契約をQ Atlantis固有のWorld／Object／Action Fold、World causality、MAGI、World Render／Flavor SDKへ接続
+- 実装境界: Atlantis World Builder runtime、OAE Schema、MAGI sidecar emitterは`NOT IMPLEMENTED`のまま保持
+- 反映branch: `chore/npm-audit-and-sakura-deploy`（既存branchを継続し、この転送専用branchは作成していない）
+- 反映コミット: `7ee3cce`（Atlantis接続票）、`fe7ce0b`（Manifest正本候補の受領台帳）
+- 状態: `[TRANSFERRED]`
 
 ### 3.2 astro.quantaril.cloud
 
