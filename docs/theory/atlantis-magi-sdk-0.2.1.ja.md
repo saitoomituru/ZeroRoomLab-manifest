@@ -64,14 +64,14 @@ magi_temporal_receipt:
 同時にsplitする。
 
 ```text
-7D Fold = World
-        + Instance Ghost
-        + Temporal Coordinate
-        + Observation-Evidence
-        + Branch-Hypothesis
-        + Provenance
-        + Recovery-Restore
+7D Fold validator-local provisional profile:
+  World / Instance Ghost / Temporal Coordinate / Observation-Evidence /
+  Branch-Hypothesis / Provenance / Recovery-Restore
 ```
+
+七名称は0.2.1 validatorを閉じるための仮設profileであり、backup SDKの正規Registryではない。
+User要件として固定済みなのは7D Fold、World／Instance Ghostの同時split、Source不変までである。
+残るDimension ID、Registry revision、署名方式は`unknown`として将来のUser gateへ返す。
 
 分岐receiptには、source／target World、source／target Instance Ghost、fork point、Provenance、
 `source_mutation: false`、`status: hypothetical`を必須とする。一方だけを複製し、もう一方を元世界線へ
