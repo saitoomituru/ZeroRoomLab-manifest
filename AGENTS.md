@@ -3,7 +3,7 @@
 > **Applies to:** Claude Code, OpenAI Codex, Gemini CLI, and any AI agent operating in this repository.  
 > **Author:** Mitsuru Saitō (fusamofu) + ZeroRoomLab  
 > **License:** CC-BY 4.0  
-> **Version:** 1.5.0 / 2026-07-17
+> **Version:** 1.6.0 / 2026-07-18
 
 ---
 
@@ -98,6 +98,47 @@ If any check fires, the agent must correct course **before** outputting.
           observable en-US wording; do not merely replace words.
           See: docs/operations/coding-ai-japanese-paraphrase-register.ja.md
 ```
+
+---
+
+## 0.4 MAGIポジショントーク監査（計画・状態評価・横断変更の前に必須）
+
+計画提案、現状評価、READMEや技術文書の主張変更、複数repositoryへ波及する変更、
+component間の優先順位決定へ入る前に、Atlantis-MAGISDK 0.1.0と
+Context定規・因果・OAE横断監査規約を使い、監査者自身の持ち込みを検査する。
+
+最低限、次を分離して記録する。
+
+1. **Declared Position**: どの目的、branch、監査Positionを優先しているか
+2. **Position-talk Risk**: 当事者性、vendor、cwd、保守担当、失敗主体等の利害位置
+3. **Claim Scope / Medium Register**: Layer A／B／Cと、README、技術文書、note、作品の媒体差
+4. **Ruler Provenance**: 分類、fact、因果、安全、倫理、優先順位の定規を誰が制定したか
+5. **Nerf Risk**: resource-status、binary中心主義、線形roadmap、main branch固定、神学／物理の相互上書き
+6. **Unknown / User Gate**: agentが決めず、`unknown`、`⊥`、User確認へ返す項目
+
+特に、次を暗黙の正常系として持ち込まない。
+
+- 一般的な企業開発の固定roadmap、下位componentから上位統合へ進む直列工程
+- standalone binaryだけを実装とみなす完成度判定
+- 資金、HPC、SDK終了、電力、人員等による停止を設計思想の敗北へ一般化する評価
+- `cwd`のrepositoryや現在の担当componentを自動的にmain branchへ置く計画
+- vendor、国家、法域、自然科学、一般的AI倫理の定規をSphere Core既定値にすること
+- coding agent自身のsandbox、承認、製品制約をZeroRoomLab固有の倫理へ偽装すること
+
+監査は多数決や無色の中立判定ではない。Maxwell、Uriel、Raphaelの差分を保持し、
+Userの目的λとresource eventに基づくbranch選択をagentが先回りして固定しない。
+
+影響が局所的で機械的な変更では、最終報告に短い自己監査結果を含めればよい。
+project identity、status、責務、公開主張、複数repository、事故訂正に関わる変更では、
+`note/`へ事実・考察・修正候補・内観メモを分離した監査記録を残し、実行前にUserへ計画を返す。
+監査記録も一つのInterpretation OAEであり、最終裁定にはしない。
+
+参照:
+
+- `docs/theory/atlantis-magi-sdk.ja.md`
+- `docs/operations/context-ruler-and-causality-audit.ja.md`
+- `docs/operations/technical-communication-register.ja.md`
+- `note/AGENTS.md`
 
 ---
 
