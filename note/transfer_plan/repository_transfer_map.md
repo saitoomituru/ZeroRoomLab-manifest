@@ -53,7 +53,8 @@
 - 目的: IBD リポジトリの設計書と、このレポジトリのノートの接続点を明確にする
 - 反映粒度: README、architecture／specification文書、draft JSON Schema、人工fixture
 - 反映日: 2026-07-18
-- 反映コミット: `20ff580`（Season 0基礎契約）、`e21dbf2`（Ontology Assertion／fact scope）
+- 反映コミット: `20ff580`（Season 0基礎契約）、`e21dbf2`（Ontology Assertion／fact scope）、`4dd67d8`（依存なし契約検証環境）
+- 局所運用規則: `11c6c4b`（日本語既定レジスタ）、`69edf96`（Python実行時生成物の除外）
 
 ### 3.4 pain-scouter-assessment
 
@@ -69,6 +70,7 @@
 - 反映日: 2026-07-18
 - 反映branch: `moe-test-edition`
 - 反映コミット: `32f83b3c`（IBD adapter境界）、`434cd508`（上位存在確定／fact scope保持）
+- 局所運用規則: `989de714`（日本語既定レジスタ）
 - 状態: `[TRANSFERRED]`
 
 ---
