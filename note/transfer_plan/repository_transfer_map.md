@@ -69,7 +69,7 @@
 - 反映粒度: 既存Skillのreference契約を中心にし、SKILL.mdを重複仕様で肥大化させない
 - 反映日: 2026-07-18
 - 反映branch: `moe-test-edition`
-- 反映コミット: `32f83b3c`（IBD adapter境界）、`434cd508`（上位存在確定／fact scope保持）
+- 反映コミット: `32f83b3c`（IBD adapter境界）、`434cd508`（上位存在確定／fact scope保持）、`2007b834`（時系列・時計校正metadata分離）
 - 局所運用規則: `989de714`（日本語既定レジスタ）
 - 状態: `[TRANSFERRED]`
 
@@ -87,5 +87,5 @@
 ## 5. 次のアクション
 
 - 反映済みの [quantaril_cloud_Q3](../../quantaril_cloud_Q3)、[AQC/astro.quantaril.cloud](../../AQC/astro.quantaril.cloud)、[IBD/IBD](../../IBD/IBD) について、今後の追随更新を監視する
-- Sphere-aaeの接続契約は`32f83b3c`と`434cd508`へ転送済み。IBD Schema草案の更新時に追随差分を監視する
+- Sphere-aaeの接続契約は`32f83b3c`、`434cd508`、`2007b834`へ転送済み。IBD Schema草案の更新時に追随差分を監視する
 - 追加の転送候補が出た場合は、対象リポジトリごとにこの表を更新する
