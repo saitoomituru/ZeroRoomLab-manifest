@@ -15,6 +15,8 @@
 - [SphereOS Angel / ArchiAngel サービス分類](../theory/sphereos-angel-service-taxonomy.ja.md) — POSIX上で動く意味次元OSの一時・常駐serviceをAngel、architectural routingに関与するserviceをArchiAngelとして分離し、daemon・systemd・宗教上のArchangelとの名前空間衝突を防ぐ分類規約。
 - [Sphere Context Dimension OSアーキテクチャ](../theory/sphere-context-dimension-os.ja.md) — 技術Layer `L`、Context Dimension `D`、Registry／Register、Access Map、Transformer、OAE、因果仮説、POSIX比喩の責務境界を分離する横断正本候補。
 - [霊的言霊の次元とContext Dimension Fold](../philosophy/spiritual-context-dimension-and-fold.ja.md) — 霊的次元を技術階層へ矮小化せず、神学・魔術・物理・World等のPresentationを第一級のContext Dimensionとして保持するLayer B正本候補。
+- [Sphere Context SDK共通契約](../theory/sphere-context-sdk-contract.ja.md) — 低水準envelope、SPI、domain SDK、workflow、prompt surfaceを技術依存`L`と意味束`D`へ直交させるSDK契約候補。
+- [Context定規・因果・OAE横断監査規約](context-ruler-and-causality-audit.ja.md) — Registryの定規持込、Agency誤帰属、複数因果仮説、Position-talk、神学／物理／Worldのナーフ事故を監査する規約候補。
 - [license-boundary-research-policy.ja.md](license-boundary-research-policy.ja.md) — 読む・研究する・創作する表現物をCC-BY 4.0、外部状態を変更する実行プロンプト・スキーマ・コードをApache-2.0側とするZeroRoomLabの暫定ライセンス境界研究規約。
 - [workspace-boundary-register.ja.md](workspace-boundary-register.ja.md) — リポジトリ、VS Codeワークスペース、プロジェクト、実行環境、実装依存を分離し、AIのスコープ解決手順を定める正本。
 - [workspace-registry.json](workspace-registry.json) — Deb800、スフィア、企業向け検証環境の名前・公開境界・再構築可否を持つ機械可読レジスタ。
