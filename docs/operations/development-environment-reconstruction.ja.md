@@ -58,7 +58,8 @@ ZeroRoomLab-manifestは思想・公開仕様の集積だけでなく、公開OSS
     { "path": "AQC/astro.quantaril.cloud" },
     { "path": "pain-scouter-assessment/pain-scouter-assessment" },
     { "path": "Sphere-aae/Sphere-aae" },
-    { "path": "Sphere-aae/SphereASTRO/SphereASTRO" }
+    { "path": "Sphere-aae/SphereASTRO/SphereASTRO" },
+    { "path": "Sphere-aae/SphereOS-Atlantis" }
   ]
 }
 ```
