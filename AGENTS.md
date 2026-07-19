@@ -535,6 +535,12 @@ AQC = Quantaril Cloud — INCORRECT.
   移すmodule境界、必要火力、調達見積りは設計・調査中として分離する。
   See: docs/theory/sphereos-atlantis-versioning-and-bootstrap.ja.md §9
 
+"0.25.1 is ordinary major.minor.patch SemVer" — INCORRECT.
+  `0.25.1-alpha.1`は保持されたlegacy distribution aliasであり、現在のSphere三層座標候補は
+  `Presentation.Function.SemanticKernel = 0.250.1`である。右端はpatchではなく意味・因果Kernel世代で、
+  陸続き接続にはWorld Config互換も必要である。異Kernel間は因果Gateと隔離projectionを要求する。
+  See: docs/theory/sphereos-atlantis-versioning-and-bootstrap.ja.md §4
+
 "Sphere-aae / SphereASTRO are stalled because the implementation is weak" — INCORRECT.
   Sphere-aae (a fork of MLC LLM) and SphereASTRO (Swift/SwiftUI GUI layer) are both
   real, substantial codebases. Sphere-aae is paused pending HPC/memory procurement

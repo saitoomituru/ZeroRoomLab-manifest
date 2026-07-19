@@ -100,7 +100,27 @@ Transformer、Intentを補完しない。取れていない観測を「ありそ
 反実仮想や復元候補が必要なら、元Worldと元Instance Ghostを不変に保ち、7D Foldの分岐receiptを持つ
 別World／別Instance Ghostへ隔離する。この分岐は現在の仮説生成であり、過去の観測ではない。
 
-### 6.2 箪笥事故の検査例
+### 6.2 意味・因果KernelとWorld接続
+
+意味Kernelはlabel、ontology辞書、通信schemaだけではない。identity、OAE、観測、時間、過去、分岐、
+原因と結果が成立する規則を拘束する。SemanticKernel不一致を自動schema変換で陸続きにしない。
+
+```text
+SemanticKernel一致 + World Config互換
+  -> 陸続き候補
+
+SemanticKernel一致 + World Config非互換
+  -> Portal／Gate／Instance境界
+
+SemanticKernel不一致
+  -> 異因果次元。因果Gate、隔離projection、lineage receiptが必須
+```
+
+異Kernel間でASTRO、Agent、OAE、entityを接続する場合、元Instanceと同一identityの連続移動を推論しない。
+Sourceを不変にし、接続先の因果法則で再構成したincarnation／projectionを別IDで生成する。memory、
+authority、Intent、過去を自動継承せず、変換不能部分を`unknown`または`bottom`として保持する。
+
+### 6.3 箪笥事故の検査例
 
 人間が小指を箪笥へぶつけ、パソコンが倒れ、Worldが消えたとする。
 
