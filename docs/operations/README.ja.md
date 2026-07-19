@@ -26,6 +26,7 @@
 - [heterogeneous-agent-deck-governance.ja.md](heterogeneous-agent-deck-governance.ja.md) — Codex、Claude Code、Gemini CLI、Copilot等を同一現場へ投入した際のベンダー代理戦争、認知衝突、権限競合、デッキ崩壊を防ぐ、操竜型マルチ召喚プロジェクト管理と兵站規約。
 - [corn-work-item-stack.ja.md](corn-work-item-stack.ja.md) — repository-nativeな作業指示、context closure、event receipt、Forge Issue projection、scheduler adapterを疎結合で束ねるCORN共通契約。
 - [participation-nonjurisdiction-and-experience.ja.md](participation-nonjurisdiction-and-experience.ja.md) — 異棚からのNote参加、信仰・ゲーム・工学の相互非越権、任意persona、Experience Receipt、cluster保持、Core content非裁定の共通契約。
+- [help-and-capability-discovery.ja.md](help-and-capability-discovery.ja.md) — 利用者をmaintainer熟練者と仮定せず、現在能力、未実装、非code入口、次の選択肢をmutationなしで提示するHelp共通契約。
 - [dotfiles-and-gitignore-policy.ja.md](dotfiles-and-gitignore-policy.ja.md) — 再現性に必要なdotfileと、端末状態・生成物・秘密情報を分離する`.gitignore`運用の正本。
 - [documentation-maintenance-policy.ja.md](documentation-maintenance-policy.ja.md) — ディレクトリ構成・命名規則・更新責任・状態ラベルの規約。
 - [extension-plan.ja.md](extension-plan.ja.md) — Native / Server / App-layer / Edge-algo の棚分け方針。
