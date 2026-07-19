@@ -72,7 +72,8 @@
         "AQC/astro.quantaril.cloud",
         "pain-scouter-assessment/pain-scouter-assessment",
         "Sphere-aae/Sphere-aae",
-        "Sphere-aae/SphereASTRO/SphereASTRO"
+        "Sphere-aae/SphereASTRO/SphereASTRO",
+        "Sphere-aae/SphereOS-Atlantis"
       ],
       "expected_repositories": [
         {
@@ -109,6 +110,11 @@
           "name": "SphereASTRO",
           "workspace_path": "Sphere-aae/SphereASTRO/SphereASTRO",
           "remote": "https://github.com/saitoomituru/SphereASTRO.git"
+        },
+        {
+          "name": "SphereOS-Atlantis",
+          "workspace_path": "Sphere-aae/SphereOS-Atlantis",
+          "remote": "https://github.com/saitoomituru/SphereOS-Atlantis.git"
         }
       ],
       "local_only_components": [

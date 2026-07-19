@@ -10,6 +10,7 @@
 - [default-language-and-translation-policy.ja.md](default-language-and-translation-policy.ja.md) — 指示がない限り日本語を規定動作とし、en-USを西洋圏が検証するための外部GUIとして省略なく意訳する言語規約。他言語は現地話者・神学者・実務家のレビューを求める。
 - [myth-purpose-cross-engineering-audit.ja.md](myth-purpose-cross-engineering-audit.ja.md) — 神話・哲学をフレーバーへ矮小化せず、安全・制度・金融・情報・人間工学を横断して目的関数と実装資源を両輪監査し、情報子工学と相互監査する規約。
 - [Atlantis-MAGISDK 0.2.1](../theory/atlantis-magi-sdk-0.2.1.ja.md) — 0.2.0 Skill bundleへOAE時間整合性、unknown＋Last Order、7D Fold分岐境界を追加するcorrective patch仕様。0.1.0正本は系譜として保持する。
+- [SphereOS Atlantis版数・再アーキテクト境界](../theory/sphereos-atlantis-versioning-and-bootstrap.ja.md) — legacy salvage、現行architecture、resource event、0.25.1-alpha設計系列、release gateを分離する版数・状態規約。
 - [SphereOS 3.x / 4.x サービス終了境界](../theory/sphereos-3x-4x-service-closure.ja.md) — 旧サービス実行系・インスタンスゴースト・動的APIチェーンの終了と、GPTsに残る静的レジスター／知識キャッシュ、ストア残置、画像生成用途の限定的な残存価値を分離する正本。
 - [Proton.md 歴史系譜と概念実装境界](../theory/proton-md-historical-lineage.ja.md) — 2025年SphereOS期から使われていたProton.mdの概念実装、Embedding drift・fallback経験、Skill / Manifest / FAM / MCP / Foldlogとの責務分離、現在のFAMoverMCPへの継承を整理する正本。
 - [SphereOS Angel / ArchiAngel サービス分類](../theory/sphereos-angel-service-taxonomy.ja.md) — POSIX上で動く意味次元OSの一時・常駐serviceをAngel、architectural routingに関与するserviceをArchiAngelとして分離し、daemon・systemd・宗教上のArchangelとの名前空間衝突を防ぐ分類規約。
@@ -23,6 +24,9 @@
 - [development-environment-reconstruction.ja.md](development-environment-reconstruction.ja.md) — 公開OSSリポジトリを集め、ZeroRoomLabのVS Codeワークスペースを再構築する人間・AGI向け手順書。
 - [Python／Venv運用の虎の巻.proton](python-venv-operations.proton.md) — Python実行主体、repository単位Venv、既知の自己再生成loop、network依存導入、clean-room、SaaS検索と使い捨てheadless browser観測を分離する横断runtime contract。
 - [heterogeneous-agent-deck-governance.ja.md](heterogeneous-agent-deck-governance.ja.md) — Codex、Claude Code、Gemini CLI、Copilot等を同一現場へ投入した際のベンダー代理戦争、認知衝突、権限競合、デッキ崩壊を防ぐ、操竜型マルチ召喚プロジェクト管理と兵站規約。
+- [corn-work-item-stack.ja.md](corn-work-item-stack.ja.md) — repository-nativeな作業指示、context closure、event receipt、Forge Issue projection、scheduler adapterを疎結合で束ねるCORN共通契約。
+- [participation-nonjurisdiction-and-experience.ja.md](participation-nonjurisdiction-and-experience.ja.md) — 異棚からのNote参加、信仰・ゲーム・工学の相互非越権、任意persona、Experience Receipt、cluster保持、Core content非裁定の共通契約。
+- [help-and-capability-discovery.ja.md](help-and-capability-discovery.ja.md) — 利用者をmaintainer熟練者と仮定せず、現在能力、未実装、非code入口、次の選択肢をmutationなしで提示するHelp共通契約。
 - [dotfiles-and-gitignore-policy.ja.md](dotfiles-and-gitignore-policy.ja.md) — 再現性に必要なdotfileと、端末状態・生成物・秘密情報を分離する`.gitignore`運用の正本。
 - [documentation-maintenance-policy.ja.md](documentation-maintenance-policy.ja.md) — ディレクトリ構成・命名規則・更新責任・状態ラベルの規約。
 - [extension-plan.ja.md](extension-plan.ja.md) — Native / Server / App-layer / Edge-algo の棚分け方針。
