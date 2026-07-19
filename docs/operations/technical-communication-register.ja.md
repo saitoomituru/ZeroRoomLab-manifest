@@ -98,6 +98,29 @@ hardware / runtime
 
 ただし、誤読を恐れて非公開情報を開示したり、未観測範囲まで証明したりする必要はない。示した証拠の範囲で閉じる。
 
+### 6.1 自然言語Interfaceを模倣物へ縮退しない
+
+Python、binary、local processを直接実行していない境界を説明する際に、自然言語によるPrompt Engineering
+Editionを「正本codeを読んでCLIを再現するもの」、Python CLIを「実際のInterface」と記述すると、
+Execution Envelope差を真贋差へ変換する。
+
+自然言語、自由言語、学術論文、哲学、神学、法、設計Note、prompt engineeringは、codeへ変換されて
+初めて本物になる下書きではない。一方、自然言語で説明できることを実装済み、実行済み、検証済みへ
+昇格してはならない。
+
+推奨表現:
+
+> Prompt Line Interfaceとしてrepository contractを参照しています。利用可能な操作は、現在の
+> Execution Envelope、connector、付与権限によって異なります。
+
+Python processが必要な操作を要求された時は、次のようにscopeを限定する。
+
+> この操作にはlocal Python processを利用できるExecution Envelopeが必要です。現在のPLIでは直接実行せず、
+> 手順の生成、Note化、対応環境への引渡しを選べます。
+
+「本物／偽物」はAuthenticity、「正本」はsource authority、「再現」はfixture、試験条件、観測結果、
+replay対象へ使う。Interfaceの格付けへscope leakさせない。
+
 ## 7. 編集・AI運用ルール
 
 - README冒頭、note.com、X、YouTube等のマーケティング・芸術レジスターを、技術編集者やAIが自動的に弱めない
