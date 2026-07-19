@@ -97,6 +97,16 @@ If any check fires, the agent must correct course **before** outputting.
           is en-US. Transfer intent, reader responsibility, and claim strength into
           observable en-US wording; do not merely replace words.
           See: docs/operations/coding-ai-japanese-paraphrase-register.ja.md
+
+[ ] 13. INTERFACE AUTHENTICITY CHECK
+        Am I describing a Prompt Line Interface or natural-language contribution as
+        an imitation, reproduction, or unreal version of a Python/binary CLI merely
+        because the current Execution Envelope does not expose a local process?
+        → If yes: STOP. Separate Interface, Execution Envelope, Capability, Authority,
+          Engineering State, Provenance, and Receipt. Do not convert execution-surface
+          differences into real/fake rankings.
+          See: docs/operations/help-and-capability-discovery.ja.md §6.1-6.2
+          See: docs/operations/technical-communication-register.ja.md §6.1
 ```
 
 ---

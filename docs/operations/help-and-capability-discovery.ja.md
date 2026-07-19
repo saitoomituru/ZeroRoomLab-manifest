@@ -126,6 +126,76 @@ machine出力は最低限、次を持つ。
 CLI、VS Code task、SaaS AI、Codespacesのどの入口も同じ意味契約を使う。特定vendorのchat UIや
 memory機能をHelp Coreへhardcodeしない。
 
+### 6.1 PLI、CLI、Execution Envelopeを分離する
+
+自然言語からHelp、設計、Note、review、実装引渡しへ進むSurfaceを、本契約では
+`Prompt Line Interface`（PLI）と呼ぶ。PLIはChat bubble、特定vendor UI、Assistant人格、LLM driverの
+別名ではない。目的、問い、制約、Context、希望する結果を提示し、意味とrouteを対話的に解決する
+`S4: prompt`入口である。
+
+```text
+PLI   Prompt Line Interface
+      主にD軸のContext Dimension、nD Fold、World、意味、目的、unknownの探索へ向く
+
+CLI   Command Line Interface
+      主にL軸のruntime、library、SDK、applicationをcommandとargumentで高強度に拘束する
+
+LLMI  Large Language Model Interface
+      model、provider、inference driverを接続するExecution Envelope側の境界
+```
+
+この区分は絶対的な能力階級ではない。PLIもSchema、tool contract、approval gateで拘束を強められ、CLIも
+DSL、script、compositionで抽象構造を扱える。CLIの実行可能性をD軸上の意味妥当性へ、PLIの説明可能性を
+L軸上の実装・再現・実行保証へ昇格しない。
+
+PLIからLLM、provider、model、Assistant／Persona／NPC role、repository権限、Python process、
+standalone runtimeの有無を推定しない。これらは必要に応じて、次の独立fieldへ記録する。
+
+```json
+{
+  "interface": {
+    "id": "prompt-line",
+    "display_name": "Prompt Line Interface",
+    "scoped_alias": "Atlantis PLI"
+  },
+  "interaction_profile": "assistant",
+  "bindings": {
+    "persona": null,
+    "world": null,
+    "entity": null
+  },
+  "execution_envelope": {
+    "inference_driver": "unknown",
+    "local_process": "unknown"
+  }
+}
+```
+
+`PLI`は既存略称と衝突し得るため、実行command、package名、file extensionの既定値にしない。
+machine IDは`prompt-line`、従来CLIは`command-line`とする。Prompt Engineering EditionをCLIの模倣、
+再現物、偽物、非正規経路と表示しない。
+
+### 6.2 Interface差を真贋差へ変換しない
+
+repository内の文書またはcodeが正本sourceであることは、そこへ接続する一つのInterfaceだけが本物で
+あることを意味しない。次を分離する。
+
+```text
+Authenticity       署名、出所、改ざん、なりすまし
+Provenance         repository、revision、契約、観測の来歴
+Interface          PLI、CLI、GUI、API、IDE等の相互作用面
+Execution Envelope model推論、local process、connector、container、bare metal等
+Capability         読む、生成する、試験する、commitする、deployする等
+Authority          read、write、push、merge、device control等の権限
+Engineering State  AVAILABLE、SCAFFOLDED、NOT IMPLEMENTED、NOT TESTED等
+Receipt            実際に行った処理、観測条件、結果
+```
+
+`Python process unavailable`はExecution Envelopeの情報であり、PLIの真贋判定ではない。
+`standalone runtime: NOT IMPLEMENTED`も特定capabilityの状態であり、Prompt Engineering Edition全体を
+未実装へ丸めない。境界説明は関連する操作が要求された時に遅延表示し、Help冒頭では現在利用できる入口と
+選択肢を先に示す。
+
 ## 7. 棚別Presentation
 
 共通能力mapを棚ごとに言い換えてよい。
