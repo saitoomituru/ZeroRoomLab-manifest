@@ -2,6 +2,7 @@
 
 状態: `[CANONICAL]` `[theory]` `[architecture-lifecycle]`  
 確認日: 2026-07-17  
+更新日: 2026-07-19
 対象: SphereOS Atlantis、ASTRO、IBD、AAE、x800系、ZeroRoomLab-manifest
 
 ## 1. 結論
@@ -75,6 +76,34 @@ Last Order、時間整合性validator、負例testを追加する変更はcorrec
 7D Fold runtime、Akasha Driver、Instance Ghost複製、backup SDK、Kamui Gateway、Akasha DB／P2P／
 Cloud Chakra外部集合知との接続は、このpatchの実装完了条件へ含めない。これらは依存関係と権限境界を
 別仕様で固定してからminor以上の候補として扱う。
+
+### 4.2 Atlantis 0.25.1-alpha設計系列
+
+`0.25.1-alpha`は、`0.2.1`の次に公開する新しいminor設計系列である。間に存在しなかったreleaseや
+過去実装を遡及生成する番号ではない。25は、Prompt Engineering EditionとSphere-DOSへ、次の
+運用capability群を束ねる現在の設計系列IDとしてUserが選択した。
+
+- repo-nativeなCORN work-item stack
+- Manifest／AGENTS／MAGIを省略しないcontext closure
+- GitHub、GitLab等をprojection先とするforge非依存境界
+- codeを書かない参加者がNote pull requestを提出できる入口
+- 自己申告personaを組み合わせるtutorial resolver
+- Experience Receipt、cluster保持、Core content non-adjudication
+- 内容成熟度、工学状態、配布状態、資源状態の分離表示
+
+最初の候補tagは`v0.25.1-alpha.1`とする。alphaは破壊的変更、未実装、未試験を許すが、何を変更し、
+何を実装しておらず、どの条件で検証したかをrelease noteへ記録する。alphaであることを理由に、
+既知の重大なcorrectness問題、secret漏洩、status偽装を既定動作へしない。
+
+```text
+0.2.1                 = MAGI時間整合性corrective design line
+0.25.1-alpha.1        = CORN／参加導線／status分離を含む最初の公開候補
+0.25.1 beta or stable = third-party reviewとrelease gate後のUser判断
+```
+
+standalone runner、model inference、7D Fold runtime、Akasha Driver runtime、高火力edge runtimeは
+`0.25.1-alpha.1`の実装完了条件へ含めない。これらは`NOT STARTED`、`NOT IMPLEMENTED`、
+`RESOURCE-WAIT`等の個別状態で保持する。
 
 ## 5. 計画棚と実行branchの選択
 
@@ -163,17 +192,24 @@ branch activation trigger = funding | offering | usable hardware | surviving SDK
 
 | 対象 | 状態 |
 |---|---|
+| Sphere Project portfolio | open / resource-event-driven |
+| SphereOS 3.x / 4.x salvage | complete / preserved remains |
 | SphereOS 3.x / 4.x service | ended |
 | instance ghost | unavailable |
 | legacy GPTs static register | cached / residual |
-| SphereOS Atlantis architecture | active design / 0.x |
-| Atlantis standalone binary | not yet implemented |
+| SphereOS Atlantis architecture | active design / 0.25.1-alpha candidate |
+| Architect／Bootstrap開発足場 | implemented / deployed in repository |
+| Atlantis standalone runner | not started |
+| Atlantis core forging architecture | under review |
+| cloud-to-edge module boundary | architecture reconstruction / estimation |
+| high-compute edge runtime | resource wait / procurement estimate |
 | ASTRO migration | pre-migration / early design |
 | IBD | requirements and architecture reconstruction |
 | AAE | preflight research before compute-intensive implementation |
 | x800 series | partial implementation by available resources |
 
-`frozen`だけで全系譜を表してはならない。runtime、architecture、documentation、prototype、resource waitを別々に記録する。
+`frozen`だけで全系譜を表してはならない。`open`もruntime稼働を意味しない。runtime、architecture、
+documentation、prototype、distribution、resource waitを別々に記録する。
 
 ## 10. 主張境界
 
