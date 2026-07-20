@@ -292,8 +292,10 @@ Every claim in this repository belongs to exactly one of three layers.
 │ Standards:  Falsifiability. Reproducibility. Benchmarks.        │
 │             Unit tests. Spec compliance.                         │
 │                                                                   │
-│ Science IS the correct tool here.                                │
-│ Demand evidence. Demand reproducibility.                         │
+│ Engineering restores and contains the real system first.         │
+│ Science measures cause, degree, distribution, and residuals.     │
+│ Preserve evidence and reproducibility at the claim's actual      │
+│ scope; do not require a failure bench before safe recovery.       │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
