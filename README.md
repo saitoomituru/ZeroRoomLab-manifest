@@ -28,6 +28,17 @@ No fixed priority queue does not mean no plan.
 It means the plan is resource-gated rather than capital-assured.
 A branch that cannot run today is preserved, not declared failed.
 
+Commercial scale is not a truth ruler here. Revenue, sponsor risk, enterprise adoption,
+and procurement convention describe the constraints of commercial systems; they do not
+automatically define the right defaults for a gift-economy lab, a solo performer, or an
+experimental device. When a proven upstream component serves a different KPI, ZeroRoomLab
+keeps the component where useful and implements the missing adapter or operating profile
+without deleting the product's original purpose.
+
+We do not owe philosophical neutrality to systems that protect a sponsor's wallet by
+sacrificing the performer's life, work, or voice. Respecting an upstream implementation does
+not require adopting its master. Commercial users can buy commercial devices; open devices serve the people and purposes that commercial KPIs leave out.
+
 This repository is the shared development deck for that process.
 It stores project intent, workspace maps, claim layers, cultural and technical registers,
 protected boundaries, evidence rules, agent handoff routes, and stopping conditions.
@@ -45,6 +56,7 @@ Start here:
 - [Machine-readable workspace registry](docs/operations/workspace-registry.json)
 - [Development-environment reconstruction](docs/operations/development-environment-reconstruction.ja.md)
 - [Japanese-to-en-US pragmatic translation register](docs/operations/coding-ai-japanese-paraphrase-register.ja.md)
+- [Myth, purpose, and cross-engineering audit](docs/operations/myth-purpose-cross-engineering-audit.ja.md)
 
 ---
 

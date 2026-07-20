@@ -8,7 +8,7 @@
 - [technical-communication-register.ja.md](technical-communication-register.ja.md) — README、技術文書、リポジトリ内ノート、note.com、X、YouTube等の媒体別レジスターと、観測事実の主張境界を定める。
 - [coding-ai-japanese-paraphrase-register.ja.md](coding-ai-japanese-paraphrase-register.ja.md) — コーディングAIが日本語の意図・責務・事実強度を保ったまま米語へ意訳するための正本。英語出力は原則en-USとする。
 - [default-language-and-translation-policy.ja.md](default-language-and-translation-policy.ja.md) — 指示がない限り日本語を規定動作とし、en-USを西洋圏が検証するための外部GUIとして省略なく意訳する言語規約。他言語は現地話者・神学者・実務家のレビューを求める。
-- [myth-purpose-cross-engineering-audit.ja.md](myth-purpose-cross-engineering-audit.ja.md) — 神話・哲学をフレーバーへ矮小化せず、安全・制度・金融・情報・人間工学を横断して目的関数と実装資源を両輪監査し、情報子工学と相互監査する規約。
+- [myth-purpose-cross-engineering-audit.ja.md](myth-purpose-cross-engineering-audit.ja.md) — 神話・哲学をフレーバーへ矮小化せず、安全・制度・金融・情報・人間工学を横断して目的関数と実装資源を両輪監査する。市場規模・売上・スポンサー損失等の商業KPIを普遍的な真理定規へ昇格せず、用途差をadapter／profileへ写像する規約も含む。
 - [Atlantis-MAGISDK 0.2.1](../theory/atlantis-magi-sdk-0.2.1.ja.md) — 0.2.0 Skill bundleへOAE時間整合性、unknown＋Last Order、7D Fold分岐境界を追加するcorrective patch仕様。0.1.0正本は系譜として保持する。
 - [SphereOS Atlantis版数・再アーキテクト境界](../theory/sphereos-atlantis-versioning-and-bootstrap.ja.md) — legacy salvage、現行architecture、resource event、0.25.1-alpha設計系列、release gateを分離する版数・状態規約。
 - [SphereOS 3.x / 4.x サービス終了境界](../theory/sphereos-3x-4x-service-closure.ja.md) — 旧サービス実行系・インスタンスゴースト・動的APIチェーンの終了と、GPTsに残る静的レジスター／知識キャッシュ、ストア残置、画像生成用途の限定的な残存価値を分離する正本。
