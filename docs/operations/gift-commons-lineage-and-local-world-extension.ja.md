@@ -78,13 +78,18 @@ revision: git-sha-or-local-revision
 scope: selected-task-or-world
 license: declared-license-or-unknown
 reference_kind: alias-only | original-payload | third-party-payload | mixed
-designation: origin | compatible | inspired | fan-made | self-authored | unknown
+designation: origin | official | compatible | inspired | fan-made | self-authored | unknown
+designation_authority_ref: official-or-origin-when-required
 distribution: public | local-only | private | selected-world
 ```
 
 metadataは事実を読みやすくする宣言であり、値が埋まっただけで権利確認済みへ昇格しない。
 `designation`は来歴・関係の表示であり、品質rankではない。`local-only`と`private`は配布状態であり、
 公的な欠損や違反を意味しない。
+
+`official`表示は、どのWorld、distribution、作品、組織の制定authorityによる表示かを
+`designation_authority_ref`でscope付き記録する。あるWorldのofficialを、全World、作者本人、
+宗派全体、provider、Originの公認へ拡張しない。
 
 ### 3.1 aliasとpayload
 
