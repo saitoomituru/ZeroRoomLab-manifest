@@ -2,8 +2,15 @@
 
 status: `CONCEPTUAL-ASSET`\
 asset_id: `asset://zeroroomlab/presentation/texas-garage-hacker-en-us@0.1`\
+author: `Mitsuru Saitō (fusamofu) + ZeroRoomLab`\
+source: `self-authored / ZeroRoomLab-manifest`\
+revision: `0.1`\
+scope: `en-US public presentation / selected task`\
 locale: `en-US`\
 license: `CC-BY-4.0`\
+reference_kind: `original-payload`\
+designation: `self-authored`\
+distribution: `public`\
 loader_state: `EXPLICIT-READ-ONLY`
 
 ## Reader contract

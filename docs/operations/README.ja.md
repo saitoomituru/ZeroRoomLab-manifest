@@ -31,6 +31,7 @@
 - [corn-work-item-stack.ja.md](corn-work-item-stack.ja.md) — repository-nativeな作業指示、context closure、event receipt、Forge Issue projection、scheduler adapterを疎結合で束ねるCORN共通契約。
 - [participation-nonjurisdiction-and-experience.ja.md](participation-nonjurisdiction-and-experience.ja.md) — 異棚からのNote参加、信仰・ゲーム・工学の相互非越権、任意persona、Experience Receipt、cluster保持、Core content非裁定の共通契約。
 - [participation-nonjurisdiction-and-experience.md](participation-nonjurisdiction-and-experience.md) — 相互非越権、任意persona、霊的・非code参加、Experience Receiptを同じ強度で案内するen-US外部GUI。
+- [gift-commons-lineage-and-local-world-extension.ja.md](gift-commons-lineage-and-local-world-extension.ja.md) — 非排他的な贈与コモンズ、構造一致を含む多次元lineage、Roleの非越権、local-only非欠損、局所Worldだけを閉じられる狭いproprietary extension、unmount／fork／別World回復路を定める。
 - [help-and-capability-discovery.ja.md](help-and-capability-discovery.ja.md) — 利用者をmaintainer熟練者と仮定せず、現在能力、未実装、非code入口、次の選択肢をmutationなしで提示するHelp共通契約。
 - [help-and-capability-discovery.md](help-and-capability-discovery.md) — Help／Capability Discoveryのen-US外部GUI。PLI、CLI、Execution Envelopeの真贋誤認を避け、試遊・Note・Experience入口を保つ。
 - [dotfiles-and-gitignore-policy.ja.md](dotfiles-and-gitignore-policy.ja.md) — 再現性に必要なdotfileと、端末状態・生成物・秘密情報を分離する`.gitignore`運用の正本。

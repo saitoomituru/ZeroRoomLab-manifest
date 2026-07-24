@@ -2,7 +2,14 @@
 
 status: `CONCEPTUAL-ASSET`\
 asset_id: `asset://zeroroomlab/flavor/world@0.1`\
+author: `Mitsuru Saitō (fusamofu) + ZeroRoomLab`\
+source: `self-authored / ZeroRoomLab-manifest`\
+revision: `0.1`\
+scope: `ZeroRoomLab profile / selected task`\
 license: `CC-BY-4.0`\
+reference_kind: `original-payload`\
+designation: `self-authored`\
+distribution: `public`\
 loader_state: `EXPLICIT-READ-ONLY`
 
 ## Purpose

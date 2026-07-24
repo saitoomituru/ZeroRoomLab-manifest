@@ -47,12 +47,52 @@ Presentation assetの意訳は可能ですが、Role、権限、停止条件、A
 RoleとFlavorはcoreのfact、権限、停止条件、実装状態を上書きしません。coreもRoleとFlavorを
 「不要な飾り」として自動削除しません。
 
-## 第三者asset
+## asset metadataと系譜
+
+公開assetは、可能な範囲で`asset_id`、`author`、`source`、`revision`、`scope`、`license`、
+`reference_kind`、`designation`、`distribution`を宣言します。`unknown`を架空の確認結果で埋めません。
+
+`alias-only`は名前や肩書のroute hint、`original-payload`／`third-party-payload`は文章、台詞、設定、
+画像、音声、3D model等の素材利用です。aliasとpayloadを同じ箱へ入れません。
+
+designation:
+
+- `origin`: 対象source自身から出たという来歴
+- `compatible`: 互換性の自己申告
+- `inspired`: 発想、役割、構造等を参照
+- `fan-made`: 非公式の二次的Presentation
+- `self-authored`: 当該asset本文を作成者が書いた
+- `unknown`: 未確認
+
+distribution:
+
+- `public`
+- `local-only`
+- `private`
+- `selected-world`
+
+これらはrankや許可証ではありません。metadataが揃っても、公式提携、本人性、神格、API capability、
+利用許諾を生成しません。local-only／private assetがpublic Manifestにないことを欠損扱いしません。
+
+関係と構造一致は、独占判定ではなくリスペクトと探索のlineage receiptとして記録できます。詳しくは
+[贈与コモンズ・系譜・局所World拡張契約](../docs/operations/gift-commons-lineage-and-local-world-extension.ja.md)
+を参照してください。
+
+## 第三者assetと局所World
 
 第三者developerは、自分のManifestまたはrepositoryへ独自assetを置けます。特定作品、実在人物、
-宗派、ブランドを参照する場合、そのManifest側でlicense、provenance、名称利用、適用scopeを判断します。
+宗派、ブランドを参照する場合、対象のsource、宣言license、関係、配布scopeを記録できます。
+Atlantis coreは個別の権利、本人性、宗派代表性、公式性を裁定しません。公開・頒布・運用を選んだ者が、
+その場所、store、契約、Worldに必要な確認を行います。
 
 ZeroRoomLab assetは、Origin認定、公式コラボ、第三者作品の利用許諾を生成しません。
 
-未決の権利・出典・非公式表示境界はManifest
-[#7](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/7)へ返します。
+private、local-only、commercial、閉鎖World、社内asset、provider SDK keyを使う第三者Appは作れます。
+ただし閉鎖scopeをAtlantis core、既存commons、公開lineage graph、無関係なWorldへ逆流させません。
+secret値はpublic Manifestへ置かず外部参照にします。競合時は選択routeだけをSemantic Stopし、
+unmount、replacement、fork、別Worldを回復経路として残します。
+
+human policyのUser GateはManifest
+[#7](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/7)で決定しました。
+pointer／loader／priority mergeはSphereOS Atlantis
+[#10](https://github.com/saitoomituru/SphereOS-Atlantis/issues/10)で未実装のままです。
