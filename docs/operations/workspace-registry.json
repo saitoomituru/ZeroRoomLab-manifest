@@ -137,6 +137,40 @@
       ]
     },
     {
+      "id": "neet_kitchen_alchemist",
+      "display_name": "NeeT_kitchen_ALCHEMIST",
+      "descriptor_name": "NeeT_kitchen_ALCHEMIST.code-workspace",
+      "aliases": [
+        "NEET_KITCHNE_ALCHEMIST"
+      ],
+      "layer": "human_life_logistics_and_open_recipe_research",
+      "visibility": "public_oss",
+      "reconstruction": "supported",
+      "manifest_required": true,
+      "implicit_scope_expansion": false,
+      "descriptor_member_order": [
+        "NeeT_kitchen_ALCHEMIST/OpenSourcePITETO",
+        "ZeroRoomLab-manifest/ZeroRoomLab-manifest"
+      ],
+      "expected_repositories": [
+        {
+          "name": "OpenSourcePITETO",
+          "workspace_path": "NeeT_kitchen_ALCHEMIST/OpenSourcePITETO",
+          "remote": "https://github.com/saitoomituru/OpenSourcePITETO"
+        },
+        {
+          "name": "ZeroRoomLab-manifest",
+          "workspace_path": "ZeroRoomLab-manifest/ZeroRoomLab-manifest",
+          "remote": "https://github.com/saitoomituru/ZeroRoomLab-manifest.git"
+        }
+      ],
+      "separate_from": [
+        "deb800",
+        "sphere"
+      ],
+      "public_summary": "低資源の生活者が家庭設備、公開知識、人間の感覚フィードバックを使って食べられる成果物を作り、失敗条件を含むレシピ知識を共有する人間側の生活兵站研究。最初の実装はOpenSourcePITETO。"
+    },
+    {
       "id": "teratoku_enterprise_training",
       "display_name": "寺徳アイルー訓練場VScode",
       "descriptor_name": "寺徳アイルー訓練場VScode.code-workspace",

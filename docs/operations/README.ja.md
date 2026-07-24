@@ -20,7 +20,7 @@
 - [Context定規・因果・OAE横断監査規約](context-ruler-and-causality-audit.ja.md) — Registryの定規持込、Agency誤帰属、複数因果仮説、Position-talk、神学／物理／Worldのナーフ事故を監査する規約候補。
 - [license-boundary-research-policy.ja.md](license-boundary-research-policy.ja.md) — 読む・研究する・創作する表現物をCC-BY 4.0、外部状態を変更する実行プロンプト・スキーマ・コードをApache-2.0側とするZeroRoomLabの暫定ライセンス境界研究規約。
 - [workspace-boundary-register.ja.md](workspace-boundary-register.ja.md) — リポジトリ、VS Codeワークスペース、プロジェクト、実行環境、実装依存を分離し、AIのスコープ解決手順を定める正本。
-- [workspace-registry.json](workspace-registry.json) — Deb800、スフィア、企業向け検証環境の名前・公開境界・再構築可否を持つ機械可読レジスタ。
+- [workspace-registry.json](workspace-registry.json) — Deb800、スフィア、NeeT_kitchen_ALCHEMIST、企業向け検証環境の名前・公開境界・再構築可否を持つ機械可読レジスタ。
 - [development-environment-reconstruction.ja.md](development-environment-reconstruction.ja.md) — 公開OSSリポジトリを集め、ZeroRoomLabのVS Codeワークスペースを再構築する人間・AGI向け手順書。
 - [Python／Venv運用の虎の巻.proton](python-venv-operations.proton.md) — Python実行主体、repository単位Venv、既知の自己再生成loop、network依存導入、clean-room、SaaS検索と使い捨てheadless browser観測を分離する横断runtime contract。
 - [heterogeneous-agent-deck-governance.ja.md](heterogeneous-agent-deck-governance.ja.md) — Codex、Claude Code、Gemini CLI、Copilot等を同一現場へ投入した際のベンダー代理戦争、認知衝突、権限競合、デッキ崩壊を防ぐ、操竜型マルチ召喚プロジェクト管理と兵站規約。
