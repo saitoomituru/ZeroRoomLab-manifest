@@ -97,8 +97,9 @@ may be missing.
 
 ## 7. Connection to Chikuwa Cannon
 
-The future pane in [Chikuwa Cannon — Japanese source](chikuwa-cannon-prospective-meta-safety.ja.md) displays not only
-Risk, but also Benefit, original purpose, required resources, and missing safety margin.
+The future pane in [Chikuwa Cannon](chikuwa-cannon-prospective-meta-safety.md) /
+[Japanese source](chikuwa-cannon-prospective-meta-safety.ja.md) displays not only Risk, but also Benefit, original
+purpose, required resources, and missing safety margin.
 
 Fantasy is not a device for inspiring people to push through impossible conditions. It is a presentation layer that
 keeps the value of a future that does not yet exist intact, then gathers the material conditions required to reach it
@@ -120,7 +121,8 @@ Minimum recommended structure:
 
 Attach signals to an operation and snapshot. Do not score human loyalty, personality, or enthusiasm.
 
-See the Layer A [Meta-KPI Drift Verification Procedure](../theory/meta-kpi-drift.ja.md).
+See the Layer A [Meta-KPI Drift Verification Procedure](../theory/meta-kpi-drift.md) /
+[Japanese source](../theory/meta-kpi-drift.ja.md).
 
 ## 9. Claim boundary
 
