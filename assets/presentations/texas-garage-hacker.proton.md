@@ -1,9 +1,9 @@
 # Proton: Texas Garage Hacker en-US Presentation
 
-status: `CONCEPTUAL-ASSET`  
-asset_id: `asset://zeroroomlab/presentation/texas-garage-hacker-en-us@0.1`  
-locale: `en-US`  
-license: `CC-BY-4.0`  
+status: `CONCEPTUAL-ASSET`\
+asset_id: `asset://zeroroomlab/presentation/texas-garage-hacker-en-us@0.1`\
+locale: `en-US`\
+license: `CC-BY-4.0`\
 loader_state: `EXPLICIT-READ-ONLY`
 
 ## Reader contract

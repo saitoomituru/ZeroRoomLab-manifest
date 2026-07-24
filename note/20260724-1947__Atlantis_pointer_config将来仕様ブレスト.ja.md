@@ -1,7 +1,7 @@
 # Atlantis pointer config将来仕様ブレスト
 
-状態: `[DRAFT]` `[HYPOTHESIS]` `[FUTURE SPEC]` `[NOT IMPLEMENTED]`  
-作成日: 2026-07-24  
+状態: `[DRAFT]` `[HYPOTHESIS]` `[FUTURE SPEC]` `[NOT IMPLEMENTED]`\
+作成日: 2026-07-24\
 対象: `Atlantis.json`、`ASTRO.json`、個人fold-vector `config.json`
 
 ## 内観メモ／ポエム

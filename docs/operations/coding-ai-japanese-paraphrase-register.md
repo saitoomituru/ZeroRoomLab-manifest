@@ -1,9 +1,9 @@
 # Japanese-to-en-US Paraphrase Register for Coding Agents
 
-Status: `[CANONICAL]`  
-Established: 2026-07-15  
-Updated: 2026-07-17  
-Default English locale: `en-US`  
+Status: `[CANONICAL]`\
+Established: 2026-07-15\
+Updated: 2026-07-17\
+Default English locale: `en-US`\
 Applies to: coding agents editing READMEs, AGENTS.md, technical docs, experiment Notes, commits, Issues, PRs,
 and code comments
 

@@ -1,7 +1,7 @@
 # Default Language, Translation, and External Verification GUI Policy
 
-Status: `[CANONICAL]`  
-Established: 2026-07-17  
+Status: `[CANONICAL]`\
+Established: 2026-07-17\
 Applies to: AI interaction, READMEs, technical documents, Issues, PRs, commits, and translated artifacts
 
 ## 1. Default behavior

@@ -1,8 +1,8 @@
 # Proton: ZeroRoomLab World Flavor
 
-status: `CONCEPTUAL-ASSET`  
-asset_id: `asset://zeroroomlab/flavor/world@0.1`  
-license: `CC-BY-4.0`  
+status: `CONCEPTUAL-ASSET`\
+asset_id: `asset://zeroroomlab/flavor/world@0.1`\
+license: `CC-BY-4.0`\
 loader_state: `EXPLICIT-READ-ONLY`
 
 ## Purpose

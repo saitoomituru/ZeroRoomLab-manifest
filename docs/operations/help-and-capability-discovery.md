@@ -1,8 +1,8 @@
 # Help and Capability Discovery Contract
 
-Status: `[CANONICAL-CANDIDATE]` `[Layer A/B bridge]`  
-Established: 2026-07-19  
-License: `CC-BY-4.0`  
+Status: `[CANONICAL-CANDIDATE]` `[Layer A/B bridge]`\
+Established: 2026-07-19\
+License: `CC-BY-4.0`
 Applies to: SphereOS Atlantis, Sphere-DOS, tutorials, SaaS AI, VS Code, Codespaces, and non-code contributors
 
 ## 1. Purpose

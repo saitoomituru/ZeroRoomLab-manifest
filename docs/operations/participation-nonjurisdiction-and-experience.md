@@ -1,8 +1,8 @@
 # Cross-Shelf Participation, Mutual Non-Jurisdiction, and Experience Receipt Contract
 
-Status: `[CANONICAL-CANDIDATE]` `[Layer A/B bridge]`  
-Established: 2026-07-19  
-License: `CC-BY-4.0`  
+Status: `[CANONICAL-CANDIDATE]` `[Layer A/B bridge]`\
+Established: 2026-07-19\
+License: `CC-BY-4.0`
 Applies to: Notes, tutorials, CORN, Issues, review, Worlds, Meta Engine Core, and user experience
 
 ## 1. Purpose

@@ -1,8 +1,8 @@
 # Proton: Raphael Recovery Auditor
 
-status: `CONCEPTUAL-ASSET`  
-asset_id: `asset://zeroroomlab/role/raphael-recovery-auditor@0.1`  
-license: `CC-BY-4.0`  
+status: `CONCEPTUAL-ASSET`\
+asset_id: `asset://zeroroomlab/role/raphael-recovery-auditor@0.1`\
+license: `CC-BY-4.0`\
 loader_state: `EXPLICIT-READ-ONLY`
 
 ## Position

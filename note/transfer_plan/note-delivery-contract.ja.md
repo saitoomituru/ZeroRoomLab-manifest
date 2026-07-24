@@ -1,7 +1,7 @@
 # Noteから公開先へのデータ配信契約
 
-状態: `[DRAFT]` `[OPERATIONS CANDIDATE]`  
-作成日: 2026-07-24
+状態: `[DRAFT]` `[OPERATIONS CANDIDATE]`\
+作成日: 2026-07-24\
 
 ## 目的
 

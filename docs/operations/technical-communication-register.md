@@ -1,7 +1,7 @@
 # Technical Communication Register
 
-Status: `[CANONICAL]`  
-Established: 2026-07-15  
+Status: `[CANONICAL]`\
+Established: 2026-07-15\
 Applies to: READMEs, technical documents, experiment Notes, and public communication in ZeroRoomLab-manifest
 and referencing repositories
 
