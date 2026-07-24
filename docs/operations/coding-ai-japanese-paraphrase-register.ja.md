@@ -68,6 +68,19 @@
 
 意訳の目的は「無難にすること」ではない。同じ作用を別の言語環境で再現することである。
 
+### 4.1 通常意訳を停止する対象
+
+次は、単独のコーディングAIが通常のen-US意訳として処理しない。
+
+- 実行可能Prompt、PLI、Proton.md
+- identity、OAE、World、時間、因果、権限、停止を拘束するSemanticKernel source
+- 実行付与が明示されていなくても、agentがarchitecture authorityとして読むNote
+- 神学・霊的Meaningを実行Registryへ接続するsource
+
+対象を`[JAPANESE-KERNEL-SOURCE]`として報告し、
+[言語学的architecture port条件](default-language-and-translation-policy.ja.md#42-言語学的architecture-port)
+へrouteする。英語pair数を増やすために、意味・因果Kernelを直接翻訳しない。
+
 ## 5. README境界文の基準例
 
 日本語版ではプロジェクト固有の関係性を保持してよい。
@@ -118,6 +131,8 @@ README、技術文書、翻訳、主張表現を編集する前に、ZeroRoomLab
 - en-US表現を日本語正本へ逆輸入し、日本語固有の関係性や情緒を削る
 - 依頼なくen-GB版やロケール別ファイルを増やす
 - マニフェスト正本を各リポジトリへ全文複製し、更新漂流を発生させる
+- 日本語Kernel Sourceを通常のdocumentation translationとして処理する
+- bilingual／architecture／神学・実践reviewを省いてKernel portを同一挙動と表示する
 
 ## 8. 関連文書
 

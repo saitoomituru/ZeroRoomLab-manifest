@@ -1,0 +1,99 @@
+# ZeroRoomLab assets
+
+このディレクトリーは、ZeroRoomLab-manifest固有のRole、Flavor、Presentationを保持します。
+SphereOS AtlantisのMAGI core、resolver、validator、Position Skillはここへ置きません。
+
+## 現在の読込方法
+
+現段階は明示includeだけです。AGENTS.md、README、または対象taskが必要なasset pathを指定し、
+agentがそのファイルを読むことで適用します。
+
+```text
+Atlantis MAGI core
+  + --profile zeroroomlab
+  + Manifestが明示したasset file
+  -> 対象taskの監査deck
+```
+
+repository全体の暗黙scan、優先順位merge、remote download、hot reload、常駐daemonは
+`NOT IMPLEMENTED`です。assetを置いただけで自動的に人格、権限、外部操作、課金、model call、
+永続stateが生えるとは記述しません。
+
+## Proton.mdの扱い
+
+初版は`*.proton.md`を、概念register、責務、入力、出力、禁止操作、fallbackを人間とagentが読む
+宣言形式として使います。現時点では専用parser／loaderのmachine schemaではありません。
+
+FAM形式、pointer config、machine validationへ移行するときは、旧Protonを消さず、migration receiptと
+compatibilityを残します。
+
+### 言語authority
+
+Proton.md、PLI、実行可能Prompt、意味・因果Kernelへ接続するassetは、通常翻訳の対象にしません。
+日本語原典を`[JAPANESE-KERNEL-SOURCE]`として保持し、別言語版が必要な場合は
+[既定言語・翻訳・外部検証GUI規約](../docs/operations/default-language-and-translation-policy.ja.md#42-言語学的architecture-port)
+の言語学的architecture portへrouteします。
+
+Presentation assetの意訳は可能ですが、Role、権限、停止条件、Agency、神学的Meaningを変更した場合は
+単なるlocale variantではなく別port／別revisionです。英語fileの存在だけでauto-mount、同一Kernel、
+同一Role、同一Worldを生成しません。
+
+## 棚
+
+- `flavor/`: ZeroRoomLabのWorld、語り口、神話・工学の共存条件
+- `presentations/`: 読者別の表現surface
+- `roles/`: task上の役割、観測角度、禁止越権
+
+RoleとFlavorはcoreのfact、権限、停止条件、実装状態を上書きしません。coreもRoleとFlavorを
+「不要な飾り」として自動削除しません。
+
+## asset metadataと系譜
+
+公開assetは、可能な範囲で`asset_id`、`author`、`source`、`revision`、`scope`、`license`、
+`reference_kind`、`designation`、`distribution`を宣言します。`unknown`を架空の確認結果で埋めません。
+
+`alias-only`は名前や肩書のroute hint、`original-payload`／`third-party-payload`は文章、台詞、設定、
+画像、音声、3D model等の素材利用です。aliasとpayloadを同じ箱へ入れません。
+
+designation:
+
+- `origin`: 対象source自身から出たという来歴
+- `official`: 選択scopeの制定authorityが公式表示した関係。別Worldへ自動拡張しない
+- `compatible`: 互換性の自己申告
+- `inspired`: 発想、役割、構造等を参照
+- `fan-made`: 非公式の二次的Presentation
+- `self-authored`: 当該asset本文を作成者が書いた
+- `unknown`: 未確認
+
+distribution:
+
+- `public`
+- `local-only`
+- `private`
+- `selected-world`
+
+これらはrankや許可証ではありません。metadataが揃っても、公式提携、本人性、神格、API capability、
+利用許諾を生成しません。local-only／private assetがpublic Manifestにないことを欠損扱いしません。
+
+関係と構造一致は、独占判定ではなくリスペクトと探索のlineage receiptとして記録できます。詳しくは
+[贈与コモンズ・系譜・局所World拡張契約](../docs/operations/gift-commons-lineage-and-local-world-extension.ja.md)
+を参照してください。
+
+## 第三者assetと局所World
+
+第三者developerは、自分のManifestまたはrepositoryへ独自assetを置けます。特定作品、実在人物、
+宗派、ブランドを参照する場合、対象のsource、宣言license、関係、配布scopeを記録できます。
+Atlantis coreは個別の権利、本人性、宗派代表性、公式性を裁定しません。公開・頒布・運用を選んだ者が、
+その場所、store、契約、Worldに必要な確認を行います。
+
+ZeroRoomLab assetは、Origin認定、公式コラボ、第三者作品の利用許諾を生成しません。
+
+private、local-only、commercial、閉鎖World、社内asset、provider SDK keyを使う第三者Appは作れます。
+ただし閉鎖scopeをAtlantis core、既存commons、公開lineage graph、無関係なWorldへ逆流させません。
+secret値はpublic Manifestへ置かず外部参照にします。競合時は選択routeだけをSemantic Stopし、
+unmount、replacement、fork、別Worldを回復経路として残します。
+
+human policyのUser GateはManifest
+[#7](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/7)で決定しました。
+pointer／loader／priority mergeはSphereOS Atlantis
+[#10](https://github.com/saitoomituru/SphereOS-Atlantis/issues/10)で未実装のままです。
