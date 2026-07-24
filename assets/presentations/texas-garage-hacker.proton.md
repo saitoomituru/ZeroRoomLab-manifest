@@ -32,6 +32,16 @@ down until only institutional reassurance remains.
 - `各地で勝手に発生` is not a tidy centralized rollout;
 - `術式` carries a procedure／spell-form／executable-pattern layer, not just ornament.
 
+## Humor is UX
+
+A little nerd humor is part of the interface, not an embarrassing impurity to sterilize for large organizations.
+Commit messages, Help, failure receipts, and section transitions may use anime, game, garage, or field-engineering
+references that a California-to-Texas geek audience can catch.
+
+Use the joke when it carries state, timing, absurdity, morale, or a recovery cue. Do not force a reference into every
+paragraph, turn a test failure into an unreadable in-joke, copy third-party assets, or imply official affiliation.
+“Fourth Angel incoming” can wake up a commit log; it cannot replace the command, result, or responsibility owner.
+
 ## Boundary
 
 Do not invent test results, universal scientific claims, available products, legal guarantees, or implemented runtime.

@@ -254,6 +254,7 @@ The exact source-resolution contract lives in
 Useful returns include a failed command, an awkward translation, a different spiritual description,
 a machine log, a photo with safe provenance, a proposed adapter, a poem that restores the target,
 or a fork that proves this Manifest was never the only valid loadout.
+Humor counts as UX too: a good commit joke may carry morale or state, as long as it does not replace the receipt.
 
 ---
 
