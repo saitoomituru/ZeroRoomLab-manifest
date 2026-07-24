@@ -10,6 +10,7 @@ They define how those layers may connect without one layer silently cancelling a
 |---|---|
 | [Authority Must Serve Exploration](authority-serves-exploration.md) / [日本語](authority-serves-exploration.ja.md) | Why scientific, religious, and state authority derive legitimacy from serving practitioners, absorbing exploration risk, and creating broad opportunity |
 | [Baseload Collapse and the Boundary of Support](baseload-collapse-and-support.md) / [日本語](baseload-collapse-and-support.ja.md) | Multi-layer infrastructure collapse, non-linear support, faith position, subjective truth, reproducible mining, and scientific scope misfire |
+| [Subjective Spiritual Stream Register](subjective-spiritual-stream-register.md) / [日本語](subjective-spiritual-stream-register.ja.md) | A shared first-person register for sensory form, temporal structure, bandwidth, urgency, overload, translation methods, and research boundaries across spiritual practitioners |
 | [Thought lineage](thought-lineage.ja.md) | Intellectual and religious lineage of ZeroRoomLab and fusamofu |
 
 ## Shared boundary
@@ -22,6 +23,7 @@ The operating pattern is:
 ```text
 faith, subjective truth, myth, anomaly, and lived experience
   -> preserve without fictionalizing or erasing
+  -> compare first-person stream forms across practitioners
   -> identify observable and shareable surfaces
   -> test reproducible parts with stated instruments and conditions
   -> publish engineering and scientific claims at their demonstrated range
