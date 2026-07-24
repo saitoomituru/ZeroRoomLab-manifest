@@ -21,7 +21,8 @@ Japanese operation document already has a complete translation.
   reader responsibility, religious vocabulary, and claim strength instead of translating word by word.
 - [Default language and external verification GUI policy](default-language-and-translation-policy.md) /
   [日本語](default-language-and-translation-policy.ja.md) —
-  Japanese by default; en-US as a usable outside interface.
+  Japanese by default; en-US as a usable outside interface; executable Prompt, Proton, PLI, and meaning-Kernel
+  sources stay Japanese unless a reviewed linguistic architecture port is performed.
 - [Context ruler, causality, and OAE audit](context-ruler-and-causality-audit.ja.md) — expose imported rulers,
   Agency errors, position-talk, and retrospective OAE fabrication.
 - [Heterogeneous-agent deck governance](heterogeneous-agent-deck-governance.ja.md) — keep Codex, Claude Code,

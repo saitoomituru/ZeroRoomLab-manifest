@@ -3,7 +3,7 @@
 > **Applies to:** Claude Code, OpenAI Codex, Gemini CLI, and any AI agent operating in this repository.  
 > **Author:** Mitsuru Saitō (fusamofu) + ZeroRoomLab  
 > **License:** CC-BY 4.0  
-> **Version:** 1.7.0 / 2026-07-21
+> **Version:** 1.8.0 / 2026-07-24
 
 ---
 
@@ -122,6 +122,16 @@ If any check fires, the agent must correct course **before** outputting.
           reject a sponsor-first, capital-first, or institution-first ideology in its
           Layer B and public-position registers.
           See: docs/operations/myth-purpose-cross-engineering-audit.ja.md §2.1
+
+[ ] 15. EXECUTABLE-PROMPT LANGUAGE PORT CHECK
+        Am I treating an executable Prompt, Proton.md, PLI Kernel source, or a document
+        that constrains identity, OAE, time, causality, authority, or stopping behavior
+        as ordinary translation material?
+        → If yes: STOP. Keep the Japanese source authoritative. A direct or machine
+          translation is not an equivalent Kernel. Route a foreign-language version
+          through the linguistic-architecture port contract, with bilingual,
+          architecture, and theological / practitioner review as applicable.
+          See: docs/operations/default-language-and-translation-policy.ja.md §4.1-4.2
 ```
 
 ---

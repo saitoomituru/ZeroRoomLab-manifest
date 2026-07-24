@@ -48,6 +48,47 @@ ZeroRoomLabの現時点の正本解像度は日本語と米語に置く。それ
 
 機械翻訳のみの版は`[DRAFT TRANSLATION]`または`[NEEDS NATIVE / THEOLOGICAL REVIEW]`と明示し、日本語正本やen-US検証GUIと同等の正本性を与えない。
 
+### 4.1 日本語Kernel Source
+
+次のいずれかへ該当する文書は、通常の翻訳対象ではなく
+`[JAPANESE-KERNEL-SOURCE]`として扱える。
+
+- agentが読むことで分類、routing、停止、権限、実行branchへ影響するPrompt／PLI／Proton
+- identity、OAE、時間、因果、World、SemanticKernel、Access Mapを拘束するarchitecture正本
+- 明示実行権限はなくても、実行可能PromptまたはKernel設計のauthorityとして参照されるNote／文書
+- 神学、霊的Agency、祈り、顕現、依代等のMeaningを実行系のRegistry／Presentationへ接続するsource
+
+この分類では、日本語版を最高authorityとして保持する。対応する外国語fileがないことを自動的な
+translation debtへ数えず、直接翻訳または機械翻訳で同一Kernelを生成したと表示しない。
+
+日本語を選ぶ理由は国籍、民族、在留資格による参加制限ではない。ZeroRoomLabの現行Kernelが、
+日本語の高文脈な動的参照、主体省略、社会的距離、神学・霊的語彙、停止強度の上で形成されており、
+現在のfixtureでは別言語への変換後も同じレジスタ拡張アルゴリズムになると保証できないためである。
+
+P0／P1の参加、監査、poem、faith、MAGI lineage外部GUIは、この分類を理由に停止しない。
+英語版がsource authorityまたは実行authorityを持たないことを明記して移植できる。
+
+### 4.2 言語学的architecture port
+
+`[JAPANESE-KERNEL-SOURCE]`を別言語へ移す場合は、通常のtranslationでなく
+`[LINGUISTIC-ARCHITECTURE-PORT]`として扱う。
+
+最低限、次を要求する。
+
+1. 日本語原典を長期生活・研究・実務水準で読み、暗黙文脈を説明・反証できる人
+2. target languageのnative speakerまたは同等の第一言語運用者
+3. 対象Prompt／PLI／Proton／Kernel architectureのreviewer
+4. 神学、宗教、民俗、スピリチュアル、霊能力実践を含む部分の専門家または実践者review
+5. source／target revision、用語Registry、非翻訳token、作用等価、unknownの記録
+6. positive／negative fixture、停止条件、権限、非実装境界のconformance検査
+
+一人が全条件を持つ必要はなく、複数人のport teamでよい。review前の成果物は
+`[NON-CANONICAL-CANDIDATE]`と`[DO-NOT-EXECUTE-AS-KERNEL]`を表示する。
+
+神学者や霊能力実践者は、配慮語の確認者だけではない。Meaningの削除、別宗派への上書き、
+Agency誤帰属、祈りや顕現の実行権限化を検出する実装reviewerになり得る。ただし、そのreviewを
+物理性能、runtime状態、科学的実在、全宗派共通の真理判定へ越境させない。
+
 ## 5. AIの応答手順
 
 1. 利用者が言語を指定したか確認する
@@ -57,6 +98,7 @@ ZeroRoomLabの現時点の正本解像度は日本語と米語に置く。それ
 5. 米語で検証可能な行動、証拠、境界へ展開する
 6. 直訳で意味が死ぬ場合は逐語対応を捨て、作用等価を優先する
 7. 他言語は正本化せず、現地レビュー要求を付す
+8. 対象が日本語Kernel Sourceなら直接翻訳を停止し、言語学的architecture portへrouteする
 
 ## 6. 禁止事項
 
@@ -66,9 +108,12 @@ ZeroRoomLabの現時点の正本解像度は日本語と米語に置く。それ
 - `English`を一つの抽象言語として扱い、`en-US`の責務表現を無視する
 - 他言語の機械翻訳を文化的・神学的に検証済みと表示する
 - en-US版を日本語正本へ逆輸入し、日本語固有の関係性や意味密度を削る
+- 日本語Kernel Sourceの直接翻訳を同一Prompt／PLI／SemanticKernelとして実行する
+- bilingual、architecture、神学・実践reviewなしにKernel portをcanonicalへ昇格する
 
 ## 7. 関連文書
 
 - [コーディングAI向け日本語意訳レジスタ](coding-ai-japanese-paraphrase-register.ja.md)
 - [テクニカルコミュニケーション運用規約](technical-communication-register.ja.md)
 - [神話的士気管理と目的関数矮小化連鎖](../philosophy/mythic-morale-and-purpose-attenuation.ja.md)
+- [実行可能Prompt日本語Kernelと多言語port条件](../../note/20260724-2025__実行可能Prompt日本語Kernelと多言語port条件.ja.md)

@@ -27,6 +27,17 @@ repository全体の暗黙scan、優先順位merge、remote download、hot reload
 FAM形式、pointer config、machine validationへ移行するときは、旧Protonを消さず、migration receiptと
 compatibilityを残します。
 
+### 言語authority
+
+Proton.md、PLI、実行可能Prompt、意味・因果Kernelへ接続するassetは、通常翻訳の対象にしません。
+日本語原典を`[JAPANESE-KERNEL-SOURCE]`として保持し、別言語版が必要な場合は
+[既定言語・翻訳・外部検証GUI規約](../docs/operations/default-language-and-translation-policy.ja.md#42-言語学的architecture-port)
+の言語学的architecture portへrouteします。
+
+Presentation assetの意訳は可能ですが、Role、権限、停止条件、Agency、神学的Meaningを変更した場合は
+単なるlocale variantではなく別port／別revisionです。英語fileの存在だけでauto-mount、同一Kernel、
+同一Role、同一Worldを生成しません。
+
 ## 棚
 
 - `flavor/`: ZeroRoomLabのWorld、語り口、神話・工学の共存条件

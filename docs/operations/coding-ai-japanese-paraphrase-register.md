@@ -83,6 +83,19 @@ Before translating Japanese:
 
 The goal is not to make the text safe and bland. The goal is to reproduce its effect in a different language environment.
 
+### 4.1 Targets that stop ordinary paraphrase
+
+A coding agent must not process the following as an ordinary en-US paraphrase:
+
+- executable Prompts, PLI surfaces, or Proton.md sources;
+- SemanticKernel sources that constrain identity, OAE, World, time, causality, authority, or stopping;
+- Notes that agents read as architecture authority even without an explicit execution grant;
+- sources that connect theological or spiritual Meaning to an execution Registry.
+
+Report the target as `[JAPANESE-KERNEL-SOURCE]` and route it to the
+[linguistic architecture port contract](default-language-and-translation-policy.md#42-linguistic-architecture-ports).
+Do not translate a meaning or causality Kernel merely to increase the English pair count.
+
 ## 5. Baseline README boundary examples
 
 Japanese may preserve a project-specific relationship:
@@ -146,6 +159,8 @@ reader responsibility, and workspace contract came with it.
 - importing en-US wording backward and sanding relationships or emotion out of the Japanese canonical source;
 - adding en-GB or additional locale files without a request;
 - copying the entire Manifest canonical source into every repository and creating update drift.
+- processing a Japanese Kernel Source as ordinary documentation translation;
+- claiming equivalent Kernel behavior without bilingual, architecture, and theological or practitioner review.
 
 ## 8. Related documents
 

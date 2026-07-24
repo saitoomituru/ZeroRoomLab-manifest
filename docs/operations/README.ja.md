@@ -10,7 +10,7 @@
 - [technical-communication-register.md](technical-communication-register.md) — 表紙の火力、技術証拠、過剰防壁事故、PLI真贋誤認を同じ強度で保持するen-US外部GUI。
 - [coding-ai-japanese-paraphrase-register.ja.md](coding-ai-japanese-paraphrase-register.ja.md) — コーディングAIが日本語の意図・責務・事実強度を保ったまま米語へ意訳するための正本。英語出力は原則en-USとする。
 - [coding-ai-japanese-paraphrase-register.md](coding-ai-japanese-paraphrase-register.md) — コーディングAI向け日本語意訳レジスタのen-US外部GUI。
-- [default-language-and-translation-policy.ja.md](default-language-and-translation-policy.ja.md) — 指示がない限り日本語を規定動作とし、en-USを西洋圏が検証するための外部GUIとして省略なく意訳する言語規約。他言語は現地話者・神学者・実務家のレビューを求める。
+- [default-language-and-translation-policy.ja.md](default-language-and-translation-policy.ja.md) — 指示がない限り日本語を規定動作とし、en-USを西洋圏が検証するための外部GUIとして省略なく意訳する言語規約。実行可能Prompt／Proton／PLI／意味Kernelは日本語Kernel Sourceとして直接翻訳せず、特殊bilingual・architecture・神学／実践reviewを含む言語学的portへ分離する。
 - [default-language-and-translation-policy.md](default-language-and-translation-policy.md) — 既定言語・翻訳・外部検証GUI規約のen-US版。
 - [myth-purpose-cross-engineering-audit.ja.md](myth-purpose-cross-engineering-audit.ja.md) — 神話・哲学をフレーバーへ矮小化せず、安全・制度・金融・情報・人間工学を横断して目的関数と実装資源を両輪監査する。市場規模・売上・スポンサー損失等の商業KPIを普遍的な真理定規へ昇格せず、用途差をadapter／profileへ写像する規約も含む。
 - [Atlantis-MAGISDK 0.2.1](../theory/atlantis-magi-sdk-0.2.1.ja.md) — 0.2.0 Skill bundleへOAE時間整合性、unknown＋Last Order、7D Fold分岐境界を追加するcorrective patch仕様。0.1.0正本は系譜として保持する。
