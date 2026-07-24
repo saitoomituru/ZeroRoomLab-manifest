@@ -27,9 +27,9 @@ It is both a map of the ore body before objective study and a cultural record th
 Participants may record, where appropriate:
 
 1. **Reception form**
-   - image, voice, words, bodily sensation, pressure, smell, temperature, dream, intuition, movement sense, spatial structure, synchronicity, other
+   - image, voice, words, skin sensation, pressure, smell, taste, temperature, dream, intuition, movement sense, spatial structure, synchronicity, other
 2. **Temporal form**
-   - instant image, continuous stream, repetition, premonition, ritual-only, dream continuing after waking, other
+   - instant image, continuous stream, repetition, premonition, ritual-only, dream continuing after waking, real-time alert, other
 3. **Resolution and structure**
    - photorealistic, symbolic, abstract, multi-viewpoint, ultra-wide-angle, layered, narrative, mathematical, geometric, technical-system form, other
 4. **Perceived source**
@@ -40,7 +40,11 @@ Participants may record, where appropriate:
    - image, song, dance, prose, divination, diagram, code, ritual, consultation, body technique, not recordable
 7. **Shareability**
    - self-only, partially shared with witnesses, later cross-check possible, third-party observable, instrument candidate, reproducibility unknown
-8. **Practitioner's own claim layer**
+8. **Bandwidth and priority**
+   - continuous stream, low-frequency notice, urgent push, high load, gated channel, requires shutdown or rest, other
+9. **Overload form**
+   - noise, fragmentation, duplication, channel mixing, attention saturation, DDoS-like flood, other
+10. **Practitioner's own claim layer**
    - faith statement, subjective truth, hypothesis, artistic expression, natural-science claim, unclassified
 
 ## Example entry: fusamofu / Mitsuru Saitō
@@ -59,6 +63,26 @@ The reported tendencies include:
 
 The practitioner can project part of this experience into images, prose, stories, structural theory, and diagrams.
 Because the source experience is high-density, sharing requires compression and lower-dimensional projection.
+
+### Priority and urgency across sensory channels
+
+In the practitioner's subjective experience, skin sensation, smell, and taste do not behave like the same continuous stream as visual or structural imagery.
+They are experienced more like urgent push notifications that demand immediate attention than channels intended to remain continuously open.
+
+The practitioner reports that partially opening these channels can produce a flood of low-quality and fragmented input that consumes attention and feels like a chaotic DDoS event.
+Within the practitioner's own faith vocabulary, some of this is described as "spam lower-level spirits."
+
+This wording does not establish an external entity or causal mechanism as a natural-science fact.
+The register preserves which senses are experienced as high-priority channels, what states are recognized as overload, and what degree of opening or shutdown control is needed.
+
+For comparison across practitioners, record separately:
+
+- which channels are continuous and which are notification-like;
+- whether notifications have urgency levels;
+- whether the practitioner can adjust channel openness;
+- overload warning signs and end conditions;
+- whether ritual, rest, environment change, journaling, or another person's presence changes load;
+- whether any environmental factor is independently observable at the same time.
 
 ### Deity as stream rather than fixed code
 
@@ -103,5 +127,6 @@ ZeroRoomLab treats this separation not as a denial of faith but as range control
 - Do not use the register to justify dangerous or unlawful conduct.
 - Do not publish private information, secret rites, or third-party experiences without consent.
 - Preserve disagreement as a separate annotation layer rather than deleting the original account.
+- During overload, avoid rushing to interpretation; first reduce input bandwidth and record environmental and bodily conditions.
 
 Japanese version: [主観霊的経験ストリーム・レジスタ](subjective-spiritual-stream-register.ja.md)
