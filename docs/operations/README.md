@@ -15,9 +15,11 @@ Japanese operation document already has a complete translation.
   from raw Notes into target-native docs, code, assets, Issues, or PRs without silently promoting drafts.
 - [Technical communication register](technical-communication-register.ja.md) — keep public cover, engineering proof,
   raw Notes, and social posts in the right register.
-- [Japanese-to-en-US paraphrase register](coding-ai-japanese-paraphrase-register.ja.md) — preserve intent,
+- [Japanese-to-en-US paraphrase register](coding-ai-japanese-paraphrase-register.md) /
+  [日本語](coding-ai-japanese-paraphrase-register.ja.md) — preserve intent,
   reader responsibility, religious vocabulary, and claim strength instead of translating word by word.
-- [Default language and external verification GUI policy](default-language-and-translation-policy.ja.md) —
+- [Default language and external verification GUI policy](default-language-and-translation-policy.md) /
+  [日本語](default-language-and-translation-policy.ja.md) —
   Japanese by default; en-US as a usable outside interface.
 - [Context ruler, causality, and OAE audit](context-ruler-and-causality-audit.ja.md) — expose imported rulers,
   Agency errors, position-talk, and retrospective OAE fabrication.

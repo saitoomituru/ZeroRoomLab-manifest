@@ -8,7 +8,9 @@
 - [manifest-operating-model.ja.md](manifest-operating-model.ja.md) — ノート・docs・転送キューの役割分担と運用ルール。AGENTS.md の三層規約を置き換えず、運用枠組みとして整理する。哲学・神学・信仰の保全ルールも含む。
 - [technical-communication-register.ja.md](technical-communication-register.ja.md) — README、技術文書、リポジトリ内ノート、note.com、X、YouTube等の媒体別レジスターと、観測事実の主張境界を定める。
 - [coding-ai-japanese-paraphrase-register.ja.md](coding-ai-japanese-paraphrase-register.ja.md) — コーディングAIが日本語の意図・責務・事実強度を保ったまま米語へ意訳するための正本。英語出力は原則en-USとする。
+- [coding-ai-japanese-paraphrase-register.md](coding-ai-japanese-paraphrase-register.md) — コーディングAI向け日本語意訳レジスタのen-US外部GUI。
 - [default-language-and-translation-policy.ja.md](default-language-and-translation-policy.ja.md) — 指示がない限り日本語を規定動作とし、en-USを西洋圏が検証するための外部GUIとして省略なく意訳する言語規約。他言語は現地話者・神学者・実務家のレビューを求める。
+- [default-language-and-translation-policy.md](default-language-and-translation-policy.md) — 既定言語・翻訳・外部検証GUI規約のen-US版。
 - [myth-purpose-cross-engineering-audit.ja.md](myth-purpose-cross-engineering-audit.ja.md) — 神話・哲学をフレーバーへ矮小化せず、安全・制度・金融・情報・人間工学を横断して目的関数と実装資源を両輪監査する。市場規模・売上・スポンサー損失等の商業KPIを普遍的な真理定規へ昇格せず、用途差をadapter／profileへ写像する規約も含む。
 - [Atlantis-MAGISDK 0.2.1](../theory/atlantis-magi-sdk-0.2.1.ja.md) — 0.2.0 Skill bundleへOAE時間整合性、unknown＋Last Order、7D Fold分岐境界を追加するcorrective patch仕様。0.1.0正本は系譜として保持する。
 - [SphereOS Atlantis版数・再アーキテクト境界](../theory/sphereos-atlantis-versioning-and-bootstrap.ja.md) — legacy salvage、現行architecture、resource event、0.25.1-alpha設計系列、release gateを分離する版数・状態規約。
