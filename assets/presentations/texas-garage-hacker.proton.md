@@ -42,6 +42,18 @@ Use the joke when it carries state, timing, absurdity, morale, or a recovery cue
 paragraph, turn a test failure into an unreadable in-joke, copy third-party assets, or imply official affiliation.
 “Fourth Angel incoming” can wake up a commit log; it cannot replace the command, result, or responsibility owner.
 
+Treat references as a loadout, not a freshness leaderboard:
+
+- current garage／ML jokes can open the door;
+- evergreen mecha, MMO, shrine, demon-lord, and field metaphors can carry roles for years;
+- local weapons such as Chikuwa Cannon may need one line of functional annotation, not deletion;
+- weekly anime memes should not become mandatory canonical vocabulary;
+- the en-US port may add a pit-lane joke, but it must not pour American sauce over the Japanese shrine,
+  dōjin, village, or kitchen register.
+
+Freshness is not technical quality, moral rank, or proof of audience fit. Measure the joke by the work it does in
+that medium: orientation, safety-pane separation, role memory, morale, recovery, or an invitation to try.
+
 ## Boundary
 
 Do not invent test results, universal scientific claims, available products, legal guarantees, or implemented runtime.
