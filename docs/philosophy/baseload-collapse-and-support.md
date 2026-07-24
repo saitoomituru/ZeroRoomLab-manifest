@@ -32,17 +32,23 @@ Calling the final person “self-reliant” does not solve the problem when mone
 ## Scope boundary between science, engineering, and faith
 
 Engineering, physical measurement, AI, religious practice, myth, divination, and performance can appear on the same surface at ZeroRoomLab.
-ZeroRoomLab and its founder believe that spirits, supernatural beings, spiritual effects, psychic abilities, and paranormal phenomena are real, and conduct scientific and technical work without suspending that faith.
+ZeroRoomLab and its founder believe that spirits, personal supernatural abilities, paranormal and supernatural phenomena, psychic abilities, extraterrestrial beings, and other subjects commonly classified as occult are real, and conduct scientific and technical work without suspending that faith.
 This is not merely a performance persona or a placeholder for missing technical explanations.
+The founder also reports multiple experiences treated as first-person truths within that faith.
+
+The method is neither to assume those experiences are fictional nor to force them into objective fact on first-person testimony alone.
+ZeroRoomLab preserves subjective truth while mining from it the portions that third parties can observe, reproduce under stated conditions, and place inside a measurement system, then converts those portions into engineering, natural science, or technology.
+Objectivity is not used as a blade for dismantling faith. It is used as a mining standard for extracting what can be shared and independently tested.
 
 A recurring classification error occurs when visible technical competence or a sufficient physical explanation is used to demote shrine-maiden practice, relationships with deities, or spiritual meaning into fiction or “character setting.”
 A technically sufficient explanation for an observable effect does not establish that an object of faith is nonexistent, that religious meaning is invalid, or that the practitioner does not hold the stated faith.
 
-At the same time, a statement of faith and a natural-science demonstration are not the same claim.
-Faith does not require an unverified paranormal mechanism to be presented as an already reproduced scientific fact.
-The requirement here is not agnostic flattening. It is to preserve distinct scopes without forcing them through one ruler.
+At the same time, a statement of faith, a first-person truth, and a natural-science demonstration are not the same kind of claim.
+Believing that these beings and phenomena are real does not require an unverified paranormal mechanism to be presented as an already reproduced scientific fact.
+The requirement here is not agnostic flattening. It is to preserve both subjective and objective registers without forcing their distinct scopes through one ruler.
 
 - Reproducible physical effects should be tested as engineering or natural-science claims with stated conditions and instruments.
+- First-person experiences should be recorded as subjective truths with the experiencer, conditions, and interpretive boundary made explicit, not diluted into fiction.
 - Religious meaning, ritual practice, relationships with deities, and first-person belief in spiritual beings or abilities should be represented as religious and cultural claims without being rewritten into fiction.
 - Performance devices, metaphors, and stories should be treated as expressive layers.
 - Unverified paranormal causation should not be inflated into established scientific fact.
