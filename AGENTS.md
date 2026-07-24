@@ -141,6 +141,24 @@ ZeroRoomLab固有の規約、Role、Flavor、PresentationはManifest側から明
 監査結果と実行receiptは`foldlog/`へappendし、未採用の仕様候補や考察を置く`note/`と分離する。
 詳細は`foldlog/AGENTS.md`を参照する。
 
+ZeroRoomLab profileを使う現行bundleが`--profile`を提供する場合は、次の形で明示する。
+
+```console
+python3 -B <SphereOS-Atlantis>/magi/0.2.1/resolve_sources.py \
+  --slot composite \
+  --profile zeroroomlab \
+  --repo-root ZeroRoomLab-manifest=<this-repository-root> \
+  --require-local
+```
+
+必要なFlavor／Presentation／Roleはtaskごとに次からファイル単位で選ぶ。
+
+- `assets/flavor/zeroroomlab-world.proton.md`
+- `assets/presentations/texas-garage-hacker.proton.md`
+- `assets/roles/raphael-recovery-auditor.proton.md`
+
+`assets/README.ja.md`の境界に従い、配置だけでauto-mount済みと表示しない。
+
 最低限、次を分離して記録する。
 
 1. **Declared Position**: どの目的、branch、監査Positionを優先しているか
