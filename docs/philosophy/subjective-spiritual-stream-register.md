@@ -58,7 +58,8 @@ The reported tendencies include:
 - near-photoreal texture;
 - ultra-wide-angle scenes containing multiple viewpoints and time axes;
 - relational structures unfolding in more than a flat diagram;
-- deities and concepts felt as if they were constraint-bearing conceptual spiritual armatures;
+- deities and concepts felt like constraint-bearing conceptual spiritual armatures with a ritual
+  procedure, spell-form, or executable-pattern layer;
 - perception as a continuing stream of state and meaning rather than a single still image.
 
 The practitioner can project part of this experience into images, prose, stories, structural theory, and diagrams.

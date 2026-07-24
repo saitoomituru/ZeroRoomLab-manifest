@@ -30,8 +30,9 @@ It is a general moral hazard in which power loses reverence for natural law, mea
 
 ## The explorer comes first
 
-The unknowns of nature and the inexhaustible work of meaning exist first, together with the individuals who mine them.
-States, universities, academies, churches, companies, and other authorities arise afterward.
+The unknowns of nature and the human-divine work of living with God as an infinity of meaning exist first,
+together with the individuals who mine those frontiers.
+States, universities, academies, religious institutions, companies, and other authorities arise afterward.
 
 Without nature and mystery, there is nothing for a person to explore.
 Without exploring persons, there is no subject for an institution to serve.

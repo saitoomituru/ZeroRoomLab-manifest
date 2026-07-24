@@ -84,7 +84,9 @@ In a multi-layer collapse, the weakest supporting layer must often be repaired f
 ## What this repository can return
 
 ZeroRoomLab-manifest is not only a product roadmap.
-It is an **advance-scout and first-casualty repository** for last-mile failures that are already appearing around other people: gaps between institutions, unmaintainable equipment, research under severe resource constraints, vendor sunsets, and missing coverage in rural medicine, rescue, wildlife response, and disaster operations.
+It is an **advance-scout and first-casualty repository** for last-mile failures erupting on their own all over the place:
+gaps between institutions, unmaintainable equipment, research under severe resource constraints, vendor sunsets,
+and missing coverage in rural medicine, rescue, wildlife response, and disaster operations.
 
 Its useful outputs include:
 
@@ -94,7 +96,8 @@ Its useful outputs include:
 - which failures were local and which are likely to recur elsewhere;
 - maps that reduce the chance that the next person falls into the same hole.
 
-Support cannot always be tied to one deliverable, but discoveries, failures, repairs, and survivable configurations can still be recorded and converted into reusable public knowledge.
+Support cannot always be tied to one deliverable, but we can still record what the expedition uncovered,
+what broke, and what survived or was saved, then convert those traces into reusable public knowledge.
 
 ## Yokai ecosystem preservation as the minimum objective
 
