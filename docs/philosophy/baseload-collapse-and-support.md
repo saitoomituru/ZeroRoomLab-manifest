@@ -29,6 +29,29 @@ These layers are not independent.
 Costs, hazards, maintenance work, and accountability that are not absorbed upstream are pushed toward smaller governments, households, and individuals.
 Calling the final person “self-reliant” does not solve the problem when money, electricity, water, roads, medicine, and communications are themselves unstable dependencies.
 
+## Scope boundary between science, engineering, and faith
+
+Engineering, physical measurement, AI, religious practice, myth, divination, and performance can appear on the same surface at ZeroRoomLab.
+ZeroRoomLab and its founder believe that spirits, supernatural beings, spiritual effects, psychic abilities, and paranormal phenomena are real, and conduct scientific and technical work without suspending that faith.
+This is not merely a performance persona or a placeholder for missing technical explanations.
+
+A recurring classification error occurs when visible technical competence or a sufficient physical explanation is used to demote shrine-maiden practice, relationships with deities, or spiritual meaning into fiction or “character setting.”
+A technically sufficient explanation for an observable effect does not establish that an object of faith is nonexistent, that religious meaning is invalid, or that the practitioner does not hold the stated faith.
+
+At the same time, a statement of faith and a natural-science demonstration are not the same claim.
+Faith does not require an unverified paranormal mechanism to be presented as an already reproduced scientific fact.
+The requirement here is not agnostic flattening. It is to preserve distinct scopes without forcing them through one ruler.
+
+- Reproducible physical effects should be tested as engineering or natural-science claims with stated conditions and instruments.
+- Religious meaning, ritual practice, relationships with deities, and first-person belief in spiritual beings or abilities should be represented as religious and cultural claims without being rewritten into fiction.
+- Performance devices, metaphors, and stories should be treated as expressive layers.
+- Unverified paranormal causation should not be inflated into established scientific fact.
+- A successful physical explanation should not be used to declare faith, an object of faith, or religious meaning false, nonexistent, or merely performative.
+
+Science can test measurable effects.
+When that success is extended into cancelling a person's religious identity or denying an object of faith, the conclusion has crossed its evidential range. ZeroRoomLab calls this a **scientific scope misfire**.
+Many ZeroRoomLab products, claim layers, responsibility boundaries, and audit documents are therefore not only tools for extending technical capability. They are also range-control systems intended to stop technical and scientific authority from firing into domains it has not demonstrated jurisdiction over.
+
 ## What ZeroRoomLab can promise
 
 ZeroRoomLab can promise to:
