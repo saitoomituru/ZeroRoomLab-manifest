@@ -28,6 +28,28 @@ No fixed priority queue does not mean no plan.
 It means the plan is resource-gated rather than capital-assured.
 A branch that cannot run today is preserved, not declared failed.
 
+## Support under multi-layer baseload collapse
+
+ZeroRoomLab does not sit on top of a stable household, utility, medical, transport,
+or public-finance base. Personal credit capacity, the household wallet, shared infrastructure
+in a small aging settlement, water and flood control, forestry, electricity, regional medicine
+and rescue, municipal finance, and national fiscal choices can all lose capacity at once.
+
+Because these layers are coupled, support cannot honestly be promised as a linear exchange in
+which a fixed amount always becomes one named feature, product, or paper. It may first keep the
+weakest layer alive: electricity, food, communications, transport, tools, parts, water systems,
+medical or rescue access, experimental equipment, or the time required to publish the record.
+
+This repository is therefore also an advance-scout and first-casualty record for last-mile failures
+that are already appearing elsewhere. It cannot promise a linear return. It can document where an
+assumption broke, what was repairable, what remained impossible, and what the next explorer should
+carry before entering the same swamp.
+
+Read the responsibility boundary and full research note:
+
+- [English: Baseload Collapse and the Boundary of Support](docs/philosophy/baseload-collapse-and-support.md)
+- [日本語：多重底抜けと支援の境界](docs/philosophy/baseload-collapse-and-support.ja.md)
+
 Commercial scale is not a truth ruler here. Revenue, sponsor risk, enterprise adoption,
 and procurement convention describe the constraints of commercial systems; they do not
 automatically define the right defaults for a gift-economy lab, a solo performer, or an
@@ -51,6 +73,7 @@ pointed toward the original purpose without pretending every future branch alrea
 
 Start here:
 
+- [Baseload collapse and support boundary](docs/philosophy/baseload-collapse-and-support.md) / [日本語](docs/philosophy/baseload-collapse-and-support.ja.md)
 - [Heterogeneous-agent deck governance](docs/operations/heterogeneous-agent-deck-governance.ja.md)
 - [Workspace boundary register](docs/operations/workspace-boundary-register.ja.md)
 - [Machine-readable workspace registry](docs/operations/workspace-registry.json)
@@ -203,6 +226,8 @@ The result is not a smarter model in isolation. It is a better-governed developm
 | Document | Purpose |
 |---|---|
 | [AGENTS.md](AGENTS.md) | Root AI operating guidelines |
+| [docs/philosophy/baseload-collapse-and-support.md](docs/philosophy/baseload-collapse-and-support.md) | Multi-layer baseload collapse and support boundary |
+| [docs/philosophy/baseload-collapse-and-support.ja.md](docs/philosophy/baseload-collapse-and-support.ja.md) | 多重底抜けと支援の境界 |
 | [docs/operations/README.ja.md](docs/operations/README.ja.md) | Operations index |
 | [docs/operations/heterogeneous-agent-deck-governance.ja.md](docs/operations/heterogeneous-agent-deck-governance.ja.md) | Multi-agent project governance |
 | [docs/operations/workspace-boundary-register.ja.md](docs/operations/workspace-boundary-register.ja.md) | Workspace and repository boundary model |
