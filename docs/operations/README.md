@@ -23,13 +23,22 @@ Japanese operation document already has a complete translation.
   [日本語](default-language-and-translation-policy.ja.md) —
   Japanese by default; en-US as a usable outside interface; executable Prompt, Proton, PLI, and meaning-Kernel
   sources stay Japanese unless a reviewed linguistic architecture port is performed.
-- [Context ruler, causality, and OAE audit](context-ruler-and-causality-audit.ja.md) — expose imported rulers,
+- [Context ruler, causality, and OAE audit](context-ruler-and-causality-audit.md) /
+  [日本語](context-ruler-and-causality-audit.ja.md) — expose imported rulers,
   Agency errors, position-talk, and retrospective OAE fabrication.
-- [Heterogeneous-agent deck governance](heterogeneous-agent-deck-governance.ja.md) — keep Codex, Claude Code,
+- [Myth and objective-function cross-engineering audit](myth-purpose-cross-engineering-audit.md) /
+  [日本語](myth-purpose-cross-engineering-audit.ja.md) — keep mythic purpose, material resources,
+  user sovereignty, and field-specific KPI independently auditable.
+- [Heterogeneous-agent deck governance](heterogeneous-agent-deck-governance.md) /
+  [日本語](heterogeneous-agent-deck-governance.ja.md) — keep Codex, Claude Code,
   Gemini CLI, Copilot, and other agents from turning one workspace into a vendor proxy war.
-- [Workspace boundary register](workspace-boundary-register.ja.md) and
+- [Workspace boundary register](workspace-boundary-register.md) /
+  [日本語](workspace-boundary-register.ja.md) and
   [workspace registry](workspace-registry.json) — distinguish repository, workspace, project, execution environment,
   and implementation dependency.
+- [Public development environment reconstruction](development-environment-reconstruction.md) /
+  [日本語](development-environment-reconstruction.ja.md) — rebuild public source/reference sets without
+  reconstructing secrets, private assets, physical hardware, or runtime state.
 - [Participation, non-jurisdiction, and Experience Receipts](participation-nonjurisdiction-and-experience.md) /
   [日本語](participation-nonjurisdiction-and-experience.ja.md) —
   let theologians, spiritual practitioners, gamers, artists, engineers, lawyers, and non-code contributors enter
