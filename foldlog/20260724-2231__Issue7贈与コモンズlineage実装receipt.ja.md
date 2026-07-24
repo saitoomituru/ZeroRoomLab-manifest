@@ -8,7 +8,7 @@ Atlantis PR: [#11](https://github.com/saitoomituru/SphereOS-Atlantis/pull/11)
 
 ## 1. 実装revision
 
-Manifest head:
+Manifest implementation head（本receipt追加前）:
 
 ```text
 97bc8653c31df3ecff7a13bd626f74344fd6e4dc
@@ -111,7 +111,7 @@ secret scan: false
 virtual merge:
 
 ```text
-Manifest:
+Manifest（本receipt追加前）:
   origin/main...HEAD = behind 0 / ahead 42
   merge-base = c99d614592c3cdf8b74157009490c0a67ef06c75
   git merge-tree --write-tree = pass
