@@ -26,7 +26,8 @@ Japanese operation document already has a complete translation.
 - [Workspace boundary register](workspace-boundary-register.ja.md) and
   [workspace registry](workspace-registry.json) — distinguish repository, workspace, project, execution environment,
   and implementation dependency.
-- [Participation, non-jurisdiction, and Experience Receipts](participation-nonjurisdiction-and-experience.ja.md) —
+- [Participation, non-jurisdiction, and Experience Receipts](participation-nonjurisdiction-and-experience.md) /
+  [日本語](participation-nonjurisdiction-and-experience.ja.md) —
   let theologians, spiritual practitioners, gamers, artists, engineers, lawyers, and non-code contributors enter
   without forcing them to surrender their own vocabulary.
 
