@@ -4,6 +4,7 @@
 
 ## 主要文書
 
+- [README.md](README.md) — en-US外部GUI索引。翻訳済み入口と未翻訳境界を隠さず案内する。
 - [manifest-operating-model.ja.md](manifest-operating-model.ja.md) — ノート・docs・転送キューの役割分担と運用ルール。AGENTS.md の三層規約を置き換えず、運用枠組みとして整理する。哲学・神学・信仰の保全ルールも含む。
 - [technical-communication-register.ja.md](technical-communication-register.ja.md) — README、技術文書、リポジトリ内ノート、note.com、X、YouTube等の媒体別レジスターと、観測事実の主張境界を定める。
 - [coding-ai-japanese-paraphrase-register.ja.md](coding-ai-japanese-paraphrase-register.ja.md) — コーディングAIが日本語の意図・責務・事実強度を保ったまま米語へ意訳するための正本。英語出力は原則en-USとする。
@@ -27,6 +28,7 @@
 - [corn-work-item-stack.ja.md](corn-work-item-stack.ja.md) — repository-nativeな作業指示、context closure、event receipt、Forge Issue projection、scheduler adapterを疎結合で束ねるCORN共通契約。
 - [participation-nonjurisdiction-and-experience.ja.md](participation-nonjurisdiction-and-experience.ja.md) — 異棚からのNote参加、信仰・ゲーム・工学の相互非越権、任意persona、Experience Receipt、cluster保持、Core content非裁定の共通契約。
 - [help-and-capability-discovery.ja.md](help-and-capability-discovery.ja.md) — 利用者をmaintainer熟練者と仮定せず、現在能力、未実装、非code入口、次の選択肢をmutationなしで提示するHelp共通契約。
+- [help-and-capability-discovery.md](help-and-capability-discovery.md) — Help／Capability Discoveryのen-US外部GUI。PLI、CLI、Execution Envelopeの真贋誤認を避け、試遊・Note・Experience入口を保つ。
 - [dotfiles-and-gitignore-policy.ja.md](dotfiles-and-gitignore-policy.ja.md) — 再現性に必要なdotfileと、端末状態・生成物・秘密情報を分離する`.gitignore`運用の正本。
 - [documentation-maintenance-policy.ja.md](documentation-maintenance-policy.ja.md) — ディレクトリ構成・命名規則・更新責任・状態ラベルの規約。
 - [extension-plan.ja.md](extension-plan.ja.md) — Native / Server / App-layer / Edge-algo の棚分け方針。
