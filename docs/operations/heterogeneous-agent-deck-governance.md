@@ -281,4 +281,3 @@ The Manifest does not crown a vendor AI.
 
 **It preserves reusable OSS knowledge for dragon-rider multi-summoning: every vendor's dragon can continue development
 under the same field contract without importing its empire's proxy war into the workspace.**
-

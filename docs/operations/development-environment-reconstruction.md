@@ -140,4 +140,3 @@ Before mutation after reconstruction, check:
 
 If a difference exists, do not repair it automatically. Present descriptor, Registry, and physical checkout to the
 human.
-
