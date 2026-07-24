@@ -13,7 +13,8 @@ Japanese operation document already has a complete translation.
   and mutation-free choices before implementation.
 - [Note-to-target delivery contract](../../note/transfer_plan/note-delivery-contract.ja.md) — move selected material
   from raw Notes into target-native docs, code, assets, Issues, or PRs without silently promoting drafts.
-- [Technical communication register](technical-communication-register.ja.md) — keep public cover, engineering proof,
+- [Technical communication register](technical-communication-register.md) /
+  [日本語](technical-communication-register.ja.md) — keep public cover, engineering proof,
   raw Notes, and social posts in the right register.
 - [Japanese-to-en-US paraphrase register](coding-ai-japanese-paraphrase-register.md) /
   [日本語](coding-ai-japanese-paraphrase-register.ja.md) — preserve intent,

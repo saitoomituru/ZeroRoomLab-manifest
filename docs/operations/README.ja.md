@@ -7,6 +7,7 @@
 - [README.md](README.md) — en-US外部GUI索引。翻訳済み入口と未翻訳境界を隠さず案内する。
 - [manifest-operating-model.ja.md](manifest-operating-model.ja.md) — ノート・docs・転送キューの役割分担と運用ルール。AGENTS.md の三層規約を置き換えず、運用枠組みとして整理する。哲学・神学・信仰の保全ルールも含む。
 - [technical-communication-register.ja.md](technical-communication-register.ja.md) — README、技術文書、リポジトリ内ノート、note.com、X、YouTube等の媒体別レジスターと、観測事実の主張境界を定める。
+- [technical-communication-register.md](technical-communication-register.md) — 表紙の火力、技術証拠、過剰防壁事故、PLI真贋誤認を同じ強度で保持するen-US外部GUI。
 - [coding-ai-japanese-paraphrase-register.ja.md](coding-ai-japanese-paraphrase-register.ja.md) — コーディングAIが日本語の意図・責務・事実強度を保ったまま米語へ意訳するための正本。英語出力は原則en-USとする。
 - [coding-ai-japanese-paraphrase-register.md](coding-ai-japanese-paraphrase-register.md) — コーディングAI向け日本語意訳レジスタのen-US外部GUI。
 - [default-language-and-translation-policy.ja.md](default-language-and-translation-policy.ja.md) — 指示がない限り日本語を規定動作とし、en-USを西洋圏が検証するための外部GUIとして省略なく意訳する言語規約。他言語は現地話者・神学者・実務家のレビューを求める。
