@@ -59,3 +59,6 @@ personal fold-vector config.json
 
 stable ID、旧新定義、authority、scope、security boundary、license、priority、negative fixture、
 migration receiptが揃い、User Gateを通過した後に仕様候補へ移す。
+
+判断先: SphereOS Atlantis
+[#10 明示profileからpointer config／asset loaderへ進むUser Gate](https://github.com/saitoomituru/SphereOS-Atlantis/issues/10)
