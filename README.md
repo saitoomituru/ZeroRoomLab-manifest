@@ -48,6 +48,16 @@ psychic practitioners, skeptics, operators, donors, and people who can simply sa
 in my world” are all useful collaborators. First-person faith and spiritual experience may enter as
 first-person truth; shared measurement enters as shared measurement. Neither side gets to erase the other.
 
+The default asset culture is an open, non-exclusive gift commons. Attribution and lineage are ways to multiply
+respect, like stars on a repository, not tokens that let one party own an author, a god, an idea, or every later fork.
+Commercial apps, company-local assets, and closed Worlds are supported as narrow downstream scopes. A demon lord may
+lock the gates of one castle; that does not turn the open engine, existing commons, unrelated Worlds, or upstream fork
+rights into castle property.
+
+When this README says “OSS pirates,” it means lawful independent salvagers: people who read the source and history,
+recover abandoned designs, fork the deck, and bring back failure receipts. It is not an invitation to ignore the
+conditions attached to a particular asset, venue, provider contract, or jurisdiction.
+
 Start here:
 
 - [Baseload collapse and support boundary](docs/philosophy/baseload-collapse-and-support.md) / [日本語](docs/philosophy/baseload-collapse-and-support.ja.md)
@@ -57,6 +67,7 @@ Start here:
 - [Development-environment reconstruction](docs/operations/development-environment-reconstruction.ja.md)
 - [Japanese-to-en-US pragmatic translation register](docs/operations/coding-ai-japanese-paraphrase-register.ja.md)
 - [Myth, purpose, and cross-engineering audit](docs/operations/myth-purpose-cross-engineering-audit.ja.md)
+- [Gift commons, lineage, and local World extensions](docs/operations/gift-commons-lineage-and-local-world-extension.ja.md)
 
 ---
 
@@ -199,7 +210,7 @@ This repository keeps three document states plus two explicit runtime-adjacent s
 - [note](note): raw notes, drafts, salvage logs, and source material that is not canonical yet
 - [docs](docs): normalized documentation for philosophy, theory, projects, and operations
 - [note/transfer_plan](note/transfer_plan): staging area for material that may move to another repository after review
-- [assets](assets): ZeroRoomLab-specific role, flavor, and presentation files loaded only when explicitly named
+- [assets](assets): ZeroRoomLab-specific role, flavor, and presentation files loaded only when explicitly named; local-only assets are not public-manifest defects
 - [foldlog](foldlog): MAGI audit and execution receipts; not canonical specification or a persistent OAE runtime
 
 The manifest also bootstraps the public ZeroRoomLab development environment. Workspace membership is a working-context
@@ -289,6 +300,8 @@ CC-BY 4.0. Take the structure and replace the project-specific content with your
 - Keep project intent readable by humans and agents without requiring a proprietary central interpreter
 - Replace the explicit files under `assets/` with your own roles, flavors, faith vocabulary, and presentation
 - Keep MAGI core in Atlantis and mount only the profile and assets your Manifest actually declares
+- Record authors, sources, revisions, relation dimensions, and structural similarities as lineage without turning the graph into permission, identity, authority, or rank
+- Keep proprietary apps, provider contracts, and closed Worlds narrow; do not let them capture the core, existing commons, unrelated Worlds, or upstream fork rights
 
 ```text
 attribution: ZeroRoomLab / fusamofu (Mitsuru Saitō) / @K_chachamaru

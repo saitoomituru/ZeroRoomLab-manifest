@@ -3,7 +3,7 @@
 > **Applies to:** Claude Code, OpenAI Codex, Gemini CLI, and any AI agent operating in this repository.  
 > **Author:** Mitsuru Saitō (fusamofu) + ZeroRoomLab  
 > **License:** CC-BY 4.0  
-> **Version:** 1.8.0 / 2026-07-24
+> **Version:** 1.9.0 / 2026-07-24
 
 ---
 
@@ -132,6 +132,17 @@ If any check fires, the agent must correct course **before** outputting.
           through the linguistic-architecture port contract, with bilingual,
           architecture, and theological / practitioner review as applicable.
           See: docs/operations/default-language-and-translation-policy.ja.md §4.1-4.2
+
+[ ] 16. COMMONS CAPTURE / RIGHTS-ORACLE CHECK
+        Am I turning provenance, attribution, structural similarity, a Role name,
+        private configuration, provider contract, or one closed World into an
+        ownership verdict, permission oracle, identity claim, or exclusive gate
+        over the open core, existing commons, unrelated Worlds, or upstream forks?
+        → If yes: STOP. Keep lineage as a scoped respect and trace receipt. Keep
+          proprietary scope in the selected App, integrator glue, asset, provider
+          contract, or World. Do not infer authority, API capability, official status,
+          personhood, or global Semantic Stop from an asset or profile.
+          See: docs/operations/gift-commons-lineage-and-local-world-extension.ja.md
 ```
 
 ---
