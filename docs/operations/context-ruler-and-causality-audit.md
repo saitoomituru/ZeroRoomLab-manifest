@@ -252,6 +252,7 @@ An audit result is also an Interpretation OAE. Record the auditor's Position, Re
 
 - [Sphere Context Dimension OS architecture — Japanese Kernel Source](../theory/sphere-context-dimension-os.ja.md)
 - [Sphere Context SDK contract — Japanese Kernel Source](../theory/sphere-context-sdk-contract.ja.md)
-- [Atlantis-MAGISDK 0.2.1 — Japanese source](../theory/atlantis-magi-sdk-0.2.1.ja.md)
+- [Atlantis-MAGISDK 0.2.1](../theory/atlantis-magi-sdk-0.2.1.md) /
+  [Japanese Kernel source](../theory/atlantis-magi-sdk-0.2.1.ja.md)
 - [Myth and Objective-Function Cross-Engineering Audit](myth-purpose-cross-engineering-audit.md)
 - [Technical Communication Register](technical-communication-register.md)
