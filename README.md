@@ -28,17 +28,6 @@ No fixed priority queue does not mean no plan.
 It means the plan is resource-gated rather than capital-assured.
 A branch that cannot run today is preserved, not declared failed.
 
-Commercial scale is not a truth ruler here. Revenue, sponsor risk, enterprise adoption,
-and procurement convention describe the constraints of commercial systems; they do not
-automatically define the right defaults for a gift-economy lab, a solo performer, or an
-experimental device. When a proven upstream component serves a different KPI, ZeroRoomLab
-keeps the component where useful and implements the missing adapter or operating profile
-without deleting the product's original purpose.
-
-We do not owe philosophical neutrality to systems that protect a sponsor's wallet by
-sacrificing the performer's life, work, or voice. Respecting an upstream implementation does
-not require adopting its master. Commercial users can buy commercial devices; open devices serve the people and purposes that commercial KPIs leave out.
-
 This repository is the shared development deck for that process.
 It stores project intent, workspace maps, claim layers, cultural and technical registers,
 protected boundaries, evidence rules, agent handoff routes, and stopping conditions.
@@ -49,14 +38,36 @@ ZeroRoomLab calls the ability to preserve goals and relationships that are not y
 to code **poem power**. Code supplies local implementation force. Poem power keeps that force
 pointed toward the original purpose without pretending every future branch already exists.
 
+Pull up a chair. Bring a half-dead machine, a strange theory, a translation gripe, a field failure,
+a ritual observation, spare compute, food, cash, or the one test rig gathering dust in your garage.
+You do not need an institutional badge, one approved worldview, or a polished success story.
+Try a branch, bring back the receipt, fork the deck, or replace the ZeroRoomLab loadout with your own.
+
+Engineers, garage hackers, artists, translators, maintainers, shrine and spiritual practitioners,
+psychic practitioners, skeptics, operators, donors, and people who can simply say “this did not work
+in my world” are all useful collaborators. First-person faith and spiritual experience may enter as
+first-person truth; shared measurement enters as shared measurement. Neither side gets to erase the other.
+
+The default asset culture is an open, non-exclusive gift commons. Attribution and lineage are ways to multiply
+respect, like stars on a repository, not tokens that let one party own an author, a god, an idea, or every later fork.
+Commercial apps, company-local assets, and closed Worlds are supported as narrow downstream scopes. A demon lord may
+lock the gates of one castle; that does not turn the open engine, existing commons, unrelated Worlds, or upstream fork
+rights into castle property.
+
+When this README says “OSS pirates,” it means lawful independent salvagers: people who read the source and history,
+recover abandoned designs, fork the deck, and bring back failure receipts. It is not an invitation to ignore the
+conditions attached to a particular asset, venue, provider contract, or jurisdiction.
+
 Start here:
 
+- [Baseload collapse and support boundary](docs/philosophy/baseload-collapse-and-support.md) / [日本語](docs/philosophy/baseload-collapse-and-support.ja.md)
 - [Heterogeneous-agent deck governance](docs/operations/heterogeneous-agent-deck-governance.ja.md)
 - [Workspace boundary register](docs/operations/workspace-boundary-register.ja.md)
 - [Machine-readable workspace registry](docs/operations/workspace-registry.json)
 - [Development-environment reconstruction](docs/operations/development-environment-reconstruction.ja.md)
 - [Japanese-to-en-US pragmatic translation register](docs/operations/coding-ai-japanese-paraphrase-register.ja.md)
 - [Myth, purpose, and cross-engineering audit](docs/operations/myth-purpose-cross-engineering-audit.ja.md)
+- [Gift commons, lineage, and local World extensions](docs/operations/gift-commons-lineage-and-local-world-extension.ja.md)
 
 ---
 
@@ -116,6 +127,38 @@ No staff, no investors, no conventional infrastructure. Just UPS power, well wat
 
 ---
 
+## Support under multi-layer baseload collapse
+
+ZeroRoomLab does not sit on top of a stable household, utility, medical, transport,
+or public-finance base. Personal credit capacity, the household wallet, shared infrastructure
+in a small aging settlement, water and flood control, forestry, electricity, regional medicine
+and rescue, municipal finance, and national fiscal choices can all lose capacity at once.
+
+Because these layers are coupled, support cannot honestly be promised as a linear exchange in
+which a fixed amount always becomes one named feature, product, or paper. It may first keep the
+weakest layer alive: electricity, food, communications, transport, tools, parts, water systems,
+medical or rescue access, experimental equipment, or the time required to publish the record.
+
+That does not make this a vague no-delivery pitch. This is an **advance-scout and first-casualty
+repository** for last-mile failures erupting on their own all over the place. We record what got
+uncovered, what broke, what survived or was saved, what stayed impossible, and what the next explorer
+should carry before entering the same swamp.
+
+Commercial scale is not a truth ruler here. Revenue, sponsor risk, enterprise adoption,
+and procurement convention describe the constraints of commercial systems; they do not
+automatically define the right defaults for a gift-economy lab, a solo performer, or an
+experimental device. We do not owe philosophical neutrality to systems that protect a sponsor's
+wallet by sacrificing the performer's life, work, or voice.
+
+Money, equipment, compute, food, field access, translation, testing, and honest failure receipts can
+all keep a branch alive. Support does not buy unlimited labor, ownership of the work, or rule over the lab.
+Read the full boundary:
+
+- [Baseload Collapse and the Boundary of Support](docs/philosophy/baseload-collapse-and-support.md)
+- [日本語：多重底抜けと支援の境界](docs/philosophy/baseload-collapse-and-support.ja.md)
+
+---
+
 ## Active projects
 
 ### 800-series
@@ -162,11 +205,13 @@ Geometry constraints solve what budget cannot.
 
 ## Manifest operating model
 
-This repository serves three layers in one place:
+This repository keeps three document states plus two explicit runtime-adjacent shelves:
 
 - [note](note): raw notes, drafts, salvage logs, and source material that is not canonical yet
 - [docs](docs): normalized documentation for philosophy, theory, projects, and operations
 - [note/transfer_plan](note/transfer_plan): staging area for material that may move to another repository after review
+- [assets](assets): ZeroRoomLab-specific role, flavor, and presentation files loaded only when explicitly named; local-only assets are not public-manifest defects
+- [foldlog](foldlog): MAGI audit and execution receipts; not canonical specification or a persistent OAE runtime
 
 The manifest also bootstraps the public ZeroRoomLab development environment. Workspace membership is a working-context
 boundary, not an automatic implementation dependency. Enterprise and third-party workspaces expose only approved public
@@ -196,6 +241,32 @@ The result is not a smarter model in isolation. It is a better-governed developm
 - Read each member repository's local `AGENTS.md` after resolving the workspace
 - Do not infer implementation dependencies from neighboring folders or workspace membership
 
+### Try the deck before you change anything
+
+```bash
+git clone https://github.com/saitoomituru/ZeroRoomLab-manifest.git
+cd ZeroRoomLab-manifest
+```
+
+Then hand your PLI-capable agent this:
+
+```text
+Read AGENTS.md and README.md. Show me the routes that are AVAILABLE-NOW,
+the routes that are RESOURCE-WAIT, and one thing I can try without changing files.
+Do not flatten faith, poem, or unfinished branches into engineering claims.
+```
+
+If you are testing the Atlantis MAGI profile from a workspace that has both repositories, resolve the current
+Atlantis bundle first and explicitly mount `--profile zeroroomlab`. Do not assume a repository scanner exists.
+The exact source-resolution contract lives in
+[the foldlog instructions](foldlog/AGENTS.md) and
+[the ZeroRoomLab assets shelf](assets/README.ja.md).
+
+Useful returns include a failed command, an awkward translation, a different spiritual description,
+a machine log, a photo with safe provenance, a proposed adapter, a poem that restores the target,
+or a fork that proves this Manifest was never the only valid loadout.
+Humor counts as UX too: a good commit joke may carry morale or state, as long as it does not replace the receipt.
+
 ---
 
 ## Go deeper
@@ -203,6 +274,8 @@ The result is not a smarter model in isolation. It is a better-governed developm
 | Document | Purpose |
 |---|---|
 | [AGENTS.md](AGENTS.md) | Root AI operating guidelines |
+| [docs/philosophy/baseload-collapse-and-support.md](docs/philosophy/baseload-collapse-and-support.md) | Multi-layer baseload collapse and support boundary |
+| [docs/philosophy/baseload-collapse-and-support.ja.md](docs/philosophy/baseload-collapse-and-support.ja.md) | 多重底抜けと支援の境界 |
 | [docs/operations/README.ja.md](docs/operations/README.ja.md) | Operations index |
 | [docs/operations/heterogeneous-agent-deck-governance.ja.md](docs/operations/heterogeneous-agent-deck-governance.ja.md) | Multi-agent project governance |
 | [docs/operations/workspace-boundary-register.ja.md](docs/operations/workspace-boundary-register.ja.md) | Workspace and repository boundary model |
@@ -225,6 +298,10 @@ CC-BY 4.0. Take the structure and replace the project-specific content with your
 - Separate engineering, philosophy, and academic claims
 - Preserve the distinction between canonical documents, drafts, and transfer queues
 - Keep project intent readable by humans and agents without requiring a proprietary central interpreter
+- Replace the explicit files under `assets/` with your own roles, flavors, faith vocabulary, and presentation
+- Keep MAGI core in Atlantis and mount only the profile and assets your Manifest actually declares
+- Record authors, sources, revisions, relation dimensions, and structural similarities as lineage without turning the graph into permission, identity, authority, or rank
+- Keep proprietary apps, provider contracts, and closed Worlds narrow; do not let them capture the core, existing commons, unrelated Worlds, or upstream fork rights
 
 ```text
 attribution: ZeroRoomLab / fusamofu (Mitsuru Saitō) / @K_chachamaru
