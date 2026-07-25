@@ -60,7 +60,8 @@ This is not a purchased media placement or guaranteed exposure.
 
 We may call this record the **mythic honor ledger**: who placed what resource, and which branch or event it helped activate. It is exactly provenance—no more and no less. It is not advertising inventory, a vote, doctrinal authority, official status, lineage status, a promised result, or a purchasable role in the story.
 
-> No throne is promised.  
+> No throne is promised.
+>
 > You may still become part of the provenance.
 
 Or, more simply:

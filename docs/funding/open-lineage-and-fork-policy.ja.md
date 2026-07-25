@@ -154,8 +154,10 @@ Apache-2.0、CC BY、CC BY-SAは、次を自動付与しません。
 
 ## 9. 短い原則
 
-> 閉じた商品を作る自由はある。  
+> 閉じた商品を作る自由はある。
+>
 > 共通神棚の正統性を名乗るなら、祭壇の裏側まで開ける。
 
-> You may keep your product closed.  
+> You may keep your product closed.
+>
 > You may not keep the claimed basis of lineage authority closed.
