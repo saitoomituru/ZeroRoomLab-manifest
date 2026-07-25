@@ -8,6 +8,8 @@ We do preserve transparent use-of-resources records and public provenance where 
 
 A real contribution may become part of the story's provenance on GitHub, the Web, X, YouTube, TikTok, livestreams, films, music videos, or project mythology. That possibility is not guaranteed and is not a purchased advertising placement.
 
+Funding does not buy a vote or change upstream direction. No patron must own all risk: responsibility may be bounded and shared, and patrons remain free to diversify their support portfolios. Our mythic honor ledger records provenance—no more and no less.
+
 > No throne is promised. You may still become part of the provenance.
 
 ## Policies
@@ -23,6 +25,8 @@ A real contribution may become part of the story's provenance on GitHub, the Web
 Apache-2.0 code may be forked and used in proprietary products under its terms. CC BY mythology and worldbuilding material may be reused under its terms. Closed SDKs, platforms, models, and proprietary games are allowed.
 
 Claiming official lineage, orthodoxy, canonical compatibility, or lineage-compatible MAGI status is different. A bundled system making that claim must open the complete reproducible basis of its claimed authority under the project's ShareAlike lineage policy.
+
+This is a voluntary designation condition, not a retroactive change to Apache-2.0 or CC BY. Unless separately agreed, the upstream does not assume responsibility for independent downstream products.
 
 ## Contact
 
