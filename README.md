@@ -57,6 +57,21 @@ Start here:
 - [Development-environment reconstruction](docs/operations/development-environment-reconstruction.ja.md)
 - [Japanese-to-en-US pragmatic translation register](docs/operations/coding-ai-japanese-paraphrase-register.ja.md)
 - [Myth, purpose, and cross-engineering audit](docs/operations/myth-purpose-cross-engineering-audit.ja.md)
+- [Funding and Non-Exclusive Seed Steward policy](FUNDING.md)
+
+---
+
+## Funding without enclosure
+
+ZeroRoomLab is seeking **Non-Exclusive Seed Stewards** who can help move long-term economic responsibility away from the founder, small donors, and a thin regional nonprofit funding base without purchasing exclusive control over the upstream commons.
+
+No profit, repayment, equity, delivery, technical success, exclusivity, official authority, or media exposure is promised by the public policy alone. A real contribution may still become part of the project's provenance on GitHub, the Web, X, YouTube, TikTok, livestreams, films, music videos, or project mythology.
+
+> Fund the conditions. Maybe become lore.
+
+Read [FUNDING.md](FUNDING.md), the [Japanese funding index](docs/funding/README.ja.md), and the [en-US steward policy](docs/funding/non-exclusive-seed-steward.en-US.md).
+
+Apache-2.0 forks, closed SDKs, proprietary platforms, and commercial games remain allowed under their applicable licenses. Claiming official lineage, orthodoxy, canonical compatibility, or lineage-compatible MAGI status is different: the complete reproducible basis of that authority must be open under the project's ShareAlike lineage policy.
 
 ---
 
@@ -203,6 +218,8 @@ The result is not a smarter model in isolation. It is a better-governed developm
 | Document | Purpose |
 |---|---|
 | [AGENTS.md](AGENTS.md) | Root AI operating guidelines |
+| [FUNDING.md](FUNDING.md) | Public funding and stewardship entrypoint |
+| [docs/funding/README.ja.md](docs/funding/README.ja.md) | Funding and founding-responsibility index |
 | [docs/operations/README.ja.md](docs/operations/README.ja.md) | Operations index |
 | [docs/operations/heterogeneous-agent-deck-governance.ja.md](docs/operations/heterogeneous-agent-deck-governance.ja.md) | Multi-agent project governance |
 | [docs/operations/workspace-boundary-register.ja.md](docs/operations/workspace-boundary-register.ja.md) | Workspace and repository boundary model |
