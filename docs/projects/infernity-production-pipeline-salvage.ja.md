@@ -1,22 +1,83 @@
-# 虚空のインフェルニティ 過去制作パイプライン・サルベージ
+# 虚空のインフェルニティ 一人スタジオ制作pipeline・サルベージ
 
-状態: `[SALVAGE-INDEXED]` `[ORIGINALS-READ-ONLY]` `[REPRODUCTION-NOT-STARTED]`
+状態: `[HISTORICAL-STUDIO-PIPELINE-EVIDENCED]` `[ORIGINALS-READ-ONLY]`
+`[LEGACY-RUNTIME-REPRODUCTION-NOT-STARTED]`
 
 制定日: 2026-07-29
 
 ## 1. 目的
 
-本書は、2008年以降の`infernoayase`／虚空のインフェルニティ制作資産について、
-読み取り専用の発掘索引から確定できた系譜、権利境界、保全Gate、現代R&Dへの再接続候補を
-Manifestへ登録する。
+本書は、2008年以降の`infernoayase`／虚空のインフェルニティ制作資産を、個別libraryの
+発見一覧ではなく、漫画を完成・頒布するために一人で設計、運用、保存したstudio production
+pipelineとして解析する。読み取り専用索引から確定できた工程、component系譜、権利境界、
+保全Gate、現代R&Dへの再鍛造候補をManifestへ登録する。
 
-過去資産を「単一の自作engine」として神話化しない。第三者generator、埋め込みscript、
-portable制作環境、ユーザー固有の選択・統合・parameter・素材・scene・render・漫画工程を分ける。
+評価のmainは、個々のcomponentを誰が発明したかではなく、企画からpre-production、
+production、post-production、頒布、保存までを接続して最終製品を出したかに置く。
+第三者generatorの作者性を守ることと、漫画家／監督／system integratorとしての
+pipeline Agencyを認めることは競合しない。
 
 原本はこのrepositoryへ移していない。legacy形式の実行、変換、再保存、cloud一括downloadも
 実施していない。
 
-## 2. 発掘できた制作系統
+## 2. 完成品から逆照射する
+
+### 2.1 一人でstudio分業を圧縮した
+
+発掘corpusから観測できる役割は、次のproduction chainである。
+
+| Studio工程 | 一人スタジオ内で担った役割 | 観測したevidence |
+|---|---|---|
+| Development／pre-production | 世界、character、背景要件、asset選定、layout、scene計画 | 作品別directory、設定、背景群、generator選定 |
+| Production | portable Blender環境、generator、Python／Java bridge、model、camera、lighting、render | `.blend`、`.py`、`.jar`、texture、render |
+| Post-production | 線画化、PSD編集、ComicStudio／CLIP原稿、page構成 | PSD、`.lip`、PNG／JPG、原稿backup |
+| Publication／distribution | 冊子、Web／印刷用出力、告知、event／同人商流への接続 | 完成原稿、公開商品記録、User申告の頒布経路 |
+| Preservation／operations | portable環境、日付別backup、format／version継続、代表working copyの保持 | 2013年制作backup、同一collection hash、22GB制作corpus |
+
+これはHollywood、虫プロ、Production I.G等の特定studioとの提携、規模、成果、固有手法の
+同一性をいうものではない。企画、撮影／render、仕上げ、編集、頒布を職能として分ける
+studio productionの考え方を、同人規模の個人環境へ圧縮した組織設計上の比較である。
+
+### 2.2 出力実績
+
+[FACT]
+
+- 虚空本体corpusは22GBあり、ComicStudio `.lip` 90個、PSD 381個、`.blend` 40個、
+  `.py` 60個、PNG 531個、JPG 500個を含む
+- 横断3D corpusは5.5GBあり、Blender file 173個と、都市、宇宙船、研究所、室内、
+  漫画線画調背景等のproduction clusterを含む
+- 原稿、3D生成器、scene、renderが同じ2013年制作backupに残る
+- 2026年7月29日の外部照合では、駿河屋に
+  [第一巻・36ページ](https://www.suruga-ya.jp/product/detail/ZHORO37134)と
+  [第二巻・52ページ](https://www.suruga-ya.jp/product/detail/ZHORO35523)の商品記録があり、
+  2冊合計88ページの印刷物が10年以上後の中古流通面にも残っていた
+
+この88ページは、現在の公開検索から外部照合できた**非網羅的な下限**であり、全作品総量ではない。
+`.lip`の個数もpage数へ自動換算しない。
+
+[USER-DECLARED]
+
+- シリーズ全体では100ページを超える原稿を制作した
+- SFW／NSFW双方を制作し、コミケ、ケモケ、同人およびセミプロ以上の商流へ出した
+
+event別頒布記録と総page数の独立照合は未完了である。しかし、公開検索に出ない作品を
+「制作されなかった」へ変換しない。
+
+### 2.3 法域センシティブcorpusを焼却しない
+
+[USER-PUBLICATION-POLICY]
+
+ケモショタ、非実在青少年性表現を含む法域センシティブな原稿や、海外platformへ出せない
+原稿を、SFW公開面へ載らないことを理由に減算、削除、不存在扱いしない。
+日本国内だけで閲覧可能とする作品は`JAPAN-ONLY VIEWING` corpusとして保持し、秋葉原、
+池袋等の国内取扱面、または作者が個別に指定するprivate viewing gateへ案内を分ける。
+作者の自宅住所や非公開導線はpublic repositoryへ掲載しない。
+
+各作品の閲覧条件、年齢確認、rights、現行法への適合は、作品、媒体、時点、法域ごとの
+個別Gateで確認する。米国系serviceの検索、決済、掲載、model policyを、過去の日本作品が
+存在したかを決める普遍定規にしない。
+
+## 3. 発掘できた制作系統
 
 読み取り専用索引では、少なくとも次の系統が同じ制作史に残っている。
 
@@ -41,7 +102,7 @@ scene、render、原稿工程へ接続した**魔改造型の制作pipeline**で
 確定できない。局所rule、L-system、道路成長、zoning、seedを数理的世界生成として読む解釈と、
 特定の独自数論engineが存在したという実装claimを分ける。
 
-## 3. 同一backupと原本保全
+## 4. 同一backupと原本保全
 
 [FACT]
 
@@ -63,9 +124,11 @@ legacy originals
        -> execution receipt
 ```
 
-原本の存在、hash一致、隔離環境での起動、生成成功、現代engineでの再実装は、それぞれ別のgreenとする。
+原本の存在、hash一致、当時のpipelineが完成品を出したこと、隔離環境での再起動、
+現代engineでの再実装は、それぞれ別のgreenとする。旧runtimeを現在再実行できないことは、
+歴史上の完成品とproduction greenを取り消さない。
 
-## 4. 所管と独自性の境界
+## 5. Component作者性とpipeline Agency
 
 | Component | 現在の所管判定 |
 |---|---|
@@ -76,21 +139,24 @@ legacy originals
 | TDCG、ComicStudio、CLIP、購入素材 | 製品／素材ごとのlicense。生成結果の所管と再配布権は別確認 |
 | Minecraft class／world形式 | Mojang由来部分とlocal改変差分を分離する |
 | Ore／Redstone Madness | local数値改変の実験資産候補。作者性と正確なbase versionは未確定 |
-| 虚空の原稿、独自model、構図、render、統合設定 | infernoayase制作候補。共同制作・購入素材を個別確認 |
+| 虚空の原稿、独自model、構図、render、統合設定 | infernoayase制作資産。共同制作・購入素材の範囲は個別確認 |
 
-現時点で確実に取り出せるユーザー固有性候補は、次の層である。
+component所管とは別に、現時点のevidenceから次のstudio pipeline Agencyを観測できる。
 
 - どのgeneratorとscriptを選んだか
 - portable制作環境へどう束ねたか
 - seed、parameter、素材、library、sceneをどう設定したか
-- generator出力をどのように編集、render、線画化したか
-- 3D背景を漫画原稿工程へどう接続したか
+- productionをどうdirectionし、camera、lighting、render、線画化を行ったか
+- 3D背景を漫画原稿、page構成、完成出力、頒布へどう接続したか
+- 制作環境、原稿、出力、backupをどう運用・保存したか
 - Minecraftの局所ruleをどの値へ変更したか
 
 第三者codeを独自資産として公開しない。同時に、第三者toolを使ったことを理由に、
-選択、統合、設定、出力、作品工程の制作史を消さない。
+選択、統合、設定、direction、出力、頒布、保存の制作史を消さない。scriptへのlocal patch、
+共同制作、購入素材、page単位の直接系譜が`UNKNOWN`でも、確認済みの上位pipeline Agencyまで
+「候補」へ弱めない。
 
-## 5. 横断マイニングで立った再接続候補
+## 6. 最終製品builderへ返せる再接続候補
 
 発掘索引にはBlender以外にも、現代のworld runtimeへ接続できる候補がある。
 
@@ -121,7 +187,12 @@ world / scenario command
 小規模なworld compiler候補である。現時点では再構成仮説であり、実装repository、schema、
 互換性、性能は`UNKNOWN`とする。
 
-## 6. 現代サルベージのStage Gate
+Atlantisのようなmiddlewareを使ってMMO、TRPG、metaverse、業務systemを作る場合にも、
+componentが優秀であることと、それらをproductionへ束ねて最終製品を出すことは別の技術課題である。
+この一人スタジオpipelineは、middleware評価を完成品までつなぐsystem integrationの実例として
+再鍛造できる。
+
+## 7. 現代サルベージのStage Gate
 
 ### Stage 0 — 原本保全
 
@@ -158,17 +229,20 @@ clean-room再実装を選ぶ。
 - 更新日時、file名、構図を人間が照合する
 - page、scene、generator、素材licenseの系譜表を作る
 
-## 7. セキュリティとprivacy境界
+## 8. セキュリティ、privacy、公開範囲
 
 公開文書へ、legacy volumeの絶対path、account識別子、credential、Wi-Fi secret、
 player名、接続元IP、電話番号、SIP情報、CDR、録音、営業ASR本文を転記しない。
 
 会社案件フォルダーは技術参照と再利用権を分け、人間の契約確認なしに個人／同人資産へ混ぜない。
 
+NSFW／法域センシティブcorpusは削除対象ではない。contentを公開repositoryへ複製するか、
+日本国内限定閲覧へ置くか、非公開保存するかを作品単位で分ける。
+
 MIPはUserが指定した完全除外領域である。filename、全文、hash、index、重複判定を含め、
 存在確認を探索穴として埋めに行かない。
 
-## 8. 未解決
+## 9. 未解決
 
 [UNKNOWN]
 
@@ -180,16 +254,19 @@ MIPはUserが指定した完全除外領域である。filename、全文、hash�
 - iCloud上の未取得objectの内容hash
 - 欠落したsource、runtime、cloud／VPS上の追加backup
 - world compiler候補の最小schemaと実装owner
+- User申告の総page数、event別頒布、NSFW／SFW作品目録の独立照合
+- `JAPAN-ONLY VIEWING` corpusの作品別閲覧条件、rights、法域Gate
 
 陰性所見は「存在しない」ではなく、「接続済みの探索面では未発見」と記録する。
 
-## 9. Sourceと監査
+## 10. Sourceと監査
 
 - supplied source: `INFERNITY_BLENDER_PIPELINE_SALVAGE_INDEX_2026-07-27.md`
 - source SHA-256: `e6a938c01b904db02e1478fc39f12e33a9e431c9c196f172de2b21c0235043da`
 - source operation: 読み取り専用
 - source transfer: repositoryへ原本未転送
 - [公開監査receipt](../../foldlog/20260729-1441__虚空のインフェルニティ資産発掘公開監査.ja.md)
+- [一人スタジオpipeline 評価軸訂正監査](../../foldlog/20260729-1512__一人スタジオpipeline評価軸訂正監査.ja.md)
 
 `historical-oae-unavailable`
 

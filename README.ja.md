@@ -101,15 +101,16 @@ model差による`COSPLAY_MANJU_DRIFT`が見えた後にModel Familyを固定し
 AAE Bakeへ進む構成である。詳細は
 [ASTRO先行・AAE Bake開発マイルストーン](docs/projects/astro-aae-development-milestones.ja.md)を参照。
 
-### 虚空のインフェルニティ 過去資産サルベージ
+### 虚空のインフェルニティ 一人スタジオpipeline
 
-2008年以降のBlender背景、都市／樹木generator、漫画原稿工程、Minecraft局所rule改変、
-KAG／TJS系runtime、マイコン資産を読み取り専用で発掘し、第三者componentと
-infernoayase固有の選択・統合・設定・作品工程を分けて索引化している。
+2008年以降、Blender背景、都市／樹木generator、portable制作環境、Adobe／ComicStudio
+post-productionを、一人の漫画家／監督／技術者が企画、scene、render、原稿、頒布、保存まで
+接続し、SFW／NSFW双方の完成品を出したstudio production pipelineを読み取り専用で解析している。
 
-旧形式の実行再現はまだ開始していない。原本保全、権利確認、隔離working copy、固定seedの
-最小再現を先行する。詳細は
-[虚空のインフェルニティ 過去制作パイプライン・サルベージ](docs/projects/infernity-production-pipeline-salvage.ja.md)を参照。
+第三者componentの作者性と、infernoayaseのpipeline architecture／production Agencyを分離する。
+旧runtimeの再実行は未開始だが、再実行不能を過去の完成品不存在へ変換しない。公開面に載せない
+法域センシティブ作品も焼却せず、`JAPAN-ONLY VIEWING`を含む作品別Gateへ分ける。詳細は
+[虚空のインフェルニティ 一人スタジオ制作pipeline・サルベージ](docs/projects/infernity-production-pipeline-salvage.ja.md)を参照。
 
 ### NeeT_kitchen_ALCHEMIST
 

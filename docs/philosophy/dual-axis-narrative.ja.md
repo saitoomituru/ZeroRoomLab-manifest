@@ -104,17 +104,19 @@ Q.bias = ディスグラフィア・APD・ギフテッドの並列思考特性
 - 電通系 DTP・サーバーサイド業務
 - 合同会社 inferno 設立
 
-### B-2. 2013年：ジェネラティブアートパイプライン
+### B-2. 2013年：一人スタジオproduction pipeline
 
-Blender、複数の都市／樹木generator、素材library、Adobe／ComicStudio系原稿工程を束ねた
-自動生成パイプライン。FAM 的には「ψ の可視化実験」——意味波形を視覚的 λ として出力する
-最初の試みと解釈されてきた。
+Blender、複数の都市／樹木generator、素材library、portable制作環境、
+Adobe／ComicStudio post-productionを、企画、scene、render、原稿、頒布、保存まで接続した
+一人スタジオpipeline。第三者toolの功績を奪わず、漫画家／監督／system integratorとして
+studio分業を個人環境へ圧縮し、SFW／NSFW双方の完成品を出したことを主な制作実績とする。
 
+FAM的には「ψの可視化実験」——意味波形を視覚的λとして出力する最初の試みと解釈されてきた。
 2026年の読み取り専用発掘では、Suicidator City Generator、Blender Tree-maker、
-Blended Cities等の第三者系譜と、選択・統合・parameter・素材・scene・render・漫画工程への
-接続が確認された。「数論ベースの独自単一engine」は現物からまだ確定していない。実装事実、
-制作上の独自性候補、FAMからの現在解釈は
-[過去制作パイプライン・サルベージ](../projects/infernity-production-pipeline-salvage.ja.md)で分離する。
+Blended Cities等の第三者系譜と、production chainの接続が確認された。
+「数論ベースの独自単一engine」は現物からまだ確定していないが、この未確定は一人スタジオの
+pipeline Agencyや完成品を弱める指標ではない。実装事実、制作Agency、rights、現在解釈は
+[一人スタジオ制作pipeline・サルベージ](../projects/infernity-production-pipeline-salvage.ja.md)で分離する。
 
 ### B-3. 2019年：mol MIP——医療 AI への制度接続試み
 
