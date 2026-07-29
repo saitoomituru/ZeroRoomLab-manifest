@@ -106,7 +106,15 @@ Q.bias = ディスグラフィア・APD・ギフテッドの並列思考特性
 
 ### B-2. 2013年：ジェネラティブアートパイプライン
 
-Blender＋数論ベース世界生成器＋Adobe 連携の自動生成パイプライン。FAM 的には「ψ の可視化実験」——意味波形を視覚的 λ として出力する最初の試み。
+Blender、複数の都市／樹木generator、素材library、Adobe／ComicStudio系原稿工程を束ねた
+自動生成パイプライン。FAM 的には「ψ の可視化実験」——意味波形を視覚的 λ として出力する
+最初の試みと解釈されてきた。
+
+2026年の読み取り専用発掘では、Suicidator City Generator、Blender Tree-maker、
+Blended Cities等の第三者系譜と、選択・統合・parameter・素材・scene・render・漫画工程への
+接続が確認された。「数論ベースの独自単一engine」は現物からまだ確定していない。実装事実、
+制作上の独自性候補、FAMからの現在解釈は
+[過去制作パイプライン・サルベージ](../projects/infernity-production-pipeline-salvage.ja.md)で分離する。
 
 ### B-3. 2019年：mol MIP——医療 AI への制度接続試み
 

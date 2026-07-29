@@ -101,6 +101,16 @@ model差による`COSPLAY_MANJU_DRIFT`が見えた後にModel Familyを固定し
 AAE Bakeへ進む構成である。詳細は
 [ASTRO先行・AAE Bake開発マイルストーン](docs/projects/astro-aae-development-milestones.ja.md)を参照。
 
+### 虚空のインフェルニティ 過去資産サルベージ
+
+2008年以降のBlender背景、都市／樹木generator、漫画原稿工程、Minecraft局所rule改変、
+KAG／TJS系runtime、マイコン資産を読み取り専用で発掘し、第三者componentと
+infernoayase固有の選択・統合・設定・作品工程を分けて索引化している。
+
+旧形式の実行再現はまだ開始していない。原本保全、権利確認、隔離working copy、固定seedの
+最小再現を先行する。詳細は
+[虚空のインフェルニティ 過去制作パイプライン・サルベージ](docs/projects/infernity-production-pipeline-salvage.ja.md)を参照。
+
 ### NeeT_kitchen_ALCHEMIST
 
 低資源の生活者が、家庭設備、公開知識、人間の感覚フィードバックを使って食べられる成果物を作り、失敗条件を含む知識を社会へ返す生活兵站研究。
