@@ -1,6 +1,15 @@
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![X: @K_chachamaru](https://img.shields.io/badge/X-%40K__chachamaru-black)](https://twitter.com/K_chachamaru)
 
+**Code is Apache-2.0. Narrative, terminology, diagrams, and conceptual flavor are
+CC BY 4.0. Use freely, but preserve attribution when carrying the flavor forward.**
+
+**コードはApache-2.0、文章・用語・図解・世界観などのフレーバー層はCC BY 4.0です。
+自由に利用できますが、フレーバーを継承して語る場合は出典を明記してください。**
+
+詳細な適用境界は[ライセンス境界研究規約](docs/operations/license-boundary-research-policy.ja.md)、
+第三者素材は個別表示を優先します。
+
 # ZeroRoomLab-manifest
 
 ZeroRoomLab is a one-person research studio and fabrication space
