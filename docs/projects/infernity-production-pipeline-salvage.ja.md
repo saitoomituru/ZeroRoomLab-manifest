@@ -51,16 +51,23 @@ studio productionの考え方を、同人規模の個人環境へ圧縮した組
   [第一巻・36ページ](https://www.suruga-ya.jp/product/detail/ZHORO37134)と
   [第二巻・52ページ](https://www.suruga-ya.jp/product/detail/ZHORO35523)の商品記録があり、
   2冊合計88ページの印刷物が10年以上後の中古流通面にも残っていた
+- Alice Booksには、C89発行の
+  [全年齢版・80ページ](https://alice-books.com/item/show/4953-1)と、けもケット5発行の
+  [成人指定冊子・16ページ](https://alice-books.com/item/show/4953-4)の商品記録が残る
+- 公開商品記録4件のページ建て累計は`36 + 52 + 80 + 16 = 184ページ`であり、
+  公開カタログから確認できる頒布量は100ページを超える
 
-この88ページは、現在の公開検索から外部照合できた**非網羅的な下限**であり、全作品総量ではない。
-`.lip`の個数もpage数へ自動換算しない。
+`184ページ`は版／冊子ごとの**public catalog extent**である。2015年の80ページ版と
+2013年の2冊に再録、再編集、改訂の重複があるかは未照合のため、固有原稿184ページとは
+断定しない。`.lip`の個数もpage数へ自動換算しない。
 
 [USER-DECLARED]
 
-- シリーズ全体では100ページを超える原稿を制作した
-- SFW／NSFW双方を制作し、コミケ、ケモケ、同人およびセミプロ以上の商流へ出した
+- 固有原稿としてもシリーズ全体で100ページを超える
+- SFW／NSFW双方を制作し、上記以外の同人およびセミプロ以上の商流へも出した
 
-event別頒布記録と総page数の独立照合は未完了である。しかし、公開検索に出ない作品を
+C89とけもケット5への頒布は外部商品記録で確認できた。固有原稿page数、版間の重複、
+上記以外のevent／商流は独立照合が未完了である。しかし、公開検索に出ない作品を
 「制作されなかった」へ変換しない。
 
 ### 2.3 法域センシティブcorpusを焼却しない
@@ -71,7 +78,11 @@ event別頒布記録と総page数の独立照合は未完了である。しか�
 原稿を、SFW公開面へ載らないことを理由に減算、削除、不存在扱いしない。
 日本国内だけで閲覧可能とする作品は`JAPAN-ONLY VIEWING` corpusとして保持し、秋葉原、
 池袋等の適法な国内取扱面、または作者が個別に指定するprivate viewing gateへ案内を分ける。
-作者の自宅住所や非公開導線はpublic repositoryへ掲載しない。
+
+個人事業の責任表示、Fantia等の成人向け販売／公開、年齢確認、予約、国内閲覧を運用するため、
+Userがpublic business surfaceとして指定済みの住所、連絡先、責任表示、受付導線は消さない。
+一方、発掘したlocal fileから、公開指定されていない居住情報、訪問手順、Gate通過後の詳細を
+自動転記しない。公開事業住所とprivate access detailを「住所」の一語へ潰さない。
 
 各作品の閲覧条件、年齢確認、rights、現行法への適合は、作品、媒体、時点、法域ごとの
 個別Gateで確認する。米国系serviceの検索、決済、掲載、model policyを、過去の日本作品が
@@ -234,6 +245,9 @@ clean-room再実装を選ぶ。
 公開文書へ、legacy volumeの絶対path、account識別子、credential、Wi-Fi secret、
 player名、接続元IP、電話番号、SIP情報、CDR、録音、営業ASR本文を転記しない。
 
+Userが公開指定した事業住所、法定／契約上の責任表示、連絡先、年齢確認、予約入口は
+privacy情報として一律削除しない。未公開の居住情報、credential、訪問手順とは別fieldで管理する。
+
 会社案件フォルダーは技術参照と再利用権を分け、人間の契約確認なしに個人／同人資産へ混ぜない。
 
 NSFW／法域センシティブcorpusは削除対象ではない。contentを公開repositoryへ複製するか、
@@ -254,7 +268,7 @@ MIPはUserが指定した完全除外領域である。filename、全文、hash�
 - iCloud上の未取得objectの内容hash
 - 欠落したsource、runtime、cloud／VPS上の追加backup
 - world compiler候補の最小schemaと実装owner
-- User申告の総page数、event別頒布、NSFW／SFW作品目録の独立照合
+- 固有原稿page数、版間の再録／再編集、未照合event／商流、NSFW／SFW作品目録
 - `JAPAN-ONLY VIEWING` corpusの作品別閲覧条件、rights、法域Gate
 
 陰性所見は「存在しない」ではなく、「接続済みの探索面では未発見」と記録する。
