@@ -72,20 +72,24 @@ SphereOS本体や関連実装の稼働状態は、clone可否とは別に各リ�
 
 ## 6. NeeT_kitchen_ALCHEMISTの再構築
 
-レジスタの`neet_kitchen_alchemist.expected_repositories`にある2リポジトリをcloneし、次の参照集合を持つ`NeeT_kitchen_ALCHEMIST.code-workspace`を作る。
+レジスタの`neet_kitchen_alchemist.expected_repositories`にある3リポジトリをcloneし、次の参照集合を持つ`NeeT_kitchen_ALCHEMIST.code-workspace`を作る。
 
 ```json
 {
   "folders": [
     { "path": "NeeT_kitchen_ALCHEMIST/OpenSourcePITETO" },
+    { "path": "NeeT_kitchen_ALCHEMIST/saitoomituru" },
     { "path": "ZeroRoomLab-manifest/ZeroRoomLab-manifest" }
   ]
 }
 ```
 
-ここで再現できるのは、レシピ、実機写真、画像整備ツール、ライセンス、共通manifestである。食材、油、調味料、調理器具、オーブンの実温度、人間の味覚等は実行環境であり、cloneだけで再現したとはみなさない。
+ここで再現できるのは、レシピ、実機写真、画像整備ツール、ライセンス、運営者の公開プロフィールと
+協働・支援導線、共通manifestである。食材、油、調味料、調理器具、オーブンの実温度、人間の味覚等は
+実行環境であり、cloneだけで再現したとはみなさない。
 
 本ワークスペースは人間側の生活兵站研究であり、Deb800またはスフィアのrepositoryを暗黙に追加しない。`OpenSourcePITETO`の日本語READMEをレシピ正本として読み、en-US版を翻訳GUIとして扱う。
+`saitoomituru`は運営者の名寄せと公開活動を示す参照面であり、レシピ、試食結果、食品安全の正本にはしない。
 
 ## 7. 企業・サードパーティワークスペース
 

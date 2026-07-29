@@ -51,11 +51,12 @@
 
 ## 4. ワークスペース構成
 
-`NeeT_kitchen_ALCHEMIST.code-workspace` の現行メンバーは次の2つである。
+`NeeT_kitchen_ALCHEMIST.code-workspace` の現行メンバーは次の3つである。
 
 | メンバー | 責務 |
 |---|---|
 | `NeeT_kitchen_ALCHEMIST/OpenSourcePITETO` | レシピ、実機写真、画像圧縮ツール、ライセンス |
+| `NeeT_kitchen_ALCHEMIST/saitoomituru` | 運営者の名寄せ、公開活動、協働・支援導線。料理実装や実験結果の正本ではない |
 | `ZeroRoomLab-manifest/ZeroRoomLab-manifest` | 共通の認知規約、ワークスペース境界、公開主張、プロジェクト位置づけ |
 
 同一ワークスペースにあることは、相互のruntime依存、submodule依存、package依存を意味しない。

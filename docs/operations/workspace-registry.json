@@ -150,6 +150,7 @@
       "implicit_scope_expansion": false,
       "descriptor_member_order": [
         "NeeT_kitchen_ALCHEMIST/OpenSourcePITETO",
+        "NeeT_kitchen_ALCHEMIST/saitoomituru",
         "ZeroRoomLab-manifest/ZeroRoomLab-manifest"
       ],
       "expected_repositories": [
@@ -157,6 +158,13 @@
           "name": "OpenSourcePITETO",
           "workspace_path": "NeeT_kitchen_ALCHEMIST/OpenSourcePITETO",
           "remote": "https://github.com/saitoomituru/OpenSourcePITETO"
+        },
+        {
+          "name": "saitoomituru",
+          "workspace_path": "NeeT_kitchen_ALCHEMIST/saitoomituru",
+          "remote": "https://github.com/saitoomituru/saitoomituru.git",
+          "workspace_role": "operator_profile_identity_and_support_reference",
+          "implementation_dependency": false
         },
         {
           "name": "ZeroRoomLab-manifest",
