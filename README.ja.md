@@ -96,6 +96,11 @@ standalone Atlantis／ASTRO統合runtime、永続OAE、7D Fold runtime等は未�
 [docs/theory/sphere-os.ja.md](docs/theory/sphere-os.ja.md)、
 [SphereOS Atlantis](https://github.com/saitoomituru/SphereOS-Atlantis)を参照。
 
+現在の開発主経路は、SphereASTROで実機build、Chat、実推論、Body制御を順に観測し、
+model差による`COSPLAY_MANJU_DRIFT`が見えた後にModel Familyを固定してSphere-aaeの
+AAE Bakeへ進む構成である。詳細は
+[ASTRO先行・AAE Bake開発マイルストーン](docs/projects/astro-aae-development-milestones.ja.md)を参照。
+
 ### NeeT_kitchen_ALCHEMIST
 
 低資源の生活者が、家庭設備、公開知識、人間の感覚フィードバックを使って食べられる成果物を作り、失敗条件を含む知識を社会へ返す生活兵站研究。
@@ -116,7 +121,7 @@ standalone Atlantis／ASTRO統合runtime、永続OAE、7D Fold runtime等は未�
 | プロジェクト | スコープ | 状態 |
 |---|---|---|
 | **プロジェクト八百万** | 800系生産パイプライン（OND800/FAN800/SAO800/DVE800/PSYCHO-Py800MCP） | 稼働中 |
-| **プロジェクトスフィア：サルベージエッジスフィア** | SphereOS本体・AQC・FAM・Sphere-aae・SphereASTRO | **凍結中**（物理リソース問題＝SDK廃止＋HPC/クラウド維持費） |
+| **プロジェクトスフィア：サルベージエッジスフィア** | SphereOS本体・AQC・FAM・Sphere-aae・SphereASTRO | **再鍛造中／一部RESOURCE-WAIT**（ASTRO実機断面を先行。大型MoE・AAE Bake・分散火力は実測後に判定） |
 | **プロジェクト縄文ラボ：ハードウェア工房** | commonsATX・Dr.SILICONシリーズ・EVバイク縄文エンジェル等、800系/Sphere系に属さない物理工作案件 | 稼働中 |
 
 3ボードともこのリポジトリ（ZeroRoomLab-manifest）にリンク済み。一覧は[Projectsタブ](https://github.com/saitoomituru/ZeroRoomLab-manifest/projects)から参照できる。
@@ -161,8 +166,8 @@ FAM と 4軸射程モデルは、この多重性を説明可能な形へ落と�
 | [SAO800](https://github.com/HIPSTAR-IScompany/SAO800) | 配信母艦拡張 |
 | [DVE800](https://github.com/saitoomituru/DVE800) | 編集エンジン（DaVinci Resolve × ローカルAI） |
 | [PSYCHO-Py800MCP](https://github.com/saitoomituru/PSYCHO-Py800MCP) | 計測器MCP |
-| [Sphere-aae](https://github.com/saitoomituru/Sphere-aae) | エッジAIエージェントエンジン（FAM推論エンジン中核・HPC調達待ちで停止中） |
-| [SphereASTRO](https://github.com/saitoomituru/SphereASTRO) | Sphere-aae向けGUI・責任境界層（Swift/SwiftUI・AI未接続） |
+| [Sphere-aae](https://github.com/saitoomituru/Sphere-aae) | エッジAIエージェントエンジン（runtime土台あり。ASTRO実測後にModel Family固定・AAE Bake、本格MoEはRESOURCE-WAIT） |
+| [SphereASTRO](https://github.com/saitoomituru/SphereASTRO) | ASTRO Runner・GUI・責任境界層（Swift/SwiftUI・target spec確定・AI未接続・Stage 0実機receipt待ち） |
 | [commonsATX](https://github.com/saitoomituru/commonsATX) | レーザーカッター用OSHフレーム |
 | [OpenSourcePITETO](https://github.com/saitoomituru/OpenSourcePITETO) | 家庭設備へ工程機能を移植するオープンソース・ポテトチップス実験 |
 
@@ -197,6 +202,7 @@ FAM と 4軸射程モデルは、この多重性を説明可能な形へ落と�
 | [docs/philosophy/kotodama-and-ai.ja.md](docs/philosophy/kotodama-and-ai.ja.md) | 言霊とAI — 言霊の国でAIを作るということ |
 | [docs/philosophy/dual-axis-narrative.ja.md](docs/philosophy/dual-axis-narrative.ja.md) | FAM二軸ナラティブ — ハイヤー世界層×地上技術活動層 |
 | **プロジェクト層** | |
+| [docs/projects/astro-aae-development-milestones.ja.md](docs/projects/astro-aae-development-milestones.ja.md) | ASTRO先行・AAE Bake開発マイルストーン — 実機観測、model固定、AAE Bake、永続人格、Neat Runnerの順序 |
 | [docs/projects/800-series.ja.md](docs/projects/800-series.ja.md) | 800系 — 演者による主権回収システム |
 | [docs/projects/dve800.ja.md](docs/projects/dve800.ja.md) | DVE800 — 編集レイヤー・実装状況・FAM三系統との接続 |
 | [docs/projects/neet-kitchen-alchemist.ja.md](docs/projects/neet-kitchen-alchemist.ja.md) | NeeT kitchen ALCHEMIST — Sphere／Deb800から独立した人間側の生活兵站研究 |
