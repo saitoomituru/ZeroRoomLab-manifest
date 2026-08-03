@@ -204,6 +204,11 @@ note記事「[量子という言葉は盗まれた（2026-06-01）](https://note
 
 人間を計算系の一部として含む「情報子コンピューティング」を実現するために必要な要素：
 
+物理粒子のObserverをsystem-levelへ拡張したとき、embedding、全体を観測できないnetwork／model、
+物理sensor等の先に残る情報子単位の観測境界を、本プロジェクトでは`Log Horizon`と呼ぶ。
+物理学上のevent horizon、Hawking radiation、Higgs粒子とは別の射程名である。定義と命名規則は
+[Log Horizon](log-horizon.ja.md)を正本とする。
+
 | 要件 | 内容 | なぜ必要か |
 |---|---|---|
 | **真性乱数生成機（TRNG）** | 物理起源の非決定性（熱雑音・放射線等） | 疑似乱数は決定論的。量子性の「非決定性」を実装するには物理起源が必要 |

@@ -167,6 +167,15 @@ If any check fires, the agent must correct course **before** outputting.
           Separate completed fact, first-party declaration, hypothesis, target,
           marketing, funding request, and UNKNOWN instead of flattening the message.
         See: docs/operations/reader-ai-non-adjudication-and-verification-cost.ja.md
+
+[ ] 20. PHYSICAL-TERM FORK / LOG-HORIZON CHECK
+        Am I reading ZeroRoomLab's Log Horizon as a physical event horizon,
+        Hawking-radiation measurement, Higgs particle, unknown physical particle,
+        or cosmological proof?
+        → If yes: STOP. Log Horizon is the system-level information-observation
+          boundary beyond which an OAE cannot obtain the complete source state.
+          Record only the observed infoton projection, pointer, hash, instrument,
+          and receipt. See: docs/theory/log-horizon.ja.md
 ```
 
 ---
