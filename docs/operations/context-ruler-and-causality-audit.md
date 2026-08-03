@@ -2,6 +2,7 @@
 
 Status: `[REVIEW]` `[Layer A/B/C bridge]`\
 Established: 2026-07-18\
+Updated: 2026-08-03\
 Applies to: MAGI, Sphere Architect, FAM, IBD, SDKs, READMEs, research Notes, and incident analysis
 
 > Language and authority boundary: this en-US document is an external audit GUI. The
@@ -52,12 +53,15 @@ Do not merge concepts merely because Japanese uses the same word for “layer”
 | `technical_layer_ref` | ordered technical dependency or execution axis `L` |
 | `context_dimension_ref` | meaning axis `D` |
 | `context_dimension_count` | number of unique D axes in a Fold |
+| `fold_nesting_depth` | nesting depth `G` of Fold containers |
 | `embedding_dimension` | vector-space dimensionality |
-| `sdk_surface` | SDK entry abstraction `S` |
+| `sdk_surface` | SDK/toolchain entry abstraction `S` within an L route |
 | FAM `λ` | objective/output, not a technical layer |
 
 When a legacy schema retains a field named `layer`, identify its original namespace. Do not silently load a new
 meaning into the old field.
+The canonical triad is `L / D / G`. `S` remains a valid SDK-surface classification, but it must not replace G as an
+independent third axis.
 
 ## 4. Audit the source of the ruler
 
@@ -188,10 +192,10 @@ party's account. Separate access to logs from independence of self-evaluation.
 Treating poison talk in a work of art or README cover as a technical fact, or importing deep technical caveats into
 the public cover.
 
-### 7.7 L/D/Schema failure
+### 7.7 L/D/G/S/Schema failure
 
-Placing meaning dimensions on a technical-layer axis, inferring compatibility from the number `4D`, or overwriting a
-legacy `layer` key with a different namespace.
+Placing meaning dimensions on a technical-layer axis, inferring compatibility from the number `4D`, dropping G and
+promoting S into the canonical third-axis position, or overwriting a legacy `layer` key with a different namespace.
 
 ## 8. MAGI cross-audit
 
@@ -245,6 +249,7 @@ An audit result is also an Interpretation OAE. Record the auditor's Position, Re
 - Hypotheses from different Causality Profiles can coexist without overwrite.
 - Confidence includes a `scale_ref`.
 - Theology is not promoted into a physical claim, and physics is not promoted into a theological claim.
+- The canonical `L / D / G` triad is complete, and SDK surface `S` has not replaced G.
 - A failed custom Registry has an explicit fallback.
 - The audit discloses the speaker's interest position.
 

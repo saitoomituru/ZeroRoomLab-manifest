@@ -2,6 +2,7 @@
 
 状態: `[REVIEW]` `[Layer A/B bridge]`  
 制定日: 2026-07-18  
+更新日: 2026-08-03
 対象: Sphere Architect、SphereOS、FAM、IBD、ASTRO、Atlantis、第三者SDK  
 関連Presentation: [霊的言霊の次元とContext Dimension Fold](../philosophy/spiritual-context-dimension-and-fold.ja.md)
 
@@ -13,11 +14,13 @@ SphereOSはLinux、BSD、macOS、POSIX、container runtime、database kernelを�
 
 POSIX.1-2024は、applicationのsource-level portabilityを支える標準OS interfaceとenvironmentを定義する規格である。POSIX自体を「memory registerを抽象管理するOS」とは定義しない。[The Open Group Base Specifications Issue 8, Introduction](https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/V1_chap01.html)
 
-## 2. 二つの独立軸
+## 2. 正本三軸`L / D / G`
 
 ### 2.1 技術Layer `L`
 
-`L`は、技術的な上下依存、実行順序、責務境界を数える順序軸である。
+`L`は、技術的な上下依存、実行順序、責務境界を串刺しし、対象環境で利用可能なartifactへ
+materializeする経路である。候補全体は分岐を持つdependency／toolchain graphであり、Lはtargetごとに
+選択された実行経路を表す。
 
 ```text
 hardware
@@ -25,7 +28,9 @@ hardware
   → POSIX-compatible OS
   → process / container runtime
   → Sphere runtime
-  → library / SDK / App / prompt surface
+  → library / SDK / tool / engine / App
+  → build / package / interpreter / Runner
+  → target artifact
 ```
 
 同じ技術Layerで並列に動くmodule数を増やしても、直ちにLayer数は増えない。順序を入れ替えると依存構造が変わるため、`L`方向の合成は非可換である。
@@ -42,14 +47,27 @@ Fold内の軸は同じ意味ではないが、上下・主従を暗黙生成し�
 
 同じ`4D Fold`同士でも、dimension ID、Registry revision、World、fact scope、Mappingが違えば互換ではない。`D`はembedding dimensionでも、配列長でも、技術Layer番号でもない。
 
-### 2.3 三層スコープ規約との非同一性
+### 2.3 Fold nesting depth `G`
+
+`G`は、Fold containerが別のFold containerを包むnesting depthである。
+
+```text
+G = nesting_depth(fold_containers)
+```
+
+各GはそれぞれD軸集合とL経路を持ち得る。`G`を通信世代、SDK surface、embedding dimension、
+技術Layer番号へ流用しない。`S0`〜`S4`はL経路を構成するSDK／toolchain strataであり、Gを置換する
+正本三軸目ではない。
+
+### 2.4 三層スコープ規約との非同一性
 
 ManifestのLayer A／B／Cは、主張を工学・哲学・学術へ分類する**文書・主張スコープ規約**である。技術Layer `L`、Context Dimension `D`のどちらとも同一ではない。
 
 ```text
 Layer A/B/C = 主張の評価規約
-L           = 技術依存の順序
+L           = 技術依存からtarget artifactまでの実行・materialization経路
 D Fold      = 束ねる意味軸数
+G           = Fold container nesting depth
 ```
 
 ## 3. Context OSの管理資源
@@ -328,19 +346,20 @@ Coreが保証するのは、指定された分類法とSchemaへの忠実性、s
 
 ## 9. 不変条件
 
-1. 技術Layer `L`とContext Dimension `D`を同じ軸へ置かない。
-2. `D`の数だけでFold互換性を推定しない。
-3. Registry、Context Register、OAEを同義にしない。
-4. Access Mapなしの変換を「定義済み」と表示しない。
-5. Transformerなしの暗黙型変換を捏造しない。
-6. Observer、Recorder、Initiator、Executor、Causal Agencyを無断で同一化しない。
-7. Source Eventと派生解釈を上書き統合しない。
-8. 一つのCausality Profileを普遍的な因果定規として持ち込まない。
-9. POSIX／kernel資源とContext資源の管理責務を混同しない。
-10. `unknown`、`unmapped`、`unverified`、`⊥`を成功へ変換しない。
-11. 過去資料から同時点OAEを遡及生成し、同一Worldへbackfillしない。
-12. 現在のInterpretation OAEを過去時点の観測へ偽装しない。
-13. 仮想再構成ではSource WorldとSource Instance Ghostを変更せず、7D Foldで双方をsplitする。
+1. 正本三軸`L / D / G`を保持し、SDK surface `S`でGを置換しない。
+2. 技術Layer `L`とContext Dimension `D`を同じ軸へ置かない。
+3. `D`の数または`G`の深さだけでFold互換性を推定しない。
+4. Registry、Context Register、OAEを同義にしない。
+5. Access Mapなしの変換を「定義済み」と表示しない。
+6. Transformerなしの暗黙型変換を捏造しない。
+7. Observer、Recorder、Initiator、Executor、Causal Agencyを無断で同一化しない。
+8. Source Eventと派生解釈を上書き統合しない。
+9. 一つのCausality Profileを普遍的な因果定規として持ち込まない。
+10. POSIX／kernel資源とContext資源の管理責務を混同しない。
+11. `unknown`、`unmapped`、`unverified`、`⊥`を成功へ変換しない。
+12. 過去資料から同時点OAEを遡及生成し、同一Worldへbackfillしない。
+13. 現在のInterpretation OAEを過去時点の観測へ偽装しない。
+14. 仮想再構成ではSource WorldとSource Instance Ghostを変更せず、7D Foldで双方をsplitする。
 
 ## 10. 関連文書
 

@@ -2,6 +2,7 @@
 
 状態: `[REVIEW]` `[Layer A/B bridge]`  
 制定日: 2026-07-18  
+更新日: 2026-08-03
 対象: Sphere Architect、IBDSDK、AstroSDK、Atlantis SDK、第三者SDK
 
 ## 1. 目的
@@ -17,17 +18,27 @@ context fold manifest        どの意味軸を等価なpeerとして束ねる�
 
 SDKはすべてを一つに同梱する製品ではない。目的に応じてcapabilityを選び、上位Registryが制定したD Foldへbindするbundleである。
 
-## 2. 三つの独立した番号
+## 2. 正本三軸`L / D / G`とSDK surface `S`
 
 | 名前 | 例 | 数えるもの | 互換判定への利用 |
 |---|---|---|---|
 | `technical_layer_ref` | `runtime/application` | 技術依存・実行責務 | ABI、runtime、dependency graphと組にする |
 | `context_dimension_count` | `4` | Fold内の一意な意味軸数 | 数だけでは互換判定しない |
+| `fold_nesting_depth` | `7` | Fold containerを包むnesting depth `G` | 各GのRegistry、D集合、L経路と組にする |
 | `sdk_surface` | `S2` | 利用者へ公開する抽象度 | 同じ機能への入口選択に使う |
 
-`S0`から`S4`はSDKの使いやすさを示すsurfaceであり、OSの技術Layer番号でも、Context Dimension数でもない。
+正本三軸は`L = execution／materialization route`、`D = Context Dimension`、
+`G = Fold container nesting depth`である。各GはそれぞれD軸集合とL経路を持ち得る。
+
+`S0`から`S4`はSDKの使いやすさを示すsurfaceであり、Gを置換する独立三軸目ではない。Lの実行経路を
+構成するSDK／framework／toolchain strataとして扱う。OSの技術Layer番号、Context Dimension数、
+embedding dimension、Fold nesting depthへ流用しない。
 
 ## 3. SDK surface
+
+旧文書で`S`を独立した「S軸」と表記した来歴は保持する。ただし正本`L / D / G`との関係では、
+SはLのdependency／build／package／Runner経路を構成するsubgraphである。engineやRunnerの採用は
+Vesselの来歴であり、完成したApp、ゲーム、作品のMeaning、価値、真正性を格付けしない。
 
 | Surface | 主な利用者 | 公開するもの |
 |---|---|---|
@@ -79,6 +90,7 @@ sdk_bundle:
       requires: ibd-sdk@0.x
   context_fold:
     fold_ref: fold://example/astro@3
+    fold_nesting_depth: 1
     dimension_refs:
       - dimension://cloud-chakra
       - dimension://spiritual
@@ -90,6 +102,7 @@ sdk_bundle:
 ```
 
 `context_dimension_count`は`dimension_refs`の一意数から検査する。同じ`4D`でもFold ID、revision、Dimension IDが違えば自動互換にしない。
+`fold_nesting_depth`はcontainer nestingを表し、SDK surface番号や通信世代から推定しない。
 
 ## 5. 共通SPI
 

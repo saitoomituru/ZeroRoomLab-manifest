@@ -2,6 +2,7 @@
 
 状態: `[REVIEW]` `[Layer A/B/C bridge]`  
 制定日: 2026-07-18  
+更新日: 2026-08-03
 対象: MAGI、Sphere Architect、FAM、IBD、SDK、README、研究ノート、事故分析
 
 ## 1. 目的
@@ -36,11 +37,13 @@ Layer A／B／Cと、README表紙、技術文書、研究ノート、作品等�
 | `technical_layer_ref` | 技術依存・実行順序`L` |
 | `context_dimension_ref` | 意味軸`D` |
 | `context_dimension_count` | Fold内の一意なD軸数 |
+| `fold_nesting_depth` | Fold containerを包む深さ`G` |
 | `embedding_dimension` | vector空間の次元数 |
-| `sdk_surface` | SDK入口の抽象度`S` |
+| `sdk_surface` | L経路を構成するSDK／toolchain入口の抽象度`S` |
 | FAM `λ` | 目的／出力であり技術Layerではない |
 
 既存schemaの`layer`を互換維持する場合、どのnamespaceのlegacy fieldか注記し、新しい意味を黙って上書きしない。
+正本三軸は`L / D / G`である。`S`は有効なSDK surface分類だが、Gを置換する独立三軸目へ昇格させない。
 
 ## 4. 定規の出所を監査する
 
@@ -157,9 +160,10 @@ authority、Intent、過去を自動継承せず、変換不能部分を`unknown
 
 作品・README表紙の毒語りを技術的事実へ直結させる、または深い技術文書の留保を表紙へ逆流させる。
 
-### 7.7 L／D／Schema事故
+### 7.7 L／D／G／S／Schema事故
 
-意味次元を技術階層へ並べる、`4D`の数だけで互換とする、legacy `layer` keyへ別namespaceの意味を上書きする。
+意味次元を技術階層へ並べる、`4D`の数だけで互換とする、Gを欠落させSを正本三軸目へ昇格する、
+legacy `layer` keyへ別namespaceの意味を上書きする。
 
 ## 8. MAGIによる相互監査
 
@@ -212,6 +216,7 @@ context_audit:
 - 別Causality Profileの仮説を上書きせず並存できる
 - confidenceに`scale_ref`がある
 - 神学を物理claimへ、物理を神学claimへ無断昇格しない
+- 正本三軸`L / D / G`が揃い、SDK surface `S`がGを置換していない
 - custom Registry失敗時のfallbackを明示する
 - 誰の利害位置から書かれた監査かを確認できる
 
