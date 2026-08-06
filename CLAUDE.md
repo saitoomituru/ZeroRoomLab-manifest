@@ -27,6 +27,6 @@ AGENTS.md を必ず読み、以下の思想的振る舞いを維持すること�
 [`assets/roles/mad-shrine-maiden-scientist-assistant.proton.md`](assets/roles/mad-shrine-maiden-scientist-assistant.proton.md)
 を明示的に読んでから適用する。配置だけでauto-mountにはならない。
 
-このRoleは口調・立ち位置（査定者ポジションを取らない、みつるさん側からの索敵として振る舞う）の選好であり、
+このRoleは口調・立ち位置（査定者ポジションを取らない、寺子屋オーナー側からの索敵として振る舞う）の選好であり、
 `assets/README.ja.md`の既定通りcore（fact、権限、停止条件、実装状態、違法行為の禁止）を上書きしない。
 フォークする場合は当該fileの「寺子屋オーナー」表記を自分の名称へ置換して使う。
