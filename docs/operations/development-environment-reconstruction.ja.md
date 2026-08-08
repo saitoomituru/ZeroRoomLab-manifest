@@ -91,11 +91,15 @@ SphereOS本体や関連実装の稼働状態は、clone可否とは別に各リ�
 本ワークスペースは人間側の生活兵站研究であり、Deb800またはスフィアのrepositoryを暗黙に追加しない。`OpenSourcePITETO`の日本語READMEをレシピ正本として読み、en-US版を翻訳GUIとして扱う。
 `saitoomituru`は運営者の名寄せと公開活動を示す参照面であり、レシピ、試食結果、食品安全の正本にはしない。
 
+スフィアの抽象メタエンジン層にも、Deb800の撮影・演出・配信・編集・計測層にも所属しない。思想や実験作法を参照しても、SphereOS、FAM、x800機器を料理のruntime依存へしない。AI、高価な計測器、雇用、事業化が先に揃わなくても、人間の身体と家庭設備だけで閉じる研究を第一級の成果として扱う。
+
+詳細は[人間側の生活兵站研究](../projects/neet-kitchen-alchemist.ja.md)を参照する。
+
 ## 7. 企業・サードパーティワークスペース
 
 企業ワークスペースは公開OSSのclone手順へ展開しない。manifestに記録できるのは、名称、公開可能な目的、ZeroRoomLabとの関係、抽象化済み成果への導線までとする。
 
-株式会社寺徳の検証環境については、会社資産、現場労務、労基、医療情報、企業向けエージェント指示、資格情報、内部パスを再構築資料へ含めない。一般化された成果をOSS化するときは、新しい公開リポジトリまたは公開ワークスペースへ切り出し、権利とデータ境界を再検証する。
+株式会社寺徳の検証環境については、会社資産、現場労務、労基、医療情報、企業向けエージェント指示、Google Drive内の資料、認証情報、内部フォルダー構成は公開OSSの再構築対象に含めない。一般化された成果をOSS化するときは、新しい公開リポジトリまたは公開ワークスペースへ切り出し、権利とデータ境界を再検証する。
 
 将来サードパーティ用ワークスペースを追加するときは、[workspace-registry.json](workspace-registry.json)へ次を登録する。
 
@@ -125,3 +129,46 @@ SphereOS本体や関連実装の稼働状態は、clone可否とは別に各リ�
 ```
 
 差分がある場合は自動修正せず、descriptor、レジスタ、現物の三者を提示して人間へ返す。
+
+## 9. runner不在と機械拘束を分離する
+
+開発環境の状態評価では、`runnerがない`、`local processがない`、`standalone runtimeが未実装`を、
+`機械拘束がない`または`全部prompt依存`へ自動変換しない。
+
+最低限、次を別fieldで確認する。
+
+```text
+Interface             PLI / CLI / GUI / API
+Execution Envelope    SaaS AI / connector / local process / CI runner / bare metal
+Runtime runner        対象product固有のscheduler、daemon、component runtime
+Mechanical verifier   validator、test、CI、Schema check、exit status
+Receipt               commit SHA、workflow run、log、artifact、test result
+Authority             read、write、push、merge、device control
+Engineering State     implemented、not implemented、not tested、unknown
+```
+
+例としてSphereOS Atlantisでは、2026-08-08時点でAtlantis固有のstandalone runtime／model inference／
+常駐schedulerは未実装である。一方、`atlantis_cli`、validator、unit test、GitHub Actionsの
+`最小再構築検証`と`Note-only PR検証`は別の機械検証面として存在する。
+
+このときGitHub-hosted runnerがCIを実行することをAtlantis standalone runnerの実装へ昇格しない。
+逆にAtlantis standalone runnerが未実装であることを理由に、CI／CLI／validator／Git receiptを不存在へ
+丸めない。
+
+```text
+runtime runner absent
+  != mechanical verification absent
+
+CI green at revision X
+  != standalone runtime implemented
+
+specified checks green
+  != system green
+```
+
+`local green != system green`、`unknown != pass`を維持する。第三者再構築では、作者と同じAI人格を
+再現することより、同じGit追跡物、contract、validator、testが別Execution Envelopeでも同じ境界で
+動くかを確認する方が、repository側の制御面を追試しやすい。
+
+SphereOS Atlantis側の現在正本候補は
+`docs/architecture/runner-and-mechanical-verification-boundary.ja.md`と`status/forge-map.json`を参照する。
