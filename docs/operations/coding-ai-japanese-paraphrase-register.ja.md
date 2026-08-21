@@ -136,6 +136,7 @@ README、技術文書、翻訳、主張表現を編集する前に、ZeroRoomLab
 
 ## 8. 関連文書
 
+- [日本語テックライト語形レジスタ](japanese-technical-writing-word-form-register.ja.md)
 - [異種AGIデッキ統治と操竜型マルチ召喚プロジェクト管理](heterogeneous-agent-deck-governance.ja.md)
 - [テクニカルコミュニケーション運用規約](technical-communication-register.ja.md)
 - [マニフェスト運用モデル](manifest-operating-model.ja.md)

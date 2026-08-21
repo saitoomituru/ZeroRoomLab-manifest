@@ -9,6 +9,7 @@
 - [technical-communication-register.ja.md](technical-communication-register.ja.md) — README、技術文書、リポジトリ内ノート、note.com、X、YouTube等の媒体別レジスターと、観測事実の主張境界を定める。
 - [technical-communication-register.md](technical-communication-register.md) — 表紙の火力、技術証拠、過剰防壁事故、PLI真贋誤認を同じ強度で保持するen-US外部GUI。
 - [coding-ai-japanese-paraphrase-register.ja.md](coding-ai-japanese-paraphrase-register.ja.md) — コーディングAIが日本語の意図・責務・事実強度を保ったまま米語へ意訳するための正本。英語出力は原則en-USとする。
+- [japanese-technical-writing-word-form-register.ja.md](japanese-technical-writing-word-form-register.ja.md) — 同じ由来語を和文、カタカナ、英字で書く際の役割差を定める正本。スキーマー／スキーマ／`schema/`、レンダー／GUI／画面等を工程と機械境界で書き分ける。
 - [coding-ai-japanese-paraphrase-register.md](coding-ai-japanese-paraphrase-register.md) — コーディングAI向け日本語意訳レジスタのen-US外部GUI。
 - [default-language-and-translation-policy.ja.md](default-language-and-translation-policy.ja.md) — 指示がない限り日本語を規定動作とし、en-USを西洋圏が検証するための外部GUIとして省略なく意訳する言語規約。実行可能Prompt／Proton／PLI／意味Kernelは日本語Kernel Sourceとして直接翻訳せず、特殊bilingual・architecture・神学／実践reviewを含む言語学的portへ分離する。
 - [default-language-and-translation-policy.md](default-language-and-translation-policy.md) — 既定言語・翻訳・外部検証GUI規約のen-US版。
