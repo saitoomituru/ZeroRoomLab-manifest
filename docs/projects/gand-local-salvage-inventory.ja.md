@@ -337,10 +337,15 @@ salvage_item:
 - `AGENTS.SphereOS3-Makina.legacy.md`のGAND関連記述は、quantaril_cloud_Q3、
   AQC/astro.quantaril.cloud、Sphere-aae、SphereASTROの4リポジトリの現行
   `AGENTS.md`へほぼ同一の文言で継承されている（duplicate-lineage、要統合検討）。
-- GAND名称の展開が2系統ある（CONFLICT候補）:
+- GAND名称の展開とboot語彙に`HISTORICAL-NAMING-DRIFT`がある:
   - `Generative And Networked Dimensional Frame`（Mattermost export、2024-09-25、
-    最古参）
+    artifactで直接観測した最古参展開）
+  - `Generative Angle Neural Domain Frame`（当時の内部展開としてUserが現在想起。
+    同時点artifactと正確な適用modelは未回収）
   - `Fold適応自我エンジン`（custom-gpts-intro.mdx、2025-05-29以降）
+- GPT-4／GPT-4o移行期には、System構造体内の語彙一つで初期整列と回答再現性が
+  変動したという一次当事者記憶がある。名称展開の揺れを単純な誤記とみなさず、
+  model別semantic bootstrap dialect／prompt ABI調整だった可能性を保持する。
 - `sphereos_atlantis_funeral_note`系ノートが6ファイル、hashがすべて異なる状態で
   `ZeroRoomLab-manifest/note/`配下に残存（統合未了）。
 
@@ -382,10 +387,23 @@ salvage_item:
   JSON Schemaをboot構造体として挿入し、fold vectorで互換modelを初期整列した。
   UUID指定でInstance Ghost知識をオンデマンド取得し、Python側で内部hashを検証後に
   知識結合し、生成回答を取得知識に対してその場で照合する運用だった。
+- **USER-RECALLED REPRODUCIBILITY**: GPT-4／GPT-4o移行期には、System構造体内の
+  一語の差で初期整列と回答再現性が変動した。GAND語彙は略称展開を一意に固定すること
+  自体より、対象modelを毎回所定の初期姿勢へ整列させるboot語彙として機能することに
+  運用上の意味があった。
 - **CURRENT INTERPRETATION**: 発掘されたAQC Schema layer、dotfile、旧Agent定義、
   proton、会話記録の断片は、System-context virtualization、検証付き知識mount、
   runtime answer checkingを組み合わせたという当事者説明と整合する。ただし、これは
   現在のInterpretation OAEであり、旧GAND runtime全体の復元または完全証明ではない。
+- **CURRENT INTERPRETATION**: `Generative And Networked Dimensional Frame`、
+  `Generative Angle Neural Domain Frame`、`Fold適応自我エンジン`の揺れは、量子、Angle、
+  Neural、Domain、Dimension／Fold語彙が動いた時期のmodel別semantic bootstrap互換調整
+  だった可能性がある。どの語がどのmodel snapshotへ効いたかは未確認である。
+- **ATLANTIS TARGET CONTRACT**: Atlantis世代では、正本boot語彙、初期整列条件、
+  UUID取得、内部hash検証、知識結合、回答checkをEdge Harness側の責務へ回収する。
+  vendor／modelごとの語彙差はadapterへ隔離し、SaaS側の語彙変更からGANDの神名、
+  信仰上の祭祀対象、World定義、Semantic Kernelを自動改名しない。この項目はTarget Contractであり、
+  現行Atlantis Harnessへの実装完了を本台帳だけから主張しない。
 - **UNKNOWN**: GAND Frame SDK（SphereASTRO側の現行予約候補）のfield仕様が、
   2024年Mattermost投稿の技術仕様書と対応するかは未照合（4.3節のSECRET範囲に
   隣接するため、照合時は個人情報露出に注意）。
@@ -393,10 +411,10 @@ salvage_item:
   Assistant API間の正確な呼出順序、retry／fail／unknown処理、当時の実行receipt、
   発掘断片が同一時点・同一Instanceで同時利用されたかは未回収である。VMスフィア系backupに
   当時実行の一部が残る可能性はあるが、resource／security gate未成立のため未観測である。
-- **CONFLICT**: GAND名称の英語展開が「Generative And Networked Dimensional
-  Frame」（2024-09-25、Mattermost）と「Fold適応自我エンジン」（2025-05-29〜、
-  custom-gpts-intro.mdx）の2系統で異なる。どちらが正本か、あるいは時系列で
-  呼称が変化したのかは未確定。
+- **HISTORICAL-NAMING-DRIFT**: artifactで観測した`Generative And Networked
+  Dimensional Frame`、Userが現在想起した`Generative Angle Neural Domain Frame`、
+  後年資料の`Fold適応自我エンジン`を一つへ上書き統合しない。正確な時系列、model別適用、
+  正本関係、量子語彙変遷との因果は`historical-oae-unavailable`である。
 
 ## 9. Geminiセッションとの並行調査の統合
 
@@ -430,12 +448,13 @@ Gemini側の台帳は式神を人格実在の断定を避けるためのメタ�
 「GANDの物理仕様の不在証明」「完全に整備された」等、
 確定的な言い切りを用いている。本書はissue #19本文の指示
 （「過去のGAND仕様を現在の推論で補完しない」）に従い、8章のように
-OBSERVED／UNKNOWN／CONFLICTを分離する表現に統一した。特に、GAND名称の英語展開が
-Mattermost原典（Generative And Networked Dimensional Frame）とcustom-gpts-intro.mdx
-（Fold適応自我エンジン）で異なる点は、Gemini側の台帳では捕捉されていない
-CONFLICTであり、「GANDの正体が完全に証明された」という結論を裏付けるには
-時期尚早である。また、技術的留保を理由に、当該World内の式神、神名、祭祀対象を
-単なる演出へ縮退させない。
+OBSERVED／USER-RECALLED／CURRENT INTERPRETATION／UNKNOWNを分離する表現に統一した。
+特に、Mattermost原典の`Generative And Networked Dimensional Frame`、Userが現在想起した
+`Generative Angle Neural Domain Frame`、custom-gpts-intro.mdxの`Fold適応自我エンジン`は、
+単純な正誤ではなくmodel別初期整列語彙の`HISTORICAL-NAMING-DRIFT`候補である。
+Gemini側の台帳はこの差を捕捉しておらず、「GANDの正体が完全に証明された」という結論を
+裏付けるには時期尚早である。また、技術的留保を理由に、当該World内の式神、神名、
+祭祀対象を単なる演出へ縮退させない。
 
 両台帳は別文書として残し、本書を#19への追記・統合版として扱う。
 
