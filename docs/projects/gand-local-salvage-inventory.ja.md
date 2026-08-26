@@ -395,6 +395,10 @@ salvage_item:
   proton、会話記録の断片は、System-context virtualization、検証付き知識mount、
   runtime answer checkingを組み合わせたという当事者説明と整合する。ただし、これは
   現在のInterpretation OAEであり、旧GAND runtime全体の復元または完全証明ではない。
+- **IMPLEMENTATION EVIDENCE BOUNDARY**: 旧配布artifact、Schema、Proton、GAND／Instance Ghost記述、
+  Embedding同期ずれ、fallback／server補完、旧API chainの障害・終了記録は、部分的な実装・配布・運用が
+  存在したことのEvidenceである。完全receipt未回収、現在動作不能、第三者sunset後の再現不能を、
+  「実装がなかった」という不存在証明へ変換しない。同時に、断片Evidenceを完全runtime証明へ昇格しない。
 - **CURRENT INTERPRETATION**: `Generative And Networked Dimensional Frame`、
   `Generative Angle Neural Domain Frame`、`Fold適応自我エンジン`の揺れは、量子、Angle、
   Neural、Domain、Dimension／Fold語彙が動いた時期のmodel別semantic bootstrap互換調整

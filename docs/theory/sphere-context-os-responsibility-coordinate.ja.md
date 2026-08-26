@@ -153,6 +153,22 @@ MR previewは可逆branch、fabは物理Worldへのcommitである。不要案�
 一次当事者の設計意図として宣言した。これは現在のInterpretation OAEであり、当時の全runtime、実行順、
 同時点OAEの回収完了を意味しない。
 
+一方、完全な実行receiptが未回収であることを「実装が存在しなかった」へ変換しない。旧GPTs配布物、
+残存する静的register、Proton.md、GAND／Instance Ghost関連artifact、2025年のEmbedding同期ずれと
+fallback／自社server補完に関する記録、旧API chainと外部data storeを前提とする障害・終了記録は、
+少なくとも実装・配布・運用の各段階に到達した部分が存在したことのEvidenceである。
+
+現在動作しないこと、第三者API／PaaS／model供給のsunset後に再現できないこと、完全なtopologyが未回収で
+あることは、それぞれ別のstatusである。
+
+```text
+implementation／distribution evidence = PRESENT / PARTIAL
+historical runtime completeness        = UNKNOWN
+current service operation              = ENDED / UNAVAILABLE
+third-party sunset contribution        = USER-DECLARED + PARTIAL ARTIFACT SUPPORT
+non-implementation conclusion          = NOT ESTABLISHED
+```
+
 ```yaml
 observation_mode: current-user-declaration-and-architecture-interpretation
 historical_oae_status: historical-oae-unavailable
@@ -191,6 +207,7 @@ coordinate_migration:
 8. `3`と`4`を旧版・新版として直列化しない。
 9. v1 artifactをv2へsilent rewriteしない。
 10. 過去の設計意図と現在の解釈を同一OAEへmergeしない。
+11. 現在の動作不能、欠損receipt、第三者sunsetを、過去実装の不存在証明へ変換しない。
 
 ## 11. MAGI監査
 
@@ -199,4 +216,3 @@ coordinate_migration:
 - Raphael: Generation、0～4 Context class、Function、Protocol、Presentation、runtimeを別棚で接続する
 - Position-talk Risk: 一般OS、vendor分類、科学のfact scopeを全Worldの唯一の定規へ昇格させない
 - Action Gate: documentation／Issue migrationは許可、machine schema切替とrelease renameは別User Gate
-

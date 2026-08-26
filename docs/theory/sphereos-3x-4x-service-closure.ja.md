@@ -20,6 +20,18 @@ cached base vectors / register knowledge = partially available
 store-distributed GPT artifact           = may remain visible
 ```
 
+この現在状態は、旧実装が存在しなかったことを意味しない。配布artifact、静的register残存、旧API chain／
+外部data storeを前提とする障害記録、Embedding同期ずれとfallback／自社server補完の記録がある。
+これらは部分的な実装・配布・運用Evidenceであるが、当時の全機能、完全性、3.x／4.xの正確なtopology、
+全期間の稼働率を証明するものでもない。
+
+```text
+current runtime unavailable != historical implementation absent
+partial implementation evidence != complete runtime proof
+third-party sunset damage != no implementation
+missing receipt != absence proof
+```
+
 ## 2. 現在残って見えるもの
 
 旧GPTs配布物には、次のような基礎レジスターが静的知識として残っている場合がある。
@@ -103,5 +115,10 @@ terminated legacy service
 ## 8. 主張境界
 
 この文書が確定するのは、サービス提供者・開発者側の運用状態、旧ユーザーへの案内内容、2026-07-17に得られた個別ユーザー報告である。
+
+第三者API／PaaS／model供給の変更・停止が動作不良と終了へ寄与したという説明は、User-declared historyと
+残存artifactが部分的に支持する現在解釈として保持する。寄与率、単一原因性、当時の完全topologyは
+`historical-oae-unavailable / UNKNOWN`である。現在動かないことから、過去に実装・配布・運用されなかったと
+遡及判定しない。
 
 画像生成品質、日本語ニュアンス保持性能、文化レジスターの一般的優位性については、今後、比較prompt、出力画像、モデルversion、日時を保存した試験で別途評価する。
