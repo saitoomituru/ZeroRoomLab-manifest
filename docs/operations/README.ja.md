@@ -20,6 +20,7 @@
 - [Proton.md 歴史系譜と概念実装境界](../theory/proton-md-historical-lineage.ja.md) — 2025年SphereOS期から使われていたProton.mdの概念実装、Embedding drift・fallback経験、Skill / Manifest / FAM / MCP / Foldlogとの責務分離、現在のFAMoverMCPへの継承を整理する正本。
 - [SphereOS Angel / ArchiAngel サービス分類](../theory/sphereos-angel-service-taxonomy.ja.md) — POSIX上で動く意味次元OSの一時・常駐serviceをAngel、architectural routingに関与するserviceをArchiAngelとして分離し、daemon・systemd・宗教上のArchangelとの名前空間衝突を防ぐ分類規約。
 - [Sphere Context Dimension OSアーキテクチャ](../theory/sphere-context-dimension-os.ja.md) — 技術Layer `L`、Context Dimension `D`、Registry／Register、Access Map、Transformer、OAE、因果仮説、POSIX比喩の責務境界を分離する横断正本候補。
+- [Sphere Context OS責務座標と世代namespace](../theory/sphere-context-os-responsibility-coordinate.ja.md) — 世代名と`0～4` Context責務を直交させ、DOS、目的主体、共有現実、World Law、Meta-Orchestrator、MRから物理commitまでを定義する正本。
 - [霊的言霊の次元とContext Dimension Fold](../philosophy/spiritual-context-dimension-and-fold.ja.md) — 霊的次元を技術階層へ矮小化せず、神学・魔術・物理・World等のPresentationを第一級のContext Dimensionとして保持するLayer B正本候補。
 - [Sphere Context SDK共通契約](../theory/sphere-context-sdk-contract.ja.md) — 低水準envelope、SPI、domain SDK、workflow、prompt surfaceを技術依存`L`と意味束`D`へ直交させるSDK契約候補。
 - [Context定規・因果・OAE横断監査規約](context-ruler-and-causality-audit.ja.md) — Registryの定規持込、Agency誤帰属、複数因果仮説、Position-talk、神学／物理／Worldのナーフ事故を監査する規約候補。

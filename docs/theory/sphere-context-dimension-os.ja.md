@@ -344,6 +344,7 @@ Coreが保証するのは、指定された分類法とSchemaへの忠実性、s
 
 ## 10. 関連文書
 
+- [Sphere Context OS責務座標と世代namespace](sphere-context-os-responsibility-coordinate.ja.md)
 - [SphereOS Angel / ArchiAngel サービス分類](sphereos-angel-service-taxonomy.ja.md)
 - [Atlantis-MAGISDK 0.2.1](atlantis-magi-sdk-0.2.1.ja.md)
 - [FAM概要](fam-overview.ja.md)
