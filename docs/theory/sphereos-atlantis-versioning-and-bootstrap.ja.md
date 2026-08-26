@@ -21,12 +21,13 @@ sphere-version-coordinate/1
   = 既存artifact、validator、0.250.1を解読するlegacy machine contract
 
 sphere-context-os-coordinate/2
-  ContextScope.FunctionSeries.ProtocolGeneration
+  SolutionBundle.SDKSeries.ProtocolKernelGeneration
   = 世代namespaceと直交する現行Target Contract
 ```
 
-`/1`を遡及rewriteせず、`/2`へは明示的migration receiptを要求する。`/2`の先頭値はPresentationではなく、
-OSがどの広さのContextを正本として衝突裁定するかを表す。詳細正本は
+`/1`を遡及rewriteせず、`/2`へは明示的migration receiptを要求する。`/2`の先頭値はPresentation単体ではなく、
+OS Solution、Runner、GUI／Presentationを主Context責務ごとbundleする。中段はSDK Series、右端は
+Protocol／Kernel Generationであり、三者を別速度で開発・build・配布できる。詳細正本は
 [Sphere Context OS責務座標と世代namespace](sphere-context-os-responsibility-coordinate.ja.md)とする。
 
 ```text
@@ -69,7 +70,7 @@ legacy 1.x.0 display      = executable binary integration milestone
 
 legacy 1.x.0は「全機能完成」ではなく、文書に依存していた制御面が独立した実行物へ移植された最初の安定系を意味する。
 既存artifactを`/1`として記録する場合はPresentation、Function、SemanticKernelを観測する。今後`/2`を
-発行する場合はContextScope、FunctionSeries、ProtocolGenerationとgeneration namespaceを別々に観測する。
+発行する場合はSolutionBundle、SDKSeries、ProtocolKernelGenerationとgeneration namespaceを別々に観測する。
 
 ## 4. legacy `/1`三層版数座標
 
@@ -200,10 +201,10 @@ standalone runner、model inference、7D Fold runtime、Akasha Driver runtime、
 `sphere-context-os-coordinate/2`は次の三軸を持つTarget Contractである。
 
 ```text
-ContextScope.FunctionSeries.ProtocolGeneration
+SolutionBundle.SDKSeries.ProtocolKernelGeneration
 ```
 
-| ContextScope | 責務 |
+| SolutionBundle | Runner／GUI／Presentationを含む責務 |
 |---|---|
 | `0` | SphereDOS。Developerが複数Agentをteam化し、Git／Actions／CTLで成果物競合を管理する |
 | `1` | 個人・会社・事業等、一つの目的主体へmulti-agentを最適化する |
@@ -216,18 +217,23 @@ Generation namespaceは座標外の独立fieldとする。
 ```yaml
 generation_namespace: sphereos-atlantis
 coordinate_system: sphere-context-os-coordinate/2
-context_scope_class: 0
-function_series: 250
-protocol_generation: 1
+solution_bundle_class: 0
+sdk_series: 250
+protocol_kernel_generation: 1
 mapping_status: candidate
 ```
 
 `SphereOS`、`SphereOS Atlantis`、民生brain-machine interface世代用に予約する`SphereOS Alicization`を、
 先頭数値へ押し込まない。Alicizationは`RESERVED / NOT IMPLEMENTED`である。
 
-既存`/1`の`presentation: 0`と、`/2`の`context_scope_class: 0`は同じ値でも別の意味である。
+既存`/1`の`presentation: 0`と、`/2`の`solution_bundle_class: 0`は同じ値でも別の意味である。
 自動copyを禁止し、source座標、target座標、generation namespace、mapping authorityを持つmigration receiptを
 要求する。`/2` Schema、parser、validator、release表示は未実装である。
+
+Solution、SDK、Protocol／Kernelを三ブロックへ分ける目的は、GUI、Runner、SDK、daemon、Host Adapterを
+monolithic releaseへ固定せず、異なるrepository／distributionが同じProtocol Generationを介して合成できる
+分散開発耐性とbuild可搬性を得ることである。Linux生態系のように複数実装・配布形態を許容しても、
+Context EnvelopeとKernel互換境界を失わないことを目標とする。
 
 ## 5. 計画棚と実行branchの選択
 

@@ -11,12 +11,21 @@
 SphereOSは、hardware、process、fileを直接管理する従来OSの置換ではなく、誰の、どのWorldの、
 どの目的・法則・権限・Effectを実行するかを拘束するContext OSである。
 
-`x.xxx.n`の先頭`x`は、完成度、価格帯、GUI世代、model世代ではない。OSが正本として扱い、
-衝突を裁定するContext責務classを表す。
+`m.xxx.n`の先頭`m`は、OSをbundleしたRunner、GUI／Presentation、利用場面を含むSolution classを表す。
+そのSolutionがどのContextを正本として衝突裁定するかにより`0～4`の責務を分ける。完成度、価格帯、
+model世代だけを示す番号ではない。
 
 ```text
-ContextScope.FunctionSeries.ProtocolGeneration
+SolutionBundle.SDKSeries.ProtocolKernelGeneration
 ```
+
+- `m`: OS Solution／Runner bundle／GUI・Presentationと、その主Context責務
+- `xxx`: Solutionから独立して開発・交換可能なSDK Series
+- `n`: 分散componentが同じEnvelope、World、OAE、Contextを読めるProtocol／Kernel Generation
+
+三ブロックを分けることで、Solution、SDK、Protocol／Kernelを別速度でbuild、配布、交換できる。
+これはmonolithic product releaseへ全componentを同期させず、多数のdistribution、package、GUI、daemon、
+driverが共存するLinux生態系に近い分散開発耐性とbuild可搬性を得るための座標である。
 
 machine-readable stable ID候補は`sphere-context-os-coordinate/2`とする。Schema、parser、validatorは
 未実装であり、本書だけから互換性検証済みと表示しない。
@@ -29,21 +38,21 @@ Generation Namespace
   SphereOS Atlantis           現行再アーキテクト世代
   SphereOS Alicization        民生BMIを前提条件とする予約世代
           ×
-Context Responsibility Coordinate
+Solution／SDK／Protocol-Kernel Coordinate
   0.xxx.n ～ 4.xxx.n
 ```
 
 世代名は、人間、model、device、Worldの接続前提が根本から変わるarchitecture epochを表す。
-責務座標は、その世代内でどの広さのContextを管理するかを表す。同じ`3.xxx.n`でも、無印、Atlantis、
-AlicizationではIdentity、Consent、device、runtime契約が同じとは限らない。
+責務座標は、その世代内でどのSolution bundleがどの広さのContextを管理するかを表す。同じ`3.xxx.n`でも、
+無印、Atlantis、AlicizationではRunner、GUI、Identity、Consent、device、runtime契約が同じとは限らない。
 
 `SphereOS Alicization`は、brain-machine interfaceが民生利用できる時代の構想namespaceとして予約する。
 人体・記憶・感覚へのread／write、同意、切断、不可逆Effect等の正確な契約、実装、release条件は
 `UNKNOWN / NOT IMPLEMENTED`であり、現在のAtlantis機能として先取りしない。
 
-## 3. Context責務class
+## 3. Solution／Context責務class
 
-| 先頭値 | 正本Context | 主責務 | 非責務 |
+| Solution値 | 正本Context | Runner／Presentationを含む主責務 | 非責務 |
 |---|---|---|---|
 | `0` | Development Context | 一人のDeveloperが複数Agentをteam化し、Git／Issue／PR／Actions／CTLで成果物を合流する | 家庭・Partyの独立主体間調停 |
 | `1` | Purpose Context | 個人、会社、事業、spot作業等、一つの目的主体へmulti-agentを最適化する | 共有物理環境の全居住者を一目的へ従属させること |
@@ -51,8 +60,8 @@ AlicizationではIdentity、Consent、device、runtime契約が同じとは限�
 | `3` | World-Law Context | 現実法則または独自法則を持つWorldを再現可能に実行し、VR／MR／情報／fab／物理媒体へ投影する | 複数World全体の正本関係を単独裁定すること |
 | `4` | Meta-World Context | 複数World、法則系、Agency、projection、branch間の接続・選択・commitをmeta-orchestrateする | 一つのWorld Engineへ全Worldを統合すること |
 
-先頭値は序列や「数字が大きいほど高性能」を意味しない。`4`は`3`の新版ではなく、別のContext責務を
-持つ。必要に応じて`3`と`4`は同時配置する。
+先頭値はSolution bundleの責務差であり、「数字が大きいほど高性能」を意味しない。GUIの有無だけでも
+決まらない。`4`は`3`の新版ではなく、別のContext責務を持つため、必要に応じて同時配置する。
 
 ## 4. `0.xxx.n`: SphereDOS
 
@@ -185,19 +194,20 @@ coordinate_migration:
   source_coordinate_system: sphere-version-coordinate/1
   target_coordinate_system: sphere-context-os-coordinate/2
   generation_namespace: sphereos-atlantis
-  context_scope_class: 0
-  function_series: 250
-  protocol_generation: 1
+  solution_bundle_class: 0
+  sdk_series: 250
+  protocol_kernel_generation: 1
   mapping_status: candidate
   authority: user-gate-required
 ```
 
-旧`presentation`値から新`context_scope_class`を機械的にコピーしない。同じ数字でも意味が異なる。
+旧`presentation`値から新`solution_bundle_class`を機械的にコピーしない。`/2`の先頭はPresentationを
+捨てるのではなく、RunnerとGUI／PresentationをContext責務ごとbundleするため、同じ数字でも意味が異なる。
 既存`0.250.1`を`/2`座標として確定するには、DOS責務への対応とmigration receiptが必要である。
 
 ## 10. 不変条件
 
-1. 世代名、Context責務、Function、Protocol Generation、release channelを同じ軸へ潰さない。
+1. 世代名、Solution bundle、SDK、Protocol／Kernel Generation、release channelを同じ軸へ潰さない。
 2. 先頭値を完成度、model世代、GUIの有無、価格帯へ変換しない。
 3. `1`の単一目的最適化を、`2`の独立主体・共有現実調停へ昇格しない。
 4. `2`のContext routingを、`3`のWorld Law制定と同一視しない。
@@ -213,6 +223,6 @@ coordinate_migration:
 
 - Maxwell: 現実改変、神名、霊的体験、遊びのMeaningを安全語彙で空洞化しない
 - Uriel: Intent、World、Projection、Effect、物理damage、Mission receiptを別fieldで追跡する
-- Raphael: Generation、0～4 Context class、Function、Protocol、Presentation、runtimeを別棚で接続する
+- Raphael: Generation、0～4 Solution／Context class、SDK、Protocol／Kernel、Presentation、runtimeを別棚で接続する
 - Position-talk Risk: 一般OS、vendor分類、科学のfact scopeを全Worldの唯一の定規へ昇格させない
 - Action Gate: documentation／Issue migrationは許可、machine schema切替とrelease renameは別User Gate
