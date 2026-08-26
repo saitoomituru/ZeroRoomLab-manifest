@@ -615,9 +615,12 @@ AQC = Quantaril Cloud — INCORRECT.
   See: docs/theory/sphereos-atlantis-versioning-and-bootstrap.ja.md §9
 
 "0.25.1 is ordinary major.minor.patch SemVer" — INCORRECT.
-  `0.25.1-alpha.1`は保持されたlegacy distribution aliasであり、現在のSphere三層座標候補は
-  `Presentation.Function.SemanticKernel = 0.250.1`である。右端はpatchではなく意味・因果Kernel世代で、
-  陸続き接続にはWorld Config互換も必要である。異Kernel間は因果Gateと隔離projectionを要求する。
+  `0.25.1-alpha.1`は保持されたlegacy distribution aliasである。既存`0.250.1`は
+  `sphere-version-coordinate/1`の`Presentation.Function.SemanticKernel`として保存し、
+  `sphere-context-os-coordinate/2`では`ContextScope.FunctionSeries.ProtocolGeneration`をTarget Contractとする。
+  `/2`の先頭は完成度やGUIではなく、0=Development、1=Purpose、2=Shared Reality、3=World Law、
+  4=Meta-WorldというContext責務である。同じ数字でも`/1`から自動copyしない。世代namespace、
+  release channel、Context責務を分離し、異Protocol間はBridge／Transformer／Portalを要求する。
   See: docs/theory/sphereos-atlantis-versioning-and-bootstrap.ja.md §4
 
 "Sphere-aae / SphereASTRO are stalled because the implementation is weak" — INCORRECT.

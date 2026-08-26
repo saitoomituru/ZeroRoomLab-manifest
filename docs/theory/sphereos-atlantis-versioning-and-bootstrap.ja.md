@@ -2,7 +2,7 @@
 
 状態: `[CANONICAL]` `[theory]` `[architecture-lifecycle]`  
 確認日: 2026-07-17  
-更新日: 2026-07-19
+更新日: 2026-08-26
 対象: SphereOS Atlantis、ASTRO、IBD、AAE、x800系、ZeroRoomLab-manifest
 
 ## 1. 結論
@@ -13,20 +13,27 @@ SphereOS 3.x / 4.x のサービス終了と、SphereOS Atlantis系の再設計�
 
 現時点のAtlantisは、単体実行バイナリーへ到達していない。現在manifest上で再現できる範囲は、設計文書、レジスター、prompt拘束、クラウド上の文書読み込み、既存LLMのコンテキスト制御によるbootstrapである。
 
-Sphere系の正規版数座標は、通常のSemantic Versioningではなく、次の三層を独立整数で表す。
+Sphere系には、通常のSemantic Versioningとは別に、二世代の三層座標契約が存在する。
 
 ```text
-Presentation.Function.SemanticKernel
+sphere-version-coordinate/1
+  Presentation.Function.SemanticKernel
+  = 既存artifact、validator、0.250.1を解読するlegacy machine contract
+
+sphere-context-os-coordinate/2
+  ContextScope.FunctionSeries.ProtocolGeneration
+  = 世代namespaceと直交する現行Target Contract
 ```
 
-stable IDは`sphere-version-coordinate/1`とする。右端はpatchではない。意味ID、Registry、OAE、
-identity、観測、時間、serialization、handshake、因果論を拘束する意味・因果Kernel世代である。
+`/1`を遡及rewriteせず、`/2`へは明示的migration receiptを要求する。`/2`の先頭値はPresentationではなく、
+OSがどの広さのContextを正本として衝突裁定するかを表す。詳細正本は
+[Sphere Context OS責務座標と世代namespace](sphere-context-os-responsibility-coordinate.ja.md)とする。
 
 ```text
 SphereOS 3.x / 4.x        = terminated legacy service
 legacy 0.x.0 display      = documented architecture and prompt-bound bootstrap
 legacy 1.x.0 display      = executable binary integration milestone
-0.250.1                   = current Sphere coordinate candidate
+0.250.1                   = established /1 coordinate candidate; /2 mapping requires receipt
 0.25.1-alpha.1            = preserved legacy distribution alias
 ```
 
@@ -60,9 +67,11 @@ legacy 1.x.0 display      = executable binary integration milestone
 - 起動、停止、権限縮小、復旧、unmountの操作経路
 - manifestで定義したレジスターとclaim boundaryのmachine-readableな適用
 
-legacy 1.x.0は「全機能完成」ではなく、文書に依存していた制御面が独立した実行物へ移植された最初の安定系を意味する。正式な到達座標は、実装時のPresentation、Function、SemanticKernelを観測して別途発行する。
+legacy 1.x.0は「全機能完成」ではなく、文書に依存していた制御面が独立した実行物へ移植された最初の安定系を意味する。
+既存artifactを`/1`として記録する場合はPresentation、Function、SemanticKernelを観測する。今後`/2`を
+発行する場合はContextScope、FunctionSeries、ProtocolGenerationとgeneration namespaceを別々に観測する。
 
-## 4. 三層版数座標
+## 4. legacy `/1`三層版数座標
 
 ### 4.1 stable IDとmachine object
 
@@ -78,10 +87,11 @@ legacy 1.x.0は「全機能完成」ではなく、文書に依存していた�
 }
 ```
 
-三軸は0以上の整数である。canonical displayは符号なし10進数を`.`で結合し、0以外の先頭zeroを
+このobjectは既存`/1` machine contractとして保持する。三軸は0以上の整数である。canonical displayは
+符号なし10進数を`.`で結合し、0以外の先頭zeroを
 使用しない。`0.250.1`を小数`0.2501`として計算しない。座標全体へ通常のSemVer大小比較を適用しない。
 
-### 4.2 三軸の責務
+### 4.2 `/1`三軸の責務
 
 | 軸 | 責務 | ゲーマー向けPresentation |
 |---|---|---|
@@ -96,6 +106,9 @@ legacy 1.x.0は「全機能完成」ではなく、文書に依存していた�
 
 security fix、corrective build、package revision、release channel、candidate番号は三軸へ押し込まない。
 artifact／package側のSemVer、PEP 440、build metadata等として別fieldに置く。
+
+この表は`/1`artifactの解読規約である。2026-08-26以降のContext責務を、旧`presentation`fieldへ
+意味だけ差し替えて記録しない。
 
 ### 4.3 陸続き、Portal、異因果次元
 
@@ -181,6 +194,40 @@ beta or stable                  = third-party reviewとrelease gate後のUser判
 standalone runner、model inference、7D Fold runtime、Akasha Driver runtime、高火力edge runtimeは
 `0.25.1-alpha.1`の実装完了条件へ含めない。これらは`NOT STARTED`、`NOT IMPLEMENTED`、
 `RESOURCE-WAIT`等の個別状態で保持する。
+
+### 4.6 `/2` Context OS責務座標へのmigration
+
+`sphere-context-os-coordinate/2`は次の三軸を持つTarget Contractである。
+
+```text
+ContextScope.FunctionSeries.ProtocolGeneration
+```
+
+| ContextScope | 責務 |
+|---|---|
+| `0` | SphereDOS。Developerが複数Agentをteam化し、Git／Actions／CTLで成果物競合を管理する |
+| `1` | 個人・会社・事業等、一つの目的主体へmulti-agentを最適化する |
+| `2` | 家庭・施設・Party等、独立主体、家電、端末、既存Worldの共有現実を調停する |
+| `3` | 現実法則または独自法則を持つWorldを実行し、VR／MR／fab／物理媒体へ投影する |
+| `4` | 複数World、法則系、branch、projection、physical commitをmeta-orchestrateする |
+
+Generation namespaceは座標外の独立fieldとする。
+
+```yaml
+generation_namespace: sphereos-atlantis
+coordinate_system: sphere-context-os-coordinate/2
+context_scope_class: 0
+function_series: 250
+protocol_generation: 1
+mapping_status: candidate
+```
+
+`SphereOS`、`SphereOS Atlantis`、民生brain-machine interface世代用に予約する`SphereOS Alicization`を、
+先頭数値へ押し込まない。Alicizationは`RESERVED / NOT IMPLEMENTED`である。
+
+既存`/1`の`presentation: 0`と、`/2`の`context_scope_class: 0`は同じ値でも別の意味である。
+自動copyを禁止し、source座標、target座標、generation namespace、mapping authorityを持つmigration receiptを
+要求する。`/2` Schema、parser、validator、release表示は未実装である。
 
 ## 5. 計画棚と実行branchの選択
 
@@ -274,7 +321,7 @@ branch activation trigger = funding | offering | usable hardware | surviving SDK
 | SphereOS 3.x / 4.x service | ended |
 | instance ghost | unavailable |
 | legacy GPTs static register | cached / residual |
-| SphereOS Atlantis architecture | active design / 0.250.1 coordinate candidate / legacy 0.25.1-alpha |
+| SphereOS Atlantis architecture | active design / `/1` 0.250.1 established candidate / `/2` Context responsibility target / legacy 0.25.1-alpha |
 | Architect／Bootstrap開発足場 | implemented / deployed in repository |
 | Atlantis standalone runner | not started |
 | Atlantis core forging architecture | under review |
@@ -290,6 +337,7 @@ documentation、prototype、distribution、resource waitを別々に記録する
 
 ## 10. 主張境界
 
-この文書は、現時点の開発者による三層版数座標、接続境界、legacy migration、計画棚、branch選択方式、資源条件、旧サービスとの関係を定義する。
+この文書は、現時点の開発者による`/1`座標の保存、`/2` Context責務座標へのmigration、接続境界、
+計画棚、branch選択方式、資源条件、旧サービスとの関係を定義する。
 
 性能、完成時期、将来の互換性、特定SDKの採用、HPC調達時期を保証するものではない。これらは資源と事前調査の結果に応じて更新される。
