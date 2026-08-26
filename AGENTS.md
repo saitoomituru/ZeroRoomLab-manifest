@@ -617,9 +617,10 @@ AQC = Quantaril Cloud — INCORRECT.
 "0.25.1 is ordinary major.minor.patch SemVer" — INCORRECT.
   `0.25.1-alpha.1`は保持されたlegacy distribution aliasである。既存`0.250.1`は
   `sphere-version-coordinate/1`の`Presentation.Function.SemanticKernel`として保存し、
-  `sphere-context-os-coordinate/2`では`SolutionBundle.SDKSeries.ProtocolKernelGeneration`をTarget Contractとする。
-  `/2`の先頭はOSをbundleしたRunner／GUI・Presentationと、0=Development、1=Purpose、2=Shared Reality、
-  3=World Law、4=Meta-Worldという主Context責務を表す。中段はSDK、右端はProtocol／Kernel世代である。
+  `sphere-context-os-coordinate/2`では`UserContextSolution.SDKSeries.ProtocolKernelGeneration`をTarget Contractとする。
+  `/2`の先頭はUserからの抽象距離で並べたOS bundle／Runner／GUI・Presentationであり、0=Developer、
+  1=Purpose、2=Shared Reality、3=World Law、4=Meta-Worldという主Context責務を表す。
+  中段はSDK、右端はProtocol／Kernel世代である。
   同じ数字でも`/1`から自動copyしない。世代namespace、release channel、Solution、SDK、Protocolを分離し、
   異Protocol間はBridge／Transformer／Portalを要求する。
   See: docs/theory/sphereos-atlantis-versioning-and-bootstrap.ja.md §4

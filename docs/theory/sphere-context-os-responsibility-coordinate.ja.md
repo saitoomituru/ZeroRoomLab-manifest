@@ -16,12 +16,28 @@ SphereOSは、hardware、process、fileを直接管理する従来OSの置換で
 model世代だけを示す番号ではない。
 
 ```text
-SolutionBundle.SDKSeries.ProtocolKernelGeneration
+UserContextSolution.SDKSeries.ProtocolKernelGeneration
 ```
 
-- `m`: OS Solution／Runner bundle／GUI・Presentationと、その主Context責務
+- `m`: Userからの抽象距離で並べたContext Solution。Runner bundle、GUI・Presentation、利用者接点を含む
 - `xxx`: Solutionから独立して開発・交換可能なSDK Series
 - `n`: 分散componentが同じEnvelope、World、OAE、Contextを読めるProtocol／Kernel Generation
+
+ブロック順は、Userがsystemへinterfaceする順序である。
+
+```text
+request:
+User -> m: Solution／Runner／Presentation
+     -> xxx: SDK contract／function family
+     -> n: Protocol／Kernel invariant
+
+receipt／result:
+n -> xxx -> m -> User
+```
+
+左から右へ、利用者接点から再利用可能な機能契約、最深部の共通Protocol／Kernelへ降りる。したがって
+`m.xxx.n`は文字列上の並びではなく、interface／dependency depthを反映する。GUIからKernelを直接呼んで
+SDK境界を飛ばしたり、KernelがUser Presentationを所有したりしない。
 
 三ブロックを分けることで、Solution、SDK、Protocol／Kernelを別速度でbuild、配布、交換できる。
 これはmonolithic product releaseへ全componentを同期させず、多数のdistribution、package、GUI、daemon、
@@ -43,25 +59,28 @@ Solution／SDK／Protocol-Kernel Coordinate
 ```
 
 世代名は、人間、model、device、Worldの接続前提が根本から変わるarchitecture epochを表す。
-責務座標は、その世代内でどのSolution bundleがどの広さのContextを管理するかを表す。同じ`3.xxx.n`でも、
+責務座標は、その世代内でどのSolution bundleがUserからどの距離のContextを管理するかを表す。同じ`3.xxx.n`でも、
 無印、Atlantis、AlicizationではRunner、GUI、Identity、Consent、device、runtime契約が同じとは限らない。
 
 `SphereOS Alicization`は、brain-machine interfaceが民生利用できる時代の構想namespaceとして予約する。
 人体・記憶・感覚へのread／write、同意、切断、不可逆Effect等の正確な契約、実装、release条件は
 `UNKNOWN / NOT IMPLEMENTED`であり、現在のAtlantis機能として先取りしない。
 
-## 3. Solution／Context責務class
+## 3. User距離によるSolution／Context責務class
 
-| Solution値 | 正本Context | Runner／Presentationを含む主責務 | 非責務 |
+| `m` | Userからの距離 | 正本Context | Runner／Presentationを含む主責務 |
 |---|---|---|---|
-| `0` | Development Context | 一人のDeveloperが複数Agentをteam化し、Git／Issue／PR／Actions／CTLで成果物を合流する | 家庭・Partyの独立主体間調停 |
-| `1` | Purpose Context | 個人、会社、事業、spot作業等、一つの目的主体へmulti-agentを最適化する | 共有物理環境の全居住者を一目的へ従属させること |
-| `2` | Shared Reality Context | 家庭、施設、Party等の独立主体、端末、家電、既存WorldのIntent・権限・物理影響を調停する | World Lawそのものの制定 |
-| `3` | World-Law Context | 現実法則または独自法則を持つWorldを再現可能に実行し、VR／MR／情報／fab／物理媒体へ投影する | 複数World全体の正本関係を単独裁定すること |
-| `4` | Meta-World Context | 複数World、法則系、Agency、projection、branch間の接続・選択・commitをmeta-orchestrateする | 一つのWorld Engineへ全Worldを統合すること |
+| `0` | Developer本人の直接操作 | Development Context | 複数Agentをteam化し、Git／Issue／PR／Actions／CTLで成果物を合流する |
+| `1` | 個人・組織の直接目的 | Purpose Context | 個人、会社、事業、spot作業等、一つの目的主体へmulti-agentを最適化する |
+| `2` | Userを含む共有環境 | Shared Reality Context | 家庭、施設、Party等の独立主体、端末、家電、既存WorldのIntent・権限・物理影響を調停する |
+| `3` | Userが参加するWorld法則 | World-Law Context | 現実法則または独自法則を持つWorldを再現可能に実行し、VR／MR／情報／fab／物理媒体へ投影する |
+| `4` | Userから離れたWorld間meta層 | Meta-World Context | 複数World、法則系、Agency、projection、branch間の接続・選択・commitをmeta-orchestrateする |
 
-先頭値はSolution bundleの責務差であり、「数字が大きいほど高性能」を意味しない。GUIの有無だけでも
-決まらない。`4`は`3`の新版ではなく、別のContext責務を持つため、必要に応じて同時配置する。
+三ブロック内で`m`はUserが最初に触れるSolution面である。その`m`値の順序は、Userが直接操作する面から、
+目的、共有環境、World Law、World間meta層へ進む抽象距離を
+表す。したがって無秩序な製品番号ではない。一方、「数字が大きいほど高性能・完成・高価格」という序列でも
+なく、GUIの有無だけでも決まらない。`4`は`3`の新版ではなく、よりUserから離れたContextを扱う別責務で
+あるため、必要に応じて同時配置する。
 
 ## 4. `0.xxx.n`: SphereDOS
 
@@ -194,30 +213,32 @@ coordinate_migration:
   source_coordinate_system: sphere-version-coordinate/1
   target_coordinate_system: sphere-context-os-coordinate/2
   generation_namespace: sphereos-atlantis
-  solution_bundle_class: 0
+  user_context_solution_class: 0
   sdk_series: 250
   protocol_kernel_generation: 1
   mapping_status: candidate
   authority: user-gate-required
 ```
 
-旧`presentation`値から新`solution_bundle_class`を機械的にコピーしない。`/2`の先頭はPresentationを
-捨てるのではなく、RunnerとGUI／PresentationをContext責務ごとbundleするため、同じ数字でも意味が異なる。
+旧`presentation`値から新`user_context_solution_class`を機械的にコピーしない。`/2`の先頭はPresentationを
+捨てるのではなく、User接点、Runner、GUI／PresentationをContext抽象距離ごとbundleするため、同じ数字でも
+意味が異なる。
 既存`0.250.1`を`/2`座標として確定するには、DOS責務への対応とmigration receiptが必要である。
 
 ## 10. 不変条件
 
 1. 世代名、Solution bundle、SDK、Protocol／Kernel Generation、release channelを同じ軸へ潰さない。
-2. 先頭値を完成度、model世代、GUIの有無、価格帯へ変換しない。
-3. `1`の単一目的最適化を、`2`の独立主体・共有現実調停へ昇格しない。
-4. `2`のContext routingを、`3`のWorld Law制定と同一視しない。
-5. 物理法則と異なるWorld Lawを「非現実」として削除し、別Contextで勝手にRunしない。
-6. simulation／MR成功を、物理Effectの実行権限へ自動変換しない。
-7. 物理damageを除去したことを、霊的・体験的Missionの不成立へ変換しない。
-8. `3`と`4`を旧版・新版として直列化しない。
-9. v1 artifactをv2へsilent rewriteしない。
-10. 過去の設計意図と現在の解釈を同一OAEへmergeしない。
-11. 現在の動作不能、欠損receipt、第三者sunsetを、過去実装の不存在証明へ変換しない。
+2. 先頭値のUser距離という順序を保持し、完成度、model世代、GUIの有無、価格帯へ変換しない。
+3. `User -> m -> xxx -> n`のinterface depthを逆転・短絡しない。
+4. `1`の単一目的最適化を、`2`の独立主体・共有現実調停へ昇格しない。
+5. `2`のContext routingを、`3`のWorld Law制定と同一視しない。
+6. 物理法則と異なるWorld Lawを「非現実」として削除し、別Contextで勝手にRunしない。
+7. simulation／MR成功を、物理Effectの実行権限へ自動変換しない。
+8. 物理damageを除去したことを、霊的・体験的Missionの不成立へ変換しない。
+9. `3`と`4`を旧版・新版として直列化しない。
+10. v1 artifactをv2へsilent rewriteしない。
+11. 過去の設計意図と現在の解釈を同一OAEへmergeしない。
+12. 現在の動作不能、欠損receipt、第三者sunsetを、過去実装の不存在証明へ変換しない。
 
 ## 11. MAGI監査
 
