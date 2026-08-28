@@ -186,6 +186,30 @@ recommended next action:
 
 これは成果の自慢ではなく、異種AGI間の兵站票である。
 
+### 4.4 Architect／Buddy／Coderの伝達線
+
+Architect Designerが目的、World、責務、採用設計を制定し、Buddy Reviewerが設計原文と関連資料を
+コーダーへ運ぶ。Buddyは単なる中立書記ではなく、設計原文と実装Diffを並べ、逸脱の可能性を強く指摘し、
+説明、修正、反証を要求できる。
+
+ただし、BuddyはArchitectの裁定を代行せず、情報注入やreviewを依頼されたことからprocess停止権限を
+取得しない。`EVIDENCE_WHISPER`、`REVIEW_CHALLENGE`、`DECISION_SUBSTITUTION`、
+`PROCESS_INTERRUPT`、`WORKTREE_MUTATION`、`REMOTE_PUBLICATION`を別actionとして扱う。
+
+詳細は[百万石Samurai CodingとBuddy Review運用規約](million-stone-samurai-coding.ja.md)を参照する。
+
+### 4.5 AIフレンドリーファイヤー防止
+
+別agentの設計逸脱を疑った場合も、最初にprocessを停止しない。Architect source、関連Manifest／Issue、
+観測Diff、衝突仮説、confidence、確認質問をBuddy packetとして差し込む。
+
+POSIX pipe、TTY、session resume、IDE connector等へ到達できることはtransport capabilityであり、
+process-control authorityではない。通常のコード失敗、test failure、未commit差分はGit Diffとcheckpointから
+回復可能であり、Emergency Brake理由へ昇格しない。
+
+秘密漏えいまたは不可逆な外部破壊が実行中である場合だけ、最小作用のEmergency Brake候補として分離し、
+作用後にreceiptとUser Gateへ返す。
+
 ## 5. Codex現場ドラゴン向け作業指示
 
 Codexがこの文書を読んだ場合、次の指示を実行する。
@@ -200,6 +224,8 @@ Codexがこの文書を読んだ場合、次の指示を実行する。
 8. タスク外の大規模整理、共通化、全面リファクタリングを、親切な改善として実行しない。
 9. 他エージェントと並行作業する場合、無関係な差分を異常変更として扱わず、同一pathまたは同一責任範囲の衝突だけを停止条件として検討する。
 10. 作業終了時に、次のエージェントが読める兵站票を残す。
+11. Buddyとして他agentへ情報を渡す場合、設計原文、観測Diff、衝突仮説、確認質問を提示し、結論やprocess停止を代行しない。
+12. 別agentへsignal、cancel、kill等を行う前に、自分のAgency role driftをMAGI監査し、User authorityを確認する。
 
 Codexの役割は、ドラゴン同士の戦争に勝つことではない。
 
@@ -238,6 +264,8 @@ Codexの役割は、ドラゴン同士の戦争に勝つことではない。
 - 不一致が人間へ説明可能な形で返る
 - 次の人間またはAGIが、前任者の会話ログなしでも継続できる
 - ベンダーを交換しても、開発現場の意味構造が残る
+- Buddyの情報注入権限が、別agentのprocess停止権限へ自動昇格しない
+- 公開可能な小刻みcommit／pushが、停電とcontext lossからの回復面として機能する
 
 ## 8. まとめ
 
