@@ -20,6 +20,16 @@ and shared registers that help humans and different AI agents work
 without flattening engineering, culture, philosophy, and unfinished ideas
 into one vendor's default worldview.
 
+A core design lineage is:
+
+**Spiritual Engineering → Infoton Engineering → Context Engineering / FAM / SphereOS Atlantis**
+
+Here, Spiritual Engineering is an engineering philosophy, Infoton Engineering is the research domain,
+and Context Engineering and SphereOS are implementation layers. The focus is the information-selection problem
+*before* representation, discretization, and tokenization flatten meaning into data. This does not replace Shannon
+information theory or claim a new physical particle; it investigates the upstream choices about what becomes
+information at all. See [Spiritual Engineering and Infoton Engineering](docs/philosophy/spiritual-and-infoton-engineering.ja.md).
+
 The lab does not run one linear roadmap.
 It keeps many plans alive as branches, then mounts whichever branch becomes executable
 when donations, shrine offerings, salvage hardware, surviving SDKs, compute, power,
@@ -69,6 +79,7 @@ conditions attached to a particular asset, venue, provider contract, or jurisdic
 
 Start here:
 
+- [Spiritual Engineering and Infoton Engineering](docs/philosophy/spiritual-and-infoton-engineering.ja.md)
 - [Baseload collapse and support boundary](docs/philosophy/baseload-collapse-and-support.md) / [日本語](docs/philosophy/baseload-collapse-and-support.ja.md)
 - [Heterogeneous-agent deck governance](docs/operations/heterogeneous-agent-deck-governance.ja.md)
 - [Workspace boundary register](docs/operations/workspace-boundary-register.ja.md)
@@ -300,39 +311,3 @@ Humor counts as UX too: a good commit joke may carry morale or state, as long as
 | [AGENTS.md](AGENTS.md) | Root AI operating guidelines |
 | [FUNDING.md](FUNDING.md) | Public funding and stewardship entrypoint |
 | [docs/funding/README.ja.md](docs/funding/README.ja.md) | Funding and founding-responsibility index |
-| [docs/philosophy/baseload-collapse-and-support.md](docs/philosophy/baseload-collapse-and-support.md) | Multi-layer baseload collapse and support boundary |
-| [docs/philosophy/baseload-collapse-and-support.ja.md](docs/philosophy/baseload-collapse-and-support.ja.md) | 多重底抜けと支援の境界 |
-| [docs/operations/README.ja.md](docs/operations/README.ja.md) | Operations index |
-| [docs/operations/heterogeneous-agent-deck-governance.ja.md](docs/operations/heterogeneous-agent-deck-governance.ja.md) | Multi-agent project governance |
-| [docs/operations/workspace-boundary-register.ja.md](docs/operations/workspace-boundary-register.ja.md) | Workspace and repository boundary model |
-| [docs/operations/workspace-registry.json](docs/operations/workspace-registry.json) | Machine-readable workspace registry |
-| [docs/operations/development-environment-reconstruction.ja.md](docs/operations/development-environment-reconstruction.ja.md) | Public environment reconstruction |
-| [docs/operations/coding-ai-japanese-paraphrase-register.ja.md](docs/operations/coding-ai-japanese-paraphrase-register.ja.md) | Japanese-to-en-US pragmatic translation |
-| [docs/theory/fam-overview.ja.md](docs/theory/fam-overview.ja.md) | FAM overview |
-| [docs/theory/fam-operation.ja.md](docs/theory/fam-operation.ja.md) | FAM operational and divination modes |
-| [docs/theory/fam-divination-quickstart.ja.md](docs/theory/fam-divination-quickstart.ja.md) | Divination quick start |
-| [docs/projects/bento-syndrome.md](docs/projects/bento-syndrome.md) | Context-collapse failure mode |
-
----
-
-## Fork and adapt
-
-CC-BY 4.0. Take the structure and replace the project-specific content with your own.
-
-- Replace the known bias list with your own failure modes
-- Define your own workspace and secret boundaries
-- Separate engineering, philosophy, and academic claims
-- Preserve the distinction between canonical documents, drafts, and transfer queues
-- Keep project intent readable by humans and agents without requiring a proprietary central interpreter
-- Replace the explicit files under `assets/` with your own roles, flavors, faith vocabulary, and presentation
-- Keep MAGI core in Atlantis and mount only the profile and assets your Manifest actually declares
-- Record authors, sources, revisions, relation dimensions, and structural similarities as lineage without turning the graph into permission, identity, authority, or rank
-- Keep proprietary apps, provider contracts, and closed Worlds narrow; do not let them capture the core, existing commons, unrelated Worlds, or upstream fork rights
-
-```text
-attribution: ZeroRoomLab / fusamofu (Mitsuru Saitō) / @K_chachamaru
-```
-
----
-
-*ZeroRoomLab / @K_chachamaru — CC-BY 4.0 / Apache 2.0*
