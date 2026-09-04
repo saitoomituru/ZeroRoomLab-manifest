@@ -4,9 +4,16 @@
 
 ZeroRoomLab / SphereOS 系では、**Spiritual Engineering（スピリチュアルエンジニアリング）**を新しい物理法則や超自然現象の実証名としてではなく、既存の**設計哲学・工学哲学**として扱います。
 
+ZeroRoomLab はその始祖を自称しません。むしろ先行する重要な系譜として、Steve Jobs が禅、簡素化、直観、意味、身体的な使い心地をコンピュータ製品設計へ統合し、単純な FLOPS や機能数では測れない人間系の生産性を引き上げようとした設計思想に敬意を表します。
+
+ここでいう Spiritual Engineering は、そのような**形而上学・価値観・美意識を、隠れた前提のまま放置せず設計へ持ち込む手法**を広く指す工学哲学です。ZeroRoomLab / SphereOS は、その系譜を Context Engineering 世代へ接続し直す試みとして位置づけます。
+
 その実装・研究上の中心語を **Infoton Engineering（情報子工学）** とします。
 
 ```text
+prior design lineage
+  └─ Zen / simplicity / meaning-driven product philosophy
+       ↓
 Spiritual Engineering
   └─ design / engineering philosophy
        ↓
