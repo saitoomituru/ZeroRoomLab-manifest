@@ -79,6 +79,28 @@ Docker実装は、AQCをローカル・エッジ・クラウド間で可搬に�
 
 参照リポジトリ: [HIPSTAR-IScompany/astro.quantaril.cloud](https://github.com/HIPSTAR-IScompany/astro.quantaril.cloud)
 
+### 現行系譜: `schemas/` / Schemer → refFAM
+
+上記`schemas/`はAQC世代の歴史的実装であり、エージェントの役割・制約・文脈を外部Schemaとして定義し、Schemer側で読み込む責務を持っていた。
+
+現行FAM世代では、この責務を**refFAMへ統合**する。
+
+```text
+AQC世代
+  Schema JSON
+  + Schemer runtime
+
+FAM世代
+  refFAM
+  = schema / worldview / method自体をFAMとして記述
+```
+
+refFAMは共有factの正解表ではない。問い方、見方、分類、成立条件、mapping、unknown policy、追試・改善方法など、factより一段上の形而上学的method / wisdomを記述する。
+
+fact、業務state、個別観測は通常FAMへ置き、必要に応じてQにevidence取得方法、Observer、対象revision、verifier、hash receipt等を束縛する。
+
+歴史的AQCを現行仕様へ遡及改変せず、責務移行の詳細は[aqc-schemer-to-reffam.ja.md](aqc-schemer-to-reffam.ja.md)を参照する。
+
 ---
 
 ## FAMoverAQC のサ終経緯
@@ -114,12 +136,24 @@ SaaS AI側では：
 
 ## FAMとの関係
 
+歴史的AQC文脈では:
+
 ```
 FAM  = 思考ログ・意味波形・出典・バイアスを記述する言語仕様
 AQC  = そのFAMで記述された思考・記憶を永続運用するための外部脳
 ```
 
-FAMが言語なら、AQCはその言語で書かれた記憶を保存するデータベース。
+現行Interpretationでは、FAMJSON / FAMLog / refFAMをさらに分離する。
+
+```text
+FAMLog = 観測・操作・所感の時間方向trace
+FAMJSON = 再参照可能な独立意味identity / Infotonのwire representation
+refFAM = ものの見方・問い方・方法を記述するmetaphysical Schemer
+```
+
+詳細は[FAM / 情報子 / refFAM の参照境界](fam-infoton-reference-boundary.ja.md)を参照する。
+
+AQCはこれらの過去世代の記憶・運用基盤として位置付け、現行IBD/FQuery責務をAQCへ遡及移植しない。
 
 ---
 
@@ -140,6 +174,8 @@ SphereOS ← AQC（外部記憶・認知器官）
 
 - [quantaril-cloud.ja.md](quantaril-cloud.ja.md) — 上位概念
 - [fam-overview.ja.md](fam-overview.ja.md) — 記述言語
+- [fam-infoton-reference-boundary.ja.md](fam-infoton-reference-boundary.ja.md) — FAMJSON / FAMLog / refFAM / 情報子の現行参照境界
+- [aqc-schemer-to-reffam.ja.md](aqc-schemer-to-reffam.ja.md) — 旧AQC SchemerからrefFAMへの責務系譜
 - [../philosophy/thought-lineage.ja.md](../philosophy/thought-lineage.ja.md) — 系統樹全体
 
 ---
