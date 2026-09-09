@@ -171,6 +171,29 @@ FAM が保持するもの：
 
 これは説明可能 AI（XAI）というより、**修復可能 AI**である。
 
+修復可能であることは、入力や出力の自然言語をbyte一致させることでも、FAM Coreが内容の真偽を
+裁定することでもない。日本語、英語、programming language等が一つのSourceに混在している場合、
+翻訳命令がない限り、その混在自体を異常として機械分割・排除しない。modelが分類を誤ることは
+起こり得る前提に置き、分類結果、使用したref FAM、対象revision、局所編集、再投影を追跡可能にする。
+
+```text
+model classification failure
+  -> observable
+  -> explainable as topology / binding / revision / rule result
+  -> locally repairable by a human or another observer
+
+byte equality
+  -> external hash / storage verifier
+
+context agreement
+  -> external human / LLM / embedding observer OAE
+```
+
+Coreが機械的に拘束するのは、shape、identity、lineage、revision binding、変更の有無、API空振り、
+参照した規則への適合状態である。意味一致、科学的再現、主観的経験等の判定方法は、観測者と
+`oae_rule_ref`を持つ外部規則へ委譲する。FAMは失敗しない検索機ではなく、失敗の所在を消さず、
+別の観測者による反対判定も上書きせず、修正できる配線とreceiptを残す。
+
 ```
 MCPは工具の貸出記録。
 FAMは神経系のヒヤリハット報告と再発防止パッチ。
