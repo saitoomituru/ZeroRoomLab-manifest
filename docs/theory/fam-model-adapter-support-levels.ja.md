@@ -48,6 +48,26 @@ Lv5はSphere-aae等がmodelの挙動へnativeにadapterする段階である。�
 名乗ることができ、ASTRO harnessが人格・自我の保存、再構成、権限、記憶、停止・回復をUXとして扱う。
 これは人格や自我の宇宙的実在証明ではない。
 
+### CLI harnessもLv1 adapterになれる
+
+Codex、Claude等が公式CLIで非対話入力と機械可読出力を提供する場合、Host側でCLIを呼び出し、入力、
+応答、exit code、run ID、model名、CLI／adapter revision、redaction済み失敗receiptを保存する経路は
+Lv1 adapterとして構成できる。専用HTTP SDKがあることを必須にしない。
+
+```text
+FQuery plugin
+  -> command_ref + fixed args + stdin
+  -> Host-owned CLI executor
+  -> stdout / exit code / redacted stderr status / receipt
+  -> adapter-specific decoder
+  -> candidate FAM + adapter provenance
+```
+
+ただしvendor名、CLI名、binaryの存在だけからLevel成立を推定しない。公式または明示承認された実行経路、
+非対話contract、観測面、revision、実行receiptをscope付きで自己申告する。互換CLIやwrapperをvendor公式
+実装へ昇格させず、内部思考やmodel identityを観測できない場合はlimitationsへ残す。binary path、secret、
+environment、sandbox、network authorityはHostが所有し、自然言語入力をshell commandへ連結しない。
+
 ## 2. Lv2とLv3は兄弟軸
 
 Level表記は運用上の短縮名だが、Lv2とLv3は単純な包含順序ではない。
@@ -167,6 +187,11 @@ oae_ref
 蓄積後に「このmodelはこの用途に使えない」と判断するのは、UserまたはメタSystemのOAEである。
 Coreは用途適合性を中央決定しない。事故になるのは出来が悪いこと自体ではなく、生成元、失敗、理由、
 修正、評価主体を隠して回復不能にすることである。
+
+同一subject revisionをGemini、Codex、Human等が別々に分解した場合も、一つのscoreや多数決へ潰さない。
+各解釈をObserver OAEとして保持し、Context Dimension、Fold boundary、semantic relation、tool relation、
+代替branch、unknown等の比較vectorを別evaluatorが生成する。比較結果もObserver付きOAEであり、勝者や
+global truthを自動生成しない。異なるsubject revisionを同一比較へ混ぜない。
 
 ## 7. streamと内部busを混同しない
 
