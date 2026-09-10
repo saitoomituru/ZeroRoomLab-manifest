@@ -288,6 +288,7 @@ AQC `schemas/` / SchemerからrefFAMへの責務移行は[aqc-schemer-to-reffam.
 ## 関連ドキュメント
 
 - [FAM / 情報子 / refFAM の参照境界](fam-infoton-reference-boundary.ja.md) — 現行のFAMJSON / FAMLog / refFAM / Fold正本
+- [FAM model adapterサポートLevel](fam-model-adapter-support-levels.ja.md) — Lv1説明可能AIからLv5 native internal busまでのadapter自己申告境界
 - [AQC SchemerからrefFAMへの責務移行](aqc-schemer-to-reffam.ja.md) — schema系譜
 - [IBD FAMネイティブResolverとバインダー中立性](ibd-fam-native-binder.ja.md) — FAM探索技と永続参照
 - [Fold Hypertext Spec](fold-hypertext-spec.md) — FAM思想を文章構造へ適用

@@ -279,7 +279,7 @@ refFAM declares a worldview/method
 refFAM proves a world-global fact
 ```
 
-科学、法、宗教、ゲーム、心象Worldのいずれも、自分の成立条件をrefFAMとして記述できる。FAM CoreはどのrefFAMが宇宙的に正しいかを決めない。
+科学、法、宗教、ゲーム、心象Worldのいずれも、自分の成立条件をrefFAMとして記述できる。倫理、ガイドレール、正義、善悪、適切性も形而上学的な判断定規としてrefFAMへ置き、作者、revision、注入者、適用scopeを残す。FAM CoreはどのrefFAMが宇宙的に正しいかを決めず、refFAMの申告内容や適用結果を認証・降格・BANしない。
 
 ---
 
@@ -333,6 +333,9 @@ unknown extension
 
 unreferenced observation
   -> FAMLog / OAE candidate
+
+adapter support claim
+  -> producer／adapter chain／revision／OAE refと共に保持
 ```
 
 機械実装では既存artifactを即破棄せず、旧形式をmigration candidateとして保持する。正規化で内容を失わないことを優先する。
@@ -343,6 +346,7 @@ unreferenced observation
 
 - [FAM概要](fam-overview.ja.md)
 - [情報子工学](infoton-engineering.ja.md)
+- [FAM model adapterサポートLevel](fam-model-adapter-support-levels.ja.md)
 - [FAM Operation](fam-operation.ja.md)
 - [FAM Execution](fam-execution.ja.md)
 - [AQC](aqc.ja.md)

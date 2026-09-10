@@ -227,10 +227,12 @@ observer_verdict
 ```
 
 `observer_verdict`は`matched`、`not-matched`、`completed`、`experienced`等を取り得るが、Coreの
-固定enumへ世界横断の優先順位として焼き込まない。Coreが検証するのは「宇宙的に正しいか」ではなく、
-`subject_ref + revision_ref`、`observer_ref + observer_domain_ref`、`oae_rule_ref`、要求された
-evidence／instrument／receiptが結び付いているかである。成立表現は**OAE拘束成立**または
-`accepted under rule X`とし、global truth confirmedへ昇格させない。
+固定enumへ世界横断の優先順位として焼き込まない。FAM Coreは`subject_ref + revision_ref`、
+`observer_ref + observer_domain_ref`、`oae_rule_ref`、evidence／instrument／receiptへの参照を
+保存・運搬する。record integrityやrule conformanceを評価するのは、選択されたvalidator／evaluator
+adapterまたはObserverであり、その結果自体もOAEとして残す。Coreはその評価の宇宙的真偽や優先順位を
+裁定しない。成立表現は**OAE拘束成立**または`accepted under rule X`とし、global truth confirmedへ
+昇格させない。
 
 同じ対象revisionに対して、観測者Aの`matched`と観測者Bの`not-matched`が同時に存在し、双方の
 record integrityとrule conformanceが成立することを許す。どちらを採用するかは上位World／SDKの
