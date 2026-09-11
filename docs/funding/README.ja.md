@@ -12,6 +12,7 @@ ZeroRoomLab は、小口奉納、寄付、現物、廃材、計算資源、電�
 2. [Open Lineage / Fork / 正統性ポリシー](open-lineage-and-fork-policy.ja.md)
 3. [Jomon 2.0、日本ゲシュタルト、アメノウズメとNSFW神楽](../philosophy/jomon-2.0-japan-gestalt-and-uzume.ja.md)
 4. [en-US: Non-Exclusive Seed Steward](non-exclusive-seed-steward.en-US.md)
+5. [Quantaril 公式ドメイン現状（wallet pain / DEAD namespace）](../preservation/quantaril-domain-status.ja.md)
 
 ## 資金の三層
 
@@ -31,7 +32,7 @@ ZeroRoomLab は、小口奉納、寄付、現物、廃材、計算資源、電�
 
 上流、神話、創業者、流派、公式性、コミュニティを所有しません。
 
-一人ですべてを背負う必要はありません。用途、期間、金額、損失上限、Stageごとに責任を区切り、複数Patronが並行して支えられます。Patron自身が複数の研究・OSS・文化プロジェクトへportfolioを分散する自由も保ちます。
+一人ですべてを背おう必要はありません。用途、期間、金額、損失上限、Stageごとに責任を区切り、複数Patronが並行して支えられます。Patron自身が複数の研究・OSS・文化プロジェクトへportfolioを分散する自由も保ちます。
 
 資金額は上流の票になりません。支援の有無で、Apache-2.0 / CC BYのフォーク・翻案・商用利用の自由は変わりません。
 
