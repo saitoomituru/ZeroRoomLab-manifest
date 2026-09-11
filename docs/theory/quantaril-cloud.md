@@ -93,7 +93,11 @@ Quantaril Cloud     = the infrastructure thought for infotons to circulate, pers
 
 Quantaril Cloud the concept remains at the philosophical layer for now. AQC as implementation device is partially in stasis — see [aqc.md](aqc.md) for why.
 
-Public doc site: [quantaril.cloud](https://quantaril.cloud)
+Public doc site `https://quantaril.cloud` is **DEAD** after the 2026-08-25 renewal miss (wallet pain / #26). It is not live canonical.
+
+Origin / surviving source tree: [HIPSTAR-IScompany/quantaril_cloud_QAtlantis](https://github.com/HIPSTAR-IScompany/quantaril_cloud_QAtlantis)
+
+Status note: [../preservation/quantaril-domain-status.ja.md](../preservation/quantaril-domain-status.ja.md)
 
 ---
 

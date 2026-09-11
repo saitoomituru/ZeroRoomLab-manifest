@@ -51,9 +51,9 @@ P2P・E2EE・OSS・情報子工学・分散観測・自己主権・思考ログ�
 
 ---
 
-## 宗教比喩による説明
+## 宗教比嗚による説明
 
-宗教比喩で言えば：
+宗教比嗚で言えば：
 
 ```
 既存SaaS・巨大データセンター = 「教会」
@@ -98,9 +98,13 @@ Quantaril Cloud = その情報子が自律的に流通・保存・再観測さ�
 ## 現在の実装状況
 
 Quantaril Cloud概念そのものは現在も思想レイヤーにある。
-実装装置としてのAQCは一部塩漬け状態（理由→[aqc.ja.md](aqc.ja.md)参照）。
+実装装置としてのAQCは一部塩漏け状態（理由→[aqc.ja.md](aqc.ja.md)参照）。
 
-公開ドキュメントサイト: [quantaril.cloud](https://quantaril.cloud)
+公開ドキュメントサイト `https://quantaril.cloud` は 2026-08-25 更新期限の未更新（wallet pain / #26）により **DEAD**。live canonical ではない。
+
+生成元（ソースが残っている場所）: [HIPSTAR-IScompany/quantaril_cloud_QAtlantis](https://github.com/HIPSTAR-IScompany/quantaril_cloud_QAtlantis)
+
+現状の正本メモ: [../preservation/quantaril-domain-status.ja.md](../preservation/quantaril-domain-status.ja.md)
 
 ---
 
