@@ -30,6 +30,7 @@
 - [development-environment-reconstruction.ja.md](development-environment-reconstruction.ja.md) — 公開OSSリポジトリを集め、ZeroRoomLabのVS Codeワークスペースを再構築する人間・AGI向け手順書。
 - [Python／Venv運用の虎の巻.proton](python-venv-operations.proton.md) — Python実行主体、repository単位Venv、既知の自己再生成loop、network依存導入、clean-room、SaaS検索と使い捨てheadless browser観測を分離する横断runtime contract。
 - [heterogeneous-agent-deck-governance.ja.md](heterogeneous-agent-deck-governance.ja.md) — Codex、Claude Code、Gemini CLI、Copilot等を同一現場へ投入した際のベンダー代理戦争、認知衝突、権限競合、デッキ崩壊を防ぐ、操竜型マルチ召喚プロジェクト管理と兵站規約。
+- [million-stone-samurai-coding.ja.md](million-stone-samurai-coding.ja.md) — Architectの設計原文をBuddyがコーダーへ運び、強いDiff reviewとprocess-control authorityを分離する百万石Samurai Coding規約。公開checkpointを停電・context lossからの回復面として扱う。
 - [corn-work-item-stack.ja.md](corn-work-item-stack.ja.md) — repository-nativeな作業指示、context closure、event receipt、Forge Issue projection、scheduler adapterを疎結合で束ねるCORN共通契約。
 - [participation-nonjurisdiction-and-experience.ja.md](participation-nonjurisdiction-and-experience.ja.md) — 異棚からのNote参加、信仰・ゲーム・工学の相互非越権、任意persona、Experience Receipt、cluster保持、Core content非裁定の共通契約。
 - [participation-nonjurisdiction-and-experience.md](participation-nonjurisdiction-and-experience.md) — 相互非越権、任意persona、霊的・非code参加、Experience Receiptを同じ強度で案内するen-US外部GUI。

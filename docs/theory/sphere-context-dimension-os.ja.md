@@ -210,6 +210,45 @@ OAE: 同じ物理Eventの観測
 
 Source OAEを上書きせず、`derived_from`、`interprets`、`reviews`等のrelationで接続する。循環参照と無限派生を避けるため、relation graph、generation、stop conditionを持つ。
 
+#### 6.4.1 OAE拘束成立と観測者判定を分ける
+
+OAEは真実そのものではなく、ある観測者が、ある対象revisionについて、参照した拘束規則のもとで
+出した観測・評価recordである。少なくとも次の三状態を混ぜない。
+
+```text
+record_integrity
+  valid | invalid
+
+rule_conformance
+  satisfied | not-satisfied | not-evaluable
+
+observer_verdict
+  rule / observer domain defined
+```
+
+`observer_verdict`は`matched`、`not-matched`、`completed`、`experienced`等を取り得るが、Coreの
+固定enumへ世界横断の優先順位として焼き込まない。FAM Coreは`subject_ref + revision_ref`、
+`observer_ref + observer_domain_ref`、`oae_rule_ref`、evidence／instrument／receiptへの参照を
+保存・運搬する。record integrityやrule conformanceを評価するのは、選択されたvalidator／evaluator
+adapterまたはObserverであり、その結果自体もOAEとして残す。Coreはその評価の宇宙的真偽や優先順位を
+裁定しない。成立表現は**OAE拘束成立**または`accepted under rule X`とし、global truth confirmedへ
+昇格させない。
+
+同じ対象revisionに対して、観測者Aの`matched`と観測者Bの`not-matched`が同時に存在し、双方の
+record integrityとrule conformanceが成立することを許す。どちらを採用するかは上位World／SDKの
+規則であり、FQueryやIBDが無断で多数決、最新版優先、正典化を行わない。
+
+```text
+byte equality          -> hash verifier OAE
+context agreement      -> human / LLM / embedding verifier OAE
+scientific replication -> replication OAE
+game action completion -> game-system receipt OAE
+first-person experience -> phenomenological attestation OAE
+```
+
+想像、信仰、霊的信用を禁止しない。その観測者domainと規則を明示し、検証済み物理factや
+human-reviewed recordへ偽装しなければ、固有の`observer_verdict`として保持できる。
+
 ### 6.5 OAEの時間整合性と遡及生成禁止
 
 OAEは、その場で観測・記録されたEffect、または現在行われた解釈作用の記録である。過去のcommit、log、
@@ -318,6 +357,31 @@ Causal Hypothesis
 
 confidenceも絶対共通値へしない。`value`と`scale_ref`を組にし、別Registryの同じ数値を無断比較しない。
 
+### 7.3 制作主体と作品Worldを分ける
+
+現実の配給会社・game会社、公開行為、製品、作品内World、game system instanceは別Contextとして
+保持する。公式sourceだからといって、そこで述べられた全Eventを現実WorldのEventへ平坦化しない。
+
+```text
+company://publisher
+  -> publishes -> work://title
+
+publication://announcement
+  -> published_by -> company://publisher
+  -> describes_world -> world://fiction/title
+
+game://build/revision
+  -> implements -> world://fiction/title
+
+event://story/hero-hardship
+  -> occurs_in_world -> world://fiction/title
+```
+
+監督interviewも単一Worldへ潰さない。「監督が制作で苦労した」はreal production Worldのstatement、
+「監督が主人公の苦労を説明した」はreal interviewからfictional Worldを参照するstatement、
+「主人公が苦労した」はfictional event、観客が苦しさを感じた記録はaudienceのfirst-person World、
+宣伝要約はpublisher claimである。同じ語彙や同じ公式domainを根拠に同一Eventへmergeしない。
+
 ## 8. SDKとPresentationの自由
 
 第三者SDKは、同じSource Effectを神学、ゲーム魔術、自然科学、安全工学、法、財務、人格、World等の好きなFoldへ投射できる。
@@ -341,6 +405,9 @@ Coreが保証するのは、指定された分類法とSchemaへの忠実性、s
 11. 過去資料から同時点OAEを遡及生成し、同一Worldへbackfillしない。
 12. 現在のInterpretation OAEを過去時点の観測へ偽装しない。
 13. 仮想再構成ではSource WorldとSource Instance Ghostを変更せず、7D Foldで双方をsplitする。
+14. OAE record integrity、rule conformance、observer verdictを一つの真偽値へ潰さない。
+15. 複数観測者の対立判定を無断で多数決・最新版優先・global truthへ正典化しない。
+16. 制作主体、公開行為、製品、作品内World、runtime instance、受け手の心象Worldを同一Worldへ平坦化しない。
 
 ## 10. 関連文書
 

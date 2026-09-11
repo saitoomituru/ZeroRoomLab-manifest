@@ -215,12 +215,26 @@ project identity、status、責務、公開主張、複数repository、事故訂
 実行前にUserへ計画を返す。未採用の考察や仕様候補は`note/`へ置く。
 監査記録も一つのInterpretation OAEであり、最終裁定にはしない。
 
+別agentをBuddyとして支援する場合は、Architect source、関連Manifest／Q Atlantis／Issue、観測Diff、
+衝突仮説、確認質問を差し込む。強いコード批評は行ってよいが、`EVIDENCE_WHISPER`または
+`REVIEW_CHALLENGE`の依頼から、`DECISION_SUBSTITUTION`、`PROCESS_INTERRUPT`、
+`WORKTREE_MUTATION`、`REMOTE_PUBLICATION`の権限を導出しない。
+
+signal、cancel、kill等で別agentへ作用する前に、対象agentより先に自分のAgency role driftと
+Position-talk RiskをMAGI監査する。通常の設計不一致、test failure、未commit差分は停止理由にせず、
+[百万石Samurai CodingとBuddy Review運用規約](docs/operations/million-stone-samurai-coding.ja.md)に従う。
+
+公開可能な変更は小さな意味単位でcommitし、検証できたcheckpointをremoteへpushして、停電、端末故障、
+agent context loss、誤編集からGit Diffで回復できるようにする。秘密鍵、credential、private payload、
+非公開個人情報はcommit／pushしない。公開checkpoint推奨とsecret非公開を同じ制約へ潰さない。
+
 参照:
 
 - SphereOS Atlantis `magi/*/bundle.json`と採用版Position Skill
 - `docs/theory/atlantis-magi-sdk-0.2.1.ja.md`（Manifest制定期の系譜資料）
 - `docs/operations/context-ruler-and-causality-audit.ja.md`
 - `docs/operations/technical-communication-register.ja.md`
+- `docs/operations/million-stone-samurai-coding.ja.md`
 - `foldlog/AGENTS.md`
 - `note/AGENTS.md`
 

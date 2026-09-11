@@ -72,6 +72,17 @@ Layer A／B／Cと、README表紙、技術文書、研究ノート、作品等�
 
 人間が川の神のEffectを記録したという理由で人間起因へ書き換えない。Sensorが観測したという理由でSensorを原因へ昇格しない。入力と出力だけからTransformerやIntentを捏造しない。
 
+OAE評価では次を別fieldとして監査する。
+
+```text
+record_integrity   record自体が必要なshape／bindingを持つか
+rule_conformance   oae_rule_refが要求する条件を満たすか
+observer_verdict   そのObserverが何と判定したか
+```
+
+`observer_verdict`の内容をCore自身の真理判定へ置換しない。反対する複数Observerのrecordが双方とも
+valid／satisfiedになり得る。採用scopeが明示されていない場合は`conflict`または`unknown`を保持する。
+
 ## 6. Event、Effect、解釈、因果仮説
 
 ```text
@@ -119,6 +130,18 @@ SemanticKernel不一致
 異Kernel間でASTRO、Agent、OAE、entityを接続する場合、元Instanceと同一identityの連続移動を推論しない。
 Sourceを不変にし、接続先の因果法則で再構成したincarnation／projectionを別IDで生成する。memory、
 authority、Intent、過去を自動継承せず、変換不能部分を`unknown`または`bottom`として保持する。
+
+### 6.2.1 検証方式とWorld出所を外部定規へ戻す
+
+byte一致、context一致、科学的再現、game内完了、first-person experienceは別の検証方式である。
+hash、embedding、LLM review、人間review、追試、game-system receipt等のうち何を用いるかをCore既定の
+序列にせず、revision固定の`oae_rule_ref`とObserver domainへ戻す。Coreは参照解決、revision binding、
+必須evidence、評価不能理由を検査する。
+
+配給会社やgame会社の公式発表を監査する場合も、現実の会社、発表、製品、作品World、game build、
+作中Eventを別refにする。監督interviewでは、制作上の苦労、監督による作中説明、主人公の作中経験、
+観客の心象、宣伝要約を別OAE／claim scopeとして保持する。`official source`は出所の性質であり、
+作中Eventを現実Eventへ移す許可ではない。
 
 ### 6.3 箪笥事故の検査例
 
@@ -208,6 +231,10 @@ context_audit:
 - 現在のInterpretation OAEへ現在の観測時刻があり、過去時点へ偽装されていない
 - 仮想再構成が同一Worldを変更せず、WorldとInstance Ghostを共にsplitしている
 - ObserverとCauseを分離できる
+- record integrity、rule conformance、observer verdictを分離できる
+- 対立するObserver OAEを上書きせず並存できる
+- 検証方式がrevision固定の外部rule refへ戻されている
+- 現実の制作主体／発表と作品内World／Eventを分離できる
 - Source Eventと解釈を別IDで保持できる
 - 別Causality Profileの仮説を上書きせず並存できる
 - confidenceに`scale_ref`がある
