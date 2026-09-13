@@ -57,17 +57,19 @@ Embedding pipeline identity
 
 文章意味のsemantic embedding、分類候補用embedding、graph topology由来のstructural embeddingは等価な第一級機能だが、相互交換可能ではない。どの責務配置を選んでも、明示的な結合指示なしにraw scoreや候補集合を混ぜないことは維持する。
 
-### 3.2 FAM Splitterは同梱可能・差替可能とする
+### 3.2 Pool Occurrence Driver(旧FAM Splitter)は同梱可能・差替可能とする
 
-FAM SplitterはIBDSDK内の標準libraryとして同梱できるが、IBD Coreへ一つの分類機を焼き込まない。Store既定BindingとDatabase単位overrideを持つ差替可能SPIとする。
+2026-09-13、IBD側で「FAM Splitter」という旧称を「Pool Occurrence Driver」へ改称した(詳細・命名経緯はIBD `docs/architecture/pool-occurrence-driver.ja.md`)。旧SPIは、DeFold(FQuery側で正式に切り出されたFAM構造の可逆・局所編集責務)と、FIT／MATCH／SELECTドライバーによる照合・ルーティング責務を未分化のまま一語へ押し込んでいた。IBDに残る責務は後者のみであり、RDB／Vector DB／Graph DB／file／objectを抽象化したPoolに対する3 occurrence(FIT/MATCH/SELECT)として位置づける。
+
+Pool Occurrence DriverはIBDSDK内の標準libraryとして同梱できるが、IBD Coreへ一つの分類機を焼き込まない。Store既定BindingとDatabase単位overrideを持つ差替可能SPIとする。
 
 ```text
-Splitter   候補分類、tag、根拠、unknown、receiptを返す
-Registry   許可class、Dimension、保存先、閾値を定義する
-IBD        決定済みrouteへ隔離保存する
+Pool Occurrence Driver   候補分類、tag、根拠、unknown、receiptを返す
+Registry                 許可class、Dimension、保存先、閾値を定義する
+IBD                      決定済みrouteへ隔離保存する
 ```
 
-custom Splitterが失敗した場合、上位Policyの明示なしに標準Splitterへsilent fallbackしない。FAM layer label数をD Foldの軸数へしない。
+custom Occurrence Driverが失敗した場合、上位Policyの明示なしに標準Driverへsilent fallbackしない。FAM layer label数をD Foldの軸数へしない。
 
 ## 4. 顔料ではなくバインダー
 
@@ -132,7 +134,7 @@ Dockerは配備手段の一つであり、IBDの正体ではない。IBD Databas
 
 ### 8.1 IBDSDKとdomain SDK
 
-IBDSDKはMeta Catalog、FAM Splitter、Graph／Vector／Evidence adapter、Composite Resolver、SsC、OAE bindingを疎結合moduleとして提供する。低水準envelopeからworkflow、promptまでのsurfaceを段階化し、上位surfaceもRegistry、Q、Provenanceを失わない。
+IBDSDKはMeta Catalog、Pool Occurrence Driver(旧FAM Splitter)、Graph／Vector／Evidence adapter、Composite Resolver、SsC、OAE bindingを疎結合moduleとして提供する。低水準envelopeからworkflow、promptまでのsurfaceを段階化し、上位surfaceもRegistry、Q、Provenanceを失わない。
 
 AstroSDK、Atlantis SDK等は技術的な常時上位Layerではなく、目的に必要なcapabilityとContext Dimensionを束ねるD Fold bundleである。同じ4Dという数だけで自動互換にせず、Fold ID、Dimension ID、Registry revision、Access Mapを検査する。
 

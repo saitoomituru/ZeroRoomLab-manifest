@@ -32,7 +32,7 @@ SDKはすべてを一つに同梱する製品ではない。目的に応じてca
 | Surface | 主な利用者 | 公開するもの |
 |---|---|---|
 | `S0: envelope` | runtime、adapter実装者 | Ref、Schema、receipt、OAE envelope、error／unknown |
-| `S1: SPI` | library、driver実装者 | Registry Provider、Splitter、Transformer、OAE Sink、adapter |
+| `S1: SPI` | library、driver実装者 | Registry Provider、Pool Occurrence Driver、Transformer、OAE Sink、adapter |
 | `S2: domain SDK` | App開発者 | IBDSDK、AstroSDK、Atlantis SDK等のdomain bundle |
 | `S3: workflow` | automation、low-code開発者 | typed workflow、FAM Query builder、policy選択 |
 | `S4: prompt / PLI` | User、Assistant、Agent | Prompt Line Interfaceから型付きQuery／FAMへcompileする入口 |
@@ -103,16 +103,16 @@ resolve(ref, revision_policy) -> resolved | unknown | unavailable | conflict
 
 Core既定Registryも暗黙の普遍定規ではなく、IDとrevisionを持つ一つのprofileとして返す。
 
-### 5.2 Classifier / FAM Splitter
+### 5.2 Classifier / Pool Occurrence Driver(旧FAM Splitter)
 
-入力FAMまたは情報子clusterを、上位Registryの候補Dimension／routeへ分類する。
+入力FAMまたは情報子clusterを、上位Registryの候補Dimension／routeへ分類する。RDB／Vector DB／Graph DB／file／objectを抽象化したPoolに対し、FIT／MATCH／SELECTの3 occurrenceで照合する(詳細はIBD `docs/architecture/pool-occurrence-driver.ja.md`)。
 
 ```text
 classify(source, registry_ref, fold_ref, policy_ref)
-  -> route candidates + evidence + unknown + splitter receipt
+  -> route candidates + evidence + unknown + occurrence receipt
 ```
 
-Splitterのmulti-label数をD Foldの軸数とみなさない。D FoldはRegistry側のManifestで宣言される。custom Splitterが失敗した場合、明示policyなしに既定Splitterへsilent fallbackしない。
+Pool Occurrence Driverのmulti-label数をD Foldの軸数とみなさない。D FoldはRegistry側のManifestで宣言される。custom Occurrence Driverが失敗した場合、明示policyなしに既定Driverへsilent fallbackしない。
 
 ### 5.3 Access Map Provider
 
@@ -166,7 +166,7 @@ receipt:
 
 ### 7.1 IBDSDK
 
-IBD Store、Meta Catalog、FAM Splitter SPI、SsC、graph／RDB adapter、OAE保存profileを束ねる。Sphere共通の存在論や因果定規をIBD固有仕様へ閉じ込めない。
+IBD Store、Meta Catalog、Pool Occurrence Driver SPI(旧FAM Splitter SPI)、SsC、graph／RDB adapter、OAE保存profileを束ねる。Sphere共通の存在論や因果定規をIBD固有仕様へ閉じ込めない。
 
 ### 7.2 AstroSDK
 
