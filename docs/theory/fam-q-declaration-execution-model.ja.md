@@ -112,6 +112,6 @@ Q(FAMスコープ参照 or refFAM).prompt("自然言語input")
 
 ## 9. 未確定 (`[UNKNOWN]`)
 
-- reject/blocked時の戻り値がFAM形式を保つか、それとも例外的に別型を許容するか
+- ~~reject/blocked時の戻り値がFAM形式を保つか~~ → 2026-09-13の実装調査で解消。FQuery `packages/core/src/types.ts`の`CapabilityResult`(`pluginStatus?: "resolved"|"rejected"`、`candidate?`、`reason?`)が、例外を投げずrejectでも構造化状態とlosslessなcandidateを保持する契約を既に実装済み。`Q(scope).method(args)`の戻り値契約はこの既存ABIを土台にできる(詳細: FQuery `docs/specification/fam-q-declaration-execution.ja.md` §3.1、§5)。残るのは`CapabilityResult.value`がFAM型として型強制されていない点のみ
 - `Q(this.fold)`の具体的な解決アルゴリズム(別refFAM文書を開いた際、その文書内から見た「fold」が指す実体をどう識別するか)
 - G5-equivalent causal boundary越えの`transition_ref`/OAE記録の具体的schema
