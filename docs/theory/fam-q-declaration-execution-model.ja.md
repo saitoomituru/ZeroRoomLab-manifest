@@ -100,14 +100,14 @@ Q(FAMスコープ参照 or refFAM).prompt("自然言語input")
 "Q": {
   "⊥": {
     "code": "FQUERY-FOLD-CYCLE-DETECTED",
-    "reason": "スプリッターが無関係なdomainへ流れたため他の枝をlast-orderした",
+    "reason": "Pool Occurrence Driverが無関係なdomainへ流れたため他の枝をlast-orderした",
     "requestedNext": "select-another-branch-or-widen-scope",
     "resumeWhen": "explicit-scope-widening"
   }
 }
 ```
 
-発火条件: fold-chain解決(`this.fold`等)での循環参照検出、スプリッターが分解結果を無関係なdomainへ流し込んだ際の兄弟枝への発行(枝は削除せず非ゼロサムで保持したまま「これ以上進めない」と明示する)、`QueryPolicy.limits`超過。
+発火条件: fold-chain解決(`this.fold`等)での循環参照検出、Pool Occurrence Driver(旧スプリッター、2026-09-13改称。詳細はIBD `docs/architecture/pool-occurrence-driver.ja.md`)が分解結果を無関係なdomainへ流し込んだ際の兄弟枝への発行(枝は削除せず非ゼロサムで保持したまま「これ以上進めない」と明示する)、`QueryPolicy.limits`超過。
 
 `⊥`の発火は、`OaeConstraintEvaluationReceipt`と同じ設計思想(Coreはdomain固有の成立条件を裁定せず、参照束縛と確定可能性だけを保持する)に沿った、fold last-order専用のOAE receipt型として記録する。
 
