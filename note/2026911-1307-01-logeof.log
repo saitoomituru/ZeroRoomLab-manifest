@@ -1,0 +1,59 @@
+するとこのテストを行っていくためにはサンプル3など複数のFAMJSONを同時に展開できる保存ストアが必要だよね？GUI作る前に保存機構が必要になるね？
+
+
+
+
+
+
+
+8:41
+
+
+
+
+
+
+はい、その理解で合っています。
+sample3-1 -> fam_ref -> sample3-2を実際にDeFoldして再表示・再実行するには、複数のFAMJSONを独立identityのまま保持し、参照解決できる保存／Registry層がGUIより先に必要です。
+ただし段階を分けます。
+1. Core最小保存契約
+   - fam_ref + revision_refで取得
+   - parent／childを別documentとして保存
+   - 同一childを複数parentから参照
+   - 循環参照をinline展開しない
+   - revision不一致・未取得をUNKNOWN / Last Orderで返す
+   - 再起動後のrehydrateを検証
+2. 最初の実装
+まずFQuery内にbackend非依存のStore interfaceと、テスト用の永続file storeを置くのがよいです。
+FamDocumentStore
+├─ put(document)
+├─ get(famRef, revisionRef)
+├─ resolve(famRef, revisionPolicy)
+├─ listRevisions(famRef)
+└─ has(famRef, revisionRef)
+sample3-1.fam.json ─ fam_ref ─> sample3-2.fam.json
+        │                            │
+        └── parent identity          └── independent identity
+in-memory registryだけではCore契約テストはできますが、GUIのFold close/open、再起動、revision保持を保証できません。したがって先にfile-backed storeを実装し、その上へ将来のIBD adapterを接続する順序が妥当です。
+3. 境界
+   - FQuery Coreは保存interface、revision選択、参照解決結果を所有
+   - file storeはローカル参照実装
+   - IBDは後から差し替える永続adapter
+   - GUIはStoreから得た複数documentのprojectionだけを合成
+   - React Flow stateを保存正本にしない
+   - latestを無条件採用せず、まずpinned revisionを既定にする
+つまり次の順序です。
+#43 Topology Core
+  ↓
+FAM Document Store / module registry
+  ↓
+cross-FAM resolve・rehydrate・共有参照test
+  ↓
+Human Core test
+  ↓
+GUI composed projection / DeFold
+これは #43 の実質的なHuman Test前提として不足している部分です。現状のinspect:topologyは複数FAMを一実行中のresolverへ手渡しているだけで、保存・再起動復元までは証明していません。
+次はGUIへ進まず、既存Issueとの重複を確認した上で「FAM Document Store」をCore側へ実装するべきです。#43へ追加するか、既存のFAM reference／persistence Issueへ切り出すかを先に監査します。
+
+
+8:41
