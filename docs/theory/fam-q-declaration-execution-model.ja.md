@@ -90,11 +90,36 @@ Q(FAMスコープ参照 or refFAM).prompt("自然言語input")
 
 これにより、FQueryの外部API(呼び出し側から見た入口)とFAM文書内部のnode間呼び出しが、同一記法`Q(scope).method(args)`へ統一される。
 
-## 7. Sphere/ASTROの責務分界
+## 7. `⊥`(Last Order)とOAE記録(2026-09-13追記、Issue #50由来)
+
+ψ/∇φ/λの3軸だけでFoldを再帰的に辿ると、無限/循環参照は構造的に必然発生する(奇数次元的な特異点。ポアンカレ–ホップの定理=毛玉定理を着想源とする、詳細は[`infoton-engineering.ja.md`] 6.1節)。これを「防ぐ」のではなく、**どこで・なぜ探索を打ち切ったかを記録して非破壊的に停止する**、というのが`⊥`の役割。`⊥`は[`infoton-engineering.ja.md`]第4節が既に定義している概念(「⊥を返せることが工学であるための否定射程になる」)であり、FQuery Core `ControlStatus`の`"bottom"`とも対応する。本節はこれをrefFAMの`Q`語彙自体、およびOAE記録側へ正式に橋渡しする。
+
+`Q.⊥`はFQuery Core既存の`LastOrder`(`{code, reason, requestedNext, resumeWhen}`)をそのまま再利用する。新しい打ち切り語彙を独自発明しない。
+
+```json
+"Q": {
+  "⊥": {
+    "code": "FQUERY-FOLD-CYCLE-DETECTED",
+    "reason": "スプリッターが無関係なdomainへ流れたため他の枝をlast-orderした",
+    "requestedNext": "select-another-branch-or-widen-scope",
+    "resumeWhen": "explicit-scope-widening"
+  }
+}
+```
+
+発火条件: fold-chain解決(`this.fold`等)での循環参照検出、スプリッターが分解結果を無関係なdomainへ流し込んだ際の兄弟枝への発行(枝は削除せず非ゼロサムで保持したまま「これ以上進めない」と明示する)、`QueryPolicy.limits`超過。
+
+`⊥`の発火は、`OaeConstraintEvaluationReceipt`と同じ設計思想(Coreはdomain固有の成立条件を裁定せず、参照束縛と確定可能性だけを保持する)に沿った、fold last-order専用のOAE receipt型として記録する。
+
+### 記号としてのψ/∇φ/λ/Q/⊥
+
+これらが単語(`psi`/`lambda`/`bottom`等)ではなく単一unicode記号である理由: LLM tokenizerにとって、希少な単一記号は最小・安定したtoken単位になりやすく、既存語彙(英単語)が持つsubword分割の揺れや意味的connotationを引きずらない。表記の趣味ではなく、token境界を制御するための設計判断である。
+
+## 8. Sphere/ASTROの責務分界
 
 この構造体全体(Fold/DeFold/unFold、Q resolution、plugin binding)をmanagementするOSがSphereOSである。自我(ego/selfhood)・persona・ロボット等の用途(SphereASTRO)は、その**一consumer**に過ぎず、構造上の特権を持たない。[`no-generic-ego-denial-bias`]の原則通り、FAM/OAEは用法非依存のframework/言語であり、自我系だからといって特別な構造や特別な慎重さを追加しない。
 
-## 8. FQuery `docs/specification/`への転記範囲
+## 9. FQuery `docs/specification/`への転記範囲
 
 本書のうち、以下は**中立(SphereOS非依存)**であり、FQuery `docs/specification/`へ転記する:
 
@@ -104,14 +129,16 @@ Q(FAMスコープ参照 or refFAM).prompt("自然言語input")
 - 第4節(Fold/DeFold/unFold三分法、一般形)
 - 第5節(戻り値は常にFAM、という契約)
 - 第6節前半(モデル/Infinite CoreをCoreへ焼き込まない、という原則)
+- 第7節(`⊥`/Last Order、OAE記録、symbol選択理由)
 
 以下は**SphereOS Atlantis/ASTRO固有**であり、本書(manifest)側にのみ残す:
 
 - Fold7G(G7 World〜G1 Reality)固有vocabulary — [`note/20260819-2212__SphereDOS_Fold7G_Fold8G_registry_upgrade_memo.ja.md`]参照
-- 第6節後半・第7節(SphereOS/ASTROの責務分界そのもの)
+- 第6節後半・第8節(SphereOS/ASTROの責務分界そのもの)
 
-## 9. 未確定 (`[UNKNOWN]`)
+## 10. 未確定 (`[UNKNOWN]`)
 
 - ~~reject/blocked時の戻り値がFAM形式を保つか~~ → 2026-09-13の実装調査で解消。FQuery `packages/core/src/types.ts`の`CapabilityResult`(`pluginStatus?: "resolved"|"rejected"`、`candidate?`、`reason?`)が、例外を投げずrejectでも構造化状態とlosslessなcandidateを保持する契約を既に実装済み。`Q(scope).method(args)`の戻り値契約はこの既存ABIを土台にできる(詳細: FQuery `docs/specification/fam-q-declaration-execution.ja.md` §3.1、§5)。残るのは`CapabilityResult.value`がFAM型として型強制されていない点のみ
-- `Q(this.fold)`の具体的な解決アルゴリズム(別refFAM文書を開いた際、その文書内から見た「fold」が指す実体をどう識別するか)
+- ~~循環/無限参照をどう扱うか~~ → 2026-09-13、第7節`⊥`/Last Order + OAE記録として解消
+- `Q(this.fold)`の具体的な解決アルゴリズム(別refFAM文書を開いた際、その文書内から見た「fold」が指す実体をどう識別するか、循環検出時に`⊥`を発行することとは別に、fold境界自体の識別・profileBindingsとの関係はまだ未確定)
 - G5-equivalent causal boundary越えの`transition_ref`/OAE記録の具体的schema
