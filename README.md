@@ -92,6 +92,21 @@ Start here:
 
 ---
 
+### Current operational status: power-constrained development halt
+
+**2026-09-19 — Development is currently paused because the lab is in a cash-constrained power outage.**
+
+Emergency off-grid power is being reserved for essential survival and communications loads, so there is currently not enough available power to run the main development environment and compute equipment. This is an **infrastructure/resource halt, not a project cancellation**. The repositories, plans, documentation, and reproducible branches remain preserved while the lab waits for enough power capacity to resume.
+
+The immediate recovery paths are:
+
+- **Commercial power restoration:** funding for electricity and the associated legal/accounting costs needed to restore normal commercial power.
+- **Additional off-grid capacity:** funding or equipment support for batteries, generation, charging, power conditioning, and related infrastructure so development can operate without consuming the emergency reserve.
+
+If you want to help keep ZeroRoomLab's development environment alive, support is currently being sought specifically for **commercial-power recovery, legal/accounting costs, or additional off-grid power equipment**.
+
+---
+
 ## Funding without enclosure
 
 ZeroRoomLab is seeking **Non-Exclusive Seed Stewards** who can help move long-term economic responsibility away from the founder, small donors, and a thin regional nonprofit funding base without purchasing exclusive control over the upstream commons.
