@@ -61,6 +61,33 @@ Three proving grounds run in parallel: fictional/game Worlds, real-world systems
 
 See [Program Issue #47: Portable Civilization](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/47).
 
+## Life support is not civilization.
+
+If we cannot deploy advanced civilization into a marginal rural village, surviving in space is not a credible civilization architecture.
+
+Technology alone is not enough. Power, water, food, compute, communications, habitat, and fabrication can keep bodies alive, but a collection of life-support systems is not yet a civilization.
+
+Humans also make art, desire and sexuality, stories, rituals, games, families, communities, arguments, reconciliation, religion, philosophy, and metaphysics. They create systems of order and continually reinterpret what their World means. A civilization stack that leaves those things behind on Earth has transported equipment and organisms, not the full conditions from which human Worlds grow.
+
+The difficult cargo is therefore not only mass. **Human order and thought are themselves shaped by the gravity of the World that produced them.** ZeroRoomLab crosses metaphysics, religion, culture, art, sexuality, games, networks, AI, operating systems, fabrication, energy, and rural infrastructure because portability has to reach across those boundaries too.
+
+This does not require one worldview to win. Science, religion, fiction, metaphysics, high culture, low culture, desire, and engineering are not collapsed into one truth register. Nor are they pre-filtered merely by whether an engineer considers them elegant, useful, respectable, or easy to encode. Their claims, authority, evidence, and scope can remain different while the civilization stack preserves the ability to carry, fork, map, refuse, reinterpret, or replace them.
+
+```text
+Physical Stack
+  -> power / water / food / habitat / fabrication
+Information Stack
+  -> compute / network / storage / identity / provenance
+Meaning Stack
+  -> knowledge / culture / art / desire / religion / philosophy / metaphysics / governance
+```
+
+A rural village is therefore not a disposable rehearsal for Mars. It is already a production World. Game Worlds and real-world systems run beside it as parallel proving grounds. Snow, isolation, weak logistics, constrained energy, and later more extreme or off-Earth environments expand the portability envelope without turning the village into a mere prerequisite stage.
+
+> **Do not merely transport humans. Deploy the ability for humans to make a World.**
+>
+> **A civilization that cannot carry its meaning is only life support.**
+
 Funding follows the same non-enclosure rule. The Whitepaper's Patient Capital / Impact Patron model and this repository's Non-Exclusive Seed Steward policy both separate support from exclusive ownership of the upstream commons. GitHub Sponsors can act as a small practical entry point into that support model without becoming equity, repayment, or control.
 
 This repository is the shared development deck for that process.
