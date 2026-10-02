@@ -254,10 +254,47 @@ Geometry constraints solve what budget cannot.
 
 ---
 
+## Portable civilization architecture map
+
+この地図はrepositoryの所有関係や完成度を一列へ潰すものではない。**Game / Real / Villageは並行workstream**であり、各componentはWorld / Meaningを特定vendor、device、engineへ焼き付けず持ち運ぶための異なる責務を担当する。
+
+```text
+World / Meaning
+  ├─ Game World
+  ├─ Real-world systems
+  └─ Village / rural civilization
+          ↓ shared contracts / cross-feed
+ReFAM / FAM / FQuery
+          ↓
+Semantic ABI / IBD
+          ↓
+SphereOS Atlantis / Manifest
+          ↓
+Fold NIC / storage / provenance / federation
+          ↓
+replaceable runtime / presentation / device / physical modules
+```
+
+これは完成済み単一runtimeの図ではない。実装済みartifact、仕様策定中component、active research、long-term targetを各repositoryのstatusで確認すること。上位Programは[#47 Portable Civilization](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/47)で管理する。
+
+### Capital / social counterpart
+
+技術側のportable civilizationと、既存の**真ニートホワイトペーパー / 縄文文化圏2.0**は同じ設計系譜の別面である。後者はPatient Capital / Impact Patron、CC BYでfork可能な文化圏、マイクロコンポーネント、**祠単位のGit管理**、ラボ・弟子・部落・村という社会・資本側のdeployment modelを扱う。
+
+GitHub Sponsorsは、そのImpact Patron modelへ入る小さな実装可能interfaceとして扱う。支援はupstream commonsの所有権、equity、返済請求、排他的支配を生成しない。
+
+> **GitHub Sponsors is the smallest deployable unit of the Impact Patron model.**
+
+[GitHub Sponsors](https://github.com/sponsors/saitoomituru) · [Funding policy](FUNDING.md)
+
 ## Repository map
 
 | Repo | Role |
 |---|---|
+| [SphereOS-Atlantis](https://github.com/saitoomituru/SphereOS-Atlantis) | World / Meaning OS architecture and deployable development surfaces |
+| [fold-nic](https://github.com/saitoomituru/fold-nic) | Identity / World / Capability-aware semantic network boundary |
+| [IBD](https://github.com/saitoomituru/IBD) | FAM-native information / database boundary and provenance contracts |
+| [FQuery](https://github.com/saitoomituru/FQuery) | World / Meaning query surface; FAM-oriented query and mapping research |
 | [OND800](https://github.com/HIPSTAR-IScompany/OND800) | Shooting cockpit |
 | [FAN800](https://github.com/HIPSTAR-IScompany/FAN800) | Physical-effects funnels |
 | [SAO800](https://github.com/HIPSTAR-IScompany/SAO800) | Livestream mothership extension |
