@@ -108,18 +108,17 @@ Start here:
 
 ---
 
-### Current operational status: power-constrained development halt
+### Current operational status: power-constrained, still shipping
 
-**2026-09-19 — Development is currently paused because the lab is in a cash-constrained power outage.**
+**2026-10-02 — Development, documentation, and salvage continue under severe power and cash constraints.**
 
-Emergency off-grid power is being reserved for essential survival and communications loads, so there is currently not enough available power to run the main development environment and compute equipment. This is an **infrastructure/resource halt, not a project cancellation**. The repositories, plans, documentation, and reproducible branches remain preserved while the lab waits for enough power capacity to resume.
+Commercial power is not a dependable baseload for the lab when it cannot always be afforded. Emergency off-grid capacity remains prioritized for survival and communications, so high-load compute and continuous development workloads can still be unavailable. Lower-power design, documentation, GitHub work, salvage, and executable branches continue whenever the available resource envelope permits.
 
-The immediate recovery paths are:
+This does **not** mean the infrastructure problem is solved. Commercial-power recovery and continuity, additional batteries, generation and charging capacity, power conditioning, and related infrastructure remain active support needs.
 
-- **Commercial power restoration:** funding for electricity and the associated legal/accounting costs needed to restore normal commercial power.
-- **Additional off-grid capacity:** funding or equipment support for batteries, generation, charging, power conditioning, and related infrastructure so development can operate without consuming the emergency reserve.
+The operating model is therefore not simply `running` or `paused`: branches are mounted according to the power, hardware, network, and funding actually available at that moment.
 
-If you want to help keep ZeroRoomLab's development environment alive, support is currently being sought specifically for **commercial-power recovery, legal/accounting costs, or additional off-grid power equipment**.
+[GitHub Sponsors](https://github.com/sponsors/saitoomituru)
 
 ---
 
