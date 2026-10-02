@@ -47,6 +47,22 @@ No fixed priority queue does not mean no plan.
 It means the plan is resource-gated rather than capital-assured.
 A branch that cannot run today is preserved, not declared failed.
 
+## Fork the Lab. Deploy a World.
+
+ZeroRoomLab is also exploring the lab itself as a **portable / forkable civilization stack**: not one canonical civilization image, but a set of micro-modules, contracts, Worlds, meanings, cultural layers, and physical systems that can be forked, configured, deployed, repaired, and allowed to diverge.
+
+This extends an existing social and capital design lineage rather than replacing it. The **True NEET Whitepaper** (真ニートホワイトペーパー) describes Jomon Cultural Sphere 2.0 as a foundation-style OSS cultural sphere, a forkable CC BY framework, and autonomous micro-components under the metaphor **"Git management by shrine unit" (祠単位のGit管理)**. The Manifest explores the technical / World-deployment side of the same idea.
+
+Three proving grounds run in parallel: fictional/game Worlds, real-world systems, and rural/village deployment. The village is not merely a rehearsal for space. Making advanced civilization deployable in a low-density terrestrial settlement is a production use in its own right. Heavy snow, isolation, constrained logistics, stronger closed-loop operation, and eventually off-Earth environments expand the portability envelope from there.
+
+> **Fork the Lab. Deploy a World.**
+>
+> A civilization that cannot carry its meaning is only life support.
+
+See [Program Issue #47: Portable Civilization](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/47).
+
+Funding follows the same non-enclosure rule. The Whitepaper's Patient Capital / Impact Patron model and this repository's Non-Exclusive Seed Steward policy both separate support from exclusive ownership of the upstream commons. GitHub Sponsors can act as a small practical entry point into that support model without becoming equity, repayment, or control.
+
 This repository is the shared development deck for that process.
 It stores project intent, workspace maps, claim layers, cultural and technical registers,
 protected boundaries, evidence rules, agent handoff routes, and stopping conditions.
