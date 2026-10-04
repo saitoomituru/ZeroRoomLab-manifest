@@ -280,6 +280,10 @@ Geometry constraints solve what budget cannot.
 
 ---
 
+## Preserved projects
+
+- **[KUMA800](docs/projects/kuma800.ja.md)** — Independent development and this season's operation plan ended on 2026-10-04 after power constraints and parallel progress in FQuery / Sphere changed the resource allocation. Code, tests, provenance boundaries, and unresolved findings are preserved for reuse. Migration and physical acceptance are incomplete. The [case note](note/20261004-1828__KUMA800終了と非線形依存の計画検証.ja.md) records the management lesson: keep local prerequisites separate from fixed project-wide priority queues; select runnable branches from resource events.
+
 ## Portable civilization architecture map
 
 この地図はrepositoryの所有関係や完成度を一列へ潰すものではない。**Game / Real / Villageは並行workstream**であり、各componentはWorld / Meaningを特定vendor、device、engineへ焼き付けず持ち運ぶための異なる責務を担当する。
