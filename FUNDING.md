@@ -12,6 +12,25 @@ Funding does not buy a vote or change upstream direction. No patron must own all
 
 > No throne is promised. You may still become part of the provenance.
 
+## Infra-FIRE and the $1,000/month OSH publishing target
+
+Infrastructure FIRE (Infra-FIRE) is our experimental route to reduce mandatory cash dependence for essential services through owned infrastructure, lawful resource access, and reproducible maintenance. It does not mean financial independence has already been achieved. The lab's land, well, water-system fabrication and limited off-grid operations are test cases, with failures, quality, legal rights and lifecycle obligations kept in scope.
+
+**A recurring $1,000/month GitHub Sponsors target** would make it possible to budget for Git LFS or other large-file hosting, CAD/STL/3MF archiving, material and operation testing, documentation, and staged OSH publication of eligible 3D-printed water-system/well components. Git LFS has its own usage rules and existing free allowance; reaching this sponsor amount does not automatically unlock a GitHub feature or guarantee a specific release.
+
+Sponsors fund open research capacity and independently reusable evidence, not exclusive ownership, engineering certification, delivery deadlines or veto rights. Designs with unverified potable-water, pressure or material suitability will be clearly identified as experimental.
+
+[Infra-FIRE research note](docs/theory/infra-fire.en.md) · [GitHub Sponsors](https://github.com/sponsors/saitoomituru)
+
+
+## Legal, credit and payment-rail bottleneck (funding requirement)
+
+The financial/legal constraints affecting the lab are also an **infrastructure dependency**. Usage-billed Git LFS or hosted storage can require a supported payment method and continued account access. Buying capacity and having the lawful, creditworthy means to pay for it are distinct gates.
+
+The founder reports unresolved legacy legal and credit issues, with a **rough order-of-magnitude exposure of US$200,000** mentioned for legal/financial restructuring. This is a founder-reported planning figure, not an audited balance, verified settlement sum, or claim that paying that amount would automatically restore credit-card eligibility. Legal counsel would need to determine the obligations, creditor and guarantor positions, settlement alternatives, time limits, legal entity boundaries, the actual budget, and potential payment routes. We do not request a funder to assume unknown liabilities or treat a sponsorship as a debt investment.
+
+Consequently, non-exclusive legal counsel, accounting support, lawful debt/credit restructuring and reliable payment rails are legitimate **research infrastructure funding needs**, separate from the $1,000/month recurring OSH publishing milestone. Where a card-based billing route is not available, fixed-price/prepaid storage, third-party institutional hosting under appropriate agreements, self-hosting or donated capacity are additional branches to evaluate. No bypass of identity, platform billing, or financial compliance requirements is proposed.
+
 ## Policies
 
 - [日本語: 資金・創設責任ドキュメント](docs/funding/README.ja.md)
