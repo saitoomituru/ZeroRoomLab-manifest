@@ -65,6 +65,15 @@ patient / non-exclusive support
 
 No sponsorship buys upstream control, exclusive rights or guaranteed output. This follows the existing Non-Exclusive Seed Steward and licensing policies. Different CAD, text, software and third-party assets retain their documented license boundaries.
 
+
+## Legal, credit and payment-rail bottleneck (funding requirement)
+
+The financial/legal constraints affecting the lab are also an **infrastructure dependency**. Usage-billed Git LFS or hosted storage can require a supported payment method and continued account access. Buying capacity and having the lawful, creditworthy means to pay for it are distinct gates.
+
+The founder reports unresolved legacy legal and credit issues, with a **rough order-of-magnitude exposure of US$200,000** mentioned for legal/financial restructuring. This is a founder-reported planning figure, not an audited balance, verified settlement sum, or claim that paying that amount would automatically restore credit-card eligibility. Legal counsel would need to determine the obligations, creditor and guarantor positions, settlement alternatives, time limits, legal entity boundaries, the actual budget, and potential payment routes. We do not request a funder to assume unknown liabilities or treat a sponsorship as a debt investment.
+
+Consequently, non-exclusive legal counsel, accounting support, lawful debt/credit restructuring and reliable payment rails are legitimate **research infrastructure funding needs**, separate from the $1,000/month recurring OSH publishing milestone. Where a card-based billing route is not available, fixed-price/prepaid storage, third-party institutional hosting under appropriate agreements, self-hosting or donated capacity are additional branches to evaluate. No bypass of identity, platform billing, or financial compliance requirements is proposed.
+
 ## Research position
 
 Infra-FIRE is a proposed **systems-engineering extension of FIRE**, not a replacement for conventional financial independence, proof of achieved FIRE, or an established financial product. It connects ZeroRoomLab's Portable Civilization concept to a measurable terrestrial deployment target: a livable, repairable, forkable rural infrastructure stack.
