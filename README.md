@@ -47,6 +47,18 @@ No fixed priority queue does not mean no plan.
 It means the plan is resource-gated rather than capital-assured.
 A branch that cannot run today is preserved, not declared failed.
 
+## Infra-FIRE: build survival paths that do not require cash at every hop
+
+**Infra-FIRE (Infrastructure FIRE)** is ZeroRoomLab's proposed field-research extension of Financial Independence, Retire Early. Rather than assuming a liquid job market and enough investments to purchase every survival service indefinitely, it investigates ownership, lawful access, fabrication, operation and repair of essential infrastructure as ways to reduce *mandatory cash dependency*. In a remote rural location, “just work a little more” is not necessarily a low-friction fallback.
+
+Land, drinking-water wells, 3D-printed water-system components, agricultural water access, limited off-grid power and local repair skills are research inputs, not declarations of complete self-sufficiency. Financial cash scarcity itself can be a common-mode tail risk, while physical assets also carry failure, safety, logistics, replacement and maintenance risks.
+
+See the [Infra-FIRE hypothesis, field boundaries, metrics and OSH release plan](docs/theory/infra-fire.en.md).
+
+**Proposed GitHub Sponsors milestone: $1,000/month recurring.** Funding at that level would allow budgeting for large-file distribution (Git LFS or alternatives), CAD/STL/3MF archival, reproducibility documentation, material/quality testing and staged release of eligible 3D-printed well/water-system parts as open-source hardware. This is a capacity goal, **not an automatic GitHub LFS unlock, a guaranteed release, or a promise that untested printed components are drinking-water safe**. The existing small Git LFS allowance can be used below that threshold.
+
+> Don't just accumulate money to buy survival. Make survival less hostage to a money-shaped single point of failure.
+
 ## Fork the Lab. Deploy a World.
 
 ZeroRoomLab is also exploring the lab itself as a **portable / forkable civilization stack**: not one canonical civilization image, but a set of micro-modules, contracts, Worlds, meanings, cultural layers, and physical systems that can be forked, configured, deployed, repaired, and allowed to diverge.
