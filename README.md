@@ -53,7 +53,23 @@ A branch that cannot run today is preserved, not declared failed.
 
 Land, drinking-water wells, 3D-printed water-system components, agricultural water access, limited off-grid power and local repair skills are research inputs, not declarations of complete self-sufficiency. Financial cash scarcity itself can be a common-mode tail risk, while physical assets also carry failure, safety, logistics, replacement and maintenance risks.
 
-See the [Infra-FIRE hypothesis, field boundaries, metrics and OSH release plan](docs/theory/infra-fire.en.md).
+### Jomon Cultural Sphere 2.0 as community-scale Infra-FIRE
+
+**A useful existing-category label for Jomon Cultural Sphere 2.0 is: _a community-scale implementation of Infrastructure FIRE_.** This is a translation layer, not a claim that FIRE literature already defines Jomon 2.0 or that the two concepts are identical.
+
+Conventional FIRE primarily asks whether financial capital can make compulsory wage labor optional. Infra-FIRE extends the question to whether essential services can remain available without requiring cash at every hop. Jomon 2.0 extends that implementation boundary again from an individual household toward forkable lab / workshop / shrine / hamlet / village nodes and a shared commons.
+
+```text
+individual FIRE
+  -> household Infra-FIRE
+  -> ZeroRoomLab / workshop / shrine node
+  -> hamlet / village Infra-FIRE
+  -> Jomon Cultural Sphere 2.0 commons
+```
+
+In this mapping, **Infra-FIRE is an evaluation lens, not the whole civilization model**. Jomon 2.0 also carries governance, culture, meaning, licensing, provenance, education, production and capital-allocation layers. FAOC describes the fractal/autonomous node topology; OpenFAPTA observes resources that do not fit cleanly into a FIAT ledger; Fold NIC explores network portability; SphereOS/FAM and related work handle meaning/context boundaries; physical microgrids, water and fabrication provide the field layer.
+
+See the [Infra-FIRE hypothesis, field boundaries, metrics and OSH release plan](docs/theory/infra-fire.en.md) and the [FAOC / Infra-FIRE node architecture map](docs/theory/faoc-infra-fire-node.ja.md).
 
 **Proposed GitHub Sponsors milestone: $1,000/month recurring.** Funding at that level would allow budgeting for large-file distribution (Git LFS or alternatives), CAD/STL/3MF archival, reproducibility documentation, material/quality testing and staged release of eligible 3D-printed well/water-system parts as open-source hardware. This is a capacity goal, **not an automatic GitHub LFS unlock, a guaranteed release, or a promise that untested printed components are drinking-water safe**. The existing small Git LFS allowance can be used below that threshold.
 
@@ -244,180 +260,9 @@ weakest layer alive: electricity, food, communications, transport, tools, parts,
 medical or rescue access, experimental equipment, or the time required to publish the record.
 
 That does not make this a vague no-delivery pitch. This is an **advance-scout and first-casualty
-repository** for last-mile failures erupting on their own all over the place. We record what got
-uncovered, what broke, what survived or was saved, what stayed impossible, and what the next explorer
-should carry before entering the same swamp.
+repository** for last-mile deployment: it absorbs failures early, keeps receipts, and publishes
+what can be made reproducible. The exact output remains resource-gated because the failure surface
+is wider than software alone.
 
-Commercial scale is not a truth ruler here. Revenue, sponsor risk, enterprise adoption,
-and procurement convention describe the constraints of commercial systems; they do not
-automatically define the right defaults for a gift-economy lab, a solo performer, or an
-experimental device. We do not owe philosophical neutrality to systems that protect a sponsor's
-wallet by sacrificing the performer's life, work, or voice.
-
-Money, equipment, compute, food, field access, translation, testing, and honest failure receipts can
-all keep a branch alive. Support does not buy unlimited labor, ownership of the work, or rule over the lab.
-Read the full boundary:
-
-- [Baseload Collapse and the Boundary of Support](docs/philosophy/baseload-collapse-and-support.md)
-- [日本語：多重底抜けと支援の境界](docs/philosophy/baseload-collapse-and-support.ja.md)
-
----
-
-## Active projects
-
-### 800-series
-
-A distributed cockpit system that lets the performer take back ownership of their production space.
-
-- **OND800**: Raspberry Pi 5 shooting cockpit with NDI multi-camera and OBS control
-- **FAN800**: ESP32 physical-effects funnels for lights, pyro, MIDI, and DMX
-- **SAO800**: OBS mothership extension with RTSP-to-NDI bridging, BPM analysis, and AI offload
-- **DVE800**: Local-AI editing engine on DaVinci Resolve
-- **PSYCHO-Py800MCP**: Instrument MCP for oscilloscopes and logic analyzers
-
-### FAM / SphereOS / Quantaril Cloud
-
-AI architecture for connecting context spaces across cultures and communities.
-MCP connects sideways. FAM digs down by saving, verifying, and reusing thought processes.
-
-The legacy SphereOS 3.x / 4.x service and instance-ghost runtime have ended.
-SphereOS Atlantis is a separate 0.x architecture lineage under active edge-first redesign.
-Its current reproducible form is the manifest, registers, prompt-bound bootstrap, and tool-layer research;
-a standalone Atlantis / ASTRO runtime has not yet reached the 1.x binary-integration milestone.
-
-### Laser Machine Rebuild
-
-A five-person rural workshop crew turning rusty scrap into micrometer-class laser-cutter ductwork.
-Geometry constraints solve what budget cannot.
-
----
-
-## Preserved projects
-
-- **[KUMA800](docs/projects/kuma800.ja.md)** — Independent development and this season's operation plan ended on 2026-10-04 after power constraints and parallel progress in FQuery / Sphere changed the resource allocation. Code, tests, provenance boundaries, and unresolved findings are preserved for reuse. Migration and physical acceptance are incomplete. The [case note](note/20261004-1828__KUMA800終了と非線形依存の計画検証.ja.md) records the management lesson: keep local prerequisites separate from fixed project-wide priority queues; select runnable branches from resource events.
-
-## Portable civilization architecture map
-
-この地図はrepositoryの所有関係や完成度を一列へ潰すものではない。**Game / Real / Villageは並行workstream**であり、各componentはWorld / Meaningを特定vendor、device、engineへ焼き付けず持ち運ぶための異なる責務を担当する。
-
-```text
-World / Meaning
-  ├─ Game World
-  ├─ Real-world systems
-  └─ Village / rural civilization
-          ↓ shared contracts / cross-feed
-ReFAM / FAM / FQuery
-          ↓
-Semantic ABI / IBD
-          ↓
-SphereOS Atlantis / Manifest
-          ↓
-Fold NIC / storage / provenance / federation
-          ↓
-replaceable runtime / presentation / device / physical modules
-```
-
-これは完成済み単一runtimeの図ではない。実装済みartifact、仕様策定中component、active research、long-term targetを各repositoryのstatusで確認すること。上位Programは[#47 Portable Civilization](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/47)で管理する。
-
-### Capital / social counterpart
-
-技術側のportable civilizationと、既存の**真ニートホワイトペーパー / 縄文文化圏2.0**は同じ設計系譜の別面である。後者はPatient Capital / Impact Patron、CC BYでfork可能な文化圏、マイクロコンポーネント、**祠単位のGit管理**、ラボ・弟子・部落・村という社会・資本側のdeployment modelを扱う。
-
-GitHub Sponsorsは、そのImpact Patron modelへ入る小さな実装可能interfaceとして扱う。支援はupstream commonsの所有権、equity、返済請求、排他的支配を生成しない。
-
-> **GitHub Sponsors is the smallest deployable unit of the Impact Patron model.**
-
-[GitHub Sponsors](https://github.com/sponsors/saitoomituru) · [Funding policy](FUNDING.md)
-
-## Repository map
-
-| Repo | Role |
-|---|---|
-| [SphereOS-Atlantis](https://github.com/saitoomituru/SphereOS-Atlantis) | World / Meaning OS architecture and deployable development surfaces |
-| [fold-nic](https://github.com/saitoomituru/fold-nic) | Identity / World / Capability-aware semantic network boundary |
-| [IBD](https://github.com/saitoomituru/IBD) | FAM-native information / database boundary and provenance contracts |
-| [FQuery](https://github.com/saitoomituru/FQuery) | World / Meaning query surface; FAM-oriented query and mapping research |
-| [OND800](https://github.com/HIPSTAR-IScompany/OND800) | Shooting cockpit |
-| [FAN800](https://github.com/HIPSTAR-IScompany/FAN800) | Physical-effects funnels |
-| [SAO800](https://github.com/HIPSTAR-IScompany/SAO800) | Livestream mothership extension |
-| [DVE800](https://github.com/saitoomituru/DVE800) | Editing engine |
-| [PSYCHO-Py800MCP](https://github.com/saitoomituru/PSYCHO-Py800MCP) | Instrument MCP |
-| [Sphere-aae](https://github.com/saitoomituru/Sphere-aae) | Edge AI agent engine |
-| [SphereASTRO](https://github.com/saitoomituru/SphereASTRO) | GUI and responsibility-boundary layer |
-| [commonsATX](https://github.com/saitoomituru/commonsATX) | Open-source laser-cutter frame |
-
----
-
-## Manifest operating model
-
-This repository keeps three document states plus two explicit runtime-adjacent shelves:
-
-- [note](note): raw notes, drafts, salvage logs, and source material that is not canonical yet
-- [docs](docs): normalized documentation for philosophy, theory, projects, and operations
-- [note/transfer_plan](note/transfer_plan): staging area for material that may move to another repository after review
-- [assets](assets): ZeroRoomLab-specific role, flavor, and presentation files loaded only when explicitly named; local-only assets are not public-manifest defects
-- [foldlog](foldlog): MAGI audit and execution receipts; not canonical specification or a persistent OAE runtime
-
-The manifest also bootstraps the public ZeroRoomLab development environment. Workspace membership is a working-context
-boundary, not an automatic implementation dependency. Enterprise and third-party workspaces expose only approved public
-summaries. Company assets, labor data, medical information, credentials, internal paths, and enterprise agent instructions
-are excluded from public reconstruction.
-
----
-
-## Using this repository as an AI context formatter
-
-Pull this repository into the AI toolchain before starting work. It provides:
-
-1. Bias pre-correction
-2. Scope-layer enforcement
-3. Hallucination quarantine
-4. Workspace and repository boundary resolution
-5. Vendor-neutral project governance
-6. Handoff logistics for heterogeneous agents
-
-The result is not a smarter model in isolation. It is a better-governed development deck.
-
-### Integration patterns
-
-- Copy or reference `AGENTS.md` from Claude Code, Codex, Gemini CLI, or another coding agent
-- Mirror the relevant rules into `.github/copilot-instructions.md` for GitHub Copilot
-- Load `workspace-registry.json` and the actual `.code-workspace` descriptor before repository-scoped work
-- Read each member repository's local `AGENTS.md` after resolving the workspace
-- Do not infer implementation dependencies from neighboring folders or workspace membership
-
-### Try the deck before you change anything
-
-```bash
-git clone https://github.com/saitoomituru/ZeroRoomLab-manifest.git
-cd ZeroRoomLab-manifest
-```
-
-Then hand your PLI-capable agent this:
-
-```text
-Read AGENTS.md and README.md. Show me the routes that are AVAILABLE-NOW,
-the routes that are RESOURCE-WAIT, and one thing I can try without changing files.
-Do not flatten faith, poem, or unfinished branches into engineering claims.
-```
-
-If you are testing the Atlantis MAGI profile from a workspace that has both repositories, resolve the current
-Atlantis bundle first and explicitly mount `--profile zeroroomlab`. Do not assume a repository scanner exists.
-The exact source-resolution contract lives in
-[the foldlog instructions](foldlog/AGENTS.md) and
-[the ZeroRoomLab assets shelf](assets/README.ja.md).
-
-Useful returns include a failed command, an awkward translation, a different spiritual description,
-a machine log, a photo with safe provenance, a proposed adapter, a poem that restores the target,
-or a fork that proves this Manifest was never the only valid loadout.
-Humor counts as UX too: a good commit joke may carry morale or state, as long as it does not replace the receipt.
-
----
-
-## Go deeper
-
-| Document | Purpose |
-|---|---|
-| [AGENTS.md](AGENTS.md) | Root AI operating guidelines |
-| [FUNDING.md](FUNDING.md) | Public funding and stewardship entrypoint |
-| [docs/funding/README.ja.md](docs/funding/README.ja.md) | Funding and founding-responsibility index |
+Read [Baseload collapse and support boundary](docs/philosophy/baseload-collapse-and-support.md)
+and [Funding](FUNDING.md).
