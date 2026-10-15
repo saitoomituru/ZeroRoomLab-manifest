@@ -12,6 +12,12 @@ Funding does not buy a vote or change upstream direction. No patron must own all
 
 > No throne is promised. You may still become part of the provenance.
 
+## Field evidence: 30 days without commercial-grid power
+
+**2026-10-15:** The operator reports that a ~980 Wh nominal off-grid reserve sustained daily living, water use, bathing, communications and lightweight creative outreach for a month after an involuntary loss of affordable commercial electricity. It did **not** sustain normal high-load technical R&D. This is a first-person field observation, not a fully instrumented energy benchmark or independent safety certification.
+
+**Survival Independence is not Productive Independence.** Contributions of generation and charging capacity, safe power distribution, batteries, power-conversion equipment, diagnostics, field expertise, and cash for restoring dependable electricity can reopen research branches. Other ongoing infrastructure and legal costs are not erased. No specific delivery or return is promised. [Full Japanese field report](docs/projects/2026-10-15-offgrid-30days-field-report.ja.md).
+
 ## Policies
 
 - [日本語: 資金・創設責任ドキュメント](docs/funding/README.ja.md)
