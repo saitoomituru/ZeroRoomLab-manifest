@@ -137,7 +137,13 @@ Start here:
 
 ### Current operational status: power-constrained, still shipping
 
-**2026-10-02 — Development, documentation, and salvage continue under severe power and cash constraints.**
+**2026-10-15 — 30 days without commercial-grid electricity: survival and communication continued, but sustained R&D did not.**
+
+The operator reports that an approximately **980 Wh nominal off-grid reserve** kept daily living, water use, bathing, connectivity, and low-power video, singing, dancing and outreach possible through a month of involuntary grid disconnection. Continuous high-load compute and technical R&D remained beyond the available power envelope. This was an unplanned cash-triggered field observation, not a controlled endurance trial; continuous telemetry and precise workload thresholds remain unverified.
+
+**Survival Independence ≠ Productive Independence.** [30-day field report (日本語)](docs/projects/2026-10-15-offgrid-30days-field-report.ja.md).
+
+**Previous status (2026-10-02):**
 
 Commercial power is not a dependable baseload for the lab when it cannot always be afforded. Emergency off-grid capacity remains prioritized for survival and communications, so high-load compute and continuous development workloads can still be unavailable. Lower-power design, documentation, GitHub work, salvage, and executable branches continue whenever the available resource envelope permits.
 
