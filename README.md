@@ -20,6 +20,10 @@ and shared registers that help humans and different AI agents work
 without flattening engineering, culture, philosophy, and unfinished ideas
 into one vendor's default worldview.
 
+**Architecture reading path / 設計を先に読む：** [日本語正本：意味Topology → SphereOS → Fold-NIC](docs/theory/semantic-fold-os-architecture.ja.md) · [en-US interpretation](docs/theory/semantic-fold-os-architecture.en-US.md) · [日本語FAQ / claim boundaries](docs/theory/semantic-fold-claims-and-unknown.ja.md) · [en-US FAQ](docs/theory/semantic-fold-claims-and-unknown.en-US.md).
+
+The cross-project architecture explains substrate-neutral processing gradients, unknown-preserving dynamic Folds, OAE as a managed resource, client-rich meaning portability, hardware neutrality, and the open commons. It is a design explanation, **not** a claim that every component has shipped. Japanese is authoritative; the en-US pages are review interfaces.
+
 A core design lineage is:
 
 **Spiritual Engineering → Infoton Engineering → Context Engineering / FAM / SphereOS Atlantis**
