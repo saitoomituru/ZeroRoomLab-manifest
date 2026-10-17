@@ -3,6 +3,8 @@
 状態: `[REVIEW]` `[Layer A/B bridge]`  
 制定日: 2026-07-18  
 対象: Sphere Architect、SphereOS、FAM、IBD、ASTRO、Atlantis、第三者SDK  
+> **横断アーキテクチャ入口：** [意味TopologyからSphereOS・Fold-NICまで](semantic-fold-os-architecture.ja.md) · [誤読防止レジスタ](semantic-fold-claims-and-unknown.ja.md)。管理対象は意味資源と意味づけInterfaceであり、Sphere自身も別Foldから参照可能な構成単位とする設計意図を整理した。本書のL/D/OAEの実装境界と混同しない。
+
 関連Presentation: [霊的言霊の次元とContext Dimension Fold](../philosophy/spiritual-context-dimension-and-fold.ja.md)
 
 ## 1. 目的と非目標
