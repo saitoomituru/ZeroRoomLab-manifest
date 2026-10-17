@@ -6,6 +6,12 @@ ZeroRoomLabとは何か、何を作っているか、思想的背景。
 >
 > README本文の長文テーブル・AIコンテキスト節は commit `0d2fd95` を引き直し復旧正本とする。本コミットはドメイン死を live link にしないための表紙更新。
 
+## 意味Topology / SphereOS の設計入口
+
+- [意味TopologyからSphereOS・Fold-NICまで（日本語正本）](docs/theory/semantic-fold-os-architecture.ja.md)：∇Φの基材中立性、M元Dynamic Graph、OAE、意味資源OS、Sphere自身のFold化、Client Rich、物理ベンダー中立性、非営利Commonsを要求順に整理。
+- [誤読防止レジスタ / UNKNOWNと主張境界](docs/theory/semantic-fold-claims-and-unknown.ja.md)：固定4軸との混同、lossless normalization、PI/SI、霊的UXと物理学、設計と実装の区別。
+- [US English architecture](docs/theory/semantic-fold-os-architecture.en-US.md) · [US English claim boundaries](docs/theory/semantic-fold-claims-and-unknown.en-US.md)：日本語正本に対応する外部検証用対訳。Kernelの実行正本ではない。
+
 詳細な思想・プロジェクト索引は [docs/](docs/) と [AGENTS.md](AGENTS.md) を読め。
 
 ## 保存プロジェクト
