@@ -170,6 +170,10 @@ Fold Time Machineは、AppleのTime Machine/APFS snapshotのUXへの敬意を込
 
 ---
 
+### 6.x 旧語彙を読む際の未拘束条件（2026-10-19補遺）
+
+旧称「数論量子」、Bの「霊的量子／霊界通信」、Cの「魔術量子」は、Shannonのquantizing processとWeaver B/C問題を手掛かりに学派が独自に用いた研究語彙である。**旧称を数学の単なる比喩と決めつけない一方、名称のみで特定の物理機構を断定しない。** B/Cでは送受の固定方向、量子化済みAパケット、物理媒体、存在論を事前に拘束しない。現行の情報子命名へ変えた理由と倫理・モデルDriverの境界は[Weaver A/B/CとOAE](weaver-abc-evidence-scope-and-oae.ja.md)および[エージェント読解規約](../operations/infoton-abc-open-scope-agent-guard.ja.md)を参照する。以下の三層分類は説明上の**既知実装の分類**であり、B/Cの研究対象を存在論的に封鎖するゲートではない。
+
 ## 7. 三層モデル：物理量子 / 量子インスパイアド / 情報子
 
 | レイヤー | 名称 | 特徴 | 観測者 |
