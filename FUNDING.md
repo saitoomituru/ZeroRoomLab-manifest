@@ -18,6 +18,12 @@ Funding does not buy a vote or change upstream direction. No patron must own all
 
 **Survival Independence is not Productive Independence.** Contributions of generation and charging capacity, safe power distribution, batteries, power-conversion equipment, diagnostics, field expertise, and cash for restoring dependable electricity can reopen research branches. Other ongoing infrastructure and legal costs are not erased. No specific delivery or return is promised. [Full Japanese field report](docs/projects/2026-10-15-offgrid-30days-field-report.ja.md).
 
+## Edge acceleration research: Tenstorrent Blackhole® (candidate, not acquired)
+
+A named hardware research candidate is the [Tenstorrent Blackhole PCIe accelerator](https://tenstorrent.com/newsroom/tenstorrent-launches-blackhole-developer-products-at-tenstorrent-dev-day) for an optional FQuery Infinite Core target adapter. [FQuery investigation #52](https://github.com/saitoomituru/FQuery/issues/52) tracks procurement, official SDK/host compatibility, deterministic fixtures, semantic-lowering loss, and reproducible receipts. The vendor currently lists p100a and p150-series cards with **up to 300 W total board power** each; model choice, host support, actual field energy cost, availability and FQuery compatibility remain **unverified by this lab**.
+
+**Power and edge-compute baseload are the first gate, not the accelerator card.** [Resource and patron workstream #52](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/52) separates safe electric supply, a capable host and storage, test/measurement assistance, a possible loaned or donated Blackhole card, and shipping/software expenses as independently fundable resources. A hardware loan or donation does not guarantee a successful integration, endorsement, sponsorship publicity or control of the research commons. All validation and hardware acceptance require appropriate power, cooling and safety review.
+
 ## Institutional advocacy / lobbying resource branch (2026-10-18)
 
 ZeroRoomLab also accepts **purpose-bounded support for public-interest institutional advocacy**: the work needed to bring documented OSS, gift commons, attribution and research sovereignty, rural infrastructure, and exploration dignity into discussion with local governments, elected representatives, public agencies, and other decision-makers.
