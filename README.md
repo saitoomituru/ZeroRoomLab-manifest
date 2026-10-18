@@ -34,7 +34,7 @@ and Context Engineering and SphereOS are implementation layers. The focus is the
 information theory or claim a new physical particle; it investigates the upstream choices about what becomes
 information at all. See [Spiritual Engineering and Infoton Engineering](docs/philosophy/spiritual-and-infoton-engineering.ja.md).
 
-The lab does not run one linear roadmap.
+**Weaver A/B/C / research-scope reading gate:** [日本語：情報子工学の未拘束条件と証拠射程](docs/operations/infoton-abc-open-scope-agent-guard.ja.md) · [en-US interpretation](docs/operations/infoton-abc-open-scope-agent-guard.en-US.md) · [SELECT/MATCH/FIT and OAE theory](docs/theory/weaver-abc-evidence-scope-and-oae.ja.md). B/C inquiry does not presuppose a one-way sender/receiver chain, a particular carrier, or explicit packetization. This is an open research boundary, not an asserted physical discovery.\n\nThe lab does not run one linear roadmap.
 It keeps many plans alive as branches, then mounts whichever branch becomes executable
 when donations, shrine offerings, salvage hardware, surviving SDKs, compute, power,
 or a verified interface arrive.
