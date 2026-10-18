@@ -126,6 +126,7 @@ conditions attached to a particular asset, venue, provider contract, or jurisdic
 
 Start here:
 
+- [探索尊厳・生存保障・制度的Exit（2026-10-18、主宰者個人の条件付き立場）](docs/philosophy/exploration-dignity-survival-exit-2026-10-18.ja.md)
 - [Spiritual Engineering and Infoton Engineering](docs/philosophy/spiritual-and-infoton-engineering.ja.md)
 - [Baseload collapse and support boundary](docs/philosophy/baseload-collapse-and-support.md) / [日本語](docs/philosophy/baseload-collapse-and-support.ja.md)
 - [Heterogeneous-agent deck governance](docs/operations/heterogeneous-agent-deck-governance.ja.md)
