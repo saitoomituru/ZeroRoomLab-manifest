@@ -18,6 +18,16 @@ Funding does not buy a vote or change upstream direction. No patron must own all
 
 **Survival Independence is not Productive Independence.** Contributions of generation and charging capacity, safe power distribution, batteries, power-conversion equipment, diagnostics, field expertise, and cash for restoring dependable electricity can reopen research branches. Other ongoing infrastructure and legal costs are not erased. No specific delivery or return is promised. [Full Japanese field report](docs/projects/2026-10-15-offgrid-30days-field-report.ja.md).
 
+## Institutional advocacy / lobbying resource branch (2026-10-18)
+
+ZeroRoomLab also accepts **purpose-bounded support for public-interest institutional advocacy**: the work needed to bring documented OSS, gift commons, attribution and research sovereignty, rural infrastructure, and exploration dignity into discussion with local governments, elected representatives, public agencies, and other decision-makers.
+
+Potential uses include travel and communications, preparing accessible policy briefs and evidence bundles, translation, public meetings or hearings, consultation and administrative procedures, and documenting proposals, official responses, resource flows, and outcomes. This is a **separate resource branch** from living costs, energy infrastructure, and technical R&D; no new funding, lobby access, policy adoption, or politician endorsement is asserted here.
+
+**Supporting this branch does not buy a vote, political endorsement, preferential access, legislative outcome, or the right to determine the founder's stance.** The founder may conditionally oppose AI/science deployment under survival-threatening institutional conditions, while keeping technical facts, OSS licenses, author attribution, and each collaborator's independent political choices intact. No donor is required to adopt the founder's politics. Activities and spending must follow applicable rules for the actual form of support and activity. Where possible, keep expense categories, meetings, submitted proposals, responses, and unresolved outcomes as receipts without exposing private correspondence.
+
+See the [Japanese conditional survival/Exit statement](docs/philosophy/exploration-dignity-survival-exit-2026-10-18.ja.md) for the author's stated constraints.
+
 ## Policies
 
 - [日本語: 資金・創設責任ドキュメント](docs/funding/README.ja.md)
