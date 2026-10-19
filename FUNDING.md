@@ -20,6 +20,28 @@ The previously reported **~980 Wh is nominal battery storage**, not generation o
 
 **Survival continuity is not productive independence.** Contributions of generation and charging capacity, distribution equipment, batteries, power conversion, diagnostics, field expertise, and restoration funds can reopen research branches. Portable energy logistics and the founder's labor remain dependencies; the workaround does not remove the funding or infrastructure bottleneck. Other ongoing infrastructure and legal costs are not erased. No specific delivery or return is promised. [Corrected Japanese field report](docs/projects/2026-10-15-offgrid-30days-field-report.ja.md).
 
+## Blackhole実機・対応ホスト・研究用電力の支援募集 / Blackhole hardware and research power
+
+**公開仕様は判明済み。次に必要なのは実機と、それを動かすホスト・電力です。** Tenstorrent Blackhole®の貸与・寄贈・購入資金、対応ホスト、給電・冷却設備、研究用電力の復旧・提供、輸送・計測協力を募集します。現在はスニーカーグリッド0.1.xによる生存・通信・ロビー・NSFW動画配信の縮小運転で、研究設備は全面停止中です。
+
+[メーカー公開仕様](https://tenstorrent.com/hardware/cards)（2026-10-19確認）：
+
+| 公称仕様 / Vendor specification | p100a | p150a | p150b |
+| --- | --- | --- | --- |
+| Tensixコア / Tensix cores | 120 | 120 | 120 |
+| GDDR6 | 28 GB | 32 GB | 32 GB |
+| メモリー帯域 / Memory bandwidth | 448 GB/s | 512 GB/s | 512 GB/s |
+| 接続 / System interface | PCIe 5.0 x16 | PCIe 5.0 x16 | PCIe 5.0 x16 |
+| ボード電力 / Total board power | 最大300 W | 最大300 W | 最大300 W |
+| 外部給電 / External power | 12V-2x6 | 12V-2x6 | 12V-2x6 |
+| 冷却 / Cooling | 空冷・ファン搭載 / Active | 空冷・ファン搭載 / Active | パッシブ / Passive |
+
+TT-Forge、TT-NN、TT-Metalium、TT-LLKは[公式発表](https://tenstorrent.com/newsroom/tenstorrent-launches-blackhole-developer-products-at-tenstorrent-dev-day)に記載されています。メーカー公称仕様を「仕様不明」へ戻しません。未完なのは採用型番・ホスト構成の選定、実機取得、ホスト込みの実消費測定、FQuery向けアダプターの実装・適合試験です。300 Wはホスト込みの必要電力でも実測値でもありません。
+
+[Manifest #52](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/52)を実機・ホスト・電力調達の統合窓口、[FQuery #52](https://github.com/saitoomituru/FQuery/issues/52)を実装・測定の技術課題として扱います。参照規約・証拠射程の文書整備（PR #51・#54）と実機検証は別の進捗で、機材や電力が未調達でも文書は統合できます。支援は非独占Seed Steward方針に従います。
+
+**English (en-US):** Published vendor specifications are known; the next needs are physical hardware, a suitable host, and research power. We welcome a Blackhole loan/donation or acquisition funding, a compatible host, power and cooling equipment, restoration or provision of research electricity, shipping, and measurement assistance. Current sneaker-grid 0.1.x covers reduced survival, communications, lobbying, and NSFW distribution; research equipment is shut down. The table records vendor specifications, not lab measurements. Model/host selection, acquisition, total-system energy measurements, and FQuery adapter implementation/conformance remain pending. Manifest #52 coordinates resource support; FQuery #52 tracks technical experiments. Documentation integration does not assert completed hardware validation or grant sponsors exclusive control.
+
 ## Institutional advocacy / lobbying resource branch (2026-10-18)
 
 ZeroRoomLab also accepts **purpose-bounded support for public-interest institutional advocacy**: the work needed to bring documented OSS, gift commons, attribution and research sovereignty, rural infrastructure, and exploration dignity into discussion with local governments, elected representatives, public agencies, and other decision-makers.
