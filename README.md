@@ -12,6 +12,10 @@ CC BY 4.0. Use freely, but preserve attribution when carrying the flavor forward
 
 # ZeroRoomLab-manifest
 
+## Documentation publication — 2026-10-19
+
+29 Japanese/en-US pairs are now on the Fold, SphereOS, Quantaril, and World documentation main branches. See the [canonical Japanese report](docs/operations/documentation-sites-publication-2026-10-19.ja.md) and [en-US reference manuscript](docs/operations/documentation-sites-publication-2026-10-19.en-US.md). Source retention, implementation ownership, deployment verification, and DOI issuance remain distinct.
+
 ZeroRoomLab is a one-person research studio and fabrication space
 running out of an Edo-period farmhouse in Yamagata, Japan.
 

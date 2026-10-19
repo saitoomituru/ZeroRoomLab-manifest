@@ -1,5 +1,9 @@
 # ZeroRoomLab-manifest
 
+## 2026-10-19 文書サイトへの日英展開
+
+Fold・SphereOS・Quantaril・Worldのmainへ日英29組を展開しました。[日本語正本の報告](docs/operations/documentation-sites-publication-2026-10-19.ja.md) / [en-US参照写本](docs/operations/documentation-sites-publication-2026-10-19.en-US.md)。原典・実装正本・旧URLを保持し、production公開とDOI発行は別途確認します。
+
 ZeroRoomLabとは何か、何を作っているか、思想的背景。
 
 > **2026-09-11:** `https://quantaril.cloud/` は公式Web入口として **DEAD**（wallet pain / #26）。生成元は [HIPSTAR-IScompany/quantaril_cloud_QAtlantis](https://github.com/HIPSTAR-IScompany/quantaril_cloud_QAtlantis)。現状正本は [docs/preservation/quantaril-domain-status.ja.md](docs/preservation/quantaril-domain-status.ja.md)。

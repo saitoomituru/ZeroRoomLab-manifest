@@ -4,10 +4,19 @@ license: CC-BY 4.0
 author: 齋藤みつる (fusamofu)
 version: 0.1.0
 status: draft
+canonical_language: ja-JP
+translation_language: en-US
+translation_status: partial-reference-manuscript
 fold_signature: ψ → ∇φ → λ → Q
 ---
 
 # Infoton Engineering
+
+Canonical source: [Japanese](infoton-engineering.ja.md). This en-US document is a partial reference manuscript of the earlier sections, not a complete translation of later additions. Where scope or interpretation differs, consult the Japanese source. Do not use this text to overwrite the canonical source.
+
+October 19, 2026: The Japanese mathematical note corrected a parity error: on positive even-dimensional spheres a continuous tangent vector field must have a zero; odd-dimensional spheres admit a nowhere-zero smooth tangent field. See [Conrad, Math 396, §1](https://math.stanford.edu/~conrad/diffgeomPage/handouts/hairyball.pdf). Applying that theorem to Fold requires a defined state space and mapping; variable count alone is insufficient. The proposed Q / ⊥ / Last Order design remains a design proposal rather than a proven corollary. The application question remains in [#42](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/42).
+
+For the new bilingual editorial explanation, see [Fold research](https://github.com/HIPSTAR-IScompany/fold/tree/main/docs/research), its [en-US manuscript](https://github.com/HIPSTAR-IScompany/fold/tree/main/i18n/en/docusaurus-plugin-content-docs/current/research), and the [publication report](../operations/documentation-sites-publication-2026-10-19.en-US.md).
 
 Infoton Engineering is an industrial number theory built on FAM's ψ / ∇φ / λ / Q.
 

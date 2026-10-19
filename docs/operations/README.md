@@ -8,6 +8,8 @@ Japanese operation document already has a complete translation.
 
 ## Start here
 
+- [Documentation site publication (2026-10-19)](documentation-sites-publication-2026-10-19.en-US.md) / [日本語正本](documentation-sites-publication-2026-10-19.ja.md) — four bilingual projections, provenance, verification boundaries, and remaining work in existing Issues.
+
 - [Help and Capability Discovery](help-and-capability-discovery.md) /
   [日本語](help-and-capability-discovery.ja.md) — show current capability, unfinished work, non-code entrances,
   and mutation-free choices before implementation.

@@ -144,3 +144,7 @@ fold_cluster:
 ---
 
 *ZeroRoomLab / @K_chachamaru — CC-BY 4.0*
+
+## 2026-10-19 文書siteへの展開
+
+[Foldの日本語解説](https://github.com/HIPSTAR-IScompany/fold/blob/main/docs/research/infoton-cluster.md)と[en-US参照写本](https://github.com/HIPSTAR-IScompany/fold/blob/main/i18n/en/docusaurus-plugin-content-docs/current/research/infoton-cluster.md)へ、候補保持、状態遷移、動的グラフとの対応を再編集した。原典は本ページに保持し、runtime ABIや因果確定器を新設したとはしない。実装波及は#36／SphereOS-Atlantis #29、隣接分野と数理的な適用の精査は#42で継続する。

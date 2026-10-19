@@ -4,6 +4,8 @@
 
 ## 主要文書
 
+- [文書site日英展開（2026-10-19）](documentation-sites-publication-2026-10-19.ja.md) / [en-US](documentation-sites-publication-2026-10-19.en-US.md) — 4siteの編集解説、出典台帳、buildとdeployの別状態、既存Issueの残作業。
+
 - [README.md](README.md) — en-US外部GUI索引。翻訳済み入口と未翻訳境界を隠さず案内する。
 - [manifest-operating-model.ja.md](manifest-operating-model.ja.md) — ノート・docs・転送キューの役割分担と運用ルール。AGENTS.md の三層規約を置き換えず、運用枠組みとして整理する。哲学・神学・信仰の保全ルールも含む。
 - [technical-communication-register.ja.md](technical-communication-register.ja.md) — README、技術文書、リポジトリ内ノート、note.com、X、YouTube等の媒体別レジスターと、観測事実の主張境界を定める。
