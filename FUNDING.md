@@ -12,11 +12,13 @@ Funding does not buy a vote or change upstream direction. No patron must own all
 
 > No throne is promised. You may still become part of the provenance.
 
-## Field evidence: 30 days without commercial-grid power
+## Field evidence: sneaker-grid survival power; research equipment shut down
 
-**2026-10-15:** The operator reports that a ~980 Wh nominal off-grid reserve sustained daily living, water use, bathing, communications and lightweight creative outreach for a month after an involuntary loss of affordable commercial electricity. It did **not** sustain normal high-load technical R&D. This is a first-person field observation, not a fully instrumented energy benchmark or independent safety certification.
+**2026-10-19 correction to the 2026-10-15 report:** Financial distress (「財布ペイン」) led to the seizure of generation equipment. The current supply is **sneaker-grid 0.1.x**, an improvised early version of an off-grid system: LiFePO4 batteries originally prepared for the electric bike 「縄文エンジェル」 are carried by bicycle in jerrycan-scale portable loads, and vehicle-battery power is converted into a reduced household supply. The vehicle-to-home analogy is Prius/PHV-style household power extraction; it does not identify a Prius as installed equipment.
 
-**Survival Independence is not Productive Independence.** Contributions of generation and charging capacity, safe power distribution, batteries, power-conversion equipment, diagnostics, field expertise, and cash for restoring dependable electricity can reopen research branches. Other ongoing infrastructure and legal costs are not erased. No specific delivery or return is promised. [Full Japanese field report](docs/projects/2026-10-15-offgrid-30days-field-report.ja.md).
+The previously reported **~980 Wh is nominal battery storage**, not generation output or a single charge that lasted a month. The system secures reduced power for **survival, communications, lobbying, and NSFW video distribution**. **Research equipment is fully shut down.** Continuing tablet/phone-based documentation or GitHub work is not a restart of the local lab.
+
+**Survival continuity is not productive independence.** Contributions of generation and charging capacity, distribution equipment, batteries, power conversion, diagnostics, field expertise, and restoration funds can reopen research branches. Portable energy logistics and the founder's labor remain dependencies; the workaround does not remove the funding or infrastructure bottleneck. Other ongoing infrastructure and legal costs are not erased. No specific delivery or return is promised. [Corrected Japanese field report](docs/projects/2026-10-15-offgrid-30days-field-report.ja.md).
 
 ## Institutional advocacy / lobbying resource branch (2026-10-18)
 

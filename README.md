@@ -140,21 +140,17 @@ Start here:
 
 ---
 
-### Current operational status: power-constrained, still shipping
+### Current operational status: sneaker-grid 0.1.x; research equipment fully shut down
 
-**2026-10-15 — 30 days without commercial-grid electricity: survival and communication continued, but sustained R&D did not.**
+**2026-10-19 correction — survival, communications, lobbying, and NSFW video distribution have reduced power; all research equipment is shut down.**
 
-The operator reports that an approximately **980 Wh nominal off-grid reserve** kept daily living, water use, bathing, connectivity, and low-power video, singing, dancing and outreach possible through a month of involuntary grid disconnection. Continuous high-load compute and technical R&D remained beyond the available power envelope. This was an unplanned cash-triggered field observation, not a controlled endurance trial; continuous telemetry and precise workload thresholds remain unverified.
+After financial distress (「財布ペイン」) led to the seizure of the generation equipment, the operator improvised **sneaker-grid 0.1.x**: an emergency early version of an off-grid power system. LiFePO4 batteries originally prepared for the electric bike 「縄文エンジェル」 are transported by bicycle in portable, jerrycan-scale loads. Vehicle-battery power is repurposed into a reduced household supply, using the vehicle-to-home idea illustrated by Prius/PHV systems. This describes the architecture, not the use of an actual Prius or a production V2H installation.
 
-**Survival Independence ≠ Productive Independence.** [30-day field report (日本語)](docs/projects/2026-10-15-offgrid-30days-field-report.ja.md).
+The previously reported **~980 Wh is nominal stored energy**, not generation capacity or a month of energy from one charge. Energy transport and replenishment remain dependencies. Available power covers survival, communications, lobbying, and NSFW video distribution in reduced operation. **All research equipment, including the X99/GPU environment, is fully shut down.** Tablet/phone-based documentation and GitHub work do not mean that local research equipment has restarted.
 
-**Previous status (2026-10-02):**
+**Survival continuity ≠ research-power recovery.** The earlier 30-day report is corrected with these details: [field report (日本語)](docs/projects/2026-10-15-offgrid-30days-field-report.ja.md).
 
-Commercial power is not a dependable baseload for the lab when it cannot always be afforded. Emergency off-grid capacity remains prioritized for survival and communications, so high-load compute and continuous development workloads can still be unavailable. Lower-power design, documentation, GitHub work, salvage, and executable branches continue whenever the available resource envelope permits.
-
-This does **not** mean the infrastructure problem is solved. Commercial-power recovery and continuity, additional batteries, generation and charging capacity, power conditioning, and related infrastructure remain active support needs.
-
-The operating model is therefore not simply `running` or `paused`: branches are mounted according to the power, hardware, network, and funding actually available at that moment.
+Support needs remain commercial-power restoration, generation and charging capacity, batteries, conversion and distribution equipment, and the dependable power needed to restart research. The founder's improvised survival supply does not close the infrastructure or funding gap.
 
 [GitHub Sponsors](https://github.com/sponsors/saitoomituru)
 
