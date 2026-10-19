@@ -17,6 +17,8 @@ FAMとは何か、MCPと何が違うのか、FAMLog / FAMJSON / refFAM / Foldを
 
 現行参照境界 → [FAM / 情報子 / refFAM の参照境界](fam-infoton-reference-boundary.ja.md)
 
+Selector / module / Fold scope正本 → [FAM module / selector / Fold scope](fam-module-selector-and-fold-scope.ja.md)。`self`は現FAM module、`this`は現nodeである。L構造位置の`prev/next`をmL実行経路の`before/after`と混同しない。cross-Fold traversalには明示reference / transitionを要求し、意味類似によるpointer権限付与は行わない。
+
 ---
 
 ## 0. 現行要約

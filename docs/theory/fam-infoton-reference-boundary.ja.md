@@ -8,6 +8,8 @@ fold_signature: ψ → ∇φ → λ → Q
 
 # FAM / 情報子 / refFAM の参照境界
 
+**Selector・module・Fold scopeの現行正本：** [FAM module / selector / Fold scope](fam-module-selector-and-fold-scope.ja.md)。本書の情報子・refFAM定義と併読する。`self = FAM module`、`this = current node`、L軸`prev/next`とmL軸`before/after`は別責務であり、cross-Fold pointerは明示遷移なしに解決しない。これは意味内容の正誤をCoreが裁定するという意味ではない。
+
 ## 0. 目的
 
 本書は、FAMを巨大な一枚JSON graphとして扱わず、**可搬性を獲得した意味単位を独立FAMとして切り出し、参照で接続する**ための正本Interpretationを定義する。
