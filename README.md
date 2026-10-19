@@ -51,6 +51,34 @@ No fixed priority queue does not mean no plan.
 It means the plan is resource-gated rather than capital-assured.
 A branch that cannot run today is preserved, not declared failed.
 
+## Infra-FIRE: build survival paths that do not require cash at every hop
+
+**Infra-FIRE (Infrastructure FIRE)** is ZeroRoomLab's proposed field-research extension of Financial Independence, Retire Early. Rather than assuming a liquid job market and enough investments to purchase every survival service indefinitely, it investigates ownership, lawful access, fabrication, operation and repair of essential infrastructure as ways to reduce *mandatory cash dependency*. In a remote rural location, “just work a little more” is not necessarily a low-friction fallback.
+
+Land, drinking-water wells, 3D-printed water-system components, agricultural water access, sneaker-grid 0.1.x survival power and local repair skills are research inputs, not declarations of complete self-sufficiency. Financial cash scarcity itself can be a common-mode tail risk, while physical assets also carry failure, safety, logistics, replacement and maintenance risks.
+
+### Jomon Cultural Sphere 2.0 as community-scale Infra-FIRE
+
+**A useful existing-category label for Jomon Cultural Sphere 2.0 is: _a community-scale implementation of Infrastructure FIRE_.** This is a translation layer, not a claim that FIRE literature already defines Jomon 2.0 or that the two concepts are identical.
+
+Conventional FIRE primarily asks whether financial capital can make compulsory wage labor optional. Infra-FIRE extends the question to whether essential services can remain available without requiring cash at every hop. Jomon 2.0 extends that implementation boundary again from an individual household toward forkable lab / workshop / shrine / hamlet / village nodes and a shared commons.
+
+```text
+individual FIRE
+  -> household Infra-FIRE
+  -> ZeroRoomLab / workshop / shrine node
+  -> hamlet / village Infra-FIRE
+  -> Jomon Cultural Sphere 2.0 commons
+```
+
+In this mapping, **Infra-FIRE is an evaluation lens, not the whole civilization model**. Jomon 2.0 also carries governance, culture, meaning, licensing, provenance, education, production and capital-allocation layers. FAOC describes the fractal/autonomous node topology; OpenFAPTA observes resources that do not fit cleanly into a FIAT ledger; Fold NIC explores network portability; SphereOS/FAM and related work handle meaning/context boundaries; physical microgrids, water and fabrication provide the field layer.
+
+See the [Infra-FIRE hypothesis, field boundaries, metrics and OSH release plan](docs/theory/infra-fire.en.md) and the [FAOC / Infra-FIRE node architecture map](docs/theory/faoc-infra-fire-node.ja.md).
+
+**Proposed GitHub Sponsors milestone: $1,000/month recurring.** Funding at that level would allow budgeting for large-file distribution (Git LFS or alternatives), CAD/STL/3MF archival, reproducibility documentation, material/quality testing and staged release of eligible 3D-printed well/water-system parts as open-source hardware. This is a capacity goal, **not an automatic GitHub LFS unlock, a guaranteed release, or a promise that untested printed components are drinking-water safe**. The existing small Git LFS allowance can be used below that threshold.
+
+> Don't just accumulate money to buy survival. Make survival less hostage to a money-shaped single point of failure.
+
 ## Fork the Lab. Deploy a World.
 
 ZeroRoomLab is also exploring the lab itself as a **portable / forkable civilization stack**: not one canonical civilization image, but a set of micro-modules, contracts, Worlds, meanings, cultural layers, and physical systems that can be forked, configured, deployed, repaired, and allowed to diverge.
@@ -140,21 +168,17 @@ Start here:
 
 ---
 
-### Current operational status: power-constrained, still shipping
+### Current operational status: sneaker-grid 0.1.x; research equipment fully shut down
 
-**2026-10-15 — 30 days without commercial-grid electricity: survival and communication continued, but sustained R&D did not.**
+**2026-10-19 correction — survival, communications, lobbying, and NSFW video distribution have reduced power; all research equipment is shut down.**
 
-The operator reports that an approximately **980 Wh nominal off-grid reserve** kept daily living, water use, bathing, connectivity, and low-power video, singing, dancing and outreach possible through a month of involuntary grid disconnection. Continuous high-load compute and technical R&D remained beyond the available power envelope. This was an unplanned cash-triggered field observation, not a controlled endurance trial; continuous telemetry and precise workload thresholds remain unverified.
+After financial distress (「財布ペイン」) led to the seizure of the generation equipment, the operator improvised **sneaker-grid 0.1.x**: an emergency early version of an off-grid power system. LiFePO4 batteries originally prepared for the electric bike 「縄文エンジェル」 are transported by bicycle in portable, jerrycan-scale loads. Vehicle-battery power is repurposed into a reduced household supply, using the vehicle-to-home idea illustrated by Prius/PHV systems. This describes the architecture, not the use of an actual Prius or a production V2H installation.
 
-**Survival Independence ≠ Productive Independence.** [30-day field report (日本語)](docs/projects/2026-10-15-offgrid-30days-field-report.ja.md).
+The previously reported **~980 Wh is nominal stored energy**, not generation capacity or a month of energy from one charge. Energy transport and replenishment remain dependencies. Available power covers survival, communications, lobbying, and NSFW video distribution in reduced operation. **All research equipment, including the X99/GPU environment, is fully shut down.** Tablet/phone-based documentation and GitHub work do not mean that local research equipment has restarted.
 
-**Previous status (2026-10-02):**
+**Survival continuity ≠ research-power recovery.** The earlier 30-day report is corrected with these details: [field report (日本語)](docs/projects/2026-10-15-offgrid-30days-field-report.ja.md).
 
-Commercial power is not a dependable baseload for the lab when it cannot always be afforded. Emergency off-grid capacity remains prioritized for survival and communications, so high-load compute and continuous development workloads can still be unavailable. Lower-power design, documentation, GitHub work, salvage, and executable branches continue whenever the available resource envelope permits.
-
-This does **not** mean the infrastructure problem is solved. Commercial-power recovery and continuity, additional batteries, generation and charging capacity, power conditioning, and related infrastructure remain active support needs.
-
-The operating model is therefore not simply `running` or `paused`: branches are mounted according to the power, hardware, network, and funding actually available at that moment.
+Support needs remain commercial-power restoration, generation and charging capacity, batteries, conversion and distribution equipment, and the dependable power needed to restart research. The founder's improvised survival supply does not close the infrastructure or funding gap.
 
 [GitHub Sponsors](https://github.com/sponsors/saitoomituru)
 
