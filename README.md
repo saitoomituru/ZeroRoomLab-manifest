@@ -51,6 +51,34 @@ No fixed priority queue does not mean no plan.
 It means the plan is resource-gated rather than capital-assured.
 A branch that cannot run today is preserved, not declared failed.
 
+## Infra-FIRE: build survival paths that do not require cash at every hop
+
+**Infra-FIRE (Infrastructure FIRE)** is ZeroRoomLab's proposed field-research extension of Financial Independence, Retire Early. Rather than assuming a liquid job market and enough investments to purchase every survival service indefinitely, it investigates ownership, lawful access, fabrication, operation and repair of essential infrastructure as ways to reduce *mandatory cash dependency*. In a remote rural location, “just work a little more” is not necessarily a low-friction fallback.
+
+Land, drinking-water wells, 3D-printed water-system components, agricultural water access, sneaker-grid 0.1.x survival power and local repair skills are research inputs, not declarations of complete self-sufficiency. Financial cash scarcity itself can be a common-mode tail risk, while physical assets also carry failure, safety, logistics, replacement and maintenance risks.
+
+### Jomon Cultural Sphere 2.0 as community-scale Infra-FIRE
+
+**A useful existing-category label for Jomon Cultural Sphere 2.0 is: _a community-scale implementation of Infrastructure FIRE_.** This is a translation layer, not a claim that FIRE literature already defines Jomon 2.0 or that the two concepts are identical.
+
+Conventional FIRE primarily asks whether financial capital can make compulsory wage labor optional. Infra-FIRE extends the question to whether essential services can remain available without requiring cash at every hop. Jomon 2.0 extends that implementation boundary again from an individual household toward forkable lab / workshop / shrine / hamlet / village nodes and a shared commons.
+
+```text
+individual FIRE
+  -> household Infra-FIRE
+  -> ZeroRoomLab / workshop / shrine node
+  -> hamlet / village Infra-FIRE
+  -> Jomon Cultural Sphere 2.0 commons
+```
+
+In this mapping, **Infra-FIRE is an evaluation lens, not the whole civilization model**. Jomon 2.0 also carries governance, culture, meaning, licensing, provenance, education, production and capital-allocation layers. FAOC describes the fractal/autonomous node topology; OpenFAPTA observes resources that do not fit cleanly into a FIAT ledger; Fold NIC explores network portability; SphereOS/FAM and related work handle meaning/context boundaries; physical microgrids, water and fabrication provide the field layer.
+
+See the [Infra-FIRE hypothesis, field boundaries, metrics and OSH release plan](docs/theory/infra-fire.en.md) and the [FAOC / Infra-FIRE node architecture map](docs/theory/faoc-infra-fire-node.ja.md).
+
+**Proposed GitHub Sponsors milestone: $1,000/month recurring.** Funding at that level would allow budgeting for large-file distribution (Git LFS or alternatives), CAD/STL/3MF archival, reproducibility documentation, material/quality testing and staged release of eligible 3D-printed well/water-system parts as open-source hardware. This is a capacity goal, **not an automatic GitHub LFS unlock, a guaranteed release, or a promise that untested printed components are drinking-water safe**. The existing small Git LFS allowance can be used below that threshold.
+
+> Don't just accumulate money to buy survival. Make survival less hostage to a money-shaped single point of failure.
+
 ## Fork the Lab. Deploy a World.
 
 ZeroRoomLab is also exploring the lab itself as a **portable / forkable civilization stack**: not one canonical civilization image, but a set of micro-modules, contracts, Worlds, meanings, cultural layers, and physical systems that can be forked, configured, deployed, repaired, and allowed to diverge.
