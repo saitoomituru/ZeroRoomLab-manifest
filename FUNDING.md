@@ -12,9 +12,27 @@ Funding does not buy a vote or change upstream direction. No patron must own all
 
 > No throne is promised. You may still become part of the provenance.
 
+## Field evidence: sneaker-grid survival power; research equipment shut down
+
+**2026-10-19 correction to the 2026-10-15 report:** Financial distress (「財布ペイン」) led to the seizure of generation equipment. The current supply is **sneaker-grid 0.1.x**, an improvised early version of an off-grid system: LiFePO4 batteries originally prepared for the electric bike 「縄文エンジェル」 are carried by bicycle in jerrycan-scale portable loads, and vehicle-battery power is converted into a reduced household supply. The vehicle-to-home analogy is Prius/PHV-style household power extraction; it does not identify a Prius as installed equipment.
+
+The previously reported **~980 Wh is nominal battery storage**, not generation output or a single charge that lasted a month. The system secures reduced power for **survival, communications, lobbying, and NSFW video distribution**. **Research equipment is fully shut down.** Continuing tablet/phone-based documentation or GitHub work is not a restart of the local lab.
+
+**Survival continuity is not productive independence.** Contributions of generation and charging capacity, distribution equipment, batteries, power conversion, diagnostics, field expertise, and restoration funds can reopen research branches. Portable energy logistics and the founder's labor remain dependencies; the workaround does not remove the funding or infrastructure bottleneck. Other ongoing infrastructure and legal costs are not erased. No specific delivery or return is promised. [Corrected Japanese field report](docs/projects/2026-10-15-offgrid-30days-field-report.ja.md).
+
+## Institutional advocacy / lobbying resource branch (2026-10-18)
+
+ZeroRoomLab also accepts **purpose-bounded support for public-interest institutional advocacy**: the work needed to bring documented OSS, gift commons, attribution and research sovereignty, rural infrastructure, and exploration dignity into discussion with local governments, elected representatives, public agencies, and other decision-makers.
+
+Potential uses include travel and communications, preparing accessible policy briefs and evidence bundles, translation, public meetings or hearings, consultation and administrative procedures, and documenting proposals, official responses, resource flows, and outcomes. This is a **separate resource branch** from living costs, energy infrastructure, and technical R&D; no new funding, lobby access, policy adoption, or politician endorsement is asserted here.
+
+**Supporting this branch does not buy a vote, political endorsement, preferential access, legislative outcome, or the right to determine the founder's stance.** The founder may conditionally oppose AI/science deployment under survival-threatening institutional conditions, while keeping technical facts, OSS licenses, author attribution, and each collaborator's independent political choices intact. No donor is required to adopt the founder's politics. Activities and spending must follow applicable rules for the actual form of support and activity. Where possible, keep expense categories, meetings, submitted proposals, responses, and unresolved outcomes as receipts without exposing private correspondence.
+
+See the [Japanese conditional survival/Exit statement](docs/philosophy/exploration-dignity-survival-exit-2026-10-18.ja.md) for the author's stated constraints.
+
 ## Infra-FIRE and the $1,000/month OSH publishing target
 
-Infrastructure FIRE (Infra-FIRE) is our experimental route to reduce mandatory cash dependence for essential services through owned infrastructure, lawful resource access, and reproducible maintenance. It does not mean financial independence has already been achieved. The lab's land, well, water-system fabrication and limited off-grid operations are test cases, with failures, quality, legal rights and lifecycle obligations kept in scope.
+Infrastructure FIRE (Infra-FIRE) is our experimental route to reduce mandatory cash dependence for essential services through owned infrastructure, lawful resource access, and reproducible maintenance. It does not mean financial independence has already been achieved. The lab's land, well, water-system fabrication and sneaker-grid 0.1.x survival operations, with research equipment fully shut down are test cases, with failures, quality, legal rights and lifecycle obligations kept in scope.
 
 **A recurring $1,000/month GitHub Sponsors target** would make it possible to budget for Git LFS or other large-file hosting, CAD/STL/3MF archiving, material and operation testing, documentation, and staged OSH publication of eligible 3D-printed water-system/well components. Git LFS has its own usage rules and existing free allowance; reaching this sponsor amount does not automatically unlock a GitHub feature or guarantee a specific release.
 

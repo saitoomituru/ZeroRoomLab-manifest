@@ -49,10 +49,12 @@ Infra-FIREはこのnodeを生存側から評価する指標である。金融資
 | Meaning / agent runtime | `SphereOS-Atlantis`, `FQuery`, `IBD` | 文脈、World、実行境界、状態・来歴の扱い |
 | Network portability | `fold-nic` | Identity / World / Capabilityを特定cloud・DNSと分離し、transport adapterへ投影 |
 | Resource observation | `OpenFAPTA` | FIAT、贈与、循環資源、実行力、未知benefitを混同せず観測するtoy architecture |
-| Physical microgrid | off-grid power / well / water / fabrication | 電力・水・工作など、cash dependencyを物理serviceへ変換するfield layer |
+| Physical microgrid | sneaker-grid 0.1.x / well / water / fabrication | 電力・水・工作など、cash dependencyを物理serviceへ変換するfield layer |
 | Open hardware | 3DP water parts, `commonsATX`, 800-series, future OSH | 修繕・再生産可能性とlocal fabrication |
 | Media / human interface | OND800 / OpenRVC / 800-series | node内の表現、制作、身体・文化活動をlife supportから文明へ拡張 |
 | Funding / legal | Non-Exclusive Seed Steward / Patient Capital | upstreamを囲い込まず、探索・法務・公開・物理基盤の条件を支える |
+
+**2026-10-19現在：** 発電設備は財布ペインで差し押さえ後。電動バイク「縄文エンジェル」用LiFePO4を自転車運搬するスニーカーグリッド0.1.xで、生存・通信・ロビー・NSFW動画配信のみ縮小運転し、研究設備は全面停止中。microgrid・compute・fabricationを一体稼働済みとは扱わない。[訂正済み現場報告](../projects/2026-10-15-offgrid-30days-field-report.ja.md)。
 
 この表はruntime dependency graphではない。各repositoryのREADMEに記載された実装状態を優先し、未実装機能を上位narrativeからbackfillしない。
 

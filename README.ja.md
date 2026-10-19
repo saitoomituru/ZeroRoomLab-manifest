@@ -6,7 +6,21 @@ ZeroRoomLabとは何か、何を作っているか、思想的背景。
 >
 > README本文の長文テーブル・AIコンテキスト節は commit `0d2fd95` を引き直し復旧正本とする。本コミットはドメイン死を live link にしないための表紙更新。
 
+## 意味Topology / SphereOS の設計入口
+
+- [意味TopologyからSphereOS・Fold-NICまで（日本語正本）](docs/theory/semantic-fold-os-architecture.ja.md)：∇Φの基材中立性、M元Dynamic Graph、OAE、意味資源OS、Sphere自身のFold化、Client Rich、物理ベンダー中立性、非営利Commonsを要求順に整理。
+- [誤読防止レジスタ / UNKNOWNと主張境界](docs/theory/semantic-fold-claims-and-unknown.ja.md)：固定4軸との混同、lossless normalization、PI/SI、霊的UXと物理学、設計と実装の区別。
+- [US English architecture](docs/theory/semantic-fold-os-architecture.en-US.md) · [US English claim boundaries](docs/theory/semantic-fold-claims-and-unknown.en-US.md)：日本語正本に対応する外部検証用対訳。Kernelの実行正本ではない。
+
 詳細な思想・プロジェクト索引は [docs/](docs/) と [AGENTS.md](AGENTS.md) を読め。
+
+## 現在の電力：スニーカーグリッド0.1.x（2026-10-19）
+
+発電設備は財布ペインで差し押さえられた後。電動バイク「縄文エンジェル」用のLiFePO4蓄電池をポリタンクのような容量単位で自転車運搬し、車両用電源から家庭向け電力を縮小して取り出す仕組みを急造した。現在は**オフグリッド電力システムの急造初期版であるスニーカーグリッド0.1.x**で、生存・通信・ロビー活動・NSFW動画配信の縮小運転電力だけを確保している。
+
+**研究設備は全面停止中。** タブレット／スマートフォン経由の文書・GitHub作業の継続は、X99・GPU等の研究設備の復旧を意味しない。既報の約980 Whは公称蓄電量であり、発電能力や1回の充電で1か月を賄ったことを意味しない。補給・運搬に依存する生存電力から、研究用電力を復旧するための支援が必要。
+
+[構成と稼働状態の訂正を含む現場報告](docs/projects/2026-10-15-offgrid-30days-field-report.ja.md)
 
 ## 保存プロジェクト
 

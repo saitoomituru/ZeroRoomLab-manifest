@@ -11,6 +11,8 @@ fold_signature: ψ → ∇φ → λ → Q
 
 FAMとは何か、MCPと何が違うのか、FAMLog / FAMJSON / refFAM / Foldをどう分けるかを説明する。
 
+> **横断的な現行設計意図：** [意味TopologyからSphereOS・Fold-NICまで](semantic-fold-os-architecture.ja.md)と[誤読防止レジスタ](semantic-fold-claims-and-unknown.ja.md)を先に参照。FAMの4キーはopen-worldな最小構造交渉であり、Worldの次元数を固定するものではない。本書の実装receipt・歴史記録は横断解説で遡及変更しない。
+
 元仕様 → [FoldAccessMapper.proton.md](https://github.com/HIPSTAR-IScompany/astro.quantaril.cloud/blob/main/demo/FoldAccessMapper.proton.md)
 
 現行参照境界 → [FAM / 情報子 / refFAM の参照境界](fam-infoton-reference-boundary.ja.md)

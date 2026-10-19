@@ -15,7 +15,7 @@ Money itself can become a **common-mode tail risk** when nearly every survival p
 
 ## Field practice, not a generic rural fantasy
 
-ZeroRoomLab's reported field configuration includes owned land, a private drinking-water well, access to agricultural river water, and 3D-printed water-system components. The lab experiments with off-grid electricity, local computing, field repair and salvage. Rights to use river water, well ownership, water quality, safety and infrastructure maintenance have distinct evidence and legal scopes. These details should not be collapsed into one blanket claim of regulatory or resource independence.
+ZeroRoomLab's reported field configuration includes owned land, a private drinking-water well, access to agricultural river water, and 3D-printed water-system components. As of 2026-10-19, generation equipment has been seized following financial distress. The lab uses improvised sneaker-grid 0.1.x: LiFePO4 originally prepared for the electric bike 「縄文エンジェル」 is transported by bicycle and repurposed into reduced household power. Only survival, communications, lobbying and NSFW video distribution have reduced power; all research equipment is shut down. Local-computing research remains a restart target. See the [corrected field report](../projects/2026-10-15-offgrid-30days-field-report.ja.md). Rights to use river water, well ownership, water quality, safety and infrastructure maintenance have distinct evidence and legal scopes. These details should not be collapsed into one blanket claim of regulatory or resource independence.
 
 Failures, operating expenses and externally required inputs remain part of the record. A backup supply under tight power limits is not equivalent to a fully independent production baseload.
 

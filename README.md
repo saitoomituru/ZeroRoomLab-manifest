@@ -20,6 +20,10 @@ and shared registers that help humans and different AI agents work
 without flattening engineering, culture, philosophy, and unfinished ideas
 into one vendor's default worldview.
 
+**Architecture reading path / 設計を先に読む：** [日本語正本：意味Topology → SphereOS → Fold-NIC](docs/theory/semantic-fold-os-architecture.ja.md) · [en-US interpretation](docs/theory/semantic-fold-os-architecture.en-US.md) · [日本語FAQ / claim boundaries](docs/theory/semantic-fold-claims-and-unknown.ja.md) · [en-US FAQ](docs/theory/semantic-fold-claims-and-unknown.en-US.md).
+
+The cross-project architecture explains substrate-neutral processing gradients, unknown-preserving dynamic Folds, OAE as a managed resource, client-rich meaning portability, hardware neutrality, and the open commons. It is a design explanation, **not** a claim that every component has shipped. Japanese is authoritative; the en-US pages are review interfaces.
+
 A core design lineage is:
 
 **Spiritual Engineering → Infoton Engineering → Context Engineering / FAM / SphereOS Atlantis**
@@ -51,7 +55,7 @@ A branch that cannot run today is preserved, not declared failed.
 
 **Infra-FIRE (Infrastructure FIRE)** is ZeroRoomLab's proposed field-research extension of Financial Independence, Retire Early. Rather than assuming a liquid job market and enough investments to purchase every survival service indefinitely, it investigates ownership, lawful access, fabrication, operation and repair of essential infrastructure as ways to reduce *mandatory cash dependency*. In a remote rural location, “just work a little more” is not necessarily a low-friction fallback.
 
-Land, drinking-water wells, 3D-printed water-system components, agricultural water access, limited off-grid power and local repair skills are research inputs, not declarations of complete self-sufficiency. Financial cash scarcity itself can be a common-mode tail risk, while physical assets also carry failure, safety, logistics, replacement and maintenance risks.
+Land, drinking-water wells, 3D-printed water-system components, agricultural water access, sneaker-grid 0.1.x survival power and local repair skills are research inputs, not declarations of complete self-sufficiency. Financial cash scarcity itself can be a common-mode tail risk, while physical assets also carry failure, safety, logistics, replacement and maintenance risks.
 
 ### Jomon Cultural Sphere 2.0 as community-scale Infra-FIRE
 
@@ -150,6 +154,7 @@ conditions attached to a particular asset, venue, provider contract, or jurisdic
 
 Start here:
 
+- [探索尊厳・生存保障・制度的Exit（2026-10-18、主宰者個人の条件付き立場）](docs/philosophy/exploration-dignity-survival-exit-2026-10-18.ja.md)
 - [Spiritual Engineering and Infoton Engineering](docs/philosophy/spiritual-and-infoton-engineering.ja.md)
 - [Baseload collapse and support boundary](docs/philosophy/baseload-collapse-and-support.md) / [日本語](docs/philosophy/baseload-collapse-and-support.ja.md)
 - [Heterogeneous-agent deck governance](docs/operations/heterogeneous-agent-deck-governance.ja.md)
@@ -163,15 +168,17 @@ Start here:
 
 ---
 
-### Current operational status: power-constrained, still shipping
+### Current operational status: sneaker-grid 0.1.x; research equipment fully shut down
 
-**2026-10-02 — Development, documentation, and salvage continue under severe power and cash constraints.**
+**2026-10-19 correction — survival, communications, lobbying, and NSFW video distribution have reduced power; all research equipment is shut down.**
 
-Commercial power is not a dependable baseload for the lab when it cannot always be afforded. Emergency off-grid capacity remains prioritized for survival and communications, so high-load compute and continuous development workloads can still be unavailable. Lower-power design, documentation, GitHub work, salvage, and executable branches continue whenever the available resource envelope permits.
+After financial distress (「財布ペイン」) led to the seizure of the generation equipment, the operator improvised **sneaker-grid 0.1.x**: an emergency early version of an off-grid power system. LiFePO4 batteries originally prepared for the electric bike 「縄文エンジェル」 are transported by bicycle in portable, jerrycan-scale loads. Vehicle-battery power is repurposed into a reduced household supply, using the vehicle-to-home idea illustrated by Prius/PHV systems. This describes the architecture, not the use of an actual Prius or a production V2H installation.
 
-This does **not** mean the infrastructure problem is solved. Commercial-power recovery and continuity, additional batteries, generation and charging capacity, power conditioning, and related infrastructure remain active support needs.
+The previously reported **~980 Wh is nominal stored energy**, not generation capacity or a month of energy from one charge. Energy transport and replenishment remain dependencies. Available power covers survival, communications, lobbying, and NSFW video distribution in reduced operation. **All research equipment, including the X99/GPU environment, is fully shut down.** Tablet/phone-based documentation and GitHub work do not mean that local research equipment has restarted.
 
-The operating model is therefore not simply `running` or `paused`: branches are mounted according to the power, hardware, network, and funding actually available at that moment.
+**Survival continuity ≠ research-power recovery.** The earlier 30-day report is corrected with these details: [field report (日本語)](docs/projects/2026-10-15-offgrid-30days-field-report.ja.md).
+
+Support needs remain commercial-power restoration, generation and charging capacity, batteries, conversion and distribution equipment, and the dependable power needed to restart research. The founder's improvised survival supply does not close the infrastructure or funding gap.
 
 [GitHub Sponsors](https://github.com/sponsors/saitoomituru)
 
@@ -260,9 +267,180 @@ weakest layer alive: electricity, food, communications, transport, tools, parts,
 medical or rescue access, experimental equipment, or the time required to publish the record.
 
 That does not make this a vague no-delivery pitch. This is an **advance-scout and first-casualty
-repository** for last-mile deployment: it absorbs failures early, keeps receipts, and publishes
-what can be made reproducible. The exact output remains resource-gated because the failure surface
-is wider than software alone.
+repository** for last-mile failures erupting on their own all over the place. We record what got
+uncovered, what broke, what survived or was saved, what stayed impossible, and what the next explorer
+should carry before entering the same swamp.
 
-Read [Baseload collapse and support boundary](docs/philosophy/baseload-collapse-and-support.md)
-and [Funding](FUNDING.md).
+Commercial scale is not a truth ruler here. Revenue, sponsor risk, enterprise adoption,
+and procurement convention describe the constraints of commercial systems; they do not
+automatically define the right defaults for a gift-economy lab, a solo performer, or an
+experimental device. We do not owe philosophical neutrality to systems that protect a sponsor's
+wallet by sacrificing the performer's life, work, or voice.
+
+Money, equipment, compute, food, field access, translation, testing, and honest failure receipts can
+all keep a branch alive. Support does not buy unlimited labor, ownership of the work, or rule over the lab.
+Read the full boundary:
+
+- [Baseload Collapse and the Boundary of Support](docs/philosophy/baseload-collapse-and-support.md)
+- [日本語：多重底抜けと支援の境界](docs/philosophy/baseload-collapse-and-support.ja.md)
+
+---
+
+## Active projects
+
+### 800-series
+
+A distributed cockpit system that lets the performer take back ownership of their production space.
+
+- **OND800**: Raspberry Pi 5 shooting cockpit with NDI multi-camera and OBS control
+- **FAN800**: ESP32 physical-effects funnels for lights, pyro, MIDI, and DMX
+- **SAO800**: OBS mothership extension with RTSP-to-NDI bridging, BPM analysis, and AI offload
+- **DVE800**: Local-AI editing engine on DaVinci Resolve
+- **PSYCHO-Py800MCP**: Instrument MCP for oscilloscopes and logic analyzers
+
+### FAM / SphereOS / Quantaril Cloud
+
+AI architecture for connecting context spaces across cultures and communities.
+MCP connects sideways. FAM digs down by saving, verifying, and reusing thought processes.
+
+The legacy SphereOS 3.x / 4.x service and instance-ghost runtime have ended.
+SphereOS Atlantis is a separate 0.x architecture lineage under active edge-first redesign.
+Its current reproducible form is the manifest, registers, prompt-bound bootstrap, and tool-layer research;
+a standalone Atlantis / ASTRO runtime has not yet reached the 1.x binary-integration milestone.
+
+### Laser Machine Rebuild
+
+A five-person rural workshop crew turning rusty scrap into micrometer-class laser-cutter ductwork.
+Geometry constraints solve what budget cannot.
+
+---
+
+## Preserved projects
+
+- **[KUMA800](docs/projects/kuma800.ja.md)** — Independent development and this season's operation plan ended on 2026-10-04 after power constraints and parallel progress in FQuery / Sphere changed the resource allocation. Code, tests, provenance boundaries, and unresolved findings are preserved for reuse. Migration and physical acceptance are incomplete. The [case note](note/20261004-1828__KUMA800終了と非線形依存の計画検証.ja.md) records the management lesson: keep local prerequisites separate from fixed project-wide priority queues; select runnable branches from resource events.
+
+## Portable civilization architecture map
+
+この地図はrepositoryの所有関係や完成度を一列へ潰すものではない。**Game / Real / Villageは並行workstream**であり、各componentはWorld / Meaningを特定vendor、device、engineへ焼き付けず持ち運ぶための異なる責務を担当する。
+
+```text
+World / Meaning
+  ├─ Game World
+  ├─ Real-world systems
+  └─ Village / rural civilization
+          ↓ shared contracts / cross-feed
+ReFAM / FAM / FQuery
+          ↓
+Semantic ABI / IBD
+          ↓
+SphereOS Atlantis / Manifest
+          ↓
+Fold NIC / storage / provenance / federation
+          ↓
+replaceable runtime / presentation / device / physical modules
+```
+
+これは完成済み単一runtimeの図ではない。実装済みartifact、仕様策定中component、active research、long-term targetを各repositoryのstatusで確認すること。上位Programは[#47 Portable Civilization](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/47)で管理する。
+
+### Capital / social counterpart
+
+技術側のportable civilizationと、既存の**真ニートホワイトペーパー / 縄文文化圏2.0**は同じ設計系譜の別面である。後者はPatient Capital / Impact Patron、CC BYでfork可能な文化圏、マイクロコンポーネント、**祠単位のGit管理**、ラボ・弟子・部落・村という社会・資本側のdeployment modelを扱う。
+
+GitHub Sponsorsは、そのImpact Patron modelへ入る小さな実装可能interfaceとして扱う。支援はupstream commonsの所有権、equity、返済請求、排他的支配を生成しない。
+
+> **GitHub Sponsors is the smallest deployable unit of the Impact Patron model.**
+
+[GitHub Sponsors](https://github.com/sponsors/saitoomituru) · [Funding policy](FUNDING.md)
+
+## Repository map
+
+| Repo | Role |
+|---|---|
+| [SphereOS-Atlantis](https://github.com/saitoomituru/SphereOS-Atlantis) | World / Meaning OS architecture and deployable development surfaces |
+| [fold-nic](https://github.com/saitoomituru/fold-nic) | Identity / World / Capability-aware semantic network boundary |
+| [IBD](https://github.com/saitoomituru/IBD) | FAM-native information / database boundary and provenance contracts |
+| [FQuery](https://github.com/saitoomituru/FQuery) | World / Meaning query surface; FAM-oriented query and mapping research |
+| [OND800](https://github.com/HIPSTAR-IScompany/OND800) | Shooting cockpit |
+| [FAN800](https://github.com/HIPSTAR-IScompany/FAN800) | Physical-effects funnels |
+| [SAO800](https://github.com/HIPSTAR-IScompany/SAO800) | Livestream mothership extension |
+| [DVE800](https://github.com/saitoomituru/DVE800) | Editing engine |
+| [PSYCHO-Py800MCP](https://github.com/saitoomituru/PSYCHO-Py800MCP) | Instrument MCP |
+| [Sphere-aae](https://github.com/saitoomituru/Sphere-aae) | Edge AI agent engine |
+| [SphereASTRO](https://github.com/saitoomituru/SphereASTRO) | GUI and responsibility-boundary layer |
+| [commonsATX](https://github.com/saitoomituru/commonsATX) | Open-source laser-cutter frame |
+
+---
+
+## Manifest operating model
+
+This repository keeps three document states plus two explicit runtime-adjacent shelves:
+
+- [note](note): raw notes, drafts, salvage logs, and source material that is not canonical yet
+- [docs](docs): normalized documentation for philosophy, theory, projects, and operations
+- [note/transfer_plan](note/transfer_plan): staging area for material that may move to another repository after review
+- [assets](assets): ZeroRoomLab-specific role, flavor, and presentation files loaded only when explicitly named; local-only assets are not public-manifest defects
+- [foldlog](foldlog): MAGI audit and execution receipts; not canonical specification or a persistent OAE runtime
+
+The manifest also bootstraps the public ZeroRoomLab development environment. Workspace membership is a working-context
+boundary, not an automatic implementation dependency. Enterprise and third-party workspaces expose only approved public
+summaries. Company assets, labor data, medical information, credentials, internal paths, and enterprise agent instructions
+are excluded from public reconstruction.
+
+---
+
+## Using this repository as an AI context formatter
+
+Pull this repository into the AI toolchain before starting work. It provides:
+
+1. Bias pre-correction
+2. Scope-layer enforcement
+3. Hallucination quarantine
+4. Workspace and repository boundary resolution
+5. Vendor-neutral project governance
+6. Handoff logistics for heterogeneous agents
+
+The result is not a smarter model in isolation. It is a better-governed development deck.
+
+### Integration patterns
+
+- Copy or reference `AGENTS.md` from Claude Code, Codex, Gemini CLI, or another coding agent
+- Mirror the relevant rules into `.github/copilot-instructions.md` for GitHub Copilot
+- Load `workspace-registry.json` and the actual `.code-workspace` descriptor before repository-scoped work
+- Read each member repository's local `AGENTS.md` after resolving the workspace
+- Do not infer implementation dependencies from neighboring folders or workspace membership
+
+### Try the deck before you change anything
+
+```bash
+git clone https://github.com/saitoomituru/ZeroRoomLab-manifest.git
+cd ZeroRoomLab-manifest
+```
+
+Then hand your PLI-capable agent this:
+
+```text
+Read AGENTS.md and README.md. Show me the routes that are AVAILABLE-NOW,
+the routes that are RESOURCE-WAIT, and one thing I can try without changing files.
+Do not flatten faith, poem, or unfinished branches into engineering claims.
+```
+
+If you are testing the Atlantis MAGI profile from a workspace that has both repositories, resolve the current
+Atlantis bundle first and explicitly mount `--profile zeroroomlab`. Do not assume a repository scanner exists.
+The exact source-resolution contract lives in
+[the foldlog instructions](foldlog/AGENTS.md) and
+[the ZeroRoomLab assets shelf](assets/README.ja.md).
+
+Useful returns include a failed command, an awkward translation, a different spiritual description,
+a machine log, a photo with safe provenance, a proposed adapter, a poem that restores the target,
+or a fork that proves this Manifest was never the only valid loadout.
+Humor counts as UX too: a good commit joke may carry morale or state, as long as it does not replace the receipt.
+
+---
+
+## Go deeper
+
+| Document | Purpose |
+|---|---|
+| [AGENTS.md](AGENTS.md) | Root AI operating guidelines |
+| [FUNDING.md](FUNDING.md) | Public funding and stewardship entrypoint |
+| [docs/funding/README.ja.md](docs/funding/README.ja.md) | Funding and founding-responsibility index |
