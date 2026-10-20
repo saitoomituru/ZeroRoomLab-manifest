@@ -1,5 +1,9 @@
 # ZeroRoomLab-manifest
 
+## 情報子科学・情報子工学の研究方法論（2026-10-20）
+
+[逆方向の最適化・Fit反証・再蒸留の日本語原典](docs/theory/infoton-science-engineering-fit-distillation.ja.md)を追加。科学は既存一般命題を結合して最短の最尤構造へ**蒸留**し、工学は実装に必要なEvidence・例外・冗長性を**積み増す**。Weaver B/CのMATCH/FIT単純化とFold7G/8Gの境界対応はASTRO実装・AAE検証が未完のため**蒸留炉に戻したコンフリクト**として[既存Issue #42](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/42)で追跡する。[Foldサイトの日本語解説](https://github.com/HIPSTAR-IScompany/fold/blob/main/docs/engineering/infoton-science-engineering-method.md)と[en-US版](https://github.com/HIPSTAR-IScompany/fold/blob/main/i18n/en/docusaurus-plugin-content-docs/current/engineering/infoton-science-engineering-method.md)。
+
 ## 2026-10-19 文書サイトへの日英展開
 
 Fold・SphereOS・Quantaril・Worldのmainへ日英29組を展開しました。[日本語正本の報告](docs/operations/documentation-sites-publication-2026-10-19.ja.md) / [en-US参照写本](docs/operations/documentation-sites-publication-2026-10-19.en-US.md)。原典・実装正本・旧URLを保持し、production公開とDOI発行は別途確認します。
