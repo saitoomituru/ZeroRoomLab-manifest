@@ -1,0 +1,89 @@
+---
+title: "情報子科学と情報子工学：逆方向の最適化、Fit反証と蒸留炉"
+language: ja-JP
+canonical_language: ja-JP
+author: "齋藤みつる（ふさもふ）"
+license: "CC BY 4.0"
+status: "[REVIEW] school method proposal / unresolved Weaver B-C to 7G-8G boundary"
+date: "2026-10-20"
+---
+
+# 情報子科学と情報子工学：逆方向の最適化、Fit反証と蒸留炉
+
+> 本書は齋藤学派の研究方法論の**検証待ち定義**を整理する日本語原典。FAM JSON、OAE、Last Order、ASTRO、AAE、Fold7G／Fold8Gの実装完了・wire ABI・正式な数理定理を新たに宣言しない。既存の[情報子工学原典](infoton-engineering.ja.md)、[Weaver A/B/C と SELECT/MATCH/FIT](weaver-abc-evidence-scope-and-oae.ja.md)、[参照境界](fam-infoton-reference-boundary.ja.md)、[Fold未確定事項](semantic-fold-claims-and-unknown.ja.md)を維持する。
+
+## 1. 最短に蒸留する科学と、必要な拘束を積む工学
+
+**情報子科学（Infoton Science）**の仕事は、既存学術の一般命題を異種のまま接続し、M次元動的グラフのFitを経て、目的の拘束が成立する**最短の説明構造**へ蒸留すること。出力は、今ある観測、条件、引用元、反証に対して**最も尤もらしい構造体の候補**であり、普遍真理ではない。「最尤」は方法論上の選好であり、数値的な尤度計算が行われたという宣言ではない。定量化には候補空間・評価尺度・更新則を別途定義する。
+
+**情報子工学（Infoton Engineering）**の仕事は、目的λを実世界で履行するため、足りない観測、Evidence、変換器、例外、冗長性、fallback、回復、測定、責任境界を**積み増す**こと。科学の蒸留と工学の実装は**最適化方向が逆**だが循環できる。工学で見つかった失敗が科学側のFitを再蒸留させる。
+
+| 境界 | 科学 | 工学 |
+|---|---|---|
+| 最大化するもの | 説明射程に対する反証可能性・構造適合 | 目的達成、可用性、検証可能性、復旧力 |
+| 最小化するもの | 不要な命題・余分な拘束・自分で背負う未知 | 実装上の失敗・未観測・未処理の例外 |
+| 基本操作 | Fit、切断、既存学問への還元、再蒸留 | Evidence追加、adapter、試験、例外処理、runtime実装 |
+| 成果物 | 適用射程を持つ最小の**構造仮説** | 仕様・実装・履歴・試験・運用receipt |
+| 否定時 | 成立不能な構造を撤回し再探索 | 設計変更、退避・縮退運転、再試験 |
+
+構造を説明するためにエビデンスや例外を無際限に加えるのは科学の蒸留とは逆。反対に工学が実装条件を削って見かけの簡潔さを競うのも本末転倒。
+
+## 2. 既存科学の否定射程を合成する
+
+複数の学術命題 `A, B, C` が全て**必要条件**だと定義したFitなら `H = A ∧ B ∧ C`。元の学術範囲における有効な反証集合を `R_A, R_B, R_C` とし、同じ適用scopeへ型付きで写像できる場合、`R_H = R_A ∪ R_B ∪ R_C` がこのFitを否定する入口となる。いずれか一つの必要命題が成立不能になれば、**構造コンボは連鎖的に撤回**できる。
+
+他分野の検証者に、Fitの全体像や情報子科学の採用を要求しない。相手の机の上で、自分の学術領域の必要命題に反証を立てればよい。Fit設計者は、どの文献のどのscopeを「必要」としたか、結合型と撤回条件を固定する責任を持つ。
+
+この和集合は数理的な**否定条件の合成**であり、「論文を増やせば真になる」ではない。OR結合した代替経路、単なる類推、scope外反例、未評価は全体の自動否定と同じではない。否定射程の集合和と、その確率・面積測度・実験費用も混同しない。
+
+## 3. もう一つの否定射程：型の違う飛躍は接続しない
+
+情報子科学側では、M次元グラフの必要なedgeが**結合可能か**も反証対象とする。各専門命題が成立していても、Meaning、observer、World、因果、authority、時間、変換入出力など、宣言した拘束のいずれかで必須接続が不成立なら、そのFitは型エラーで破局する。
+
+飛躍的な仮説は許す。ただし飛躍先の型が違い、必要な変換・写像もないと証明できた場合、その接続を「構造成立不能」として撤回する。`unknown`（未判明）、`not-evaluated`（未検査）、`incompatible`（条件下の不成立証明）、`refuted`（適用scope内の実証的反証）を混線させない。`⊥` と `Last Order` の意味は実装の既存契約に従い、**本稿が万能型検査器を実装済みと主張しない**。形式的な不変量・toy model・証明責任は[Manifest Issue #42](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/42)で継続する。
+
+## 4. 通常学問へ解けた命題は返却する
+
+Fitの部分構造が既存の線形solver、既存の非線形solver、自然科学、社会科学、通常工学で表現・検証可能になったら、**情報子科学独自の命題から外し、然るべき既存学問の机へ返す**。この研究上の操作を**UnFold（学術還元）**と呼ぶことはできるが、実装上の `unFold`（独立FAM境界を破壊し得る操作）と同一視しない。既存の `DeFold`（参照の非破壊展開）とも別。論文と原観測のidentity、revision、反証依存は消さない。
+
+既存の学問で回収できる部分が増えれば、科学側の独自研究残量は減る。独自命題ゼロも「全部既知に還元できた」という成功になり得る。還元に失敗した結合条件だけを蒸留炉に残す。
+
+## 5. 【未解決コンフリクト】Weaver B/C・MATCH/FITとFold7G/8Gの境界
+
+現行の[Evidence研究文書](weaver-abc-evidence-scope-and-oae.ja.md)は学派の対応候補として `Weaver B → MATCH / contextual Evidence`、`Weaver C → FIT / structural Evidence` を扱う。**これは個々の比較・局所的なFitを単純化できるケースの読解用crosswalkであって、すべてのB/C通信・効果条件の境界をそれだけで実証したものではない**。
+
+一方、[Fold7G/8G研究地図](https://github.com/HIPSTAR-IScompany/quantaril_cloud_QAtlantis/blob/main/docs/engineering/q-atlantis/fold7g-fold8g-research-map.md)と[7G/8G Registry候補メモ](../../note/20260819-2212__SphereDOS_Fold7G_Fold8G_registry_upgrade_memo.ja.md)では、`G = Fold nesting depth`、`D = 意味次元`、`L = linear transport / execution`を区別する。7Gはnested Fold候補であり、8GはInter-World Gate等の独立契約が**未確定**。GをWeaverのA/B/C段階、embedding次元、無線通信世代へ読み替えない。
+
+**現時点の衝突点**：B/Cを局所的なMATCH/FITのみに閉じるか、7G/8Gの多重Fold・World間遷移・Causal/Authority境界まで必要とするかでは、検証対象と**反証可能性の型が異なる**。どちらかを先に唯一の正本へ固定すると未実証の結合を成立済みにしてしまう。
+
+したがって**この対応関係の最終境界は研究蒸留炉へ差し戻す**。`WEAVER_B_C_TO_G7_G8 = UNKNOWN / EXPERIMENT_REQUIRED`。B/C研究そのものを取り下げる意味でも、既存SELECT/MATCH/FIT分類を取り消す意味でもない。
+
+**解除に必要な依存順序**（現時点の検証要求）：
+
+1. [SphereASTRO](https://github.com/saitoomituru/SphereASTRO) のASTRO Runner・Context/Meaning投影で、局所MATCH/FITと高G条件を分離して追跡できる実装・fixtureを確保する。既存READMEのAI接続未完了やStage構成を試験完了と扱わない。
+2. [Sphere-aae（Astro Agent Edge）](https://github.com/saitoomituru/Sphere-aae) のFAM native routing、Q／Last Order、system-call分岐を使う**実際の検証**で、B/Cに要求される効果／意味と、G/D/L・World間境界の反証条件を比較する。**AAEという製品名とOAE（Observer Agential Effect）の観測単位は別namespace**。
+3. 局所MATCH/FITだけで条件を満たす正例、7G/8GのGate/translationを欠くと破局する負例、同じ入力のWorld差・Causality差・Authority差・unknown例を揃えて反証判定する。低Gで済む例を高Gへ無断拡大しない。
+4. 結果に応じて、通常のMATCH/FITへ還元できる領域は既存学問・工学へUnFoldし、7G/8G境界が必要な条件だけを分離して再Fitする。逆に7G/8Gが不要と分かれば、当該追加拘束を削る。
+
+この順序を満たすまで、BとCの完全接続、7G/8Gによる境界実証、ASTRO／AAEが完成済みという宣言は**不可**。未実装を理由に理論を否定するのではなく、検証が発動できるまで観測を保留する。
+
+## 6. OAEの動的グラフ再トレースと継続反証
+
+現在のOAE（Observer Agential Effect）を使った評価に必要な情報は、`Fit revision`、必要/OR条件、source revision、scope、Observer、判定rule、日時、否定したedge、Last Order／unknown。Cron等で再トレースして、新しい原論文の訂正・反証と内部型検査を差分反映し、依存する上位Fitを撤回する**運用案**とする。Cronが既に稼働しているという主張ではない。
+
+過去の観測者や当時のOAEを推定で作り足さない。同時点の記録がない場合は `historical-oae-unavailable` を維持する。解決不能なsource取得失敗を否定結果に昇格させず、新しい型変換の発見は既存Fitを黙って変更せず新revisionで再Fitする。
+
+## 7. 最小実験：物理カゴ落ちとラストワンマイル
+
+購買力と商品供給があっても、利用者の持ち帰り経路が欠ければ購買目的は不成立になり得る。車、徒歩、自転車、峠、段ボール、代替店舗で成立条件が変わる。ECのcheckout離脱と物理物流の最終接続欠損は、同じ**トランザクション成立条件のFit候補**を持つ。この一般命題は全利用者・全店舗・全国物価への普遍的な量的因果を主張しない。
+
+科学側は「条件のいずれかが欠損すると、目的達成全体が非線形に落ちる」という短いFitへ蒸留する。工学側は在庫通知、予備箱、運搬容器、route選択、返品対応、測定を具体的に追加する。どの条件が崩れればFitが失効するかも同じ試験に含める。
+
+## 8. 既存Issueと正本の責務
+
+- 数学の適用、M次元型検査の形式化、Weaver B/Cと7G/8Gの反証境界は[Manifest #42](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/42)の未解決作業に接続する。Issueを乱立させない。
+- 7G/8Gの正式なruntime・通信契約は本稿で制定しない。公開[研究地図](https://github.com/HIPSTAR-IScompany/quantaril_cloud_QAtlantis/blob/main/docs/engineering/q-atlantis/fold7g-fold8g-research-map.md)と実装repositoryが責任を持つ。
+- ASTRO・AAEとOAEの実装、Evidence type、Driverの有無は各repositoryの現行実装・fixture・receiptを優先する。
+- 本書の編集・英語解説は**研究成果の文書化**であり、未完了の実験を完了扱いにしない。
+
+著者：齋藤みつる（ふさもふ）。文書：CC BY 4.0。
