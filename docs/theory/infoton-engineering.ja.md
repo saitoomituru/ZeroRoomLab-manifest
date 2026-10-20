@@ -266,6 +266,16 @@ Fold Time Machineは、AppleのTime Machine/APFS snapshotのUXへの敬意を込
 
 ---
 
+### 9.x 情報子科学との逆方向最適化と、未解決のB/C・7G/8G検証
+
+情報子工学は、現実の目的達成のためEvidence・例外・変換層・冗長性を積み増す。一方、**情報子科学**は異分野の一般命題をFitし、不要な拘束を落として**最短の最尤構造へ蒸留**する。通常の学問・線形／非線形solverで検証可能な範囲は既存科学へ返却する。必要条件の専門学術的な反証、またはグラフの接続型エラーによって、依存Fitを撤回できる。
+
+ただし**Weaver B/Cを局所的MATCH/FITへ単純化できる場合と、Fold7G/8Gの追加境界が必要な場合の反証条件は異なる**。ASTRO実装とSphere-aae（AAE）による比較・負例検証が先行しない限り、両者の境界を実証済みとしない。この問題は**蒸留炉へ再投入する未解決コンフリクト**であり、正式な7G/8G実装契約への昇格を保留する。
+
+詳細は[情報子科学と情報子工学：逆方向の最適化・Fit反証・再蒸留](infoton-science-engineering-fit-distillation.ja.md)。数学的適用と未実証の対応は[Issue #42](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/42)へ集約する。
+
+---
+
 ## 10. 具体実装例：人間の主観を設計ループに組み込む
 
 ### パラメトリックスピーカー（λ ≈ 8.3mm）
