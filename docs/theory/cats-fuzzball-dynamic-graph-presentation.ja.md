@@ -195,7 +195,102 @@ selected hair
 
 これによりCATSは単なるダッシュボードではなく、Dynamic Graph Engineの**Visual Debugger / explainability surface**として利用できる。
 
-## 9. AAE / OpenFAPTA / FQueryとの境界
+### 8.1 Simulation / Reality Residual
+
+同一の初期条件・Policy・Lawについてsimulation projectionと現実観測を比較し、差分を単なる描画誤差として捨てず、未説明のResidual Field候補として検査できるようにする。
+
+```text
+Simulated Graph / Force
+          +
+Observed Graph / Force
+          |
+       Residual
+          v
+unmodeled relation / observation gap / latency /
+external shock / nonlinear response / implementation bug / unknown
+```
+
+Residualは未知の実在Forceを自動的に証明するものではない。モデル漏れ、観測誤差、遅延、外生要因、実装不具合等を含む**金融工学・制度工学上のデバッグ対象**としてprovenance付きで保持する。
+
+## 9. GUI検討: Law / Depth / Constraint / Reality Commit
+
+CATSをOpenFAPTA等のsimulation workbenchとして利用する場合、毛玉の「毛並み」とNode/Foldそのものの移動を分離する。
+
+```text
+Relationship / State
+        |
+     Force Field
+        |
+ local hair deformation
+        |
+ Constraint / Mobility / Transition Rule
+        |
+ actual/simulated node movement
+```
+
+`Force != 0` でもConstraintによってNodeが移動しない状態を許容する。これにより「Forceが弱いから動かない」と「強いForceを受けているが拘束されて動けない」を区別する。
+
+GUI上ではsimulation中のNodeをcounterfactualに移動し、その位置・Context・Relationで生じる毛並みを観測してよい。現実にその移動が可能かどうかはConstraint / Mobility / Transition側の別判定とする。
+
+### 9.1 Policy parameterではなくLawを転送単位にする
+
+金利、税率、補助、信用枠等の単一parameterだけでなく、少なくとも次の組をsimulation / comparison / commit候補として扱える設計を検討する。
+
+```text
+Law
+  = payoff / incentive mapping
+  + boundary
+  + constraint
+  + transition rule
+  + exposure rule
+```
+
+金融domainでは、金利・税・補助・信用・手数料等はRelationship GraphとContextを介して各主体に異なるForceを生じさせる。CATS Coreはこれらの金融語彙を固定せず、domain adapter / refFAM / policyからForce descriptorへ投影する。
+
+### 9.2 Simulationは可逆、Reality exposureは原則として履歴依存
+
+GUIはsimulation上のReset/Rewindと、現実への介入・観測を同一操作として扱わない。
+
+現実では一度Fieldへ曝露された主体が、技能、信用、負債、関係、退出、Commons消耗、新規Fold等の履歴を持ち、Policy parameterを元へ戻しても初期状態へ戻らない場合がある。
+
+```text
+Sim:
+initial state -> expose -> inspect -> reset / branch / replay
+
+Reality:
+state -> exposure -> irreversible or hysteretic Fold
+                      -> observation
+                      -> revised state/history
+```
+
+したがってReality側では、経路依存、hysteresis、不可逆性を第一級の観測対象とする。正の蓄積と負の蓄積は別世界として切り離さず、同一介入が生む複数のFoldとして同時表示できるようにする。
+
+### 9.3 Reality Commit境界
+
+GUI上でsimulationから現実へLawを適用する境界を明示する。設計会話上の比喩として **「ボンドルドGUI」** を用いることがあるが、これはUI/UX検討用のコードネーム・比喩であり、CATSの正式名称、domain semantics、または第三者作品の設定をcanonical modelへ導入するものではない。
+
+この境界の目的は「最適値を自動決定する」ことではなく、simulationで観測したLawについて、現実への適用時にどの不可逆性・不確実性・Constraintを引き受けるかを明示することである。
+
+```text
+Law candidate
+    |
+Simulation branches
+    |-- force / hair
+    |-- topology transition
+    |-- commons / resource effects
+    |-- residual / uncertainty
+    |-- irreversible-fold candidates
+    v
+Reality Commit Boundary
+    |
+Observed exposure / transition
+    v
+FAM / FAMLog / OAE -> model/refFAM/policy revision
+```
+
+Commit操作そのものをCATS Coreの責務にはしない。CATSは候補Law、simulation結果、provenance、不可逆性候補、観測結果を提示し、実際の外部制度変更・金融操作・権限行使はEngine / Authority / Adapter側へ残す。
+
+## 10. AAE / OpenFAPTA / FQueryとの境界
 
 ### AAE
 
@@ -217,7 +312,7 @@ FAMは状態・観測等、refFAMは見方・問い・Mapper等、FQueryはquery
 
 時間再生、provenance、Force由来説明のtrace sourceとして接続する。AAE等が別形式のtraceを持つ場合はadapterで統合する。
 
-## 10. Presentation Force Descriptor候補
+## 11. Presentation Force Descriptor候補
 
 具体schemaは未確定だが、最低限の概念候補を次に置く。
 
@@ -238,7 +333,7 @@ force descriptor
 
 `renderer_hint` はPresentation hintに留め、semantic truthとして扱わない。
 
-## 11. PoC
+## 12. PoC
 
 初期PoCは3Dから始めず、2Dで情報モデルを検証する。
 
@@ -253,19 +348,25 @@ force descriptor
 - time playback
 - hair -> relation -> trace逆引き
 - Charts / Analytics / Tables間の同一データ投影
+- ForceとNode mobility/constraintの分離
+- simulation branch / reset / replay
+- simulated vs observed residual表示
+- irreversible / hysteretic Fold候補の表示
+- Reality Commit境界をPresentation上で明確に分離
 
 同じfixtureをAAE AdapterとOpenFAPTA Adapterから供給し、CATS Coreがdomain固有実装を要求しないことを検証する。
 
-## 12. Non-goals
+## 13. Non-goals
 
 - Rendererが信用創造・資源配分・人格推論を実行すること
 - 描画上の引力/反発を現実世界の物理因果として扱うこと
 - GUI frameworkのJSONをcanonical graph/FAMにすること
 - 画面上の近接だけでEdge成立と判定すること
 - simulationとobservationを混同すること
+- Reality CommitをCATS Core自身が外部システムへ実行すること
 - 現段階でCATSまたは毛玉グラフの完成実装が存在すると主張すること
 
-## 13. 次の設計課題
+## 14. 次の設計課題
 
 1. Presentation Force Descriptorの最小ABIを確定する。
 2. Dynamic relation / state / traceを含む共通fixtureを作る。
@@ -273,7 +374,9 @@ force descriptor
 4. Charts / Analytics / Tables間のselectionとfilterを共通化する。
 5. AAE / OpenFAPTA Adapterを独立に実装し、domain依存がCoreへ漏れないことをテストする。
 6. 大規模graph向けLOD / clustering / aggregationと情報損失表示を検討する。
+7. Law / Constraint / Mobility / Exposure / irreversible FoldのPresentation契約を整理する。
+8. Simulation branchとReality observationを同じtrace viewerで比較できるResidual Debuggerを検討する。
 
 ---
 
-この文書は設計提案であり、Issue #55とともに更新する。名称 **CATS** および **毛玉グラフ / Fuzzball Graph** は現時点では仮称である。
+この文書は設計提案であり、Issue #55とともに更新する。名称 **CATS** および **毛玉グラフ / Fuzzball Graph** は現時点では仮称である。「ボンドルドGUI」は設計会話上の比喩・コードネームであり、正式名称ではない。
