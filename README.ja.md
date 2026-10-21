@@ -1,5 +1,9 @@
 # ZeroRoomLab-manifest
 
+## CATS / 毛玉グラフ（仮）（2026-10-21）
+
+AAE・OpenFAPTA・FAM/FQuery等で共有可能な、汎用Dynamic High-Dimensional Graph Presentation Engineとして **CATS（Charts / Analytics / Tables）** と **毛玉グラフ / Fuzzball Graph（仮）** を設計中。Dynamic Relationship Graphから生成されるContext Forceを毛として描き、現在のTopologyと未成立potential・局所変化傾向を同時表示する。[設計文書](docs/theory/cats-fuzzball-dynamic-graph-presentation.ja.md) / [Issue #55](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/55)。現時点では設計提案であり、完成実装ではない。
+
 ## OpenFAPTAの責務整理（2026-10-21）
 
 回収可能性と未知コモンズの探索余地を扱う信用創造・汎用マーチャントエンジン。[日本語正本](https://github.com/saitoomituru/OpenFAPTA/blob/main/docs/theory/merchant-engine.ja.md) / [en-US参照写本](https://github.com/saitoomituru/OpenFAPTA/blob/main/docs/theory/merchant-engine.en-US.md)。利用者がFoldのトポロジー・面積測度・評価単位・配分policyを構成し、交換単位と帳簿は外部へ接続します。現行codeはPythonトイモデルです。
