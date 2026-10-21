@@ -1,5 +1,9 @@
 # ZeroRoomLab-manifest
 
+## OpenFAPTAの責務整理（2026-10-21）
+
+回収可能性と未知コモンズの探索余地を扱う信用創造・汎用マーチャントエンジン。[日本語正本](https://github.com/saitoomituru/OpenFAPTA/blob/main/docs/theory/merchant-engine.ja.md) / [en-US参照写本](https://github.com/saitoomituru/OpenFAPTA/blob/main/docs/theory/merchant-engine.en-US.md)。利用者がFoldのトポロジー・面積測度・評価単位・配分policyを構成し、交換単位と帳簿は外部へ接続します。現行codeはPythonトイモデルです。
+
 ## 情報子科学・情報子工学の研究方法論（2026-10-20）
 
 [逆方向の最適化・Fit反証・再蒸留の日本語原典](docs/theory/infoton-science-engineering-fit-distillation.ja.md)を追加。科学は既存一般命題を結合して最短の最尤構造へ**蒸留**し、工学は実装に必要なEvidence・例外・冗長性を**積み増す**。Weaver B/CのMATCH/FIT単純化とFold7G/8Gの境界対応はASTRO実装・AAE検証が未完のため**蒸留炉に戻したコンフリクト**として[既存Issue #42](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/42)で追跡する。[Foldサイトの日本語解説](https://github.com/HIPSTAR-IScompany/fold/blob/main/docs/engineering/infoton-science-engineering-method.md)と[en-US版](https://github.com/HIPSTAR-IScompany/fold/blob/main/i18n/en/docusaurus-plugin-content-docs/current/engineering/infoton-science-engineering-method.md)。

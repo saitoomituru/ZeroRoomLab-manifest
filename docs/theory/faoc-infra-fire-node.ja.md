@@ -48,7 +48,7 @@ Infra-FIREはこのnodeを生存側から評価する指標である。金融資
 | Constitution / claims | `ZeroRoomLab-manifest` | World、主張強度、資本・文化・運用境界の正本 |
 | Meaning / agent runtime | `SphereOS-Atlantis`, `FQuery`, `IBD` | 文脈、World、実行境界、状態・来歴の扱い |
 | Network portability | `fold-nic` | Identity / World / Capabilityを特定cloud・DNSと分離し、transport adapterへ投影 |
-| Resource observation | `OpenFAPTA` | FIAT、贈与、循環資源、実行力、未知benefitを混同せず観測するtoy architecture |
+| Recovery / exploration credit | `OpenFAPTA` | 回収可能性と未知コモンズの探索余地をM次元ポートフォリオとして扱う汎用マーチャントエンジン設計。現行codeはPython toy |
 | Physical microgrid | sneaker-grid 0.1.x / well / water / fabrication | 電力・水・工作など、cash dependencyを物理serviceへ変換するfield layer |
 | Open hardware | 3DP water parts, `commonsATX`, 800-series, future OSH | 修繕・再生産可能性とlocal fabrication |
 | Media / human interface | OND800 / OpenRVC / 800-series | node内の表現、制作、身体・文化活動をlife supportから文明へ拡張 |
@@ -66,7 +66,11 @@ Fold NICはFAOC node間の「誰 / どのWorld / 何ができる / どこへ運�
 
 ## 5. OpenFAPTA
 
-OpenFAPTAはInfra-FIRE / FAOCの会計をFIATだけへ潰さないための観測候補である。
+OpenFAPTAは、回収可能性と未知コモンズの探索フロンティアを発見・登録・試行・再評価して信用創造を支える、オープンで汎用的なマーチャントエンジンである。利用者がFoldの接続・分離・階層、面積測度、評価単位、配分policyを選び、個人・共同体・発行母体へ同じ構成原理を展開する。
+
+2026-10-21に作者が用途を明確化した。未来予測だけでなく、実際のリトライで未知を埋め、新たな未知・回収経路・探索範囲を発見するポートフォリオ管理として位置付ける。探索範囲の拡大・ボラの変化と、他Foldの資源消耗・重複計上を別軸で追う。交換単位、通貨、残高、決済、帳簿は外部実装へ委ねる。
+
+責務・用語の日本語正本は[OpenFAPTAマーチャントエンジン設計](https://github.com/saitoomituru/OpenFAPTA/blob/main/docs/theory/merchant-engine.ja.md)、[en-US参照写本](https://github.com/saitoomituru/OpenFAPTA/blob/main/docs/theory/merchant-engine.en-US.md)。本mapは接続要約だけを持つ。現行Pythonは資源activation、台帳可視性、未知benefit・探索状態のtoyであり、汎用チャート／永続リトライ管理／決済adapterは設計・実装課題である。
 
 ```text
 FIAT balance != whole resource state
@@ -105,7 +109,7 @@ GitHub Sponsorsの月額合計 `$1,000` は、完成したFAOCを販売する価
 - water node: eligibleな3DP部品のinventory、CAD source、用途境界、material/process、failure receipt
 - power node: generation / storage / load / autonomy window / external dependency map
 - network node: Fold NIC Stage 0の二process object exchangeとprovenance
-- resource node: OpenFAPTAでcash以外のresource activationをfixture化
+- resource / credit node: OpenFAPTAのresource activation toyを入口に、回収候補の再試行・探索フロンティア・他Fold資源消耗の比較fixtureを設計する
 - governance node: 祠単位Git管理 / 暖簾分け時のauthority、license、provenance境界
 - legal node: UNKNOWNを専門家相談で一件ずつ確定状態へ落とす
 

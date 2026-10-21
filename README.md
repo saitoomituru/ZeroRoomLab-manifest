@@ -77,7 +77,10 @@ individual FIRE
   -> Jomon Cultural Sphere 2.0 commons
 ```
 
-In this mapping, **Infra-FIRE is an evaluation lens, not the whole civilization model**. Jomon 2.0 also carries governance, culture, meaning, licensing, provenance, education, production and capital-allocation layers. FAOC describes the fractal/autonomous node topology; OpenFAPTA observes resources that do not fit cleanly into a FIAT ledger; Fold NIC explores network portability; SphereOS/FAM and related work handle meaning/context boundaries; physical microgrids, water and fabrication provide the field layer.
+In this mapping, **Infra-FIRE is an evaluation lens, not the whole civilization model**. Jomon 2.0 also carries governance, culture, meaning, licensing, provenance, education, production and capital-allocation layers. FAOC describes the fractal/autonomous node topology; OpenFAPTA designs a configurable merchant engine for credit creation from recovery potential and unexplored commons, with M-dimensional portfolios and externally chosen currencies and ledgers (current code: Python toys); Fold NIC explores network portability; SphereOS/FAM and related work handle meaning/context boundaries; physical microgrids, water and fabrication provide the field layer.
+
+
+OpenFAPTA responsibility update (2026-10-21): [canonical Japanese design](https://github.com/saitoomituru/OpenFAPTA/blob/main/docs/theory/merchant-engine.ja.md) / [en-US reference manuscript](https://github.com/saitoomituru/OpenFAPTA/blob/main/docs/theory/merchant-engine.en-US.md). The configuration selects Fold topology, area measures, evaluation units, and exploration/allocation policies; settlement remains external.
 
 See the [Infra-FIRE hypothesis, field boundaries, metrics and OSH release plan](docs/theory/infra-fire.en.md) and the [FAOC / Infra-FIRE node architecture map](docs/theory/faoc-infra-fire-node.ja.md).
 
