@@ -21,6 +21,12 @@ Before rewriting Shannon/Weaver, spiritual/magical historical terminology, cross
 - FIT/MATCH/SELECT share an abstract matching model, but their evidence scopes and concrete IBD/FQuery plugin implementations differ. Do not promote observations across these types.
 - **Unbound is not false; untested is not implemented.** Do not suppress evidence-backed criticism, safety concerns or verified source corrections.
 
+## 研究成果の評価：失敗・反証・安全工学上の発見
+
+週報・監査・KPIでは、証明成功・実装完了・CI greenだけでなく、理論矛盾、接続条件の欠落、反例、適用範囲の限定、仮説撤回、hazard／破局境界の発見、隔離・回復・再発防止設計を成果として数える。失敗から得た知識・設計上の発明をゼロ扱いする評価は、科学的態度と安全工学的態度に反し、隠蔽と未検証の成功宣言を誘発する。
+
+「証明できなかった」「実機検証まで保留」という状態を記す際も、既に何を発見し、どの仮説・設計を更新したかを併記する。未解決を反証済みへ昇格せず、発見済み成果も未完了表示で消さない。根拠・revision・scope・新たに得た情報を記録し、同じ失敗の再掲を新規発見とは数えない。[方法論と具体例](docs/theory/infoton-science-engineering-fit-distillation.ja.md)と[Issue #42](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/42)を参照する。
+
 ## 0. Mandatory Bias Self-Check (Run Before Every Response)
 
 Before generating any output in this repository, an AI agent MUST perform the following internal checks.
