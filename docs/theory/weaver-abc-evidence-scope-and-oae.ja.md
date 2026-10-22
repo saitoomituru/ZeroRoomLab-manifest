@@ -1,12 +1,25 @@
 ---
 author: 齋藤みつる (ふさもふ)
 license: CC-BY 4.0
-status: school-proposal / design-contract / not-empirically-validated
+status: school-proposal / correspondence-on-hold / experiment-required
 ---
 # 情報子工学：Weaver A/B/C、Evidence DriverとOAE評価射程
 
+## 2026-10-22訂正：Weaver B/Cとの直接対応は検証保留
+
+**状態：`UNKNOWN / EXPERIMENT_REQUIRED / BACK_TO_DISTILLATION`。** 本稿の10月19日時点の対応表には、[Issue #42の10月20日追補](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/42#issuecomment-6288692683)と[再蒸留文書 §5](infoton-science-engineering-fit-distillation.ja.md)の保留判断が未反映だった。以下の表は歴史的な学派対応候補として読み、B = MATCH、C = FITという確定した実行契約として採用しない。
+
+局所MATCH/FITで扱える条件と、Fold・World間のMeaning／Causality／Authority境界を要する条件を分離する必要がある。**B/Cの直接接続が成立するとも、成立不能とも、必ず7G/8Gに属するとも確定していない。** 特定のFoldとそのG条件で足りる可能性、異なるGやGate／変換契約を要する可能性を対照し、必要な拘束だけを残す。
+
+- `G`（Fold nesting depth）、`D`（意味次元）、`L`（linear transport / execution）は別軸。Weaver A/B/CをGの段階へ置換しない。L/mL等の構造位置・実行経路は各実装契約と照合し、語の一致から同一視しない。
+- 同じ比較結果でも、どのFold／World／revisionで、どの実行経路・因果・権限条件を通ったかを追う。局所的な構造一致だけからB/Cの通信・意味・効果条件全体を充足したと判定しない。
+- ASTRO Runner／Context投影の実装と、AAEでのFAM route・Q・Last Order・system-callの実機／runtime検証、正例・負例・unknown例を揃えるまで最終対応は保留する。AAEという製品とOAEという観測単位は別namespace。
+- Evidenceを混同しない設計要求は維持する。ただしreceiptの保存・再読込や型保持の試験が通っても、Weaver B/Cとの対応を実証したことにはならない。
+
+研究対象の未拘束を維持することと、接続の成立を確認したことは別である。本訂正で新しいG割当て、wire ABI、Driver実装、当時の観測receiptを作り足さない。
+
 ## 位置づけ
-これは齋藤学派による情報子工学の研究仮説・実装要求。Shannon/Weaverの通信問題A（technical）・B（semantic）・C（effectiveness）を出発点とする**本学派の対応モデル**であり、既存通信理論がFAM実装の妥当性を実証したという主張ではない。
+これは齋藤学派による情報子工学の研究仮説・実装要求。Shannon/Weaverの通信問題A（technical）・B（semantic）・C（effectiveness）を出発点とする**本学派の暫定対応候補（最終対応は検証保留）**であり、既存通信理論がFAM実装の妥当性を実証したという主張ではない。
 
 ## B/C研究対象の未拘束条件（エージェントによる無断縮退禁止）
 
@@ -19,11 +32,11 @@ Weaver B/Cの工学研究では、送受信者・伝達方向・因果方向・�
 ## 一致という共通抽象と異種モデル
 `Fit / Match / Select`はいずれも「対象間の一致・適合」を取り扱う**共通の抽象データモデル上の操作**である。異なるのは比較する情報表現、観測範囲、生成される証拠の種類、および実装Driver。例えばFQueryの `Q(self).file.fit` とIBDのFITは抽象的なFit操作を共有し得るが、**ファイル探索PluginとIBDモデルDriverは別実装・別責務**。同名を理由に同じアルゴリズム、API、保証、実装完了を宣言しない。接続時はAccess Mapper / capability bindingによる明示的な契約対応を要求する。
 
-| Evidence model | Weaver対応（学派提案） | 一致の表現領域 | 型付き結果 |
+| Evidence model | Weaver対応候補（検証保留） | 一致の表現領域 | 型付き結果 |
 |---|---|---|---|
 | SELECT | A / 記号伝達・Shannon側 | SQL・識別子・値・離散述語 | scoped Fact（取得条件・記録に拘束） |
-| MATCH | B / 意味領域 | 固定された背景をFoldした情報子仮想量子単位、言語vectorの近傍・方向 | contextual Evidence → OAE |
-| FIT | C / 効果・関係領域 | トポロジカルなgraph/関係構造と情報子cluster符号化 | structural Evidence → OAE |
+| MATCH | B / 意味領域との局所crosswalk候補。全面対応は未確定 | 固定された背景をFoldした情報子仮想量子単位、言語vectorの近傍・方向 | contextual Evidence → OAE |
+| FIT | C / 効果・関係領域との局所crosswalk候補。全面対応は未確定 | トポロジカルなgraph/関係構造と情報子cluster符号化 | structural Evidence → OAE |
 
 「仮想量子単位」は本学派の情報表現の用語であり、物理量子ビットの実装を意味しない。A/B/Cは信頼度の序列ではない。FITの同型・部分同型・準同型等の数理条件、MATCHのembedding仕様と閾値は別途研究・実証が必要。
 
@@ -53,6 +66,7 @@ Evidence receiptには最低限、比較対象・source ref/revision、driver/ev
 3. OAEでObserver、規則、評価射程を残し、普遍性への拡大を防ぐ。
 4. Negative fixture: (a) FIT→SELECT誤昇格 (b) SELECT不一致→FIT偽 (c) 点水温→全域一般化 (d) unknown→false。
 5. 実測、数理的証明、テストがない箇所は研究課題のまま残す。
+6. [Issue #42](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/42)に従い、特定FoldのG条件、D、L上の実行経路、World／Causality／Authorityの差を対照する。局所MATCH/FITの型保持と、Weaver B/Cとの対応検証を別の合否にする。
 
 実装側: [FQuery](https://github.com/saitoomituru/FQuery) / [IBD](https://github.com/saitoomituru/IBD)。
 
