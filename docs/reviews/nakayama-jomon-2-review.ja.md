@@ -341,6 +341,14 @@ FAOC / Infra-FIRE
 
 Issue #57に従い、次を行う。
 
+### 原文読書の先行工程（2026-10-23）
+
+[原文読書室](../research/nakayama-jomon-2/README.md)に、仲山側とZeroRoomLab側の資料・読む順番・既読欄を整理した。
+工程1（資料収集）の後に工程1.5（齋藤みつる本人による必要原文の読破）を置く。
+工程2（責務・実装状態の照合）へは、本人の読破後の移行指示を受けて進む。
+以下は後続作業の一覧であり、本人の読破や比較作業の完了を意味しない。
+
+
 - [ ] 仲山氏本人のより古い一次資料を探索しbibliographyを拡張する
 - [ ] claim tableをsource / date / scope付きで作る
 - [ ] Authority / Governance / Exit / Federationの記述を追加調査する
