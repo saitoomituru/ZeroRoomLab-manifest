@@ -12,13 +12,9 @@ CC BY 4.0. Use freely, but preserve attribution when carrying the flavor forward
 
 # ZeroRoomLab-manifest
 
-## Cyber tail-risk and paid repair market / サイバー補償と修復市場の政策提案
+**ZeroRoomLab は、独立R&D、情報子工学・SphereOS、OSS／OSH、文化・神話、地域インフラを横断する研究所です。** このManifestは、実装の正本、未解決の仮説、実験記録、責務と権限境界を横断して辿るための公開入口です。単一の製品や政策提案を研究所全体の代表にしません。
 
-**巨大テールは広域で吸収し、民間は免責ではなく改善で競争する。** CVE発見・修正・適用の報酬と、民間の特急復元保証・SE派遣等を結ぶ政策仮説です。日本語正本は[責任・秩序・修復市場](docs/philosophy/cyber-tail-risk-and-repair-market.ja.md)、[en-US](docs/philosophy/cyber-tail-risk-and-repair-market.en-US.md)。対外政策ロビーの未着手課題は[Issue #56](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/56)に集約。これは制度創設案であり、既存の国家全額補償制度や実装済み保険を主張しません。
-
-## Documentation publication — 2026-10-19
-
-29 Japanese/en-US pairs are now on the Fold, SphereOS, Quantaril, and World documentation main branches. See the [canonical Japanese report](docs/operations/documentation-sites-publication-2026-10-19.ja.md) and [en-US reference manuscript](docs/operations/documentation-sites-publication-2026-10-19.en-US.md). Source retention, implementation ownership, deployment verification, and DOI issuance remain distinct.
+**入口 / Quick paths:** [研究と設計の概要](docs/theory/semantic-fold-os-architecture.ja.md) · [Repository map](#repository-map) · [研究所の運用モデル](#manifest-operating-model) · [AIエージェント向け手順](#using-this-repository-as-an-ai-context-formatter) · [研究の継続・資金と現物支援](docs/funding/README.ja.md) · [政策提案・公開記録](#project-wide-publications-and-policy-proposals)
 
 ZeroRoomLab is a one-person research studio and fabrication space
 running out of an Edo-period farmhouse in Yamagata, Japan.
@@ -457,3 +453,17 @@ Humor counts as UX too: a good commit joke may carry morale or state, as long as
 | [AGENTS.md](AGENTS.md) | Root AI operating guidelines |
 | [FUNDING.md](FUNDING.md) | Public funding and stewardship entrypoint |
 | [docs/funding/README.ja.md](docs/funding/README.ja.md) | Funding and founding-responsibility index |
+
+---
+
+## Project-wide publications and policy proposals
+
+個別の政策提案・日付付き公開報告は研究所の総合紹介より後ろに置き、各Docs／Issueを正本として参照します。提案や進捗を研究所全体の完成状態へ拡大しません。
+
+### Cyber tail-risk and paid repair market / サイバー補償と修復市場の政策提案
+
+**巨大テールは広域で吸収し、民間は免責ではなく改善で競争する。** CVE発見・修正・適用の報酬と、民間の特急復元保証・SE派遣等を結ぶ政策仮説です。日本語正本は[責任・秩序・修復市場](docs/philosophy/cyber-tail-risk-and-repair-market.ja.md)、[en-US](docs/philosophy/cyber-tail-risk-and-repair-market.en-US.md)。対外政策ロビーの未着手課題は[Issue #56](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/56)に集約。これは制度創設案であり、既存の国家全額補償制度や実装済み保険を主張しません。
+
+### Documentation publication — 2026-10-19
+
+29 Japanese/en-US pairs are now on the Fold, SphereOS, Quantaril, and World documentation main branches. See the [canonical Japanese report](docs/operations/documentation-sites-publication-2026-10-19.ja.md) and [en-US reference manuscript](docs/operations/documentation-sites-publication-2026-10-19.en-US.md). Source retention, implementation ownership, deployment verification, and DOI issuance remain distinct.
