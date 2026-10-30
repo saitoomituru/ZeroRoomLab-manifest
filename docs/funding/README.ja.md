@@ -20,9 +20,10 @@ ZeroRoomLab は、小口奉納、寄付、現物、廃材、計算資源、電�
 
 1. [Non-Exclusive Seed Steward 方針](non-exclusive-seed-steward.ja.md)
 2. [Open Lineage / Fork / 正統性ポリシー](open-lineage-and-fork-policy.ja.md)
-3. [Jomon 2.0、日本ゲシュタルト、アメノウズメとNSFW神楽](../philosophy/jomon-2.0-japan-gestalt-and-uzume.ja.md)
-4. [en-US: Non-Exclusive Seed Steward](non-exclusive-seed-steward.en-US.md)
-5. [Quantaril 公式ドメイン現状（wallet pain / DEAD namespace）](../preservation/quantaril-domain-status.ja.md)
+3. [技術知識の再利用と評価・研究資源還流ギャップ（検証仮説）](knowledge-reuse-attribution-resource-return-hypothesis.ja.md)
+4. [Jomon 2.0、日本ゲシュタルト、アメノウズメとNSFW神楽](../philosophy/jomon-2.0-japan-gestalt-and-uzume.ja.md)
+5. [en-US: Non-Exclusive Seed Steward](non-exclusive-seed-steward.en-US.md)
+6. [Quantaril 公式ドメイン現状（wallet pain / DEAD namespace）](../preservation/quantaril-domain-status.ja.md)
 
 ## 資金の三層
 
