@@ -134,3 +134,9 @@ Sphere Architectは、どの神学、物理学、法、World Config、事故分�
 
 Layer Bの語彙を技術仕様へ吸収せず、技術仕様の検証条件を神話で代替しない。両者はMappingを持つが、同じ文書層ではない。
 
+
+## 8. 霊的な深さとUX品質への接続（2026-10-31）
+
+情報子工学ドメイン内のGhost／霊的／Spiritualの用法は、[Spiritual EngineeringとInfoton Engineering](spiritual-and-infoton-engineering.ja.md#情報子工学ドメイン内の用法霊的ghostspiritual)を参照する。観測者固有の意味存在論を保持する深さは、Dの軸数や技術Layer Lの高さへ変換しない。各Context Dimensionの機能的等価性と、主体ごとに異なる意図・成功条件を同時に保持する。
+
+意味保全、自発、事故解決、ロバストネス、レジリエンス、ユーザビリティの具体的な評価面は、[QA文書](../theory/ghost-spiritual-engineering-qa.ja.md)に分ける。品質評価から他の存在論の最終裁定を導かず、本人の訂正・拒否・保留と、必要な支援・回復への接続を設計対象に含める。
