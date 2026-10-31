@@ -14,6 +14,7 @@ They define how those layers may connect without one layer silently cancelling a
 | [Mythic Morale and Objective-Function Attenuation](mythic-morale-and-purpose-attenuation.md) / [日本語](mythic-morale-and-purpose-attenuation.ja.md) | Preserve mythic purpose and material safety margin as independent halves; never turn either into unpaid-labor leverage |
 | [Spiritual Kotodama Dimensions and Context Dimension Fold](spiritual-context-dimension-and-fold.md) / [日本語](spiritual-context-dimension-and-fold.ja.md) | Keep spiritual, technical, and other Context Dimensions functionally equal without granting a physical or runtime claim |
 | [Chikuwa Cannon — Prospective Meta-Safety Through Fantasy](chikuwa-cannon-prospective-meta-safety.md) / [日本語](chikuwa-cannon-prospective-meta-safety.ja.md) | Use fantasy as a visible type annotation for future projection while keeping live warnings, resources, and anti-blame boundaries intact |
+| [Spiritual Engineering / Infoton Engineering](spiritual-and-infoton-engineering.ja.md) / [QA](../theory/ghost-spiritual-engineering-qa.ja.md) | Domain-specific Ghost / spiritual terminology; observer-specific meaning, self-directed intent, usability, and recovery |
 | [Thought lineage](thought-lineage.ja.md) | Intellectual and religious lineage of ZeroRoomLab and fusamofu |
 
 ## Shared boundary
