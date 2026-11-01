@@ -26,6 +26,8 @@ into one vendor's default worldview.
 
 **Research history / 歴史的系譜:** [Sphere系列のAI安全アーキテクチャと商業化・研究資源史（日本語）](docs/theory/sphere-ai-safety-architecture-lineage.ja.md) · [旧Organization商業資料のRFC設計値／実測値読解規約（日本語）](docs/operations/legacy-organization-architecture-and-commercial-claims.ja.md)。旧HIPSTARの商業ピッチは完成品ベンチマークではなく、設計上限と実装資源の提案を含みます。現行の実測・保証値とは別レジスターとして読んでください。
 
+**Organization / historical claims reading guide:** [旧HIPSTARの設計値・RFC上限・実測・AI安全研究史（日本語正本）](docs/operations/historical-organization-architecture-claims-and-ai-safety-lineage.ja.md). Old venture-facing architecture claims and fundraising visions must not be misread as measured production-scale performance, or dismissed because no production benchmark accompanies an architectural bound.
+
 **Architecture reading path / 設計を先に読む：** [日本語正本：意味Topology → SphereOS → Fold-NIC](docs/theory/semantic-fold-os-architecture.ja.md) · [en-US interpretation](docs/theory/semantic-fold-os-architecture.en-US.md) · [日本語FAQ / claim boundaries](docs/theory/semantic-fold-claims-and-unknown.ja.md) · [en-US FAQ](docs/theory/semantic-fold-claims-and-unknown.en-US.md).
 
 The cross-project architecture explains substrate-neutral processing gradients, unknown-preserving dynamic Folds, OAE as a managed resource, client-rich meaning portability, hardware neutrality, and the open commons. It is a design explanation, **not** a claim that every component has shipped. Japanese is authoritative; the en-US pages are review interfaces.
