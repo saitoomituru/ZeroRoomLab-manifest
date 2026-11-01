@@ -71,6 +71,16 @@ The founder reports unresolved legacy legal and credit issues, with a **rough or
 
 Consequently, non-exclusive legal counsel, accounting support, lawful debt/credit restructuring and reliable payment rails are legitimate **research infrastructure funding needs**, separate from the $1,000/month recurring OSH publishing milestone. Where a card-based billing route is not available, fixed-price/prepaid storage, third-party institutional hosting under appropriate agreements, self-hosting or donated capacity are additional branches to evaluate. No bypass of identity, platform billing, or financial compliance requirements is proposed.
 
+### Standing legal capacity must be funded before unpublished-record review
+
+Historical Organization records and unpublished legal, intellectual-property, contract, organizational, and third-party materials are **not** a free public due-diligence bundle. A confidential source being available to the owner or a connected tool does not authorize its publication, extraction into public GitHub Issues, or distribution through external AI/RAG systems.
+
+**The required sequence is:** fund continuing legal staffing and specialist counsel costs first; establish actual attorney engagement, confidentiality and secure review procedures; conduct a private legal/rights/disclosure assessment; publish only specifically cleared artifacts. This requires more than a one-off legal consultation. IP counsel, corporate/foundation and financial-contract counsel, evidence-handling and incident-response support may require different specialties. These resources **are not currently confirmed as funded or retained**.
+
+Until those gates are met, nonpublic historical/legal material is `RESOURCE-GATED / NO-PUBLICATION`; public Git history and already-published claims remain available for ordinary research. A concrete legal notice, preservation requirement, or deadline should route to confidential urgent counsel, not to pre-emptive public disclosure.
+
+Funding provides legal capacity, **not automatic access to private records, edit authority, or the right to publish**. See the [Japanese canonical release-gate policy](docs/operations/unpublished-legal-materials-funding-gate.ja.md) and [lab funding responsibilities](docs/funding/README.ja.md).
+
 ## Policies
 
 - [日本語: 資金・創設責任ドキュメント](docs/funding/README.ja.md)
