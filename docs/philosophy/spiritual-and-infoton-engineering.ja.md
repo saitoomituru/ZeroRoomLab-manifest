@@ -28,6 +28,37 @@ Spiritual Engineering が問うのは、「何を計算できるか」だけで�
 
 Infoton Engineering は、その問いを情報システムへ接続するための工学です。
 
+## 情報子工学ドメイン内の用法：霊的・Ghost・Spiritual
+
+2026-10-31追補。以下は本ドメイン内の定義であり、日本語「霊的」や英語 spiritual の宗教・文化全体の語義を上書きしない。
+
+| 用語 | 本ドメインでの対象・責務 | en-USでの説明 |
+|---|---|---|
+| 意味工学／Context Engineering | 意味を成立させる文脈・関係・表現を設計する。両語を既存学問全体で同義とする宣言ではない | meaning and context engineering |
+| ゴースト（Ghost） | 観測者固有の意味存在論。自己理解、経験、身体、土地、文化、信仰、関係性を含み、外部から全容を確定しない | observer-specific meaning ontology |
+| 霊的エンジニアリング／Ghost Engineering | 一般命題へ抽象化する際に失われる個人差・地域差を保持し、ゴーストを傷つけずに意味を接続する | engineering that preserves observer-specific meaning and context |
+| ゴーストエンジニア | その固有性を保持し、翻訳・接続・実装を担う者 | Ghost Engineer |
+| スピリチュアルエンジニアリング／Spiritual Engineering | 意味に加えて、その主体の意図・目的・価値と、それらを生む背景まで扱う。自発的な表明・探索・修正を支え、望む行為・被害軽減・回復へ接続する | engineering UX that supports self-directed intention, purpose, values, and recovery |
+| 霊的深遠／霊的な深さ | 意味の成立背景・関係・由来をどこまで深く保持・参照できるか | depth of situated meaning |
+
+Ghostは好みの一覧や属性プロフィールへ尽くされない。既定の目的に出力を合わせるパーソナライズに加え、**目的、分類、成功条件そのものが主体ごとに異なる**ことを出発点にする。地域も住所タグではなく、その土地で可能な行為、資源、関係、経験を含む。
+
+霊的な深さは、人や信仰の優劣でも、技術Layerの高さでも、Foldの軸数でもない。[Context DimensionとFold](spiritual-context-dimension-and-fold.ja.md)の並列性を保持する。Ghostという概念と、既存仕様のInstance Ghostという実行・個体管理上の用語は、参照する仕様と責務を確認して接続する。今回の定義だけでInstance GhostのSchema、API、人格runtimeを変更しない。
+
+### 外から意図を確定しない
+
+宗教、地域、年齢、職種から本人の倫理や望む結論を自動割当てしない。言葉になっていない願い、ためらい、矛盾、関係性を思慮深く受け取り、解釈を本人へ返し、訂正・拒否・保留・選び直しを可能にする。「拾い出す」は隠れた真意の断定や、設計者の目的への誘導を許す語ではない。
+
+客観的観測は、結果予測や支援の材料になる。その証拠射程から相手の存在論全体の裁定や、無断の帰責へ飛躍する権限は生まれない。人間と機械が互いの存在論の射程を越えて意味を傷つけることを、この設計要件では事故として扱う。事故の記録と原因検証は残し、非越権を理由に失敗を隠さない。
+
+### 意味を傷つけず、意図が通るUXを届ける
+
+Steve Jobs的な設計への敬意は、演算資源の増量だけでなく、複雑さをシステム側で引き受け、ユーザーの意図を行為へつなぐGUI／UXを設計する点にある。これは本研究系が置く設計上の系譜であり、Jobsが本書の用語を提唱したという帰属ではない。
+
+帰責先を記録するだけでは完了しない。必要に応じて医療、保険、介助、修復、地域の支援等へ接続し、本人の意味を保持したまま、被害最小化とその状況での最善を探索するUXを提供する。支援がない場合も、未接続・拒否・資源待ちを可視化し、回復経路を残す。連携は本人の開示範囲・同意と、関係する他者の意味・選択権も保持して設計する。
+
+これらは付加的な情緒配慮ではなく品質要件である。霊的・スピリチュアルという名称の見た目にかかわらず、設計対象、操作、評価条件を定めれば、事故解決、ロバストネス、レジリエンス、ユーザビリティという工学指標で評価できる。具体的な受入条件は[意味保全と自発・回復UXのQA](../theory/ghost-spiritual-engineering-qa.ja.md)に分ける。
+
 ## Shannon 情報理論との関係
 
 この研究系は Claude E. Shannon の情報理論を否定したり、置き換えたり、「Shannon を超えた新しい情報理論が完成した」と主張するものではありません。
@@ -104,14 +135,12 @@ Spiritual Engineering は、神秘体験を物理学へ強制還元すること�
 
 Context Engineering は Infoton Engineering の重要な実装技法の一つです。
 
-ただし Context Engineering が主に「モデルへ何を渡すか」を扱うのに対し、Infoton Engineering はさらに上流の、
+Context Engineeringには、モデルへ渡す情報の構成だけでなく、広い文脈設計も含まれる。一般にローコンテキスト化を求める分野だと定義しない。本研究系では、その手法を使う際にも、次を明示的な必須要件として追加する。
 
-- なぜそれを context として選んだのか
-- context 化の前に何を落としたのか
-- 誰の世界観・価値観で分類したのか
-- representation の変更で何が不可逆に失われたか
-
-までを研究対象に含めます。
+- なぜそれをcontextとして選び、context化の前に何を落としたか
+- 誰の世界観・価値観で分類し、誰の意図・成功条件を採用したか
+- 表現の変換で何が失われ、本人が訂正・拒否・保留できるか
+- 共通化できない個人差や地域差を保持し、支援・回復へ接続できるか
 
 FAM、IBD、SphereOS Atlantis は、この研究プログラムを実装・検証するための系譜に位置づけます。
 
@@ -141,6 +170,6 @@ Infoton Engineering の価値は名称ではなく、既存手法より何をう
 
 といった実験へ落とします。
 
-**Spiritual Engineering is the philosophy.  
-Infoton Engineering is the engineering domain.  
-Context Engineering is one implementation layer.**
+**Spiritual Engineeringは設計哲学であり、本ドメインでは自発・意図・回復UXの品質要件にもなる。  
+Ghost Engineeringは観測者固有の意味存在論を保全・接続する。  
+Infoton Engineeringはそれらを実装・検証する工学領域であり、Context Engineeringは重要な実装技法の一つである。**
