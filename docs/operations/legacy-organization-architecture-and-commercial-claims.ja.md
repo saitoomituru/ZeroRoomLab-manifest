@@ -1,6 +1,6 @@
 # 旧Organization商業ディストリビューションの読解・設計値と実測値の分離規約
 
-状態: \`[CANONICAL / READING-REGISTER]\`  
+状態: `[CANONICAL / READING-REGISTER]`  
 制定日: 2026-11-02  
 適用: HIPSTAR-IScompany等の旧Organizationが配布したREADME、Web、広報、ベンチャー提案、アーキテクチャ図、RFC・設計仕様、プロダクト紹介、およびそれらを引用する読者／AI。
 
@@ -26,17 +26,17 @@
 
 | claim種別 | 何を意味するか | 主に要する根拠 |
 | --- | --- | --- |
-| \`VISION\` | 到達したい世界、商業目標、利用シナリオ | 事業の目的・ロードマップ・意思表明 |
-| \`RFC / ARCHITECTURE\` | 責務分解、プロトコル、境界、不変条件、技術的可否 | 設計文書、制約、仮定、矛盾・反例の検討 |
-| \`THEORETICAL / DESIGN LIMIT\` | 識別空間、DB上限、物理・規格制約等からの計算上限 | 計算モデル、採用方式、依存条件、上限の定義 |
-| \`SIMULATED\` | シミュレーション上の動作・数値 | モデル、入力・条件、実行結果 |
-| \`IMPLEMENTED / DEMONSTRATED\` | 特定版・特定環境でコードが存在／機能を実行 | commit、code、fixture、実行receipt |
-| \`MEASURED\` | 実機または実環境の実測値 | hardware、workload、測定手法、日時、ログ、測定単位 |
-| \`GUARANTEED / SLA\` | 所定条件での保証性能・契約責務 | 保証範囲、除外条件、契約・適合試験 |
+| `VISION` | 到達したい世界、商業目標、利用シナリオ | 事業の目的・ロードマップ・意思表明 |
+| `RFC / ARCHITECTURE` | 責務分解、プロトコル、境界、不変条件、技術的可否 | 設計文書、制約、仮定、矛盾・反例の検討 |
+| `THEORETICAL / DESIGN LIMIT` | 識別空間、DB上限、物理・規格制約等からの計算上限 | 計算モデル、採用方式、依存条件、上限の定義 |
+| `SIMULATED` | シミュレーション上の動作・数値 | モデル、入力・条件、実行結果 |
+| `IMPLEMENTED / DEMONSTRATED` | 特定版・特定環境でコードが存在／機能を実行 | commit、code、fixture、実行receipt |
+| `MEASURED` | 実機または実環境の実測値 | hardware、workload、測定手法、日時、ログ、測定単位 |
+| `GUARANTEED / SLA` | 所定条件での保証性能・契約責務 | 保証範囲、除外条件、契約・適合試験 |
 
-**原則:** 資料の位置・表題・前後の文脈から \`RFC / DESIGN LIMIT\` の話をしていると読める「達成」は、設計上限／理論的達成可能性を指す。測定条件と「実測」等の明示があれば \`MEASURED\` として扱う。「達成」という単語だけを拾って、同時ユーザー数や配布実績を捏造しない。
+**原則:** 資料の位置・表題・前後の文脈から `RFC / DESIGN LIMIT` の話をしていると読める「達成」は、設計上限／理論的達成可能性を指す。測定条件と「実測」等の明示があれば `MEASURED` として扱う。「達成」という単語だけを拾って、同時ユーザー数や配布実績を捏造しない。
 
-ただし \`RFC\` と書かれた資料を無条件で正しい理論・規格準拠と認証するわけではない。**設計値には設計値の検証**（仮定・単位・制約・上限計算）がある。確立した工業標準、独自RFC提案、社内仕様も区別する。
+ただし `RFC` と書かれた資料を無条件で正しい理論・規格準拠と認証するわけではない。**設計値には設計値の検証**（仮定・単位・制約・上限計算）がある。確立した工業標準、独自RFC提案、社内仕様も区別する。
 
 ## 3. 工学的な例：Wi-FiとInstance Ghost
 
@@ -44,7 +44,7 @@ Wi-Fiの広告・規格上の最大PHYリンク速度と、実利用のアプリ
 
 Instance GhostをUUID識別子＋グラフDBのメモリー構造として設計する場合も同じ。
 
-\`\`\`text
+```text
 UUID namespace / uniqueness assumptions
     + graph DB node/edge/index/storage/shard limits
     + per-Ghost history and relationship model
@@ -52,7 +52,7 @@ UUID namespace / uniqueness assumptions
 
 running agents / simultaneous inference / updates / QPS / latency
     -> different operational metrics, separate resource assumptions and measurements
-\`\`\`
+```
 
 - UUID128bitの全ビットパターン数は2^128。UUIDv4の乱数部分は122bitで、衝突確率を別に扱う。UUID空間をそのまま実DBの収容数とはしない。
 - グラフDBのnode／edge／index容量、Ghost一体当たりの履歴・関係、ストレージ、シャーディング等を指定すれば、理論上限やボトルネックの上界が見積もれる。具体的なDB製品・設定の限界値を未確認のまま断定しない。
@@ -84,7 +84,7 @@ running agents / simultaneous inference / updates / QPS / latency
 
 本規約は**Manifest側に置く読解案内**。過去のOrganization資料やコミットを後から大量に赤字注記で塗り替えない。旧商業資料の歴史的な役割と広報文体を保存し、必要な補足はこの読解案内へのリンクで行う。事後の解釈を過去当時の合意・OAEとして偽装しない。
 
-明示的な実機実測、出荷数、動作試験人数、契約上の保証が記載される場合は、その記載を優先し、測定範囲を具体的に照合する。公表された性能値の種類が本当に不明な場合は、\`UNKNOWN-CLAIM-TYPE\`とし、文脈を確認する。自動的に実測や虚偽へ分類しない。
+明示的な実機実測、出荷数、動作試験人数、契約上の保証が記載される場合は、その記載を優先し、測定範囲を具体的に照合する。公表された性能値の種類が本当に不明な場合は、`UNKNOWN-CLAIM-TYPE`とし、文脈を確認する。自動的に実測や虚偽へ分類しない。
 
 当時の到達可能性の提示と、後の商業展開で資本が結合しなかった経緯は、[Sphere系列研究史・AI安全対応](../theory/sphere-ai-safety-architecture-lineage.ja.md)へ分離して記録する。未成立の大規模実証に必要な資本・電力・設備・人員を、元の開発者の無償自己負担として要求しない。
 
