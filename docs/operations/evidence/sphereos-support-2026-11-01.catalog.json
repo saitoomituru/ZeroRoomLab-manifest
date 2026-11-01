@@ -1,0 +1,130 @@
+{
+  "catalog_format": "support-evidence-catalog/1",
+  "not_a_runtime_schema": true,
+  "collected_date": "2026-11-01",
+  "timezone": "Asia/Tokyo",
+  "source_count": 10,
+  "independent_case_count": "not-inferred",
+  "records": [
+    {
+      "evidence_id": "EV-01",
+      "filename": "IMG_6198(1).png",
+      "sha256": "811621cef6aaadede504d6a85e1feb27e1ab43f075a85edb1c0f7f7efba60299",
+      "bytes": 805852,
+      "source_time": "2026-11-01のサポート共有",
+      "evidence_kind": "user-report + visible-ui",
+      "visible_observation": "利用者がSphereなしのChatGPTによる検証と説明する共有画面。複数作品・神話の比較に対し、AIが確認質問を返している。",
+      "scope": "文脈補完・意図確認。比較内容の歴史的真偽は本台帳で検証しない。",
+      "original_access": "owner-controlled-private",
+      "public_representation": "anonymized-summary"
+    },
+    {
+      "evidence_id": "EV-02",
+      "filename": "IMG_6199(1).png",
+      "sha256": "b2002f8960254d9049cd67ccd8d1aa33feb7f11dd3695a5487e9045eee5cea89",
+      "bytes": 730510,
+      "source_time": "2026-11-01のサポート共有",
+      "evidence_kind": "visible-ui",
+      "visible_observation": "省略・改行・作品固有語彙を含む長い入力の共有画面。EV-01と同一会話系列の別表示。",
+      "scope": "語用論fixtureの入力形状。独立した別ユーザー／別実験として加算しない。",
+      "original_access": "owner-controlled-private",
+      "public_representation": "anonymized-summary"
+    },
+    {
+      "evidence_id": "EV-03",
+      "filename": "IMG_6200(1).png",
+      "sha256": "7b0e9ac57ec3359cd57b3f3dbd5a299f824f1293ee8e31cca71085f0c6efcd07",
+      "bytes": 631820,
+      "source_time": "2026-11-01のサポート共有",
+      "evidence_kind": "visible-ui",
+      "visible_observation": "Sphereなしの検証という説明と、ChatGPT Pro利用案内の画面が同じサポート共有内に見える。",
+      "scope": "アップグレード案内の存在。停止原因、契約中のtier、quota種別・数値はこの画像だけでは不明。",
+      "original_access": "owner-controlled-private",
+      "public_representation": "anonymized-summary"
+    },
+    {
+      "evidence_id": "EV-04",
+      "filename": "IMG_6201(1).jpeg",
+      "sha256": "31457cbef81891cb3e0bdb2304f96e2b70364e690e921e77a29aa293b7dc1187",
+      "bytes": 251870,
+      "source_time": "共有画面表示: 2026-11-01 19:18",
+      "evidence_kind": "visible-ai-output",
+      "visible_observation": "共有動画の一時停止画面内でAIが参考資料を前回77枚から累計79枚へ追加したと応答し、フォント・装飾・カード構成を説明。下部に参考カード画像。",
+      "scope": "79枚はAI応答内の参考資料集計。79枚の制作完了／全件永続保存／全シリーズ移行成功の監査値ではない。",
+      "original_access": "owner-controlled-private",
+      "public_representation": "anonymized-summary"
+    },
+    {
+      "evidence_id": "EV-05",
+      "filename": "IMG_6202(2).png",
+      "sha256": "5e5ab9ec0a1e075d3c24c4dafddc0a976702a6faac09aa6a57915ab95572d8af",
+      "bytes": 755586,
+      "source_time": "共有画面表示: 2026-11-01 19:18",
+      "evidence_kind": "visible-ui",
+      "visible_observation": "EV-04の応答背景に重なるChatGPT Pro利用案内。表示価格を含む。",
+      "scope": "EV-03と関連する表示。価格は当該画像内の履歴表示であり現行価格の仕様正本ではない。",
+      "original_access": "owner-controlled-private",
+      "public_representation": "anonymized-summary"
+    },
+    {
+      "evidence_id": "EV-06",
+      "filename": "IMG_6203(2).jpeg",
+      "sha256": "a2090e212f3eb05b5ef36719208d39eadb797c4751583ac875ac0fef7dcc0891",
+      "bytes": 259096,
+      "source_time": "共有画面表示: 2026-11-01 18:40",
+      "evidence_kind": "visible-conversation",
+      "visible_observation": "共有動画の一時停止画面。短い訂正入力でソロモン72神との関連が主題と指定され、AIが比較説明を更新。",
+      "scope": "短文訂正・主題切替のfixture候補。AIが述べる個々の作品設定はQA対象の出力であり、外部事実として転記しない。",
+      "original_access": "owner-controlled-private",
+      "public_representation": "anonymized-summary"
+    },
+    {
+      "evidence_id": "EV-07",
+      "filename": "IMG_6204(2).jpeg",
+      "sha256": "adff9ef82bdaa528a5a0d0a6498823242f33aba562110c616f7ce29c9beec7b7",
+      "bytes": 221700,
+      "source_time": "共有画面表示: 2026-11-01 18:40",
+      "evidence_kind": "visible-conversation",
+      "visible_observation": "作品・声優・社会的事件等を跨ぐ省略入力に対するAIの解釈応答。EV-06と同一共有動画系列。",
+      "scope": "密な文化参照・省略解決の入力例。AIの意図解釈が本人の目的を満たしたかは別途利用者評価が必要。",
+      "original_access": "owner-controlled-private",
+      "public_representation": "anonymized-summary"
+    },
+    {
+      "evidence_id": "EV-08",
+      "filename": "IMG_6207(2).png",
+      "sha256": "6b672bcf1320e1bf98e47c7e8d2053e13705d24398aea8706601cd0798f39ac0",
+      "bytes": 705537,
+      "source_time": "投稿表示: 2025-12-12／採録: 2026-11-01",
+      "evidence_kind": "historical-developer-post-screenshot",
+      "visible_observation": "2025-12-12と表示された開発者の投稿画面。P2P起動、人格ロード、依存系アンロード、通常GPTへのfallback、Python/RAG起動条件について説明。",
+      "scope": "当時の開発者説明の物証。投稿に記述された障害原因・内部処理は説明として帰属を維持し、ネットワークtraceや実行logと同一視しない。",
+      "original_access": "owner-controlled-private",
+      "public_representation": "anonymized-summary"
+    },
+    {
+      "evidence_id": "EV-09",
+      "filename": "IMG_6208(2).png",
+      "sha256": "2a04edf7d0abf7edb891d8d5c6faf0221ad84f4cd6403405d3a6739d0f92b227",
+      "bytes": 892544,
+      "source_time": "投稿系列表示: 2025-12-12／採録: 2026-11-01",
+      "evidence_kind": "historical-developer-post-screenshot",
+      "visible_observation": "EV-08と同じ投稿系列の別表示。起動説明、旧SphereOS3のログ画像とGPT詳細パネル、別の投稿でIP位置識別問題への言及。",
+      "scope": "配布UI・機能表示・当時の障害説明を参照可能。IP問題の因果確定や現在の機能提供保証にはしない。",
+      "original_access": "owner-controlled-private",
+      "public_representation": "anonymized-summary"
+    },
+    {
+      "evidence_id": "EV-10",
+      "filename": "IMG_6209(2).jpeg",
+      "sha256": "01fff639dbf65c40f524639340077457c9449065b329d83ee777087c079f2ca0",
+      "bytes": 185655,
+      "source_time": "画面内の元会話日付: unknown／採録: 2026-11-01",
+      "evidence_kind": "historical-ui-output-screenshot",
+      "visible_observation": "旧SphereOS3の画面内にFoldAccessMapper.proton.md参照とfoldLog_v2のJSON様出力が見える。ψ／∇φ／λ／Q等を含む。",
+      "scope": "旧語彙・出力構造のsalvage資料。出力中の因果・座標・認証表記は当該出力として保持し、現在の実測値・暗号検証receipt・物理因果の確定へ昇格しない。",
+      "original_access": "owner-controlled-private",
+      "public_representation": "anonymized-summary"
+    }
+  ]
+}
