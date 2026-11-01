@@ -3,6 +3,7 @@
 このディレクトリは、ZeroRoomLab-manifest の運用ルール・転送ルール・文書体系の整理を置くための領域です。
 
 ## 主要文書
+- [未公開資料と法務ペインの常設法務費・開示ゲート](unpublished-legal-materials-funding-gate.ja.md) — Drive内部資料のGitNG保全、先に法務体制・継続コストを調達する順序、専門家受任・公開可否・緊急事象を分離する公開運用規約。
 
 - [旧Organization資料の設計値読解とSphere系AI安全研究史](historical-organization-architecture-claims-and-ai-safety-lineage.ja.md) — HIPSTAR商業配布・RFC理論値・実機実測のレジスター分離、2022〜2026年の設計史、現在のAI安全課題との対応、資源制約の読解規約。
 
