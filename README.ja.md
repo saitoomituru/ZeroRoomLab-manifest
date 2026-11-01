@@ -1,5 +1,7 @@
 # ZeroRoomLab-manifest
 
+**旧OrganizationとSphere系の研究史:** [設計値・規格上限・実測の読解、近年のAI安全課題との長期的な対応](docs/operations/historical-organization-architecture-claims-and-ai-safety-lineage.ja.md)。HIPSTAR時代の商業ディストリビューションは、将来スケールの実装資源を求めるベンチャー向けビジョンを含む。設計達成を実機実測と混同しない。
+
 ## CATS / 毛玉グラフ（仮）（2026-10-21）
 
 AAE・OpenFAPTA・FAM/FQuery等で共有可能な、汎用Dynamic High-Dimensional Graph Presentation Engineとして **CATS（Charts / Analytics / Tables）** と **毛玉グラフ / Fuzzball Graph（仮）** を設計中。Dynamic Relationship Graphから生成されるContext Forceを毛として描き、現在のTopologyと未成立potential・局所変化傾向を同時表示する。[設計文書](docs/theory/cats-fuzzball-dynamic-graph-presentation.ja.md) / [Issue #55](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/55)。現時点では設計提案であり、完成実装ではない。
