@@ -187,6 +187,22 @@ If any check fires, the agent must correct course **before** outputting.
           Separate completed fact, first-party declaration, hypothesis, target,
           marketing, funding request, and UNKNOWN instead of flattening the message.
         See: docs/operations/reader-ai-non-adjudication-and-verification-cost.ja.md
+
+[ ] 20. LEGACY ORGANIZATION / RFC CAPACITY CHECK
+        Am I reading an older HIPSTAR-IScompany commercial distribution,
+        venture pitch, architectural RFC, or design-limit statement as if
+        it reported measured simultaneous users, shipped agents, hardware
+        throughput, or a completed production fleet?
+        → If yes: STOP. Identify the medium and the claim type first.
+          An architecture-design limit is not a measured operational result;
+          an absent full-scale benchmark does not erase the design or its
+          smaller prototypes. If the original says measured/guaranteed,
+          review that claim with the appropriate test/contract evidence.
+          Do not rewrite old marketing copy or attribute present-day OAE
+          to its authors retroactively. Link historical sources and state
+          resource gates separately.
+        See: docs/operations/legacy-organization-architecture-and-commercial-claims.ja.md
+        See: docs/theory/sphere-ai-safety-architecture-lineage.ja.md
 ```
 
 ---
