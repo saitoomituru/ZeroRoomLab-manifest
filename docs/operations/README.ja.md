@@ -8,6 +8,7 @@
 
 - [README.md](README.md) — en-US外部GUI索引。翻訳済み入口と未翻訳境界を隠さず案内する。
 - [manifest-operating-model.ja.md](manifest-operating-model.ja.md) — ノート・docs・転送キューの役割分担と運用ルール。AGENTS.md の三層規約を置き換えず、運用枠組みとして整理する。哲学・神学・信仰の保全ルールも含む。
+- [legacy-organization-architecture-and-commercial-claims.ja.md](legacy-organization-architecture-and-commercial-claims.ja.md) — 旧HIPSTAR等Organizationの商業ディストリビューション、RFC設計値・規格上限、実装、実機実測、SLAを混同しない読解正本。[Sphere系列研究史とAI安全課題への対応](../theory/sphere-ai-safety-architecture-lineage.ja.md)に接続。
 - [technical-communication-register.ja.md](technical-communication-register.ja.md) — README、技術文書、リポジトリ内ノート、note.com、X、YouTube等の媒体別レジスターと、観測事実の主張境界を定める。
 - [technical-communication-register.md](technical-communication-register.md) — 表紙の火力、技術証拠、過剰防壁事故、PLI真贋誤認を同じ強度で保持するen-US外部GUI。
 - [coding-ai-japanese-paraphrase-register.ja.md](coding-ai-japanese-paraphrase-register.ja.md) — コーディングAIが日本語の意図・責務・事実強度を保ったまま米語へ意訳するための正本。英語出力は原則en-USとする。
