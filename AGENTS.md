@@ -207,6 +207,14 @@ If any check fires, the agent must correct course **before** outputting.
 
 ---
 
+## 未公開資料／法務ペインの公開停止と常設法務資源ゲート（mandatory）
+
+旧Organization／過去事業に関する未公開メール、契約、法律相談、知財・権利・債務、第三者情報を含むGoogle Drive内部資料（`GitNG`等）は、アクセス可能でも**公開用素材として収集・要約・転送・Issue化・PR化しない**。過去の原典を詳しく調べる作業であっても、公開Git史料と未公開資料を自動連結しない。
+
+**順序:** 継続的な常設法務部相当の資金調達 → 専門領域別の専門家受任・守秘体制 → 非公開で整理と法的・契約的な開示確認 → 個別のオーナーと専門家の公開許可 → 許可された要約等のみ公開。調達や受任は現時点で確認されていない。私的資料に対する一般的な深掘り・public postingは `RESOURCE-GATED / STOP-BEFORE-PRIVATE-CONTENT-EXPORT`。
+
+実際に具体的な通知、法定期限、保全期限等が発生した場合は公開ではなく私的緊急相談を優先する。公開史料だけで進められる設計研究・実装・資源募集まで凍結する規則ではない。[未公開資料の常設法務資源ゲート](docs/operations/unpublished-legal-materials-funding-gate.ja.md)を参照。
+
 ## 旧OrganizationのArchitecture / RFC設計値と実測の読解（mandatory）
 
 旧HIPSTAR-IScompany、ISHIPSTAR、soikoma、SphereOS3/4、AQC等のOrganization商業資料を読む際、研究論文・実機ベンチマークのレジスターを勝手に要求しない。商業ディストリビューションには、アーキテクチャの理論到達可能性・独自RFCの設計上限を提示し、将来の実装・スケール検証の資源を求めるベンチャー向けのビジョン／ビッグマウスが含まれる。
