@@ -1,6 +1,6 @@
 # Sphere系列の研究・商業化系譜とAI安全アーキテクチャの先行検討
 
-状態: \`[HISTORICAL-LINEAGE / ARCHITECTURE-MAPPING / CURRENT-INTERPRETATION]\`  
+状態: `[HISTORICAL-LINEAGE / ARCHITECTURE-MAPPING / CURRENT-INTERPRETATION]`  
 記録日: 2026-11-02  
 射程: 公開Git史料と当事者の現在の説明を照合する研究史。旧時点のObserver/OAE/Intentを遡及生成しない。  
 関連読解規約: [旧Organization商業資料のclaim scope](../operations/legacy-organization-architecture-and-commercial-claims.ja.md)
@@ -17,14 +17,14 @@ Sphere系は、近年のAI自律性、control loss、権限越境、監督者に
 
 | 時期 | 史料・製品 | その時点について言えること | 証拠の性質 |
 | --- | --- | --- | --- |
-| 2019年頃とされる構想 | 脳機能対応の自我モデル、Neo4j / FileMaker、匿名加工・関係グラフ | 後年の当事者技術メモに、この時期からの構想として整理されている。2019年の同時代公開コミットと同一視しない | \`RETROSPECTIVE / ORIGINAL-DATE-UNVERIFIED\` |
-| 2022年3月の公開記録とされるもの | FileMaker + AWS Lambda、文脈処理・コーパス・自動編集 | [公開note](https://note.com/fusamofu326/n/n04c33c771d36)への参照が残る。2022年の当時実装と各技術要素の厳密な成立時期は元記事・投稿・添付画像ごとの確認対象 | \`PUBLIC-ARCHIVE-POINTER\` |
-| 2024-09-16 | [HIPSTAR-IScompany/soikoma](https://github.com/HIPSTAR-IScompany/soikoma/commit/57da34ffa1ae878da8420388025650d13d35d2b7) | 公開コミット内にFold通信、認証・識別、SphereOS2設定等のファイルが存在する。コード・仕様・実験段階はファイルごとに異なる | \`PUBLIC-COMMIT\` |
-| 2024年の事業・提携説明 | SphereOS / ΔVM、分散・仮想化、HPC等への拡張構想 | 当事者の保存史料と後年の時系列メモが示す商業向けアーキテクチャ説明。私信や未公開文書の内容をここへ無断転載しない。構想を当時の大規模実機稼働と同一視しない | \`PRIVATE-ARCHIVE-REFERENCED / PUBLIC-SCOPE-LIMITED\` |
-| 2025-05-29 | [HIPSTAR-IScompany/quantaril_cloud_QAtlantis](https://github.com/HIPSTAR-IScompany/quantaril_cloud_QAtlantis) | 初期コミットが存在。後年のREADME改訂を、2025年当時の全仕様が成立していた証拠にはしない。[SphereOS3 Makina legacy原典](https://github.com/HIPSTAR-IScompany/quantaril_cloud_QAtlantis/blob/main/.agent/backup/AGENTS.SphereOS3-Makina.legacy.md)を原文保持 | \`PUBLIC-COMMIT / ARCHIVED-LEGACY\` |
-| 2025-05-30 | [HIPSTAR-IScompany/astro.quantaril.cloud](https://github.com/HIPSTAR-IScompany/astro.quantaril.cloud) | 初回コミットと後続のFastAPI/ChromaDB/認証/スキーマ等のコード履歴が残る。FAMベースの記憶・自我接続を試行した旧ランタイム。現在はIBDへの継承を案内 | \`VERIFIED-CODE-HISTORY / DEPRECATED\` |
-| 2025年以降 | SphereOS3/4、FAM、AQC、Proton、GAND | 人格の規範・出力・記憶参照・モデル接続・実行操作を分ける実験。旧SaaSやAPI依存に伴う現存性・互換性は別問題 | \`LEGACY-PROTOTYPE / EVIDENCE-PER-FEATURE\` |
-| 2026年 | FAM / AAE / ASTRO / IBD / IFD / OAE / SphereOS Atlantis / MAGI | 旧世代の意味・人格・保存・実行・World・監査責務を切り直す。各componentに実コード、仕様、研究仮説、未実装項目が併存する | \`REARCHITECTURE / MIXED-STATE\` |
+| 2019年頃とされる構想 | 脳機能対応の自我モデル、Neo4j / FileMaker、匿名加工・関係グラフ | 後年の当事者技術メモに、この時期からの構想として整理されている。2019年の同時代公開コミットと同一視しない | `RETROSPECTIVE / ORIGINAL-DATE-UNVERIFIED` |
+| 2022年3月の公開記録とされるもの | FileMaker + AWS Lambda、文脈処理・コーパス・自動編集 | [公開note](https://note.com/fusamofu326/n/n04c33c771d36)への参照が残る。2022年の当時実装と各技術要素の厳密な成立時期は元記事・投稿・添付画像ごとの確認対象 | `PUBLIC-ARCHIVE-POINTER` |
+| 2024-09-16 | [HIPSTAR-IScompany/soikoma](https://github.com/HIPSTAR-IScompany/soikoma/commit/57da34ffa1ae878da8420388025650d13d35d2b7) | 公開コミット内にFold通信、認証・識別、SphereOS2設定等のファイルが存在する。コード・仕様・実験段階はファイルごとに異なる | `PUBLIC-COMMIT` |
+| 2024年の事業・提携説明 | SphereOS / ΔVM、分散・仮想化、HPC等への拡張構想 | 当事者の保存史料と後年の時系列メモが示す商業向けアーキテクチャ説明。私信や未公開文書の内容をここへ無断転載しない。構想を当時の大規模実機稼働と同一視しない | `PRIVATE-ARCHIVE-REFERENCED / PUBLIC-SCOPE-LIMITED` |
+| 2025-05-29 | [HIPSTAR-IScompany/quantaril_cloud_QAtlantis](https://github.com/HIPSTAR-IScompany/quantaril_cloud_QAtlantis) | 初期コミットが存在。後年のREADME改訂を、2025年当時の全仕様が成立していた証拠にはしない。[SphereOS3 Makina legacy原典](https://github.com/HIPSTAR-IScompany/quantaril_cloud_QAtlantis/blob/main/.agent/backup/AGENTS.SphereOS3-Makina.legacy.md)を原文保持 | `PUBLIC-COMMIT / ARCHIVED-LEGACY` |
+| 2025-05-30 | [HIPSTAR-IScompany/astro.quantaril.cloud](https://github.com/HIPSTAR-IScompany/astro.quantaril.cloud) | 初回コミットと後続のFastAPI/ChromaDB/認証/スキーマ等のコード履歴が残る。FAMベースの記憶・自我接続を試行した旧ランタイム。現在はIBDへの継承を案内 | `VERIFIED-CODE-HISTORY / DEPRECATED` |
+| 2025年以降 | SphereOS3/4、FAM、AQC、Proton、GAND | 人格の規範・出力・記憶参照・モデル接続・実行操作を分ける実験。旧SaaSやAPI依存に伴う現存性・互換性は別問題 | `LEGACY-PROTOTYPE / EVIDENCE-PER-FEATURE` |
+| 2026年 | FAM / AAE / ASTRO / IBD / IFD / OAE / SphereOS Atlantis / MAGI | 旧世代の意味・人格・保存・実行・World・監査責務を切り直す。各componentに実コード、仕様、研究仮説、未実装項目が併存する | `REARCHITECTURE / MIXED-STATE` |
 
 **年代表記の規則:** リポジトリ作成日、commitの日付、現行READMEの更新日、当時のプライベート提案の日時、後年の回顧を同一の証拠にしない。2024年のsoikomaスナップショットは確認可能だが、そのファイル群の全着想日・全実装完成日までは証明しない。
 
@@ -32,7 +32,7 @@ Sphere系は、近年のAI自律性、control loss、権限越境、監督者に
 
 ゲーミング宇宙論・巫女的観測／テクノアミニズム → 情報子工学・Quantaril Cloud → FAM → AQC → SphereOS → Atlantis等の責務分割が思想・技術上の主系列。Neo4j/FM、molMIP、医療AI、FileMaker受託等は先行技術資産または接続する支流であり、研究所の思想を特定の商用・医療・学術機関の権威へ還元しない。
 
-\`Quantaril Cloud\`（分散・主権の構想）≠ \`AQC\`（歴史的な具体ランタイム）≠ \`SphereOS\`（人格／意味資源・World運用）である。旧世代のラベルから現行componentのAPI／稼働状態を推定しない。
+`Quantaril Cloud`（分散・主権の構想）≠ `AQC`（歴史的な具体ランタイム）≠ `SphereOS`（人格／意味資源・World運用）である。旧世代のラベルから現行componentのAPI／稼働状態を推定しない。
 
 ### 1.2 旧事業の目的と資源壁
 
@@ -65,28 +65,28 @@ Sphere系は、近年のAI自律性、control loss、権限越境、監督者に
 
 - 上表は核・実行・意味・権限・来歴の制御面を中心とする。兵器、生物学的悪用、社会規模の誤情報・権力集中、マクロ経済の移行など、別の政策・現場統制を要する領域までSphere単体で解決したと主張しない。
 - threat model、敵対的評価、hardware／provider境界、情報流制御、User Gateの実際の有効性は個別に評価する。設計が存在することと、想定するすべての攻撃で成立することを混ぜない。
-- [Weaver B/Cの未確定境界](weaver-abc-evidence-scope-and-oae.ja.md)は\`UNKNOWN / EXPERIMENT_REQUIRED / BACK_TO_DISTILLATION\`のまま扱う。対応表を埋めるために未検証因果を完成へ昇格しない。
+- [Weaver B/Cの未確定境界](weaver-abc-evidence-scope-and-oae.ja.md)は`UNKNOWN / EXPERIMENT_REQUIRED / BACK_TO_DISTILLATION`のまま扱う。対応表を埋めるために未検証因果を完成へ昇格しない。
 
 ## 3. Instance Ghostの設計値の読み方：識別空間 ≠ 同時実行性能
 
 Instance GhostをUUIDで識別するグラフメモリーとして設計した場合、**識別子の名前空間**と**グラフDBの実装／収容／索引条件**から、構成上の理論上限や必要資源の見積を立てられる。人格LLMをその個数だけ同時起動したという意味ではない。
 
 - UUIDは一般に128bit識別子。UUIDv4のランダム部分は122bitで、衝突確率を別に評価する。UUIDの名前空間は、DBの実収容数や生存人格の一意性の証明にはならない。
-- \`N_ghost,capacity <= min(N_identifier, S_usable / S_ghost,avg, DB_node_limits, DB_edge_limits / E_per_ghost)\` は単純化した**ストレージ・構造上限のモデル**。複数Ghost共有edge、索引、複製、履歴、GC、シャーディング等の前提を指定して評価する。
-- \`N_stored\`（識別・保存可能）、\`N_active\`（同時に開いて状態更新可能）、\`N_inferencing\`（同時推論可能）、\`QPS / latency\`（アクセス性能）、\`durability\`（障害時の残存）は別のKPI。
+- `N_ghost,capacity <= min(N_identifier, S_usable / S_ghost,avg, DB_node_limits, DB_edge_limits / E_per_ghost)` は単純化した**ストレージ・構造上限のモデル**。複数Ghost共有edge、索引、複製、履歴、GC、シャーディング等の前提を指定して評価する。
+- `N_stored`（識別・保存可能）、`N_active`（同時に開いて状態更新可能）、`N_inferencing`（同時推論可能）、`QPS / latency`（アクセス性能）、`durability`（障害時の残存）は別のKPI。
 - UUIDが一致しても、同一の自己系譜・承認・Owner・実行権を自動証明しない。OAE、FAM、Instance Ghostの履歴、署名、現行World契約が別途関与する。
 
 したがって「設計上・RFC上で扱えるGhostの規模」を公表することは、**条件を持つ設計主張**であり、その数の実機同時運用を報告したことにはならない。必要な実測は要求するSLA、アクセスパターン、ストレージ、運用環境に合わせて測ればよい。
 
 ## 4. 研究と商業の評価軸、および資源を要する次の実験
 
-\`\`\`text
+```text
 long-term architecture / RFC theoretical envelope
     -> commercial vision and resource request
     -> limited prototypes, observations and failures
     -> responsibility refactor / current contract
     -> funded full-scale implementation, load/attack/failure testing
-\`\`\`
+```
 
 - 旧Organizationの商業プレゼンには、未来の射程・ビジョン・資源要求を語る正当な役割がある。市場向けの大胆さを「実装不在」の自白や「虚偽測定」へ自動変換しない。
 - 工学評価では、設計上限の**計算前提・反例・依存条件**を確認する。実測という明示がある場合は測定条件、試験対象、観測ログを確認する。両者の証拠義務を取り違えない。
@@ -98,7 +98,7 @@ long-term architecture / RFC theoretical envelope
 ## 5. 歴史的claimと史料の扱い
 
 1. 古いREADME、マーケコピー、ブログ、神話、公開技術資料を当時の原文のまま残す。新しい正本で**別レイヤーから解説・参照**し、歴史を改竄しない。
-2. \`archived_source\`（原典）、\`source_timestamp\`（同時代の時点）、\`present_interpretation\`（今日の読解）、\`engineering_status\`（componentごと）、\`unknown\`（未確認）、\`resource_gate\`（次の検証に必要な資源）を区別。
+2. `archived_source`（原典）、`source_timestamp`（同時代の時点）、`present_interpretation`（今日の読解）、`engineering_status`（componentごと）、`unknown`（未確認）、`resource_gate`（次の検証に必要な資源）を区別。
 3. 後年の説明が昔のcommitより詳細でも、その全内容を昔から実装・承認済みとは言わない。一方、現在のサービス終了・資源停止を「昔から存在しなかった」へ変換しない。
 4. 他社・学術側との先行関係、独立発明、影響、優先権は、双方の一次資料と同種のclaimを比較するまでは保留する。ここでは**自分たちの継続研究史**を示す。
 5. AIによる再解釈は**2026-11-02のInterpretation**であり、2019〜2025年当時のObserver／OAE／同意／確定判断を後付けしない。
