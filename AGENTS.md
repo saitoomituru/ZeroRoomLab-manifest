@@ -207,6 +207,19 @@ If any check fires, the agent must correct course **before** outputting.
 
 ---
 
+## 旧OrganizationのArchitecture / RFC設計値と実測の読解（mandatory）
+
+旧HIPSTAR-IScompany、ISHIPSTAR、soikoma、SphereOS3/4、AQC等のOrganization商業資料を読む際、研究論文・実機ベンチマークのレジスターを勝手に要求しない。商業ディストリビューションには、アーキテクチャの理論到達可能性・独自RFCの設計上限を提示し、将来の実装・スケール検証の資源を求めるベンチャー向けのビジョン／ビッグマウスが含まれる。
+
+- 「達成」は必ず対象を同定する。設計値、規格／RFC上限、シミュレーション、実測、契約上の保証を混同しない。
+- UUID／グラフDBでのInstance Ghost識別・収容上限、IPv6のアドレス空間、OSのアドレス上限、Wi-Fiの規格速度は、実機同時稼働数・実効速度とは異なる。
+- 明示的な実測・稼働実績のclaimがあれば対象構成と測定証拠を評価する。明示のない実測を勝手に追加しない。未実測を設計不存在・虚偽へ自動変換しない。
+- 旧Git原典と後年の再鍛造README、2026年の当事者による歴史的解釈を分離する。過去のObserver／Intent／OAEはbackfillしない。
+- AI安全問題との長期的な設計上の重なりは記述してよい。全対策実装済み・完全安全保証・国際的な先行権の証明へは昇格しない。
+- 商業規模の実験を追加要求する場合はHPC・電力・チーム・DB・QA・運営・法務資源とリスク負担主体を明示し、自己資金を暗黙の前提にしない。
+
+[旧Organization資料の設計値読解とSphere系AI安全研究史](docs/operations/historical-organization-architecture-claims-and-ai-safety-lineage.ja.md)を正本として参照。媒体別強度は[技術コミュニケーション規約](docs/operations/technical-communication-register.ja.md)に従う。
+
 ## 0.4 MAGIポジショントーク監査（計画・状態評価・横断変更の前に必須）
 
 計画提案、現状評価、READMEや技術文書の主張変更、複数repositoryへ波及する変更、
