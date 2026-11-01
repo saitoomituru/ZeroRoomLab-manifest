@@ -22,6 +22,10 @@ ZeroRoomLabとは何か、何を作っているか、思想的背景。
 >
 > README本文の長文テーブル・AIコンテキスト節は commit `0d2fd95` を引き直し復旧正本とする。本コミットはドメイン死を live link にしないための表紙更新。
 
+## Sphere系列の研究史・旧Organization商業資料の読み方（2026-11-02）
+
+[Sphere系列の研究・商業化系譜とAI安全アーキテクチャの先行検討](docs/theory/sphere-ai-safety-architecture-lineage.ja.md)を追加。soikoma（2024年公開コミット）、SphereOS 3/4、AQC（2025年）、Atlantisへ続く設計問題と、近年注目されるAI安全課題の対応を整理します。旧HIPSTAR等の商業ディストリビューションは、[Organization資料の読解規約](docs/operations/legacy-organization-architecture-and-commercial-claims.ja.md)に従い、RFC・アーキテクチャの理論的設計上限と、実機実測・商用稼働・保証を分離して読んでください。資源を求めるビジョンを実測主張に読み替えません。
+
 ## 意味Topology / SphereOS の設計入口
 
 - [意味TopologyからSphereOS・Fold-NICまで（日本語正本）](docs/theory/semantic-fold-os-architecture.ja.md)：∇Φの基材中立性、M元Dynamic Graph、OAE、意味資源OS、Sphere自身のFold化、Client Rich、物理ベンダー中立性、非営利Commonsを要求順に整理。
