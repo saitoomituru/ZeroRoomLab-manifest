@@ -4,6 +4,8 @@
 
 ## 主要文書
 
+- [旧Organization資料の設計値読解とSphere系AI安全研究史](historical-organization-architecture-claims-and-ai-safety-lineage.ja.md) — HIPSTAR商業配布・RFC理論値・実機実測のレジスター分離、2022〜2026年の設計史、現在のAI安全課題との対応、資源制約の読解規約。
+
 - [文書site日英展開（2026-10-19）](documentation-sites-publication-2026-10-19.ja.md) / [en-US](documentation-sites-publication-2026-10-19.en-US.md) — 4siteの編集解説、出典台帳、buildとdeployの別状態、既存Issueの残作業。
 
 - [README.md](README.md) — en-US外部GUI索引。翻訳済み入口と未翻訳境界を隠さず案内する。
