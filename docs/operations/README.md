@@ -15,6 +15,7 @@ Japanese operation document already has a complete translation.
   and mutation-free choices before implementation.
 - [Note-to-target delivery contract](../../note/transfer_plan/note-delivery-contract.ja.md) — move selected material
   from raw Notes into target-native docs, code, assets, Issues, or PRs without silently promoting drafts.
+- [Legacy Organization design-limit vs measured-claim reading guide (Japanese canonical)](legacy-organization-architecture-and-commercial-claims.ja.md) and [Sphere AI-safety architecture lineage (Japanese)](../theory/sphere-ai-safety-architecture-lineage.ja.md) — historic venture pitches and RFC capacity claims are not automatically field measurements; retrospective lineage is not implementation proof.
 - [Technical communication register](technical-communication-register.md) /
   [日本語](technical-communication-register.ja.md) — keep public cover, engineering proof,
   raw Notes, and social posts in the right register.
