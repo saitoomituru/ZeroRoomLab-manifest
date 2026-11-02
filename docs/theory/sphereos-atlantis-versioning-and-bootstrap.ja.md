@@ -357,3 +357,15 @@ documentation、prototype、distribution、resource waitを別々に記録する
 計画棚、branch選択方式、資源条件、旧サービスとの関係を定義する。
 
 性能、完成時期、将来の互換性、特定SDKの採用、HPC調達時期を保証するものではない。これらは資源と事前調査の結果に応じて更新される。
+
+## Appendix: inferno創業者SPOFと歴史的2.xxx.nの経営マイルストーン（2026-11-02）
+
+inferno合同会社の自律分散した実務（GitLab Issue、サーバーへの成果物引継ぎ、非同期レビュー・校正）と、創業者がAI案件の深い実装と経営・資金・法務の制御を同時に抱えた経験を、**実行系は分散してもcontrol planeに創業者単一点障害が残り得る**という工学仮説として保存する。生産性を努力・残業・Issue close数で代用せず、成果品質、引継ぎ可能性、例外復帰、創業者介在時間、権限とprovenanceの監査可能性で検証する。
+
+歴史的な「SphereOS Atlantis 2.xxx.nを先行デプロイすれば、シンギュラリティの先の研究ビジョンで資金調達できる」という構想は、**本人の当時の資金調達仮説**であり、実装完了・出資確約・現在のrelease座標を意味しない。特にこの「2.xxx.n」は本書の`/2` Context OS契約や`user_context_solution_class: 2`と同義ではない。現行の座標・release・実装状態には上記正本を優先し、履歴を遡及変換しない。
+
+法務ペインは当事者の経験として記録し、特定第三者の不法行為、知財権原や司法判断を未検証のまま断定しない。契約・秘密・ライセンス・source provenance・人間判断待ちをmachine-readableな権限境界と監査receiptへ落とし込む。未完成段階の研究資金、設備、人員、法務支援も独立した資源要求として扱う。
+
+- [創業者事例・検証ゲート（Atlantis研究ノート）](https://github.com/saitoomituru/SphereOS-Atlantis/blob/main/docs/research/2026-11-02-inferno-founder-bottleneck-and-atlantis-2xxx-milestone.ja.md)
+- [Atlantis実装側Issue #36](https://github.com/saitoomituru/SphereOS-Atlantis/issues/36)
+- [横断的R&D資金調達Issue #66](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/66)
