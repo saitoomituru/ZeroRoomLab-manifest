@@ -106,6 +106,38 @@ gravity  wind   electric/spring
 
 Node全体の移動を生むmacro forceと、表面の毛を曲げるlocal forceを別チャンネルにできる。この分離により、通常のforce-directed graphではNode位置へ畳み込まれて消えやすい局所場を保持する。
 
+### 4.1 設計史：2008〜2010年頃のBlender物理演算フォークと架空世界法則のレンダリング実験
+
+CATSのField Adapter / Force Descriptor / Renderer分離は、設計者が十代の頃に行ったBlenderの物理演算系フォーク／レンダリング実験から着想を得たものである。**CATS自体が2008年に実装されていたという主張ではない。** ここでは当時の作品と2026年の回顧記録を、設計思想の来歴を追跡できる歴史的資料として残す。
+
+- **2010年8月25日公開のPixiv作品：** [artworks/12790774](https://www.pixiv.net/artworks/12790774)。作者が「リリカルなのは」の架空世界法則を題材とした、物理演算・クロスシミュレーション・レンダリング実験の資料として提示した公開作品。作品の存在・公開時期の手がかりであり、内部ソースコードの独立検証資料とは区別する。
+- **2026年の回顧X投稿：** [@k_chachamaru/status/2117079642511487341](https://x.com/k_chachamaru/status/2117079642511487341)。当時の制作・実装の来歴を振り返る本人の証言・参照入口。投稿日時や本文詳細の独立再確認は本記録では行っていない。
+
+#### 当時の実装の説明（作者回顧に基づく）
+
+既製のBlenderの「重力」「風」エフェクトを設定するだけではなく、その背後にあるRAWなForce処理経路を取り出して抽象化し、クロスシミュレーションの不安定さに対処するためにフォーク・調整を行った。任意の力生成則を差し込む発想で、重力・風のみならず、**クーロン力、ローレンツ力、さらに「魔力」のような架空世界固有の力学法則**も候補に置く。衣服・スカート等の布の挙動を、単なる手付けアニメーションではなくシミュレーション側からレンダリングするための実験だった。
+
+```text
+[historical conceptual reconstruction, not recovered source code]
+arbitrary force law (gravity / wind / Coulomb / Lorentz / fictional magic)
+                     |
+          abstract RAW force pipeline
+                     |
+       cloth / other physics simulation
+                     |
+                  renderer
+```
+
+「リリカルなのは」は**レンダリング実験の題材となったフィクションの世界法則**を示すものであり、作品の公式設定・権利者との関係・現実の未知物理の実在を主張するものではない。また、上記は作者による回顧から構成した概念図であり、当時のBlenderフォークの原本コード・変更差分・数値精度・安定性を検証したものではない。
+
+#### CATSへの継承点と非同一性
+
+- **継承した発想：** 固定の「重力」「風」UIを上限とせず、法則を差し替えられる共通Force経路を用意する。CATSではdomain mapperが意味関係をPresentation Force Descriptorへ投影し、rendererを交換できる。
+- **CATSで新たに必要な境界：** 物理ソルバが扱う力と、関係グラフが生む意味上のForce／potentialは同一ではない。observed / inferred / simulated / unknown、trace、provenance、canonical graphへのReality Commit境界を別途保持する。
+- **実装成熟度：** 当時の映像作品は過去のレンダリング実験の証跡、2026年のCATSは現状Proposal / design note。過去の物理エンジン実装が現在のCATSの完成や意味モデルの妥当性を証明するわけではない。
+
+この設計史は特定作品の設定をCATS Coreへ取り込むためではなく、**物理法則の差し替え可能性を実装して試した経験から、異なるdomainの表現法則を抽象化する着想へ至った経路**を記録するものである。
+
 ## 5. Dynamic Graphとしての意味
 
 CATS毛玉グラフの狙いは、単にNodeを毛玉型アイコンへ置換することではない。
