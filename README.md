@@ -24,6 +24,8 @@ and shared registers that help humans and different AI agents work
 without flattening engineering, culture, philosophy, and unfinished ideas
 into one vendor's default worldview.
 
+**ASTRO命名・創作動機・将来Hostの射程:** [鉄腕アトム／天馬博士、親子・親離れ、アップローダーとRayGAN-BMI](docs/theory/astro-naming-parenthood-and-uploader.ja.md)。命名の文化的由来と未選定ハードの研究候補を現行実装から分離して記録。
+
 **Research history / 歴史的系譜:** [Sphere系列のAI安全アーキテクチャと商業化・研究資源史（日本語）](docs/theory/sphere-ai-safety-architecture-lineage.ja.md) · [旧Organization商業資料のRFC設計値／実測値読解規約（日本語）](docs/operations/legacy-organization-architecture-and-commercial-claims.ja.md)。旧HIPSTARの商業ピッチは完成品ベンチマークではなく、設計上限と実装資源の提案を含みます。現行の実測・保証値とは別レジスターとして読んでください。
 
 **Organization / historical claims reading guide:** [旧HIPSTARの設計値・RFC上限・実測・AI安全研究史（日本語正本）](docs/operations/historical-organization-architecture-claims-and-ai-safety-lineage.ja.md). Old venture-facing architecture claims and fundraising visions must not be misread as measured production-scale performance, or dismissed because no production benchmark accompanies an architectural bound.
