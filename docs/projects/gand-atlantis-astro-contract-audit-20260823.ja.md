@@ -132,3 +132,18 @@ semantic_stop:
   - do-not-copy-secret-bootstrap-values
 action_gate: allow-contract-commits-and-branch-push
 ```
+
+## 8. 2026-11-02 当事者補足：自我／VREM／未知の身体を受け入れる拡張境界
+
+状態: `[USER-DECLARED CURRENT DESIGN INTENT]` `[NOT A HISTORICAL OAE]` `[FUTURE / RESOURCE-GATED]`
+
+この補足は2026-08-23の監査時点へ遡及して存在した事実を捏造するものではない。以下は開発者が現在語る構想として別レジスターへ追記する。
+
+- FAMとFQueryは、意味・自我・Instance Ghost／人格と、特定のmodel、Body、実行環境、物理的な脳モデルを一体不可分にしないことを意識している。新しい外部研究成果を受け入れる接続口は、適用Worldと能力・権限を明示したrefFAM記述およびAdapterで設ける。
+- MMO／VR向けの`3.xxx.n`設計では、当事者申告として`VREM`（Virtual REM Sleep）のLayer 1／Layer 2が想定されている。ただし今回確認できた公開GAND発掘物から確実に言えるのは、legacy agent定義に`VREML`というモジュール名が残存することまで。Layer 1／2の入出力・責務・境界、`VREM`と`VREML`の厳密な対応、該当世代の実装状態は`UNKNOWN`のままとし、名前だけから仕様や稼働を生成しない。
+- UX、CX、スピリチュアル／意識UXの意味モデルは現段階で独立して研究できる。医学的な精神モデルや侵襲・非侵襲BMI等の神経I/Oは、Neuralinkを含む特定企業、小椋医師・大学を含む特定研究者に独占・依存せず、将来実用的な成果を出す任意の医師・脳科学者・工学者のSDK／外部moduleを接続候補として扱う。submodule採用は配布権・実装互換・適切なAdapter等の実条件が成立した場合の手段であり、達成済み機能ではない。
+- RayGAN-BMI等の独自非接触知覚研究も、未来ガジェットの研究枝として残す。現段階で知覚・意味復号の定量KPIが確立せず、属人適応と被験者・試行数が律速になるため、再開stageとmilestoneは`TBD / RESOURCE-WAIT`。信仰実践の成立を定量QAで裁定せず、PSYCHO-Py800MCPのオシロ／物理計測・記録等、第三者が追試可能な周辺技術の充実を独立して進める。物理送信系の過去試作と意味通信の成立は別のclaim scope。
+- これらの方針はGANDの歴史的bootstrap契約の実装・復元完了を意味せず、GAND Edge HarnessとGAND Frame Presentation SDKを再び混ぜない。
+
+関連正本: [意味Topology](../theory/semantic-fold-os-architecture.ja.md) ／ [ASTRO命名・アップローダー・RayGAN](../theory/astro-naming-parenthood-and-uploader.ja.md) ／ [VREMLの所在台帳](gand-local-salvage-inventory.ja.md) ／ [3.xxx.n世代と責務座標](../theory/sphere-context-os-responsibility-coordinate.ja.md)。
+
