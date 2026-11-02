@@ -1,5 +1,8 @@
 # IBD FAMネイティブResolverとバインダー中立性
 
+
+> **Instance記憶の射程：** モデルのパラメーター数Bは、記憶・行動ベクトルの固有の軌跡（「メモリーのビリオン」）と異なる。IBDは記録、時系列、provenance、関係と再解釈可能性を保持するDriverであり、レコード数やベクトル次元を人格同一性の証明にしない。[横断用語正本](model-parameters-vs-memory-vector-trajectories.ja.md)。
+
 状態: `[REVIEW]`  
 制定日: 2026-07-18  
 対象: IBD、FAM、Atlantis、ASTRO、Sphere-aae  
