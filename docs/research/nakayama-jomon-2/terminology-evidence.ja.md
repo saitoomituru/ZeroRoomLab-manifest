@@ -1,4 +1,4 @@
-# N01〜N03：用語・射程・引用対応表
+# 用語・射程・引用対応表：N01〜N03とFoldの参照系譜
 
 確認日：2026-11-02（日本時間）  
 状態：原文用法の確認／本稿用語への対応案。理論全体の比較監査完了ではない。  
@@ -51,3 +51,32 @@ N03の文化のOSという表現は仲山氏の発言であり、IISE独自の�
 - [FIX] 同義語の整理と射程差を分離し、仲山氏の議論を会社内・固定チームのみへ縮小しない。
 - [UNKNOWN] 全著作での用語統一、最古用例、モデル全体の操作契約と実証範囲。
 - Maxwell：当方の秩序／OSモデル化を保持する。Uriel：引用・話者・解釈を追跡する。Raphael：歴史的説明と現代モデルの棚を分け、原文を書き換えない。
+
+## Foldの参照系譜と今回の明確化
+
+参照revision：`53d20bddad5b3796a44c9c445fc4c9e31d007315`。以下は著者の設計文書であり、都市工学上の効果を実証する外部証拠ではない。
+
+| ID | 正本文書・関連仕様 | 今回参照する範囲 |
+| --- | --- | --- |
+| F01 | [semantic-fold-os-architecture.ja.md](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/53d20bddad5b3796a44c9c445fc4c9e31d007315/docs/theory/semantic-fold-os-architecture.ja.md) | §4：Foldの境界・参照・投影、独立性の保持 |
+| F02 | [fam-module-selector-and-fold-scope.ja.md](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/53d20bddad5b3796a44c9c445fc4c9e31d007315/docs/theory/fam-module-selector-and-fold-scope.ja.md) | §4–5：意味scope、明示的なFold横断参照、科学・信仰等の成立条件の分離 |
+| F03 | [fam-infoton-reference-boundary.ja.md](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/53d20bddad5b3796a44c9c445fc4c9e31d007315/docs/theory/fam-infoton-reference-boundary.ja.md) | §5：意味のまとまりを独立FAMへ切り出す境界 |
+| F04 | [fold-cluster.ja.md](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/53d20bddad5b3796a44c9c445fc4c9e31d007315/docs/theory/fold-cluster.ja.md) | 局所的に接続された候補・観測・文脈の集合。単一因果への強制収束をしない |
+| F05 | [infoton-science-engineering-fit-distillation.ja.md](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/53d20bddad5b3796a44c9c445fc4c9e31d007315/docs/theory/infoton-science-engineering-fit-distillation.ja.md) | 目的制約に沿う説明構造の蒸留と、実現条件を追加する工学の区別 |
+| F06 | [fold-hypertext-spec.md](https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/53d20bddad5b3796a44c9c445fc4c9e31d007315/docs/theory/fold-hypertext-spec.md) | §1・10：文章・推論への適用例。文章の問いと答えという単位を都市全体へ直輸入しない |
+
+著者は2026-11-02にFoldを「その目的コンテキスト、ゲシュタルトを構成する最小単位」と明確化した。本稿ではこの説明を採用し、既存文書が示す意味・参照の境界と接続する。この文言をF01〜F06にそのまま存在する逐語引用としては扱わない。特定の目的・コンテキストを構成する単位であり、すべての実装で同じ内容・人数・規模になるという定義ではない。
+
+| 用語・例 | 扱う層と用法 |
+| --- | --- |
+| Fold | 目的・コンテキスト・ゲシュタルトを構成するメタ単位。内容は実装に依存 |
+| チャンネル | MMOを使ったFoldの説明・対応例。一般定義をチャンネルへ限定しない |
+| ファンデーション | 組織・運営としての適用例。Fold全般を非営利法人と同一視しない |
+| 情報／物理クエスト／資源Fold | 何を構成・管理するかを示す今回の設計例。固定された網羅分類ではない |
+| Infoton／FAM | 再参照する意味単位とその記述・観測構造。Foldとの関係はF01〜F03を参照し、一律の同義語へ潰さない |
+
+## 協働概念の帰属と本研究の貢献候補
+
+N01の組織を越えた接続、N02の地域・祭り・課題ごとの集合と解散、N03の共創と関係形成を、仲山氏から参照する協働概念として扱う。人とチームのN対N接続や「野良狩り」はこの範囲を本稿で説明する表記・比喩であり、確認した記事にその字面があるという引用ではない。N02の三者のネットワークについての発言は矢野氏へ帰属させる。
+
+縄文2.1の貢献候補は、協働概念やFoldを新たに発明することではなく、それらを属地資源・供給継続・コモンズ・文化継承／再生産の設計へ接続し、独立forkを含む成立条件を検証可能にすること。固定チーム条件は実験上の比較条件であり、仲山モデル全体の代名詞にしない。
