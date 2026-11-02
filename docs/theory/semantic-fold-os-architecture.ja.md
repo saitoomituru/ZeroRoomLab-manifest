@@ -8,6 +8,9 @@ translation: "semantic-fold-os-architecture.en-US.md"
 license: "CC BY 4.0 (documentation)"
 ---
 
+
+> **用語補足（Instanceの記憶軌跡）：** モデルのパラメーター数Bと、メモリー／行動ベクトルが形成する固有の軌跡（「メモリーのビリオン」）は別概念。保存数やembedding次元数ではなく経験の順序・関係・再解釈を含む。詳細：[Parameter BillionとMemory Trajectory Billionの区別](model-parameters-vs-memory-vector-trajectories.ja.md)。
+
 # 意味TopologyからSphereOS・Fold-NICまで
 
 > **正本言語：日本語。** この文書は横断的な設計意図と要求の接続を説明する。FQuery、IBD、SphereOS、Fold-NIC の実装済み機能を一括して保証する仕様ではない。
