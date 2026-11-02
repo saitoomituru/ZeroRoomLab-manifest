@@ -13,6 +13,12 @@ license: "CC BY 4.0"
 
 [研究入口](README.md) / [読書記録](01.5-reading/README.md) / [既存レビュー草稿](../../reviews/nakayama-jomon-2-review.ja.md)
 
+## 2026-11-02 初稿作成への移行
+
+著者から初稿・表記修正・Issue整理を続行し、人間ゲートで停止する指示を受領。[論文初稿](../dynamic-city-topology.ja.md)と[Pre-Review](../urban-engineering-pre-review.ja.md)を作成した。以下は議論の詳細・履歴として保持し、現在の編集工程と確認事項はPre-Reviewを参照する。
+
+文化継承は既存の記憶・技能・実践を伝える過程、文化再生産は新しい担い手・関係・場・実践と維持基盤が継続的に成立する過程として区別する。両者を出生数や生物学的な人種の再生産へ還元しない。著者の「人文科学的文化人種」は固有の定義として保持し、一般学術用語との同一性を主張しない。
+
 ## 0. 今回の到達点と工程
 
 都市工学への仮説提示と研究プロトコルを作れる段階にある。実証済みの優越性や都市全体の完成モデルを報告する段階ではない。
@@ -242,7 +248,7 @@ PI/SIを設計上差別しないことから、法的人格・契約資格・操
 
 ## 5. 外部エビデンス収集計画
 
-2026-11-02に以下の一次発信元・論文の書誌／要旨／該当公開説明を初期確認した。全文精読・品質評価・主張への採用は未完。ここにあることだけでH1〜H8の実証とはしない。
+2026-11-02に以下の一次発信元・論文の書誌／要旨／該当公開説明を初期確認した。全文精読・品質評価・主張への採用は未完。ここにあることだけでH1〜H11の実証とはしない。
 
 | 資料 | 初期確認できる射程 | 次に読む箇所・限界 |
 | --- | --- | --- |
@@ -309,8 +315,8 @@ H6の法的効果は机上simulationで証明できない。OSS/OSH化・非営�
 | --- | --- |
 | 既存 docs/reviews/nakayama-jomon-2-review.ja.md | 公開原文のレビュー。方法、出典別claim table、責務比較、反例、限界、再評価判定 |
 | 本研究フォルダー | 読書・台帳・当方解釈・研究計画の正本 |
-| 今後の docs/research/urban-engineering-pre-review.ja.md | 問題設定、先行研究、H1〜H8、モデル、比較条件、測定、反証、資源計画 |
-| 今後の docs/research/dynamic-city-topology.ja.md | 理論・設計研究論文。実験済みの範囲だけ結果として追加 |
+| docs/research/urban-engineering-pre-review.ja.md（草稿作成済み） | 問題設定、先行研究、H1〜H11、モデル、比較条件、測定、反証、資源計画 |
+| docs/research/dynamic-city-topology.ja.md（初稿作成済み） | 理論・設計研究論文。実験済みの範囲だけ結果として追加 |
 | 今後の実験protocol・receipt群 | 実験前revision、条件、予算、手順、観測、負例、逸脱、分析。データ公開範囲を別管理 |
 
 論文の章案：
@@ -321,7 +327,7 @@ H6の法的効果は机上simulationで証明できない。OSS/OSH化・非営�
 4. Methods：資料選定・claim coding・比較基準・著者の立場と利害
 5. Public-source Findings：原文に確認できた範囲と未確認
 6. Proposed Architecture：2.1、Fold間契約、商業・非営利・地域資源の関係
-7. Hypotheses and Evaluation Protocol：H1〜H8、比較条件、測定・反証
+7. Hypotheses and Evaluation Protocol：H1〜H11、比較条件、測定・反証
 8. Evidence / Pilot Results：実施後にのみ追加。未実施は計画として表示
 9. Discussion：都市・農村への射程、調整費用、再集中、知識の収奪と還流
 10. Limitations / Resource Requirements / Future Work：2.5はここへ
