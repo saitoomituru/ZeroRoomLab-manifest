@@ -1,7 +1,7 @@
 ---
 title: "ZeroRoomLab 縄文2.1：都市工学の比較研究・エビデンス収集・実験計画"
 language: ja-JP
-status: "RESEARCH PLAN / AUTHOR CONFIRMATION PENDING / NO EXPERIMENTAL RESULTS"
+status: "RESEARCH PLAN / PR67 G1 PASSED / 2026-11-03 ADDENDUM REVIEW / NO EXPERIMENTAL RESULTS"
 author: "齋藤みつる / ZeroRoomLab"
 prepared_with: "AI assistance; author interpretation requires confirmation"
 date: "2026-11-02"
@@ -12,6 +12,18 @@ license: "CC BY 4.0"
 # ZeroRoomLab 縄文2.1：比較研究から都市工学実験へ
 
 [研究入口](README.md) / [読書記録](01.5-reading/README.md) / [既存レビュー草稿](../../reviews/nakayama-jomon-2-review.ja.md)
+
+## 2026-11-03 探索・維持基盤・自動化の追加
+
+初稿G1はPR #67で通過済み。今回の依頼により、[論文§3.1・4.1〜4.2・5.1・6.1](../dynamic-city-topology.ja.md)を拡張し、[追加読書・引用対応表](exploration-commons-reading.ja.md)を作成した。以下の過去の著者確認待ち表示は当時の状態として読み、今回の追加差分の採用とG2の実験固定を分ける。
+
+- 企業／顧客は一形態。α探索・安定提供・LTS維持の重なりを、便益回収・危害伝播・必要資源で比較する。
+- 「責任遮蔽、責務で接続、インフラへのコミットを記名」を設計原則として明記。金銭補償を不可逆被害への物理制御の代理にしない。
+- 再現可能な実行の自動化と探索の相対価値、知識獲得と用途発見の時間差を検証候補とする。
+- 空手家の10年／20年／25年は仮想ケース。情報子科学の既存の蒸留・学術還元を適用し、Newton力学・既存solverへ還元できたら成功として記録する。
+- 仮説の一般化は実際のデプロイと条件の異なるモデルケースの蓄積から進める。基盤・技能者・計算・記録・保守・生活を含む研究資源を調達し、著者の自弁を前提にしない。
+
+既存H1〜H11へ接続：探索と失敗知見＝H5、責務・制御＝H6/H7、自主性と継続資源＝H8、物理破局・自動化＝H10、世代間の供給・文化＝H11。独立した新理論や実証済み成果へ昇格せず、測定項目を初稿§6.1に追加した。
 
 ## 2026-11-02 初稿作成への移行
 
