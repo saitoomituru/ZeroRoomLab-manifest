@@ -1,7 +1,7 @@
 # 縄文2.1：都市工学Pre-Reviewと実行計画
 
 状態：DRAFT / G1著者レビュー通過・main反映済み / 実証未実施  
-更新：2026-11-02  
+更新：2026-11-03  
 関連：[Issue #57](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/57) / [論文初稿](dynamic-city-topology.ja.md) / [詳細研究計画](nakayama-jomon-2/jomon-21-research-plan.ja.md)
 
 ## G1通過の記録
@@ -9,6 +9,14 @@
 2026-11-02、著者からPRを読んでマージした旨の申告を受領。[PR #67](https://github.com/saitoomituru/ZeroRoomLab-manifest/pull/67)のmerged状態と、merge commit `3476541c64f6ef1f27a45c5ca617f55d9edf217b`のmain反映を確認した。今回の初稿・用語対応・版移行差分についてG1を通過した。次の判断対象はG2のpilot対象・主要評価・必要資源である。
 
 状態更新のMAGI監査：Maxwell＝著者が採用した目的・意味を保持。Uriel＝本人申告とGitHubのmerge記録を照合し、実証・投稿の承認へ拡張しない。Raphael＝過去の監査記録を保持し、今回のG1通過を現在の追記として記録する。
+
+## 2026-11-03 追加差分と次の確認
+
+[追加読書・引用対応表](nakayama-jomon-2/exploration-commons-reading.ja.md)を作成。日本語全文公開の訳書、日本語原著、英語原文、邦訳書案内を区別した。本人既読チェックは追加しない。初稿には探索／安定提供／LTS、記名された責務と制御インフラ、自動化と時間差、身体技能のpilot候補を追記した。今回の追加差分の著者レビューは未了であり、PR #67のG1通過を取り消さない。
+
+G2に向けて選ぶのは、独立情報fork／基盤アクセス比較／身体技能simulationのどれを先に実施するか、その主要評価・条件・資源。読む順は追加読書表を参照し、全件読破・資源自弁を条件にしない。
+
+MAGI追加監査：Maxwell＝文化・探索・修行と未来用途を現在売上へ縮小しない。Uriel＝一次資料の支持範囲、訳文への到達、仮想ケース、既存実験、資源を区別。Raphael＝引用台帳／科学の蒸留／工学の実装／都市工学のpilotを接続し、元の哲学と理論正本を上書きしない。resolverは既読のMAGI 0.200.1配布sourceに対し三Positionともexit=0、11/11、欠損0。これはsource解決の確認で、研究仮説の実証ではない。
 
 ## 作成可能性と投稿形式
 
