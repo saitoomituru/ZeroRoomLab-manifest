@@ -73,3 +73,17 @@ Ostromの別著 *Governing the Commons*（1990）には日本語訳『コモン�
 論文は個別商業取引だけで完結しない探索・文化・供給の維持を社会構造として設計する。既存研究は上記四論点と制御設計へ接続する。金融・制度工学が完成するまで都市工学の仮説提示・pilotを保留しない。OpenFAPTAは代替可能な隣接研究の一つで、その有効性を主論の必要条件に置かない。
 
 これ以前のFiat／内在的価値／与信ゲートの詳細は隣接課題を掘るための読書メモとして保持し、初稿本文では付記へ圧縮した。金融工学の精読と金融方式の比較は、都市工学側の初回読書・G2通過の必須条件ではない。
+
+## 文化の尺度とFoldを整理する補助資料
+
+以下は、主体・文化的な側面・共同体・場という尺度を区別するための補助参照。E01/E04/E05/E06を核とする文化継承・再生産の主論を、アイデンティティ論へ置換しない。著者から無料で読める範囲を読了したとの申告を受領したが、資料・節ごとの既読範囲は未特定のため、個別の読了印や全件読破は代理記入しない。今回追加した場の資料を含め、全件を再読・読破することはG2の条件ではない。
+
+| ID | 資料・無料で読める入口 | 読む箇所・本稿での用途 |
+| --- | --- | --- |
+| K01 | Sen, A. “Global Justice: Beyond International Equity.” [本人論文・英語全文](https://them.polylog.org/3/fsa-en.htm)。別の本人講演 [“Other People”](https://www.thebritishacademy.ac.uk/documents/2096/111p319.pdf), 2000年講演／2001年刊、pp.319–335 | 前者のplural affiliation、後者§2〜3。複数帰属と相反する要求の調整。関連邦訳書[『アイデンティティと暴力』](https://ndlsearch.ndl.go.jp/books/R100000002-I000011227138)は紙の書籍で、無料全文ではなく、これら二論文そのものの翻訳でもない |
+| K02 | Korsgaard, C. M. *The Sources of Normativity*, Cambridge UP, 1996。[大学教員サイトの原著PDF](https://notebook.colinmclear.net/ox-hugo/korsgaard1996_the_sources_of_normativity.pdf)／[出版社](https://www.cambridge.org/core/books/the-sources-of-normativity/5A85034A6566FDFDE374073A015CBD2A) | 第3講§3.3.1、原著p.101のpractical identity、続く複数性・衝突。関連邦訳[『義務とアイデンティティの倫理学』](https://ndlsearch.ndl.go.jp/books/R100000002-I000007694599)あり、無料全文は今回未確認。自己理解と価値の尺度を参照し、全義務論を採用しない |
+| K03 | 平野啓一郎（2021-08-22）[「多様性を実現するための『愛』と『関係性』」本人公式サイト・日本語全文](https://k-hirano.com/articles/relationships) | 「個人」に対して「分人」を説明する段落と、関係・環境による変化。文学・思想上の本人提案として分類し、査読実証論文とはしない |
+| K04 | Werner, K.（2020、オンライン2019）“The Little Word ‘as.’ On Making Contexts and Aspects Explicit.” *Axiomathes* 30:69–90。[英語OA全文](https://link.springer.com/article/10.1007/s10516-019-09434-1) | §3.1のqua-object、baseとgloss、側面に限定した属性帰属。Fineの原典への紹介とWerner自身の解釈を区別。日本語全訳は今回未確認 |
+| K05 | Oldenburg, R. “Our Vanishing ‘Third Places’.” *Planning Commissioners Journal* 25, Winter 1996–97。[著者記事入口](https://plannersweb.com/1997/01/our-vanishing-third-places/)／[英語全文PDF](https://plannersweb.com/wp-content/uploads/1997/01/184.pdf) | 居住・仕事・日常の社交の場、アクセスと地域生活の関係。場の尺度の原文入口。複数Fold・組織形態・再保険の対応は本研究側の構成仮説であり、原著の主張にしない。日本語全訳は今回未確認 |
+
+individualsの人を指す訳語は[Cambridge英日辞典](https://dictionary.cambridge.org/ja/dictionary/english-japanese/individual)で「個人」を確認する。辞書的訳語と著者語の文化的な射程を別に記述する。2026-11-03にK01〜K04の公開本文・指定箇所、K05の記事・PDFを照合した探索的な用語調査であり、各理論の全面採用や網羅的レビューではない。Foldそのものの定義は外部哲学から逆算せず、[用語表のF01〜F03](terminology-evidence.ja.md)と情報子工学の正本へ戻す。
