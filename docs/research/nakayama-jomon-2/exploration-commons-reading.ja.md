@@ -19,6 +19,7 @@
 | 8 | E08 | DeepMimic：動作例、外乱対応、形態差、ablationと限界 | [著者ページ](https://www.cs.ubc.ca/~van/papers/2018-TOG-deepMimic/index.html)／[英語全文PDF](https://xbpeng.github.io/projects/DeepMimic/DeepMimic_2018.pdf)。日本語全訳は今回未確認 |
 | 補助 | E09 | 生産者・利用者・公開協働の成立範囲を比較する経済モデル | [2011年論文の著者稿入口](https://dspace.mit.edu/entities/publication/18ca09f2-670d-4dd7-afb9-05b9a09085af)／[2009年WP全文](https://www.mit.edu/people/evhippel/papers/Carliss%20Eric%20Paradigm%20shift%20model%20WP%20Nov%2021%2009.pdf)。版を区別。日本語全訳は今回未確認 |
 | 補助 | E10 | 記名・評判・利用価値とOSSの商業サービス | [2002年掲載論文DOI](https://doi.org/10.1111/1467-6451.00174)／[2000年WP全文](https://www.hbs.edu/ris/Publication%20Files/00-059_ca1a0d0d-1a19-45f3-b75d-257b7ff30cb6.pdf)。日本語全訳は今回未確認 |
+| 補助 | E11 | 研究開発の無形性・外部資金調達の制約。§2のR&D投資の特徴と資金調達の議論 | [Hall・Lernerの原文入口](https://www.nber.org/papers/w15325)／[刊行章DOI](https://doi.org/10.1016/S0169-7218(10)01014-2)。日本語全訳は今回未確認 |
 
 ### 日本語資料の利用状態
 
@@ -40,6 +41,7 @@ Ostromの別著 *Governing the Commons*（1990）には日本語訳『コモン�
 | E08 | Peng, X. B., Abbeel, P., Levine, S., & van de Panne, M.（2018）“DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills.” *ACM TOG* 37(4),143. DOI:10.1145/3197517.3201311。シミュレーション実験 | §1・3、Resultsの外乱・形態変更・ablation、Limitations。動作学習の入口。修行10年／20年、実機建築ロボの故障低減を実証した資料ではない |
 | E09 | Baldwin, C., & von Hippel, E.（2011）“Modeling a Paradigm Shift: From Producer Innovation to User and Open Collaborative Innovation.” *Organization Science* 22(6):1399–1417. DOI:10.1287/orsc.1100.0618。経済モデル | 三方式の費用・構造・共存条件。参照WPでは§4.1の相互作用。企業／顧客を唯一の基本形にしない比較軸 |
 | E10 | Lerner, J., & Tirole, J.（2002）“Some Simple Economics of Open Source.” *Journal of Industrial Economics* 50(2):197–234. DOI:10.1111/1467-6451.00174。初期事例・経済分析 | 参照WP§4の動機・記名・評判、§5の商業活動。記名の価値を所有権・無限責任と同一視しない |
+| E11 | Hall, B. H., & Lerner, J.（2009 WP／2010刊行章）“The Financing of R&D and Innovation.” *Handbook of the Economics of Innovation* 1:609–639. WP DOI:10.3386/w15325。研究の統合 | §2のR&Dの無形性、外部資金と資金制約、VCの射程。資金調達の困難を価値不存在としない。Fiat全般が未来を評価不能という証明にはしない。NBER抄録・刊行章の公開本文抜粋を確認、全文精読は未了 |
 
 確認状態：2026-11-03に一次資料の公開本文・指定節または著者／発行元の書誌・抄録を照合した初期台帳。E01日本語本文とE07本文の精読、他資料の全主張にわたる監査は未完。本人読破、独立再現、systematic review完了を意味しない。原文の全文転載・自動全訳は行わない。
 
@@ -55,3 +57,9 @@ Ostromの別著 *Governing the Commons*（1990）には日本語訳『コモン�
 2. 再現可能な仕事が自動化された後、探索・破局条件発見の相対的重要性が増すという将来仮説。職業全体の置換率や実証済み人口効果を置かない。
 3. 空手家→動作モデル→別用途の制御というケースは、情報子科学の蒸留・既存学問への還元を試す候補。Newton力学・既存solverで条件を満たせたら還元成功として、原技能・科学・solverの系譜を記名する。
 4. 非市場の探索と長期維持の資源を誰が供給するかを、実験資源として見積もる。探索者・保守者の自弁を既定にしない。
+
+## Fiatによる価格化とOpenFAPTAの参照境界
+
+[初稿§5.2](../dynamic-city-topology.ja.md)では、物理量・実支出・価格・担保評価・未価格化・潜在価値を区別する。通貨単位と、その単位で表示される評価モデルは同じではない。既存金融が将来の不確実なcash flowを扱うことは[ECBの解説講演](https://www.ecb.europa.eu/press/key/date/2012/html/sp121010.sv.html)でも確認できるため、「Fiat＝過去しか測れない」を普遍的な既知命題として引用しない。金融制度・評価手法が用途未定の探索をどの条件で落とすかを比較対象とする。
+
+自著参照：[OpenFAPTA merchant-engine日本語正本](https://github.com/saitoomituru/OpenFAPTA/blob/a5b05a963ee66430a1fbc549398db2e7afcc3911/docs/theory/merchant-engine.ja.md)§1〜5、参照revision `a5b05a963ee66430a1fbc549398db2e7afcc3911`、本文blob `4c850d8bdd16efa4e560b5df80975c00099bd7df`。DESIGN／EXPERIMENTAL TOYとして参照し、初稿では詳細な信用創造アルゴリズムへ踏み込まない。本ケースの有効性・与信効果は未検証。§5自体も過去／未来を比較軸とし、既存Fiat全てへの普遍命題にはしていない。金融工学・人文科学側の潜在価値研究を都市工学の実証済み結果へ移さない。
