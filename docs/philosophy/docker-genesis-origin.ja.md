@@ -49,7 +49,7 @@ source: 本人による2026-11-03の説明をもとに整理
 
 ここに記録したのはふさもふ個人の着想の来歴である。SphereOS Atlantisは、複数の実践者・開発者・制作者が知見と資源を持ち寄って育てる公開アーキテクチャとして開かれている。一人だけで全てを設計・実装・検証・維持する前提には置かない。
 
-[AtlantisのREADME](https://github.com/saitoomituru/SphereOS-Atlantis/blob/main/README.md)は既に、スピリチュアル、ゲーム、TRPG、工学など、どの棚からでも自分の言葉を捨てずに参加できること、コード、神話、詩、観測記録、レビュー、機材、計算資源等の持ち込みを歓迎することを宣言している。本節は、その既存方針へ着想の由来から接続する。
+[cross-layer reference] [AtlantisのREADME](https://github.com/saitoomituru/SphereOS-Atlantis/blob/main/README.md)は既に、スピリチュアル、ゲーム、TRPG、工学など、どの棚からでも自分の言葉を捨てずに参加できること、コード、神話、詩、観測記録、レビュー、機材、計算資源等の持ち込みを歓迎することを宣言している。本節は、その既存方針へ着想の由来から接続する。
 
 持ち込みは、まとまったコードや完成した証明から始める必要はない。本人が共有できる範囲で、次のような内容から始められる。
 
@@ -60,7 +60,7 @@ source: 本人による2026-11-03の説明をもとに整理
 
 項目を一人で全て埋める必要はない。共有する信仰上の経験はその人の語彙と来歴で保持し、地上での実装・試験結果は条件と結果を記録する。ふさもふと同じ宗教体験や神学への一致は参加条件にしない。異なるWorldや構造のまま、接続、比較、別実装、forkとして育てられる。
 
-着想・観測・構造の相談は[AtlantisのIssue](https://github.com/saitoomituru/SphereOS-Atlantis/issues)へ、文章・設計・コードの提案はforkからPRへ送れる。手順は[参加案内](https://github.com/saitoomituru/SphereOS-Atlantis/blob/main/CONTRIBUTING.md)と[ブラウザ／SaaS AIからNote PRを送る](https://github.com/saitoomituru/SphereOS-Atlantis/blob/main/docs/tutorial/note-pr-by-saas-ai.ja.md)を参照する。本文書の来歴整理への訂正・追補は、ZeroRoomLab-manifestでも受け付ける。
+着想・観測・構造の相談は[cross-layer reference] [AtlantisのIssue](https://github.com/saitoomituru/SphereOS-Atlantis/issues)へ、文章・設計・コードの提案はforkからPRへ送れる。手順は[cross-layer reference] [参加案内](https://github.com/saitoomituru/SphereOS-Atlantis/blob/main/CONTRIBUTING.md)と[cross-layer reference] [ブラウザ／SaaS AIからNote PRを送る](https://github.com/saitoomituru/SphereOS-Atlantis/blob/main/docs/tutorial/note-pr-by-saas-ai.ja.md)を参照する。本文書の来歴整理への訂正・追補は、ZeroRoomLab-manifestでも受け付ける。
 
 ## 関連資料
 
@@ -69,4 +69,4 @@ source: 本人による2026-11-03の説明をもとに整理
 - [主観霊的経験ストリーム・レジスタ](subjective-spiritual-stream-register.ja.md)
 - [Spiritual EngineeringとInfoton Engineering](spiritual-and-infoton-engineering.ja.md)
 - [霊的言霊の次元とContext Dimension Fold](spiritual-context-dimension-and-fold.ja.md)
-- [SphereOS Atlantis](https://github.com/saitoomituru/SphereOS-Atlantis)
+- [cross-layer reference] [SphereOS Atlantis](https://github.com/saitoomituru/SphereOS-Atlantis)
