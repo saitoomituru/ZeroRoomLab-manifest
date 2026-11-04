@@ -15,7 +15,7 @@ They define how those layers may connect without one layer silently cancelling a
 | [Spiritual Kotodama Dimensions and Context Dimension Fold](spiritual-context-dimension-and-fold.md) / [日本語](spiritual-context-dimension-and-fold.ja.md) | Keep spiritual, technical, and other Context Dimensions functionally equal without granting a physical or runtime claim |
 | [Chikuwa Cannon — Prospective Meta-Safety Through Fantasy](chikuwa-cannon-prospective-meta-safety.md) / [日本語](chikuwa-cannon-prospective-meta-safety.ja.md) | Use fantasy as a visible type annotation for future projection while keeping live warnings, resources, and anti-blame boundaries intact |
 | [Spiritual Engineering / Infoton Engineering](spiritual-and-infoton-engineering.ja.md) / [QA](../theory/ghost-spiritual-engineering-qa.ja.md) | Domain-specific Ghost / spiritual terminology; observer-specific meaning, self-directed intent, usability, and recovery |
-| [Docker創世記：信仰実践から地上のSphereOSへの着想](docker-genesis-origin.ja.md) | 本人の信仰上の来歴、地上向けの別実装、意図して揃える構造・インターフェースの関係 |
+| [Docker創世記：信仰実践から地上のSphereOSへの着想](docker-genesis-origin.ja.md) | 本人の信仰上の来歴、地上向けの互換機・別実装、他の実践者による持ち帰りとIssue／PR参加 |
 | [Thought lineage](thought-lineage.ja.md) | Intellectual and religious lineage of ZeroRoomLab and fusamofu |
 
 ## Shared boundary
