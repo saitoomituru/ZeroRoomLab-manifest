@@ -55,3 +55,13 @@ Ruler Provenance: 来歴は本人の説明、実装試験の範囲は各技術�
 [INTERPRETATION / Raphael] 個人の原体験の説明から、既存の共同開発の窓口へ導線を補った。既存方針があるAtlantis側のREADMEを重複改稿せず、Manifest側から参照した。
 
 [UNKNOWN / SEMANTIC-STOP] 他者の宗教経験や神学は推定しない。新たな接続能力、実装完了、神様側へのアップストリームを追加しない。文書の再取得による一致とリンク先の実在を確認する。runtimeテストや完全なMAGI resolver実行の成功は主張しない。
+
+## 2026-11-04追補 — PRレビューの外部参照表示
+
+[FACT] [レビュー指摘](https://github.com/saitoomituru/ZeroRoomLab-manifest/pull/69#discussion_r4451909991)と、同スレッドの本人による対応依頼を確認した。
+
+[FIX] Layer Bの由来文書からAtlantisのREADME、Issue、参加案内、Note PRチュートリアル、repositoryへ張った全5リンクに `[cross-layer reference]` を付与した。今回のPRで思想系統樹に追加したAtlantis参加案内へのリンクにも同表示を付与した。
+
+[INTERPRETATION] Maxwell: 着想・共同開発方針の強度を維持。Uriel: 外部の実装・参加資料への参照を表示。Raphael: 来歴文書から工学資料への導線を保った。本文の主張や実装状態は変更しない。
+
+検証: 変更した文書を再取得して本文一致を確認し、今回追加したAtlantis宛リンクの表示漏れを検査する。文書のみの修正でruntimeテストは対象外。
