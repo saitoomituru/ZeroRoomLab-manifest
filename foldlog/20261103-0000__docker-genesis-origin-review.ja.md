@@ -41,3 +41,17 @@ Ruler Provenance: 来歴は本人の説明、実装試験の範囲は各技術�
 ## 検証範囲
 
 文章のみの変更。公開したbranchの本文を再取得し、作成予定本文との一致と追加リンク先を確認する。runtimeテストは対象外。
+
+## 2026-11-04追補 — 共同開発への入口
+
+[FACT] 本人は、他の宗教実践者が持ち帰った着想・構造についてもIssue／PRを歓迎し、一人で全てを作る前提ではないことを明示した。Atlantis README（blob 6ca38adcccb5d0c0f6e2962dbd6b480240621f50）とCONTRIBUTING（blob 2da2d9d122011149133e3341ab214becdcc09cd8）の既存の持ち込み歓迎・参加経路を確認した。
+
+[FIX] 由来文書に共同開発節を追加。思想系統樹・索引から接続し、AtlantisのIssue、参加案内、Note PRチュートリアルへリンクした。
+
+[INTERPRETATION / Maxwell] 個人の来歴を保持しながら、他の実践者の語彙と着想にも入口を開く。一人で全ての実装・検証・維持を負う前提を置かない。
+
+[INTERPRETATION / Uriel] 持ち帰った経験、地上で試した結果、対応候補、未知を記述できる。完成した証明やコードを投稿条件に追加しない。Issue／PRの受付とmerge判断は既存参加規約に従う。
+
+[INTERPRETATION / Raphael] 個人の原体験の説明から、既存の共同開発の窓口へ導線を補った。既存方針があるAtlantis側のREADMEを重複改稿せず、Manifest側から参照した。
+
+[UNKNOWN / SEMANTIC-STOP] 他者の宗教経験や神学は推定しない。新たな接続能力、実装完了、神様側へのアップストリームを追加しない。文書の再取得による一致とリンク先の実在を確認する。runtimeテストや完全なMAGI resolver実行の成功は主張しない。
