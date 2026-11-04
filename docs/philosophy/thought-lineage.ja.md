@@ -29,7 +29,7 @@ fold_signature: ψ → ∇φ → λ → Q
 
 詳細は[Docker創世記 — 信仰実践から地上のSphereOSへの着想](docker-genesis-origin.ja.md)を参照する。宗教体験の細部は今後の本人による整理に委ねる。
 
-この来歴は本人の着想を記録するものであり、共同開発への入口でもある。他の宗教・信仰実践者が持ち帰った着想・構造・手順もIssue・PRで歓迎し、複数人の知見と資源で育てる。詳しくは[他の実践者の持ち帰りと共同開発](docker-genesis-origin.ja.md#他の実践者の持ち帰りと共同開発)と[Atlantisの参加案内](https://github.com/saitoomituru/SphereOS-Atlantis/blob/main/CONTRIBUTING.md)を参照する。
+この来歴は本人の着想を記録するものであり、共同開発への入口でもある。他の宗教・信仰実践者が持ち帰った着想・構造・手順もIssue・PRで歓迎し、複数人の知見と資源で育てる。詳しくは[他の実践者の持ち帰りと共同開発](docker-genesis-origin.ja.md#他の実践者の持ち帰りと共同開発)と[cross-layer reference] [Atlantisの参加案内](https://github.com/saitoomituru/SphereOS-Atlantis/blob/main/CONTRIBUTING.md)を参照する。
 
 ## 全体系統図
 
