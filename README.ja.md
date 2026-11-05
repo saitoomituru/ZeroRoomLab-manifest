@@ -40,7 +40,7 @@ ZeroRoomLabとは何か、何を作っているか、思想的背景。
 
 投げ銭・維持資源が届かない現状で、18畳メインラボ・6畳加工場・4畳加工場を日常稼働圏から閉鎖し、寝室3畳へ生活・保温区画を集約する計画。電源不要の芯式灯油ストーブ約2.4kWで暖を取り、約980WhのLiFePO₄は照明・通信・ボイラー・井戸汲み上げ等の電力に使う。
 
-冬季発電の候補として、灯油を熱源、雪をヒートジャケットにする**「ゴッドガンダム800ウイング」**（ディスクリプト: **イーロン式ボイジャーカムイ発電**）のゼーベック系と、並行候補のスターリング系を検討する。[設計・命名の由来・必要資源](docs/projects/2026-11-05-winter-survival-cogeneration.ja.md) / [越冬運用 #71](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/71) / [ゼーベック系 #72](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/72)。コジェネは設計段階で出力未測定。縮小移行の完了・研究設備復旧を報告するものではない。
+冬季発電の候補として、灯油を熱源、雪をヒートジャケットにする**「ゴッドガンダム800ウイング」**（ディスクリプト: **イーロン式ボイジャーカムイ発電**）のゼーベック系と、並行候補のスターリング系を検討する。[設計・命名の由来・必要資源](docs/projects/2026-11-05-winter-survival-cogeneration.ja.md) / [越冬運用 #71](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/71) / [ゼーベック系 #72](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/72)。豪雪地帯の雪冷熱を前提とし、世界普遍性は主張しない。ハードウェア設計SourceはCERN-OHL-P-2.0。コジェネは設計段階で出力未測定。縮小移行の完了・研究設備復旧を報告するものではない。
 
 ## 現在の電力：スニーカーグリッド0.1.x（2026-10-19）
 
