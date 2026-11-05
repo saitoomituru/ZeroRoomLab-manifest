@@ -61,3 +61,9 @@
 支援対象は「生存できる状態の証明」ではなく、**生存しながら技術アウトプットを継続できる電力容量・電力密度と、そのための安全な保守可能性の獲得**。資金、現物部材、計測、修理、現場技能、電力インフラ設計の協力が有効。既存の [資金と非独占的Steward方針](../../FUNDING.md) に従い、寄付が納期・研究成果・議決権を保証するわけではない。
 
 関連: [Portable Civilization #47](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/47), [Infra-FIRE #48](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/48).
+
+## 2026-11-05追記：越冬区画の縮小とコジェネ設計
+
+18畳メインラボ・6畳加工場・4畳加工場を日常稼働圏から閉鎖し、寝室3畳に生活・保温機能を集約する計画を記録した。芯式灯油ストーブ約2.4kWが暖房熱源、約980WhのLiFePO₄が照明・通信・風呂のボイラー・井戸汲み上げ等の電力バッファである。灯油・雪を使う「ゴッドガンダム800ウイング」（ディスクリプト: イーロン式ボイジャーカムイ発電）のゼーベック系とスターリング系は設計候補で、発電実績は未測定。過去の観測期間の結果へ追記内容を遡及適用しない。
+
+[越冬・コジェネ設計](2026-11-05-winter-survival-cogeneration.ja.md) / [運用 #71](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/71) / [ゼーベック #72](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/72)

@@ -20,6 +20,14 @@ The previously reported **~980 Wh is nominal battery storage**, not generation o
 
 **Survival continuity is not productive independence.** Contributions of generation and charging capacity, distribution equipment, batteries, power conversion, diagnostics, field expertise, and restoration funds can reopen research branches. Portable energy logistics and the founder's labor remain dependencies; the workaround does not remove the funding or infrastructure bottleneck. Other ongoing infrastructure and legal costs are not erased. No specific delivery or return is promised. [Corrected Japanese field report](docs/projects/2026-10-15-offgrid-30days-field-report.ja.md).
 
+## 越冬縮小運転とゴッドガンダム800ウイング（2026-11-05）
+
+維持資源が届かない現状で、18畳メインラボ・6畳加工場・4畳加工場を日常稼働圏から閉鎖し、寝室3畳へ生活・保温機能を集約する計画です。芯式灯油ストーブ約2.4kWが熱源、約980WhのLiFePO₄が照明・通信・ボイラー・井戸汲み上げ等の電力バッファです。研究設備は全面停止中です。
+
+冬季発電候補 **ゴッドガンダム800ウイング**（ディスクリプト: **イーロン式ボイジャーカムイ発電**）は、灯油から受熱するゼーベック発電と雪のヒートジャケットを組み合わせる設計段階です。スターリング系も並行候補として保持します。燃料・断熱部材、充電・輸送協力、素子・熱交換部材・配電・充電制御、加工機利用・計測協力、維持費と研究用電力の提供を求めます。本人の追加自弁を前提にせず、生存維持と研究復旧をそれぞれ支える資源として扱います。
+
+[設計・命名の由来・必要資源](docs/projects/2026-11-05-winter-survival-cogeneration.ja.md) / [越冬運用 #71](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/71) / [発電系 #72](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/72)。支援は非独占Seed Steward方針に従い、成果・納期・独占権を保証しません。
+
 ## Blackhole実機・対応ホスト・研究用電力の支援募集 / Blackhole hardware and research power
 
 **公開仕様は判明済み。次に必要なのは実機と、それを動かすホスト・電力です。** Tenstorrent Blackhole®の貸与・寄贈・購入資金、対応ホスト、給電・冷却設備、研究用電力の復旧・提供、輸送・計測協力を募集します。現在はスニーカーグリッド0.1.xによる生存・通信・ロビー・NSFW動画配信の縮小運転で、研究設備は全面停止中です。
