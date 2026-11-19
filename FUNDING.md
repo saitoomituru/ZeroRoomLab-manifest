@@ -28,6 +28,10 @@ The previously reported **~980 Wh is nominal battery storage**, not generation o
 
 [設計・命名の由来・必要資源](docs/projects/2026-11-05-winter-survival-cogeneration.ja.md) / [越冬運用 #71](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/71) / [発電系 #72](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/72)。支援は非独占Seed Steward方針に従い、成果・納期・独占権を保証しません。
 
+## 越冬優先と研究再開の条件（2026-11-19）
+
+本人報告では直ちに命に別状はありません。スニーカーグリッドの維持、越冬の補給、その資金を得るためのお色気神楽に時間と電力を割いており、研究開発は停滞中です。燃料・充電・輸送の協力で生活維持にかかる負担を減らすことは、研究時間の確保にもつながります。研究再開には、安定した研究用電力、計算資源、協力者、継続資金も必要です。[越冬の現況と気象資料](docs/projects/2026-11-05-winter-survival-cogeneration.ja.md) / [ラボ運営 #74](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/74)。
+
 ## Blackhole実機・対応ホスト・研究用電力の支援募集 / Blackhole hardware and research power
 
 **公開仕様は判明済み。次に必要なのは実機と、それを動かすホスト・電力です。** Tenstorrent Blackhole®の貸与・寄贈・購入資金、対応ホスト、給電・冷却設備、研究用電力の復旧・提供、輸送・計測協力を募集します。現在はスニーカーグリッド0.1.xによる生存・通信・ロビー・NSFW動画配信の縮小運転で、研究設備は全面停止中です。
