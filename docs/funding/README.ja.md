@@ -16,6 +16,10 @@ ZeroRoomLab は、小口奉納、寄付、現物、廃材、計算資源、電�
 
 支援対象は商用電力の復旧、発電・充電設備の再構築、蓄電・変換・配電と研究設備の再稼働条件。急造の生存電力をもって研究電力が充足したとは扱わず、調達責務を本人の財布・運搬労力へ押し戻さない。
 
+## 2026-11-19 越冬優先と研究再開
+
+現在は生存・越冬に使う電力と時間を優先しており、研究開発は停滞中。燃料・充電・輸送への協力は日々の負担を減らし、研究時間を取り戻す直接の支援になる。安定した研究用電力、計算資源、協力者、継続資金も引き続き必要。[本人報告と気象資料](../projects/2026-11-05-winter-survival-cogeneration.ja.md) / [越冬運用 #71](https://github.com/saitoomituru/ZeroRoomLab-manifest/issues/71)。
+
 ## 読む順番
 
 1. [Non-Exclusive Seed Steward 方針](non-exclusive-seed-steward.ja.md)
